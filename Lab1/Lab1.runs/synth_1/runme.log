@@ -1,0 +1,412 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 39561 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1397.375 ; gain = 47.898 ; free physical = 7045 ; free virtual = 12772
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/top.vhd:22]
+INFO: [Synth 8-3491] module 'timer' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/timer.vhd:15' bound to instance 'timer1' of component 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/top.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/timer.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'timer' (1#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/timer.vhd:20]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/color_channel.vhd:15' bound to instance 'color_channel1' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/top.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/color_channel.vhd:25]
+INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/pwm_generator.vhd:13' bound to instance 'PWMS' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/color_channel.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/pwm_generator.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'pwm_generator' (2#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/pwm_generator.vhd:19]
+INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/pwm_generator.vhd:13' bound to instance 'PWMS' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/color_channel.vhd:42]
+INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/pwm_generator.vhd:13' bound to instance 'PWMS' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/color_channel.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'color_channel' (3#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/color_channel.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'top' (4#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/top.vhd:22]
+WARNING: [Synth 8-3331] design top has unconnected port led[3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1443.125 ; gain = 93.648 ; free physical = 7164 ; free virtual = 12872
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1443.125 ; gain = 93.648 ; free physical = 7180 ; free virtual = 12877
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1443.125 ; gain = 93.648 ; free physical = 7180 ; free virtual = 12877
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[0]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[1]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[2]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[3]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[4]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[5]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[6]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[7]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[0]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[1]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[2]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[3]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[4]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[5]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[6]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[7]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[0]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[1]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[2]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[3]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[4]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[5]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[6]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[7]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'row[0]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'row[1]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'row[2]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'row[3]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'row[4]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'row[5]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'row[6]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'row[7]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1769.797 ; gain = 0.000 ; free physical = 7809 ; free virtual = 13388
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1769.797 ; gain = 0.000 ; free physical = 7810 ; free virtual = 13389
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1769.797 ; gain = 0.000 ; free physical = 7810 ; free virtual = 13389
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1769.797 ; gain = 0.000 ; free physical = 7810 ; free virtual = 13389
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7888 ; free virtual = 13467
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7888 ; free virtual = 13467
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7890 ; free virtual = 13469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7889 ; free virtual = 13468
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module timer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design top has port led[0] driven by constant 1
+WARNING: [Synth 8-3331] design top has unconnected port led[3]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7877 ; free virtual = 13458
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7750 ; free virtual = 13331
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7749 ; free virtual = 13330
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7749 ; free virtual = 13330
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7749 ; free virtual = 13330
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7749 ; free virtual = 13330
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7749 ; free virtual = 13330
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7749 ; free virtual = 13330
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7749 ; free virtual = 13330
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7749 ; free virtual = 13330
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     2|
+|3     |LUT2  |     2|
+|4     |LUT3  |     4|
+|5     |LUT4  |     2|
+|6     |LUT5  |     4|
+|7     |LUT6  |     4|
+|8     |FDRE  |    14|
+|9     |IBUF  |     1|
+|10    |OBUF  |     3|
+|11    |OBUFT |     1|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    38|
+|2     |  timer1 |timer  |    32|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7749 ; free virtual = 13330
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1769.797 ; gain = 93.648 ; free physical = 7807 ; free virtual = 13388
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1769.797 ; gain = 420.320 ; free physical = 7807 ; free virtual = 13388
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1785.812 ; gain = 0.000 ; free physical = 7758 ; free virtual = 13327
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 43 Warnings, 40 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1785.812 ; gain = 436.438 ; free physical = 7806 ; free virtual = 13375
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1785.812 ; gain = 0.000 ; free physical = 7806 ; free virtual = 13375
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 17 11:37:50 2021...

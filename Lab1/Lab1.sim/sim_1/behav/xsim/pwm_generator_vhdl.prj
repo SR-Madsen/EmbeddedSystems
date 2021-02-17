@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab1.srcs/sources_1/new/pwm_generator.vhd" \
+"../../../../Lab1.srcs/sources_1/new/top.vhd" \
+"../../../../Lab1.srcs/sources_1/new/timer.vhd" \
+"../../../../Lab1.srcs/sources_1/new/color_channel.vhd" \
+
+# Do not sort compile order
+nosort
