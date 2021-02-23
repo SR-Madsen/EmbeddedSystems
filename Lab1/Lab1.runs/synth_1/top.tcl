@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -35,6 +34,7 @@ read_vhdl -library xil_defaultlib {
   /home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/top.vhd
   /home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/timer.vhd
   /home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/color_channel.vhd
+  /home/sebastian/Desktop/Git/EmbeddedSystems/Lab1/Lab1.srcs/sources_1/new/row.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

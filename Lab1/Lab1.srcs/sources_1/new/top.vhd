@@ -32,20 +32,34 @@ end component;
 --           pwm : out STD_LOGIC);
 --end component;
 
-component color_channel is
+--component color_channel is
+--    Port ( counter : in STD_LOGIC_VECTOR (7 downto 0);
+--           red : in STD_LOGIC_VECTOR (7 downto 0);
+--           green : in STD_LOGIC_VECTOR (7 downto 0);
+--           blue : in STD_LOGIC_VECTOR (7 downto 0);
+--           red_pwm : out STD_LOGIC;
+--           green_pwm : out STD_LOGIC;
+--           blue_pwm : out STD_LOGIC);
+--end component;
+
+component row is
     Port ( counter : in STD_LOGIC_VECTOR (7 downto 0);
-           red : in STD_LOGIC_VECTOR (7 downto 0);
-           green : in STD_LOGIC_VECTOR (7 downto 0);
-           blue : in STD_LOGIC_VECTOR (7 downto 0);
-           red_pwm : out STD_LOGIC;
-           green_pwm : out STD_LOGIC;
-           blue_pwm : out STD_LOGIC);
+           red : in STD_LOGIC_VECTOR (63 downto 0);
+           green : in STD_LOGIC_VECTOR (63 downto 0);
+           blue : in STD_LOGIC_VECTOR (63 downto 0);
+           red_pwm : out STD_LOGIC_VECTOR (7 downto 0);
+           green_pwm : out STD_LOGIC_VECTOR (7 downto 0);
+           blue_pwm : out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
 signal count_out: STD_LOGIC_VECTOR(7 downto 0);
-signal ocr_red: STD_LOGIC_VECTOR(7 downto 0) := "11111111";
-signal ocr_green: STD_LOGIC_VECTOR(7 downto 0) := "00100000";
-signal ocr_blue: STD_LOGIC_VECTOR(7 downto 0) := "00000001";
+signal ocr_red: STD_LOGIC_VECTOR(63 downto 0) := "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "11111111";
+signal ocr_green: STD_LOGIC_VECTOR(63 downto 0) := "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "01000000";
+signal ocr_blue: STD_LOGIC_VECTOR(63 downto 0) := "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "00000001";
+
+signal red_pwms: STD_LOGIC_VECTOR(7 downto 0);
+signal green_pwms: STD_LOGIC_VECTOR(7 downto 0);
+signal blue_pwms: STD_LOGIC_VECTOR(7 downto 0);
 
 begin
 
@@ -56,12 +70,24 @@ begin
 --                                            ocr => ocr_static,
 --                                            pwm => led(0));
 
-    color_channel1: color_channel port map (counter => count_out,
-                                            red => ocr_red,
-                                            green => ocr_green,
-                                            blue => ocr_blue,
-                                            red_pwm => led(0),
-                                            green_pwm => led(1),
-                                            blue_pwm => led(2));
+--    color_channel1: color_channel port map (counter => count_out,
+--                                            red => ocr_red,
+--                                            green => ocr_green,
+--                                            blue => ocr_blue,
+--                                            red_pwm => led(0),
+--                                            green_pwm => led(1),
+--                                            blue_pwm => led(2));
+
+    row1: row port map (counter => count_out,
+                        red => ocr_red,
+                        green => ocr_green,
+                        blue => ocr_blue,
+                        red_pwm => red_pwms,
+                        green_pwm => green_pwms,
+                        blue_pwm => blue_pwms);
+                        
+    led(0) <= red_pwms(0);
+    led(1) <= green_pwms(0);
+    led(2) <= blue_pwms(0);
 
 end Behavioral;

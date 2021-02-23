@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Wed Feb 17 11:38:37 2021
+| Date             : Mon Feb 22 12:46:37 2021
 | Host             : sebastian-ZBook running 64-bit Linux Mint 20
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -54,7 +54,7 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
 | Slice Logic    |    <0.001 |       36 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       13 |     17600 |            0.07 |
+|   LUT as Logic |    <0.001 |       12 |     17600 |            0.07 |
 |   Register     |    <0.001 |       14 |     35200 |            0.04 |
 |   Others       |     0.000 |        4 |       --- |             --- |
 | Signals        |    <0.001 |       19 |       --- |             --- |
