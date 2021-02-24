@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'color_channel'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pwm_generator'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rows'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'simple_memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'timer'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
