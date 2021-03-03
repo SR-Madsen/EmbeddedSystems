@@ -28,19 +28,21 @@ signal sync_state, sync_reset: std_logic;
 begin
 
     process(clock_125M)
-    variable scaler: integer range 0 to 125000002/2;
+    variable scaler: integer range 0 to 125000001;
     
     begin
         if rising_edge(clock_125M) then
             scaler := scaler + 1;
-            if scaler >= 125000000/2 then
+            if scaler >= 125000000 then
                 scaler := 0;
-                clk_1Hz <= not clk_1Hz;
+                clk_1Hz <= '1';
+            else
+                clk_1Hz <= '0';
             end if;
         end if;
     end process;
     
-    process(state, btn(0), btn(1), clk_1Hz)
+    process(state, btn(0), btn(1), clock_125M)
     variable counter: unsigned(3 downto 0) := "0000";
     
     begin
@@ -49,37 +51,34 @@ begin
         sync_state <= '0';
         sync_reset <= '0';
         
-        if rising_edge(clk_1Hz) then
-            sync_state <= btn(0);
-            sync_reset <= btn(1);
-        end if;
-        
-        case state is
-            when stopped =>
-                leds <= std_logic_vector(counter);
-                if (sync_state = '1') then
-                    state <= running;
-                end if;
-                if (sync_reset = '1') then
-                    counter := "0000";
-                end if;
-                
-            when running =>
-                leds <= std_logic_vector(counter);
-                if rising_edge(clk_1Hz) then
-                    counter := counter + 1;
-                end if;
-                if (sync_state = '1') then
+        if rising_edge(clock_125M) then
+            case state is
+                when stopped =>
+                    leds <= std_logic_vector(counter);
+                    if (btn(0) = '1') then
+                        state <= running;
+                    end if;
+                    if (btn(1) = '1') then
+                        counter := "0000";
+                    end if;
+                    
+                when running =>
+                    leds <= std_logic_vector(counter);
+                    if clk_1Hz = '1' then
+                        counter := counter + 1;
+                    end if;
+                    if (btn(0) = '1') then
+                        state <= stopped;
+                    end if;
+                    if (btn(1) = '1') then
+                        counter := "0000";
+                    end if;
+                    
+                when others =>
+                    leds <= std_logic_vector(counter);
                     state <= stopped;
-                end if;
-                if (sync_reset = '1') then
-                    counter := "0000";
-                end if;
-                
-            when others =>
-                leds <= std_logic_vector(counter);
-                state <= stopped;
-        end case;
+            end case;
+        end if;
         
     end process;
 

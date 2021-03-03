@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Feb 24 11:33:15 2021
-# Process ID: 55456
+# Start of session at: Wed Mar  3 09:43:50 2021
+# Process ID: 14472
 # Current directory: /home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.runs/synth_1
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: /home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.runs/synth_1/top.vds
@@ -15,23 +15,23 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 55611 
+INFO: Helper process launched with PID 14631 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1395.176 ; gain = 83.898 ; free physical = 5585 ; free virtual = 11420
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1396.016 ; gain = 79.898 ; free physical = 6432 ; free virtual = 11837
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:22]
-INFO: [Synth 8-3491] module 'timer' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/timer.vhd:15' bound to instance 'timer1' of component 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:63]
+INFO: [Synth 8-3491] module 'timer' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/timer.vhd:15' bound to instance 'timer1' of component 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:74]
 INFO: [Synth 8-638] synthesizing module 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/timer.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'timer' (1#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/timer.vhd:20]
-INFO: [Synth 8-3491] module 'simple_memory' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:4' bound to instance 'mem1' of component 'simple_memory' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:66]
+INFO: [Synth 8-3491] module 'simple_memory' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:4' bound to instance 'mem1' of component 'simple_memory' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:77]
 INFO: [Synth 8-638] synthesizing module 'simple_memory' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:11]
 INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:16]
 INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:28]
 INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'simple_memory' (2#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:11]
-INFO: [Synth 8-3491] module 'rows' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:13' bound to instance 'row1' of component 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:71]
-INFO: [Synth 8-638] synthesizing module 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:26]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:52]
+INFO: [Synth 8-3491] module 'rows' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:13' bound to instance 'row1' of component 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:24]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
 INFO: [Synth 8-638] synthesizing module 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:25]
 INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'PWMS' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:42]
 INFO: [Synth 8-638] synthesizing module 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd:19]
@@ -39,52 +39,51 @@ INFO: [Synth 8-256] done synthesizing module 'pwm_generator' (3#1) [/home/sebast
 INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'PWMS' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:42]
 INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'PWMS' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:42]
 INFO: [Synth 8-256] done synthesizing module 'color_channel' (4#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:25]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:52]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:52]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:52]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:52]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:52]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:52]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:52]
-WARNING: [Synth 8-614] signal 'clk_scaled' is read in the process but is not in the sensitivity list [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:62]
-INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:85]
-WARNING: [Synth 8-614] signal 'blue_pwm_array' is read in the process but is not in the sensitivity list [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:76]
-WARNING: [Synth 8-614] signal 'green_pwm_array' is read in the process but is not in the sensitivity list [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:76]
-WARNING: [Synth 8-614] signal 'red_pwm_array' is read in the process but is not in the sensitivity list [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:76]
-WARNING: [Synth 8-614] signal 'row_addr' is read in the process but is not in the sensitivity list [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:76]
-INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'rows' (5#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:26]
-WARNING: [Synth 8-3848] Net blue in module/entity top does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:16]
-WARNING: [Synth 8-3848] Net red in module/entity top does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:17]
-WARNING: [Synth 8-3848] Net green in module/entity top does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:18]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
+WARNING: [Synth 8-3848] Net red_pwm in module/entity rows does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:19]
+WARNING: [Synth 8-3848] Net green_pwm in module/entity rows does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:20]
+WARNING: [Synth 8-3848] Net blue_pwm in module/entity rows does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'rows' (5#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:24]
+INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:116]
+WARNING: [Synth 8-614] signal 'blue_pwms' is read in the process but is not in the sensitivity list [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:109]
+WARNING: [Synth 8-614] signal 'green_pwms' is read in the process but is not in the sensitivity list [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:109]
+WARNING: [Synth 8-614] signal 'red_pwms' is read in the process but is not in the sensitivity list [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:109]
+INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:140]
 INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:22]
+WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[7]
+WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[6]
+WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[5]
+WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[4]
+WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[3]
+WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[2]
+WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[1]
+WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[0]
+WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[7]
+WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[6]
+WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[5]
+WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[4]
+WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[3]
+WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[2]
+WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[1]
+WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[0]
+WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[7]
+WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[6]
+WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[5]
+WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[4]
+WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[3]
+WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[2]
+WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[1]
+WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[0]
+WARNING: [Synth 8-3331] design rows has unconnected port clk
 WARNING: [Synth 8-3331] design top has unconnected port led[3]
-WARNING: [Synth 8-3331] design top has unconnected port blue[7]
-WARNING: [Synth 8-3331] design top has unconnected port blue[6]
-WARNING: [Synth 8-3331] design top has unconnected port blue[5]
-WARNING: [Synth 8-3331] design top has unconnected port blue[4]
-WARNING: [Synth 8-3331] design top has unconnected port blue[3]
-WARNING: [Synth 8-3331] design top has unconnected port blue[2]
-WARNING: [Synth 8-3331] design top has unconnected port blue[1]
-WARNING: [Synth 8-3331] design top has unconnected port blue[0]
-WARNING: [Synth 8-3331] design top has unconnected port red[7]
-WARNING: [Synth 8-3331] design top has unconnected port red[6]
-WARNING: [Synth 8-3331] design top has unconnected port red[5]
-WARNING: [Synth 8-3331] design top has unconnected port red[4]
-WARNING: [Synth 8-3331] design top has unconnected port red[3]
-WARNING: [Synth 8-3331] design top has unconnected port red[2]
-WARNING: [Synth 8-3331] design top has unconnected port red[1]
-WARNING: [Synth 8-3331] design top has unconnected port red[0]
-WARNING: [Synth 8-3331] design top has unconnected port green[7]
-WARNING: [Synth 8-3331] design top has unconnected port green[6]
-WARNING: [Synth 8-3331] design top has unconnected port green[5]
-WARNING: [Synth 8-3331] design top has unconnected port green[4]
-WARNING: [Synth 8-3331] design top has unconnected port green[3]
-WARNING: [Synth 8-3331] design top has unconnected port green[2]
-WARNING: [Synth 8-3331] design top has unconnected port green[1]
-WARNING: [Synth 8-3331] design top has unconnected port green[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1440.926 ; gain = 129.648 ; free physical = 5560 ; free virtual = 11401
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1440.766 ; gain = 124.648 ; free physical = 6415 ; free virtual = 11833
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -97,10 +96,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1440.926 ; gain = 129.648 ; free physical = 5545 ; free virtual = 11393
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1440.766 ; gain = 124.648 ; free physical = 6414 ; free virtual = 11832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1440.926 ; gain = 129.648 ; free physical = 5545 ; free virtual = 11393
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1440.766 ; gain = 124.648 ; free physical = 6414 ; free virtual = 11832
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -135,34 +134,33 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1792.582 ; gain = 0.000 ; free physical = 5265 ; free virtual = 11133
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.422 ; gain = 0.000 ; free physical = 6274 ; free virtual = 11694
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1792.582 ; gain = 0.000 ; free physical = 5266 ; free virtual = 11133
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.422 ; gain = 0.000 ; free physical = 6275 ; free virtual = 11696
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1792.582 ; gain = 0.000 ; free physical = 5266 ; free virtual = 11133
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1792.582 ; gain = 0.000 ; free physical = 5266 ; free virtual = 11133
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.422 ; gain = 0.000 ; free physical = 6275 ; free virtual = 11696
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.422 ; gain = 0.000 ; free physical = 6275 ; free virtual = 11695
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5303 ; free virtual = 11178
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6415 ; free virtual = 11836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5303 ; free virtual = 11178
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6415 ; free virtual = 11836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5305 ; free virtual = 11180
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6417 ; free virtual = 11838
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'clk_scaled_reg' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:71]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5297 ; free virtual = 11172
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6409 ; free virtual = 11830
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -178,15 +176,15 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 5     
-	                3 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   8 Input     64 Bit        Muxes := 1     
 	   8 Input     56 Bit        Muxes := 1     
 	   8 Input     48 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -194,6 +192,17 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
 Module timer 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -206,17 +215,6 @@ Detailed RTL Component Info :
 	   8 Input     64 Bit        Muxes := 1     
 	   8 Input     56 Bit        Muxes := 1     
 	   8 Input     48 Bit        Muxes := 1     
-Module rows 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      3 Bit       Adders := 1     
-+---Registers : 
-	                8 Bit    Registers := 3     
-	                3 Bit    Registers := 2     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   8 Input      8 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -233,36 +231,9 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3936] Found unconnected internal register 'row1/red_pwm_reg' and it is trimmed from '8' to '5' bits. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:81]
-WARNING: [Synth 8-3936] Found unconnected internal register 'row1/green_pwm_reg' and it is trimmed from '8' to '5' bits. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:80]
-WARNING: [Synth 8-3936] Found unconnected internal register 'row1/blue_pwm_reg' and it is trimmed from '8' to '5' bits. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:79]
 WARNING: [Synth 8-3331] design top has unconnected port led[3]
-WARNING: [Synth 8-3331] design top has unconnected port blue[7]
-WARNING: [Synth 8-3331] design top has unconnected port blue[6]
-WARNING: [Synth 8-3331] design top has unconnected port blue[5]
-WARNING: [Synth 8-3331] design top has unconnected port blue[4]
-WARNING: [Synth 8-3331] design top has unconnected port blue[3]
-WARNING: [Synth 8-3331] design top has unconnected port blue[2]
-WARNING: [Synth 8-3331] design top has unconnected port blue[1]
-WARNING: [Synth 8-3331] design top has unconnected port blue[0]
-WARNING: [Synth 8-3331] design top has unconnected port red[7]
-WARNING: [Synth 8-3331] design top has unconnected port red[6]
-WARNING: [Synth 8-3331] design top has unconnected port red[5]
-WARNING: [Synth 8-3331] design top has unconnected port red[4]
-WARNING: [Synth 8-3331] design top has unconnected port red[3]
-WARNING: [Synth 8-3331] design top has unconnected port red[2]
-WARNING: [Synth 8-3331] design top has unconnected port red[1]
-WARNING: [Synth 8-3331] design top has unconnected port red[0]
-WARNING: [Synth 8-3331] design top has unconnected port green[7]
-WARNING: [Synth 8-3331] design top has unconnected port green[6]
-WARNING: [Synth 8-3331] design top has unconnected port green[5]
-WARNING: [Synth 8-3331] design top has unconnected port green[4]
-WARNING: [Synth 8-3331] design top has unconnected port green[3]
-WARNING: [Synth 8-3331] design top has unconnected port green[2]
-WARNING: [Synth 8-3331] design top has unconnected port green[1]
-WARNING: [Synth 8-3331] design top has unconnected port green[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5284 ; free virtual = 11161
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6397 ; free virtual = 11820
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -274,13 +245,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5175 ; free virtual = 11062
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6299 ; free virtual = 11721
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5173 ; free virtual = 11059
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6298 ; free virtual = 11720
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -292,7 +263,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5174 ; free virtual = 11060
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -316,7 +287,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5174 ; free virtual = 11059
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -329,7 +300,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5174 ; free virtual = 11059
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -341,25 +312,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5174 ; free virtual = 11059
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5174 ; free virtual = 11059
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5174 ; free virtual = 11059
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5174 ; free virtual = 11059
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -376,56 +347,48 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |     7|
-|3     |LUT1   |     5|
-|4     |LUT2   |     4|
-|5     |LUT3   |    12|
-|6     |LUT4   |    11|
-|7     |LUT5   |    18|
-|8     |LUT6   |     5|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     1|
+|4     |LUT2   |     6|
+|5     |LUT3   |     6|
+|6     |LUT4   |     1|
+|7     |LUT5   |     1|
+|8     |LUT6   |     2|
 |9     |FDCE   |    15|
-|10    |FDRE   |    24|
-|11    |LD     |     1|
-|12    |IBUF   |     1|
-|13    |OBUF   |    11|
-|14    |OBUFT  |    25|
+|10    |FDRE   |    12|
+|11    |IBUF   |     1|
+|12    |OBUF   |    32|
+|13    |OBUFT  |     4|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+-----------------------------+----------------+------+
-|      |Instance                     |Module          |Cells |
-+------+-----------------------------+----------------+------+
-|1     |top                          |                |   140|
-|2     |  row1                       |rows            |    65|
-|3     |    \multi_colors[4].COLORS  |color_channel   |     3|
-|4     |      \multi_pwm[0].PWMS     |pwm_generator   |     1|
-|5     |      \multi_pwm[1].PWMS     |pwm_generator_0 |     1|
-|6     |      \multi_pwm[2].PWMS     |pwm_generator_1 |     1|
-|7     |  timer1                     |timer           |    37|
-+------+-----------------------------+----------------+------+
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    86|
++------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5174 ; free virtual = 11059
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1792.582 ; gain = 129.648 ; free physical = 5230 ; free virtual = 11116
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1792.582 ; gain = 481.305 ; free physical = 5230 ; free virtual = 11116
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1793.422 ; gain = 124.648 ; free physical = 6355 ; free virtual = 11778
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6355 ; free virtual = 11778
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1792.582 ; gain = 0.000 ; free physical = 5157 ; free virtual = 11043
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.422 ; gain = 0.000 ; free physical = 6295 ; free virtual = 11718
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  LD => LDCE: 1 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-43 Infos, 70 Warnings, 8 Critical Warnings and 0 Errors encountered.
+43 Infos, 41 Warnings, 8 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1792.582 ; gain = 492.859 ; free physical = 5211 ; free virtual = 11097
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1792.582 ; gain = 0.000 ; free physical = 5211 ; free virtual = 11097
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1793.422 ; gain = 477.406 ; free physical = 6352 ; free virtual = 11775
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.422 ; gain = 0.000 ; free physical = 6352 ; free virtual = 11775
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Feb 24 11:33:48 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  3 09:44:19 2021...

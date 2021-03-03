@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Feb 24 11:34:35 2021
+| Date         : Wed Mar  3 09:45:06 2021
 | Host         : sebastian-ZBook running 64-bit Linux Mint 20
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,115 +23,59 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 20
-+-----------+----------+------------------------------+------------+
-| Rule      | Severity | Description                  | Violations |
-+-----------+----------+------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert | 1          |
-| TIMING-17 | Warning  | Non-clocked sequential cell  | 18         |
-| TIMING-20 | Warning  | Non-clocked latch            | 1          |
-+-----------+----------+------------------------------+------------+
+             Violations found: 9
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
+| TIMING-18 | Warning  | Missing input or output delay | 8          |
++-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell row1/clk_scaled_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) row1/prescaler_reg[0]/CLR, row1/prescaler_reg[10]/CLR, row1/prescaler_reg[11]/CLR, row1/prescaler_reg[12]/CLR, row1/prescaler_reg[13]/CLR, row1/prescaler_reg[14]/CLR, row1/prescaler_reg[1]/CLR, row1/prescaler_reg[2]/CLR, row1/prescaler_reg[3]/CLR, row1/prescaler_reg[4]/CLR, row1/prescaler_reg[5]/CLR, row1/prescaler_reg[6]/CLR, row1/prescaler_reg[7]/CLR, row1/prescaler_reg[8]/CLR, row1/prescaler_reg[9]/CLR (the first 15 of 15 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell prescaler[0]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) prescaler_reg[0]/CLR, prescaler_reg[10]/CLR, prescaler_reg[11]/CLR, prescaler_reg[12]/CLR, prescaler_reg[13]/CLR, prescaler_reg[14]/CLR, prescaler_reg[1]/CLR, prescaler_reg[2]/CLR, prescaler_reg[3]/CLR, prescaler_reg[4]/CLR, prescaler_reg[5]/CLR, prescaler_reg[6]/CLR, prescaler_reg[7]/CLR, prescaler_reg[8]/CLR, prescaler_reg[9]/CLR (the first 15 of 15 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-TIMING-17#1 Warning
-Non-clocked sequential cell  
-The clock pin row1/blue_pwm_reg[4]/C is not reached by a timing clock
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on row[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#2 Warning
-Non-clocked sequential cell  
-The clock pin row1/green_pwm_reg[4]/C is not reached by a timing clock
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on row[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#3 Warning
-Non-clocked sequential cell  
-The clock pin row1/red_pwm_reg[4]/C is not reached by a timing clock
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on row[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#4 Warning
-Non-clocked sequential cell  
-The clock pin row1/row_addr_reg[0]/C is not reached by a timing clock
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on row[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#5 Warning
-Non-clocked sequential cell  
-The clock pin row1/row_addr_reg[1]/C is not reached by a timing clock
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on row[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#6 Warning
-Non-clocked sequential cell  
-The clock pin row1/row_addr_reg[2]/C is not reached by a timing clock
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on row[5] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#7 Warning
-Non-clocked sequential cell  
-The clock pin row1/row_sel_reg[0]/C is not reached by a timing clock
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on row[6] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#8 Warning
-Non-clocked sequential cell  
-The clock pin row1/row_sel_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#9 Warning
-Non-clocked sequential cell  
-The clock pin row1/row_sel_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#10 Warning
-Non-clocked sequential cell  
-The clock pin row1/state_reg/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#11 Warning
-Non-clocked sequential cell  
-The clock pin timer1/counter_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#12 Warning
-Non-clocked sequential cell  
-The clock pin timer1/counter_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#13 Warning
-Non-clocked sequential cell  
-The clock pin timer1/counter_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#14 Warning
-Non-clocked sequential cell  
-The clock pin timer1/counter_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#15 Warning
-Non-clocked sequential cell  
-The clock pin timer1/counter_reg[4]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#16 Warning
-Non-clocked sequential cell  
-The clock pin timer1/counter_reg[5]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#17 Warning
-Non-clocked sequential cell  
-The clock pin timer1/counter_reg[6]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#18 Warning
-Non-clocked sequential cell  
-The clock pin timer1/counter_reg[7]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#1 Warning
-Non-clocked latch  
-The latch row1/clk_scaled_reg cannot be properly analyzed as its control pin row1/clk_scaled_reg/G is not reached by a timing clock
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on row[7] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 

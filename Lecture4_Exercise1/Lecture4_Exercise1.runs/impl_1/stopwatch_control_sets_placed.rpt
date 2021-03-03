@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Feb 24 10:01:02 2021
+| Date         : Wed Mar  3 09:26:52 2021
 | Host         : sebastian-ZBook running 64-bit Linux Mint 20
 | Command      : report_control_sets -verbose -file stopwatch_control_sets_placed.rpt
 | Design       : stopwatch
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     4 |
-| Unused register locations in slices containing registers |    24 |
+| Number of unique control sets                            |     3 |
+| Unused register locations in slices containing registers |    11 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,8 +34,8 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      1 |            2 |
 |      4 |            1 |
+|      6 |            1 |
 |    16+ |            1 |
 +--------+--------------+
 
@@ -46,25 +46,24 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               2 |            2 |
-| No           | No                    | Yes                    |               4 |            1 |
-| No           | Yes                   | No                     |              26 |            7 |
+| No           | No                    | No                     |               6 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              27 |            7 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |               4 |            1 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------+---------------+-------------------+------------------+----------------+
-|      Clock Signal     | Enable Signal |  Set/Reset Signal | Slice Load Count | Bel Load Count |
-+-----------------------+---------------+-------------------+------------------+----------------+
-|  clk                  |               |                   |                1 |              1 |
-|  clock_125M_IBUF_BUFG |               |                   |                1 |              1 |
-|  clk                  |               | sync_reset        |                1 |              4 |
-|  clock_125M_IBUF_BUFG |               | scaler[0]_i_1_n_0 |                7 |             26 |
-+-----------------------+---------------+-------------------+------------------+----------------+
++-----------------------+--------------------+------------------+------------------+----------------+
+|      Clock Signal     |    Enable Signal   | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------------+--------------------+------------------+------------------+----------------+
+|  clock_125M_IBUF_BUFG | counter[3]_i_1_n_0 | btn_IBUF[1]      |                1 |              4 |
+|  clock_125M_IBUF_BUFG |                    |                  |                4 |              6 |
+|  clock_125M_IBUF_BUFG |                    | clear            |                7 |             27 |
++-----------------------+--------------------+------------------+------------------+----------------+
 
 
