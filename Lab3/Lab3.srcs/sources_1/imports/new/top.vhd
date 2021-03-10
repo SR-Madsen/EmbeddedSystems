@@ -12,11 +12,10 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity top is
     Port ( clk_8ns : in STD_LOGIC;
-           led : out STD_LOGIC_VECTOR (3 downto 0);
-           blue : out STD_LOGIC_VECTOR (7 downto 0);
-           red : out STD_LOGIC_VECTOR (7 downto 0);
-           green : out STD_LOGIC_VECTOR (7 downto 0);
-           row : out STD_LOGIC_VECTOR (7 downto 0));
+           blue_out : out STD_LOGIC_VECTOR (7 downto 0);
+           red_out : out STD_LOGIC_VECTOR (7 downto 0);
+           green_out : out STD_LOGIC_VECTOR (7 downto 0);
+           row_out : out STD_LOGIC_VECTOR (7 downto 0));
 end top;
 
 architecture Behavioral of top is
@@ -35,8 +34,7 @@ component Lab3_wrapper is
 end component;
 
 component rows is
-    Port ( clk : in STD_LOGIC;
-           counter : in STD_LOGIC_VECTOR (7 downto 0);
+    Port ( counter : in STD_LOGIC_VECTOR (7 downto 0);
            red : in STD_LOGIC_VECTOR (63 downto 0);
            green : in STD_LOGIC_VECTOR (63 downto 0);
            blue : in STD_LOGIC_VECTOR (63 downto 0);
@@ -50,7 +48,8 @@ signal count_out: STD_LOGIC_VECTOR(7 downto 0);
 
 
 -- Signals for state machine and memory interface input
-signal row_hot: std_logic_vector(7 downto 0);
+signal row_addr: unsigned(2 downto 0) := "000";
+signal row_addr_shift: unsigned(2 downto 0) := "000";
 
 signal mem_data_in: STD_LOGIC_VECTOR(31 downto 0);
 signal mem_write_enable: STD_LOGIC_VECTOR(3 downto 0);
@@ -75,6 +74,10 @@ signal ocr_red: std_logic_vector(63 downto 0);
 signal ocr_green: std_logic_vector(63 downto 0);
 signal ocr_blue: std_logic_vector(63 downto 0);
 
+signal ocr_red_sync: STD_LOGIC_VECTOR(63 downto 0);
+signal ocr_green_sync: STD_LOGIC_VECTOR(63 downto 0);
+signal ocr_blue_sync: STD_LOGIC_VECTOR(63 downto 0);
+
 
 -- Output PWMs for the LED board
 signal red_pwms: STD_LOGIC_VECTOR(7 downto 0);
@@ -85,8 +88,8 @@ signal values_red: STD_LOGIC_VECTOR(63 downto 0);
 signal values_green: STD_LOGIC_VECTOR(63 downto 0);
 signal values_blue: STD_LOGIC_VECTOR(63 downto 0);
 
-begin
 
+begin
     timer1: timer port map (clk => clk_8ns,
                             count => count_out);
                             
@@ -96,14 +99,23 @@ begin
                                  BRAM_PORTB_0_dout => mem_data_out,
                                  BRAM_PORTB_0_we => mem_write_enable);
 
-    row1: rows port map (clk => clk_8ns,
-                         counter => count_out,
-                         red => values_red,
-                         green => values_green,
-                         blue => values_blue,
-                         red_pwm => red_pwms,
-                         green_pwm => green_pwms,
-                         blue_pwm => blue_pwms);
+    row1: rows port map (counter => count_out,
+                         red => ocr_red_sync,
+                         green => ocr_green_sync,
+                         blue => ocr_blue_sync,
+                         red_pwm => red_out,
+                         green_pwm => green_out,
+                         blue_pwm => blue_out);
+                        
+   with row_addr select row_out <=
+        "11111110" when "000",
+        "11111101" when "001",
+        "11111011" when "010",
+        "11110111" when "011",
+        "11101111" when "100",
+        "11011111" when "101",
+        "10111111" when "110",
+        "01111111" when others;
 
 
     -- Slow down clock
@@ -125,52 +137,39 @@ begin
     -- Finite State Machine for controlling LED outputs
     process(clk_8ns)
     begin
-        --blue <= blue_pwms;
-        --green <= green_pwms;
-        --red <= red_pwms;
-        
         if rising_edge(clk_8ns) then
             case state is
                 when shift =>
+                    ocr_blue_sync <= ocr_blue;
+                    ocr_green_sync <= ocr_green;
+                    ocr_red_sync <= ocr_red;
+                    row_addr <= row_addr_shift;
                     if clk_scaled = '1' then
-                        blue <= blue_pwms;
-                        green <= green_pwms;
-                        red <= red_pwms;
-                        row <= row_hot;
                         state <= ready;
-                        
-                        --led(0) <= red_pwms(0);
-                        --led(1) <= green_pwms(0);
-                        --led(2) <= blue_pwms(0);
                     end if;
-                
+                    
                 when get =>
                     if clk_scaled = '1' then
-                        if row_hot = "00000001" then row_hot <= "00000010";
-                        elsif row_hot = "00000010" then row_hot <= "00000100";
-                        elsif row_hot = "00000100" then row_hot <= "00001000";
-                        elsif row_hot = "00001000" then row_hot <= "00010000";
-                        elsif row_hot = "00010000" then row_hot <= "00100000";
-                        elsif row_hot = "00100000" then row_hot <= "01000000";
-                        elsif row_hot = "01000000" then row_hot <= "10000000";
-                        else row_hot <= "10000000"; end if;
+                        row_addr_shift <= row_addr_shift + 1;
                         start <= '1';
                         state <= waiting;
                     end if;
                     
                 when waiting =>
                     if clk_scaled = '1' then
+                        start <= '0';
                         if done = '1' then
                             state <= ready;
                         end if;
                     end if;
                 
                 when ready =>
-                    if clk_scaled = '1' then
+                    if clk_scaled = '0' then
                         state <= shift;
                     end if;
-                
+                    
                 when others =>
+                    row_addr <= "000";
                     state <= shift;
             end case;
         end if;
@@ -186,11 +185,10 @@ begin
                 when reset =>
                     mem_addr <= x"00000000";
                     done <= '0';
-                    start <= '0';
                     memory_state <= setup;
                 
                 when setup =>
-                    bram_addr <= std_logic_vector(mem_addr);
+                    bram_addr <= std_logic_vector(to_unsigned((to_integer(row_addr_shift)*32) + (to_integer(mem_addr)*4), 32));
                     memory_state <= latch;
                 
                 when latch =>
@@ -219,3 +217,4 @@ begin
     end process;
 
 end Behavioral;
+

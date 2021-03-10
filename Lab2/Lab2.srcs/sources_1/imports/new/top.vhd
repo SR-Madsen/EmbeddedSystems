@@ -12,11 +12,10 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity top is
     Port ( clk_8ns : in STD_LOGIC;
-           led : out STD_LOGIC_VECTOR (3 downto 0);
-           blue : out STD_LOGIC_VECTOR (7 downto 0);
-           red : out STD_LOGIC_VECTOR (7 downto 0);
-           green : out STD_LOGIC_VECTOR (7 downto 0);
-           row : out STD_LOGIC_VECTOR (7 downto 0));
+           blue_out : out STD_LOGIC_VECTOR (7 downto 0);
+           red_out : out STD_LOGIC_VECTOR (7 downto 0);
+           green_out : out STD_LOGIC_VECTOR (7 downto 0);
+           row_out : out STD_LOGIC_VECTOR (7 downto 0));
 end top;
 
 architecture Behavioral of top is
@@ -34,8 +33,7 @@ component simple_memory is
 end component;
 
 component rows is
-    Port ( clk : in STD_LOGIC;
-           counter : in STD_LOGIC_VECTOR (7 downto 0);
+    Port ( counter : in STD_LOGIC_VECTOR (7 downto 0);
            red : in STD_LOGIC_VECTOR (63 downto 0);
            green : in STD_LOGIC_VECTOR (63 downto 0);
            blue : in STD_LOGIC_VECTOR (63 downto 0);
@@ -45,12 +43,12 @@ component rows is
 end component;
 
 -- Signal for the counter's output
-signal count_out: STD_LOGIC_VECTOR(7 downto 0);
+signal count_out: STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
 
 
 -- Signals for state machine and memory interface input
 signal row_addr: unsigned(2 downto 0) := "000";
-signal row_hot: std_logic_vector(7 downto 0);
+signal row_addr_shift: unsigned(2 downto 0) := "000";
 
 signal clk_scaled: STD_LOGIC;
 
@@ -63,11 +61,9 @@ signal ocr_red: STD_LOGIC_VECTOR(63 downto 0);
 signal ocr_green: STD_LOGIC_VECTOR(63 downto 0);
 signal ocr_blue: STD_LOGIC_VECTOR(63 downto 0);
 
-
--- Output PWMs for the LED board
-signal red_pwms: STD_LOGIC_VECTOR(7 downto 0);
-signal green_pwms: STD_LOGIC_VECTOR(7 downto 0);
-signal blue_pwms: STD_LOGIC_VECTOR(7 downto 0);
+signal ocr_red_sync: STD_LOGIC_VECTOR(63 downto 0);
+signal ocr_green_sync: STD_LOGIC_VECTOR(63 downto 0);
+signal ocr_blue_sync: STD_LOGIC_VECTOR(63 downto 0);
 
 begin
 
@@ -79,14 +75,23 @@ begin
                                   data_green => ocr_green,
                                   data_blue => ocr_blue);
 
-    row1: rows port map (clk => clk_8ns,
-                        counter => count_out,
-                        red => ocr_red,
-                        green => ocr_green,
-                        blue => ocr_blue,
-                        red_pwm => red_pwms,
-                        green_pwm => green_pwms,
-                        blue_pwm => blue_pwms);
+    row1: rows port map (counter => count_out,
+                         red => ocr_red_sync,
+                         green => ocr_green_sync,
+                         blue => ocr_blue_sync,
+                         red_pwm => red_out,
+                         green_pwm => green_out,
+                         blue_pwm => blue_out);
+                        
+   with row_addr select row_out <=
+        "11111110" when "000",
+        "11111101" when "001",
+        "11111011" when "010",
+        "11110111" when "011",
+        "11101111" when "100",
+        "11011111" when "101",
+        "10111111" when "110",
+        "01111111" when others;
                         
                         
     -- Slow down clock
@@ -108,24 +113,20 @@ begin
     -- Finite State Machine
     process(clk_8ns)
     begin
-        blue <= blue_pwms;
-        green <= green_pwms;
-        red <= red_pwms;
-        
         if rising_edge(clk_8ns) then
             case state is
                 when shift =>
+                    ocr_blue_sync <= ocr_blue;
+                    ocr_green_sync <= ocr_green;
+                    ocr_red_sync <= ocr_red;
+                    row_addr <= row_addr_shift;
                     if clk_scaled = '1' then
-                        blue <= blue_pwms;
-                        green <= green_pwms;
-                        red <= red_pwms;
-                        row <= row_hot;
                         state <= ready;
                     end if;
                 
                 when ready =>
-                    if clk_scaled = '1' then
-                        row_addr <= row_addr + 1;
+                    if clk_scaled = '0' then
+                        row_addr_shift <= row_addr_shift + 1;
                         state <= shift;
                     end if;
                     
@@ -135,23 +136,5 @@ begin
             end case;
         end if;
     end process;
-
-    with row_addr select
-    row_hot <=      "00000001" when "000",
-                    "00000010" when "001",
-                    "00000100" when "010",
-                    "00001000" when "011",
-                    "00010000" when "100",
-                    "00100000" when "101",
-                    "01000000" when "110",
-                    "10000000" when "111",
-                    "00000000" when others;
-    
-    led(0) <= red_pwms(0);
-    led(1) <= green_pwms(0);
-    led(2) <= blue_pwms(0);
-    --red <= red_pwms;
-    --green <= green_pwms;
-    --blue <= blue_pwms;
 
 end Behavioral;

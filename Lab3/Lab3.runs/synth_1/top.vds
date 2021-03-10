@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Mar  3 11:23:02 2021
-# Process ID: 29476
+# Start of session at: Wed Mar 10 11:22:56 2021
+# Process ID: 33152
 # Current directory: /home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: /home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/top.vds
@@ -18,77 +18,46 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 29543 
+INFO: Helper process launched with PID 33183 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1430.273 ; gain = 77.898 ; free physical = 7218 ; free virtual = 12813
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1431.000 ; gain = 81.898 ; free physical = 6874 ; free virtual = 12830
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:22]
-INFO: [Synth 8-3491] module 'timer' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/timer.vhd:15' bound to instance 'timer1' of component 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'top' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:21]
+INFO: [Synth 8-3491] module 'timer' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/timer.vhd:15' bound to instance 'timer1' of component 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
 INFO: [Synth 8-638] synthesizing module 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/timer.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'timer' (1#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/timer.vhd:20]
-INFO: [Synth 8-3491] module 'Lab3_wrapper' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:14' bound to instance 'mem1' of component 'Lab3_wrapper' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
+INFO: [Synth 8-3491] module 'Lab3_wrapper' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:14' bound to instance 'mem1' of component 'Lab3_wrapper' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
 INFO: [Synth 8-638] synthesizing module 'Lab3_wrapper' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:24]
 INFO: [Synth 8-3491] module 'Lab3' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/synth/Lab3.vhd:14' bound to instance 'Lab3_i' of component 'Lab3' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:35]
 INFO: [Synth 8-638] synthesizing module 'Lab3' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/synth/Lab3.vhd:28]
-INFO: [Synth 8-3491] module 'Lab3_blk_mem_gen_0_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/.Xil/Vivado-29476-sebastian-ZBook/realtime/Lab3_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'Lab3_blk_mem_gen_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/synth/Lab3.vhd:64]
-INFO: [Synth 8-638] synthesizing module 'Lab3_blk_mem_gen_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/.Xil/Vivado-29476-sebastian-ZBook/realtime/Lab3_blk_mem_gen_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'Lab3_blk_mem_gen_0_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/.Xil/Vivado-33152-sebastian-ZBook/realtime/Lab3_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'Lab3_blk_mem_gen_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/synth/Lab3.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'Lab3_blk_mem_gen_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/.Xil/Vivado-33152-sebastian-ZBook/realtime/Lab3_blk_mem_gen_0_0_stub.vhdl:22]
 INFO: [Synth 8-256] done synthesizing module 'Lab3' (2#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/synth/Lab3.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'Lab3_wrapper' (3#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:24]
-INFO: [Synth 8-3491] module 'rows' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:13' bound to instance 'row1' of component 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:99]
-INFO: [Synth 8-638] synthesizing module 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:24]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:43]
+INFO: [Synth 8-3491] module 'rows' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:13' bound to instance 'row1' of component 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:23]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:38]
 INFO: [Synth 8-638] synthesizing module 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:25]
-INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'PWMS' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:42]
+INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'pwm_red' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:34]
 INFO: [Synth 8-638] synthesizing module 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/pwm_generator.vhd:19]
 INFO: [Synth 8-256] done synthesizing module 'pwm_generator' (4#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/pwm_generator.vhd:19]
-INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'PWMS' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:42]
-INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'PWMS' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:42]
+INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'pwm_green' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:38]
+INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'pwm_blue' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:42]
 INFO: [Synth 8-256] done synthesizing module 'color_channel' (5#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:25]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:43]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:43]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:43]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:43]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:43]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:43]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:43]
-WARNING: [Synth 8-3848] Net red_pwm in module/entity rows does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:19]
-WARNING: [Synth 8-3848] Net green_pwm in module/entity rows does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:20]
-WARNING: [Synth 8-3848] Net blue_pwm in module/entity rows does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'rows' (6#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:24]
-INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:133]
-WARNING: [Synth 8-6014] Unused sequential element ocr_red_reg was removed.  [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:224]
-WARNING: [Synth 8-6014] Unused sequential element ocr_green_reg was removed.  [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:225]
-WARNING: [Synth 8-6014] Unused sequential element ocr_blue_reg was removed.  [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:226]
-WARNING: [Synth 8-3848] Net mem_data_in in module/entity top does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:55]
-WARNING: [Synth 8-3848] Net mem_write_enable in module/entity top does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:56]
-INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:22]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[7]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[6]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[5]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[4]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[3]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[2]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[1]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[0]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[7]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[6]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[5]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[4]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[3]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[2]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[1]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[0]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[7]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[6]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[5]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[4]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[3]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[2]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[1]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[0]
-WARNING: [Synth 8-3331] design rows has unconnected port clk
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'rows' (6#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:23]
+INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:141]
+WARNING: [Synth 8-3848] Net mem_data_in in module/entity top does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:54]
+WARNING: [Synth 8-3848] Net mem_write_enable in module/entity top does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:21]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1476.023 ; gain = 123.648 ; free physical = 7226 ; free virtual = 12815
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1475.750 ; gain = 126.648 ; free physical = 6878 ; free virtual = 12835
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -97,50 +66,50 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[31] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[30] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[29] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[28] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[27] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[26] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[25] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[24] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[23] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[22] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[21] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[20] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[19] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[18] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[17] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[16] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[15] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[14] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[13] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[12] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[11] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[10] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[9] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[8] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[7] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[6] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[5] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[4] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[3] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[2] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[1] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[0] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_we[3] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_we[2] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_we[1] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
-WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_we[0] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:93]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[31] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[30] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[29] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[28] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[27] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[26] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[25] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[24] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[23] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[22] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[21] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[20] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[19] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[18] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[17] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[16] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[15] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[14] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[13] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[12] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[11] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[10] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[9] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[8] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[7] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[6] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[5] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[4] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[3] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[2] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[1] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_din[0] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_we[3] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_we[2] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_we[1] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
+WARNING: [Synth 8-3295] tying undriven pin mem1:BRAM_PORTB_0_we[0] to constant 0 [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:96]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1476.023 ; gain = 123.648 ; free physical = 7226 ; free virtual = 12814
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1475.750 ; gain = 126.648 ; free physical = 6877 ; free virtual = 12833
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1476.023 ; gain = 123.648 ; free physical = 7226 ; free virtual = 12814
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1475.750 ; gain = 126.648 ; free physical = 6877 ; free virtual = 12833
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -150,39 +119,30 @@ Initializing timing engine
 Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/ip/Lab3_blk_mem_gen_0_0/Lab3_blk_mem_gen_0_0/Lab3_blk_mem_gen_0_0_in_context.xdc] for cell 'mem1/Lab3_i/blk_mem_gen_0'
 Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/ip/Lab3_blk_mem_gen_0_0/Lab3_blk_mem_gen_0_0/Lab3_blk_mem_gen_0_0_in_context.xdc] for cell 'mem1/Lab3_i/blk_mem_gen_0'
 Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:7]
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:8]
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:9]
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:10]
-WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:14]
-WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:15]
-WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:16]
-WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:17]
 Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1832.680 ; gain = 0.000 ; free physical = 7005 ; free virtual = 12562
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1834.414 ; gain = 0.000 ; free physical = 6626 ; free virtual = 12583
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1832.680 ; gain = 0.000 ; free physical = 7006 ; free virtual = 12564
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1834.414 ; gain = 0.000 ; free physical = 6633 ; free virtual = 12590
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1832.680 ; gain = 0.000 ; free physical = 7006 ; free virtual = 12564
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1832.680 ; gain = 0.000 ; free physical = 7006 ; free virtual = 12564
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1834.414 ; gain = 0.000 ; free physical = 6629 ; free virtual = 12585
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1834.414 ; gain = 0.000 ; free physical = 6629 ; free virtual = 12585
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mem1/Lab3_i/blk_mem_gen_0' at clock pin 'clkb' is different from the actual clock period '8.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 7104 ; free virtual = 12662
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6707 ; free virtual = 12663
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 7104 ; free virtual = 12662
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6707 ; free virtual = 12663
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -190,17 +150,10 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for mem1/Lab3_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for mem1/Lab3_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 7106 ; free virtual = 12664
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6714 ; free virtual = 12670
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top'
-INFO: [Synth 8-802] inferred FSM for state register 'row_hot_reg' in module 'top'
-INFO: [Synth 8-802] inferred FSM for state register 'memory_state_reg' in module 'top'
-INFO: [Synth 8-5544] ROM "mem_addr" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "mem_addr0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "bram_addr" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "values_red" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "memory_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'memory_state_reg' in module 'top'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -210,29 +163,8 @@ INFO: [Synth 8-5544] ROM "memory_state" won't be mapped to Block RAM because add
                    latch |                             1000 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'memory_state_reg' using encoding 'one-hot' in module 'top'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                   shift |                                0 |                               00
-                   ready |                                1 |                               11
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 iSTATE1 |                         00000001 |                         00000001
-                 iSTATE2 |                         00000010 |                         00000010
-                 iSTATE3 |                         00000100 |                         00000100
-                 iSTATE4 |                         00001000 |                         00001000
-                 iSTATE5 |                         00010000 |                         00010000
-                 iSTATE6 |                         00100000 |                         00100000
-                 iSTATE0 |                         01000000 |                         01000000
-*
-                  iSTATE |                         10000000 |                         10000000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'row_hot_reg' in module 'top'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 7100 ; free virtual = 12658
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6700 ; free virtual = 12656
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -245,20 +177,18 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               64 Bit    Registers := 3     
-	               32 Bit    Registers := 1     
-	                8 Bit    Registers := 6     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	               64 Bit    Registers := 9     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
 +---Muxes : 
-	   7 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -268,25 +198,19 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module top 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               64 Bit    Registers := 3     
-	               32 Bit    Registers := 1     
-	                8 Bit    Registers := 4     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	               64 Bit    Registers := 9     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
 +---Muxes : 
-	   7 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 3     
-Module timer 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      8 Bit       Adders := 2     
-+---Registers : 
-	                8 Bit    Registers := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -303,25 +227,11 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\row_hot_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\row_hot_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\row_hot_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\row_hot_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\row_hot_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\row_hot_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\row_hot_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\row_hot_reg[7] )
-INFO: [Synth 8-3886] merging instance 'row_reg[0]' (FDE) to 'row_reg[7]'
-INFO: [Synth 8-3886] merging instance 'row_reg[1]' (FDE) to 'row_reg[7]'
-INFO: [Synth 8-3886] merging instance 'row_reg[2]' (FDE) to 'row_reg[7]'
-INFO: [Synth 8-3886] merging instance 'row_reg[3]' (FDE) to 'row_reg[7]'
-INFO: [Synth 8-3886] merging instance 'row_reg[4]' (FDE) to 'row_reg[7]'
-INFO: [Synth 8-3886] merging instance 'row_reg[5]' (FDE) to 'row_reg[7]'
-INFO: [Synth 8-3886] merging instance 'row_reg[6]' (FDE) to 'row_reg[7]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\row_reg[7] )
+INFO: [Synth 8-4471] merging register 'row_addr_shift_reg[2:0]' into 'row_addr_shift_reg[2:0]' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:146]
+INFO: [Synth 8-3886] merging instance 'bram_addr_reg[0]' (FDE) to 'bram_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bram_addr_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 7087 ; free virtual = 12647
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6648 ; free virtual = 12607
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -333,13 +243,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 6969 ; free virtual = 12529
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6558 ; free virtual = 12517
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 6967 ; free virtual = 12527
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6545 ; free virtual = 12504
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -350,10 +260,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg) is unused and will be removed from module top.
-INFO: [Synth 8-5966] Removing register instance (start_reg__0) from module (top) as it has self-loop and (start_reg) is actual driver [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:157]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 6967 ; free virtual = 12527
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6551 ; free virtual = 12510
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -376,44 +284,8 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[31] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[30] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[29] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[28] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[27] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[26] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[25] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[24] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[23] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[22] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[21] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[20] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[19] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[18] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[17] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[16] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[15] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[14] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[13] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[12] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[11] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[10] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[9] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[8] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[7] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[6] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[5] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[4] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[3] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[2] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[1] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_din[0] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_we[3] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_we[2] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_we[1] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin mem1/Lab3_i:BRAM_PORTB_0_we[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 6967 ; free virtual = 12527
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6551 ; free virtual = 12510
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -426,7 +298,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 6967 ; free virtual = 12527
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6551 ; free virtual = 12510
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -438,25 +310,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 6967 ; free virtual = 12527
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6547 ; free virtual = 12506
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 6967 ; free virtual = 12527
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6547 ; free virtual = 12506
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 6967 ; free virtual = 12527
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6547 ; free virtual = 12506
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 6967 ; free virtual = 12527
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6547 ; free virtual = 12506
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -475,49 +347,83 @@ Report Cell Usage:
 +------+----------------------------+------+
 |1     |Lab3_blk_mem_gen_0_0_bbox_0 |     1|
 |2     |BUFG                        |     1|
-|3     |CARRY4                      |     8|
-|4     |LUT1                        |     1|
-|5     |LUT2                        |     1|
-|6     |LUT3                        |     1|
-|7     |LUT4                        |     3|
-|8     |LUT5                        |     5|
-|9     |LUT6                        |     2|
-|10    |FDRE                        |    69|
-|11    |IBUF                        |     1|
-|12    |OBUF                        |    35|
-|13    |OBUFT                       |     1|
+|3     |CARRY4                      |    47|
+|4     |LUT1                        |     3|
+|5     |LUT2                        |     4|
+|6     |LUT3                        |    11|
+|7     |LUT4                        |   198|
+|8     |LUT5                        |     6|
+|9     |LUT6                        |     5|
+|10    |FDCE                        |    15|
+|11    |FDRE                        |   665|
+|12    |IBUF                        |     1|
+|13    |OBUF                        |    32|
 +------+----------------------------+------+
 
 Report Instance Areas: 
-+------+-----------+-------------+------+
-|      |Instance   |Module       |Cells |
-+------+-----------+-------------+------+
-|1     |top        |             |   192|
-|2     |  mem1     |Lab3_wrapper |    64|
-|3     |    Lab3_i |Lab3         |    64|
-+------+-----------+-------------+------+
++------+-----------------------------+-----------------+------+
+|      |Instance                     |Module           |Cells |
++------+-----------------------------+-----------------+------+
+|1     |top                          |                 |  1052|
+|2     |  row1                       |rows             |    24|
+|3     |    \multi_colors[0].COLORS  |color_channel    |     3|
+|4     |      pwm_blue               |pwm_generator_27 |     1|
+|5     |      pwm_green              |pwm_generator_28 |     1|
+|6     |      pwm_red                |pwm_generator_29 |     1|
+|7     |    \multi_colors[1].COLORS  |color_channel_0  |     3|
+|8     |      pwm_blue               |pwm_generator_24 |     1|
+|9     |      pwm_green              |pwm_generator_25 |     1|
+|10    |      pwm_red                |pwm_generator_26 |     1|
+|11    |    \multi_colors[2].COLORS  |color_channel_1  |     3|
+|12    |      pwm_blue               |pwm_generator_21 |     1|
+|13    |      pwm_green              |pwm_generator_22 |     1|
+|14    |      pwm_red                |pwm_generator_23 |     1|
+|15    |    \multi_colors[3].COLORS  |color_channel_2  |     3|
+|16    |      pwm_blue               |pwm_generator_18 |     1|
+|17    |      pwm_green              |pwm_generator_19 |     1|
+|18    |      pwm_red                |pwm_generator_20 |     1|
+|19    |    \multi_colors[4].COLORS  |color_channel_3  |     3|
+|20    |      pwm_blue               |pwm_generator_15 |     1|
+|21    |      pwm_green              |pwm_generator_16 |     1|
+|22    |      pwm_red                |pwm_generator_17 |     1|
+|23    |    \multi_colors[5].COLORS  |color_channel_4  |     3|
+|24    |      pwm_blue               |pwm_generator_12 |     1|
+|25    |      pwm_green              |pwm_generator_13 |     1|
+|26    |      pwm_red                |pwm_generator_14 |     1|
+|27    |    \multi_colors[6].COLORS  |color_channel_5  |     3|
+|28    |      pwm_blue               |pwm_generator_9  |     1|
+|29    |      pwm_green              |pwm_generator_10 |     1|
+|30    |      pwm_red                |pwm_generator_11 |     1|
+|31    |    \multi_colors[7].COLORS  |color_channel_6  |     3|
+|32    |      pwm_blue               |pwm_generator    |     1|
+|33    |      pwm_green              |pwm_generator_7  |     1|
+|34    |      pwm_red                |pwm_generator_8  |     1|
+|35    |  timer1                     |timer            |   210|
+|36    |  mem1                       |Lab3_wrapper     |    64|
+|37    |    Lab3_i                   |Lab3             |    64|
++------+-----------------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 6967 ; free virtual = 12527
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6547 ; free virtual = 12506
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1833.680 ; gain = 123.648 ; free physical = 7025 ; free virtual = 12584
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1833.680 ; gain = 481.305 ; free physical = 7025 ; free virtual = 12584
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1834.414 ; gain = 126.648 ; free physical = 6609 ; free virtual = 12568
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1834.414 ; gain = 485.312 ; free physical = 6609 ; free virtual = 12568
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1833.680 ; gain = 0.000 ; free physical = 6966 ; free virtual = 12526
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1842.422 ; gain = 0.000 ; free physical = 6545 ; free virtual = 12505
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-77 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
+53 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1833.680 ; gain = 481.406 ; free physical = 7021 ; free virtual = 12581
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1833.680 ; gain = 0.000 ; free physical = 7021 ; free virtual = 12581
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1842.422 ; gain = 499.148 ; free physical = 6607 ; free virtual = 12566
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1842.422 ; gain = 0.000 ; free physical = 6607 ; free virtual = 12566
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar  3 11:23:30 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 10 11:23:32 2021...

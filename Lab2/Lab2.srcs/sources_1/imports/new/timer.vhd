@@ -19,27 +19,18 @@ end timer;
 
 architecture Behavioral of timer is
 
-signal counter : UNSIGNED(7 downto 0) := (others => '0');
-signal slow_clk : STD_LOGIC_VECTOR(7 downto 0);
+signal counter : UNSIGNED(12 downto 0) := (others => '0');
 
 begin
     -- Clock in = 125 MHz (8 ns)
     -- Timer frequency must be 7.5 kHz and counter 8 bit.
     
-    count <= STD_LOGIC_VECTOR(counter);
+    count <= STD_LOGIC_VECTOR(counter(12 downto 5));
     
     -- Take 125 MHz and slow it down
     process(clk)
     begin
         if rising_edge(clk) then
-            slow_clk <= slow_clk + 1;
-        end if;
-    end process;
-    
-    -- Use slow clock for counting on timer
-    process(slow_clk)
-    begin
-        if rising_edge(slow_clk(5)) then
             counter <= counter + 1;
         end if;
     end process;

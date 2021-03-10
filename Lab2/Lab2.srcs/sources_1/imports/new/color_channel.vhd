@@ -29,24 +29,18 @@ architecture Behavioral of color_channel is
            ocr : in STD_LOGIC_VECTOR (7 downto 0);
            pwm : out STD_LOGIC);
     end component;
-    
-    --signal ocr_array: std_logic_vector(23 downto 0) := red & green & blue;
-    signal pwm_array: std_logic_vector(2 downto 0);
-    
-    type t_ocr_array is array (0 to 2) of std_logic_vector(7 downto 0);
-    signal ocr_array : t_ocr_array := (red, green, blue);
 
 begin
-    multi_pwm:
-    for I in 0 to 2 generate
-        PWMS: pwm_generator port map ( counter => counter,
-                                       ocr => ocr_array(I),
-                                       --ocr => ocr_array(I*8+7 downto I*8),
-                                       pwm => pwm_array(I));
-    end generate;
-    
-    blue_pwm <= pwm_array(2);
-    green_pwm <= pwm_array(1);
-    red_pwm <= pwm_array(0);
+    pwm_red: pwm_generator port map (counter => counter,
+                                     ocr => red,
+                                     pwm => red_pwm);
+
+    pwm_green: pwm_generator port map (counter => counter,
+                                       ocr => green,
+                                       pwm => green_pwm);
+                                       
+    pwm_blue: pwm_generator port map (counter => counter,
+                                      ocr => blue,
+                                      pwm => blue_pwm);
 
 end Behavioral;

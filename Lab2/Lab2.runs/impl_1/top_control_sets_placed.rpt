@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Mar  3 09:44:51 2021
+| Date         : Wed Mar 10 10:59:47 2021
 | Host         : sebastian-ZBook running 64-bit Linux Mint 20
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     4 |
-| Unused register locations in slices containing registers |    13 |
+| Number of unique control sets                            |     3 |
+| Unused register locations in slices containing registers |    12 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,8 +34,9 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      4 |            3 |
+|     12 |            1 |
 |     15 |            1 |
+|    16+ |            1 |
 +--------+--------------+
 
 
@@ -45,25 +46,24 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               4 |            1 |
+| No           | No                    | No                     |              17 |            5 |
 | No           | No                    | Yes                    |              15 |            4 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |               4 |            1 |
+| Yes          | No                    | No                     |              12 |            2 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               4 |            1 |
+| Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------+----------------+------------------+------------------+----------------+
-|    Clock Signal    |  Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+--------------------+----------------+------------------+------------------+----------------+
-|  clk_8ns_IBUF_BUFG |                |                  |                1 |              4 |
-|  clk_8ns_IBUF_BUFG | row[7]_i_1_n_0 |                  |                1 |              4 |
-|  clk_8ns_IBUF_BUFG | row[7]_i_1_n_0 | row[5]_i_1_n_0   |                1 |              4 |
-|  clk_8ns_IBUF_BUFG |                | clk_scaled       |                4 |             15 |
-+--------------------+----------------+------------------+------------------+----------------+
++--------------------+---------------+------------------+------------------+----------------+
+|    Clock Signal    | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------+---------------+------------------+------------------+----------------+
+|  clk_8ns_IBUF_BUFG | row_addr      |                  |                2 |             12 |
+|  clk_8ns_IBUF_BUFG |               | clk_scaled       |                4 |             15 |
+|  clk_8ns_IBUF_BUFG |               |                  |                5 |             17 |
++--------------------+---------------+------------------+------------------+----------------+
 
 

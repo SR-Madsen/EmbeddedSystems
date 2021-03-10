@@ -14,75 +14,42 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14631 
+INFO: Helper process launched with PID 25683 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1396.016 ; gain = 79.898 ; free physical = 6432 ; free virtual = 11837
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1395.273 ; gain = 51.898 ; free physical = 7720 ; free virtual = 13281
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:22]
-INFO: [Synth 8-3491] module 'timer' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/timer.vhd:15' bound to instance 'timer1' of component 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'top' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:21]
+INFO: [Synth 8-3491] module 'timer' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/timer.vhd:15' bound to instance 'timer1' of component 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:70]
 INFO: [Synth 8-638] synthesizing module 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/timer.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'timer' (1#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/timer.vhd:20]
-INFO: [Synth 8-3491] module 'simple_memory' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:4' bound to instance 'mem1' of component 'simple_memory' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:77]
+INFO: [Synth 8-3491] module 'simple_memory' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:4' bound to instance 'mem1' of component 'simple_memory' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:73]
 INFO: [Synth 8-638] synthesizing module 'simple_memory' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:11]
 INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:16]
 INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:28]
 INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'simple_memory' (2#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/Desktop/simple_memory.vhd:11]
-INFO: [Synth 8-3491] module 'rows' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:13' bound to instance 'row1' of component 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:82]
-INFO: [Synth 8-638] synthesizing module 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:24]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
+INFO: [Synth 8-3491] module 'rows' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:13' bound to instance 'row1' of component 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:23]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:38]
 INFO: [Synth 8-638] synthesizing module 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:25]
-INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'PWMS' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:42]
+INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'pwm_red' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:34]
 INFO: [Synth 8-638] synthesizing module 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd:19]
 INFO: [Synth 8-256] done synthesizing module 'pwm_generator' (3#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd:19]
-INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'PWMS' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:42]
-INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'PWMS' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:42]
+INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'pwm_green' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:38]
+INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/pwm_generator.vhd:13' bound to instance 'pwm_blue' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:42]
 INFO: [Synth 8-256] done synthesizing module 'color_channel' (4#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:25]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
-INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:43]
-WARNING: [Synth 8-3848] Net red_pwm in module/entity rows does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:19]
-WARNING: [Synth 8-3848] Net green_pwm in module/entity rows does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:20]
-WARNING: [Synth 8-3848] Net blue_pwm in module/entity rows does not have driver. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'rows' (5#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:24]
-INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:116]
-WARNING: [Synth 8-614] signal 'blue_pwms' is read in the process but is not in the sensitivity list [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:109]
-WARNING: [Synth 8-614] signal 'green_pwms' is read in the process but is not in the sensitivity list [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:109]
-WARNING: [Synth 8-614] signal 'red_pwms' is read in the process but is not in the sensitivity list [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:109]
-INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:140]
-INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:22]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[7]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[6]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[5]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[4]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[3]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[2]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[1]
-WARNING: [Synth 8-3331] design rows has unconnected port red_pwm[0]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[7]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[6]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[5]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[4]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[3]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[2]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[1]
-WARNING: [Synth 8-3331] design rows has unconnected port green_pwm[0]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[7]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[6]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[5]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[4]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[3]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[2]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[1]
-WARNING: [Synth 8-3331] design rows has unconnected port blue_pwm[0]
-WARNING: [Synth 8-3331] design rows has unconnected port clk
-WARNING: [Synth 8-3331] design top has unconnected port led[3]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'rows' (5#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/row.vhd:23]
+INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/sources_1/imports/new/top.vhd:21]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1440.766 ; gain = 124.648 ; free physical = 6415 ; free virtual = 11833
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1441.023 ; gain = 97.648 ; free physical = 7768 ; free virtual = 13292
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -95,10 +62,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1440.766 ; gain = 124.648 ; free physical = 6414 ; free virtual = 11832
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1441.023 ; gain = 97.648 ; free physical = 7762 ; free virtual = 13286
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1440.766 ; gain = 124.648 ; free physical = 6414 ; free virtual = 11832
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1441.023 ; gain = 97.648 ; free physical = 7762 ; free virtual = 13286
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -106,60 +73,36 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:7]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:7]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:8]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:8]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:9]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:9]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:10]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:10]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:14]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:15]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:16]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:16]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc:17]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.422 ; gain = 0.000 ; free physical = 6274 ; free virtual = 11694
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1799.680 ; gain = 0.000 ; free physical = 7403 ; free virtual = 12933
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.422 ; gain = 0.000 ; free physical = 6275 ; free virtual = 11696
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1799.680 ; gain = 0.000 ; free physical = 7403 ; free virtual = 12933
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.422 ; gain = 0.000 ; free physical = 6275 ; free virtual = 11696
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.422 ; gain = 0.000 ; free physical = 6275 ; free virtual = 11695
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1799.680 ; gain = 0.000 ; free physical = 7403 ; free virtual = 12933
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1799.680 ; gain = 0.000 ; free physical = 7403 ; free virtual = 12933
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6415 ; free virtual = 11836
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7315 ; free virtual = 12861
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6415 ; free virtual = 11836
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7315 ; free virtual = 12861
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6417 ; free virtual = 11838
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7314 ; free virtual = 12859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6409 ; free virtual = 11830
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7373 ; free virtual = 12904
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -172,11 +115,10 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      8 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 6     
-	                3 Bit    Registers := 1     
+	               64 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   8 Input     64 Bit        Muxes := 1     
@@ -196,18 +138,12 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 4     
-	                3 Bit    Registers := 1     
+	               64 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   8 Input      8 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 3     
-Module timer 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      8 Bit       Adders := 2     
-+---Registers : 
-	                8 Bit    Registers := 2     
 Module simple_memory 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -230,9 +166,111 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design top has unconnected port led[3]
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[0]' (FDE) to 'ocr_blue_sync_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[1]' (FDE) to 'ocr_blue_sync_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[8]' (FDE) to 'ocr_green_sync_reg[9]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[9]' (FDE) to 'ocr_green_sync_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[16]' (FDE) to 'ocr_green_sync_reg[17]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[17]' (FDE) to 'ocr_green_sync_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[24]' (FDE) to 'ocr_green_sync_reg[25]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[25]' (FDE) to 'ocr_green_sync_reg[26]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[32]' (FDE) to 'ocr_green_sync_reg[33]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[33]' (FDE) to 'ocr_green_sync_reg[34]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[40]' (FDE) to 'ocr_green_sync_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[41]' (FDE) to 'ocr_green_sync_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[48]' (FDE) to 'ocr_green_sync_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[49]' (FDE) to 'ocr_green_sync_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[56]' (FDE) to 'ocr_blue_sync_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[57]' (FDE) to 'ocr_blue_sync_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[0]' (FDE) to 'ocr_red_sync_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[1]' (FDE) to 'ocr_red_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[8]' (FDE) to 'ocr_red_sync_reg[9]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[9]' (FDE) to 'ocr_red_sync_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[16]' (FDE) to 'ocr_red_sync_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[17]' (FDE) to 'ocr_red_sync_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[24]' (FDE) to 'ocr_red_sync_reg[25]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[25]' (FDE) to 'ocr_red_sync_reg[26]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[32]' (FDE) to 'ocr_red_sync_reg[33]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[33]' (FDE) to 'ocr_red_sync_reg[34]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[40]' (FDE) to 'ocr_red_sync_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[41]' (FDE) to 'ocr_red_sync_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[48]' (FDE) to 'ocr_red_sync_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[49]' (FDE) to 'ocr_red_sync_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[56]' (FDE) to 'ocr_red_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[57]' (FDE) to 'ocr_red_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[0]' (FDE) to 'ocr_blue_sync_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[1]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[8]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[9]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[16]' (FDE) to 'ocr_blue_sync_reg[17]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[17]' (FDE) to 'ocr_blue_sync_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[24]' (FDE) to 'ocr_blue_sync_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[25]' (FDE) to 'ocr_blue_sync_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[32]' (FDE) to 'ocr_blue_sync_reg[33]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[33]' (FDE) to 'ocr_blue_sync_reg[34]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[40]' (FDE) to 'ocr_blue_sync_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[41]' (FDE) to 'ocr_blue_sync_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[48]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[49]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[56]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_blue_sync_reg[57]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[2]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[3]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[4]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[5]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[6]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[7]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[10]' (FDE) to 'ocr_green_sync_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[11]' (FDE) to 'ocr_green_sync_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[12]' (FDE) to 'ocr_green_sync_reg[13]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[13]' (FDE) to 'ocr_green_sync_reg[14]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[14]' (FDE) to 'ocr_green_sync_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[15]' (FDE) to 'ocr_green_sync_reg[50]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[18]' (FDE) to 'ocr_green_sync_reg[19]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[19]' (FDE) to 'ocr_green_sync_reg[20]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[20]' (FDE) to 'ocr_green_sync_reg[21]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[21]' (FDE) to 'ocr_green_sync_reg[22]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[22]' (FDE) to 'ocr_green_sync_reg[23]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[23]' (FDE) to 'ocr_green_sync_reg[42]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[26]' (FDE) to 'ocr_green_sync_reg[27]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[27]' (FDE) to 'ocr_green_sync_reg[28]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[28]' (FDE) to 'ocr_green_sync_reg[29]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[29]' (FDE) to 'ocr_green_sync_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[30]' (FDE) to 'ocr_green_sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[34]' (FDE) to 'ocr_green_sync_reg[35]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[35]' (FDE) to 'ocr_green_sync_reg[36]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[36]' (FDE) to 'ocr_green_sync_reg[37]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[37]' (FDE) to 'ocr_green_sync_reg[38]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[38]' (FDE) to 'ocr_green_sync_reg[39]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[42]' (FDE) to 'ocr_green_sync_reg[43]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[43]' (FDE) to 'ocr_green_sync_reg[44]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[44]' (FDE) to 'ocr_green_sync_reg[45]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[45]' (FDE) to 'ocr_green_sync_reg[46]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[46]' (FDE) to 'ocr_green_sync_reg[47]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[50]' (FDE) to 'ocr_green_sync_reg[51]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[51]' (FDE) to 'ocr_green_sync_reg[52]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[52]' (FDE) to 'ocr_green_sync_reg[53]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[53]' (FDE) to 'ocr_green_sync_reg[54]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[54]' (FDE) to 'ocr_green_sync_reg[55]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[58]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[59]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[60]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[61]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[62]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_green_sync_reg[63]' (FDE) to 'ocr_blue_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[2]' (FDE) to 'ocr_red_sync_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[3]' (FDE) to 'ocr_red_sync_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[4]' (FDE) to 'ocr_red_sync_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[5]' (FDE) to 'ocr_red_sync_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[6]' (FDE) to 'ocr_red_sync_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[7]' (FDE) to 'ocr_red_sync_reg[58]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[10]' (FDE) to 'ocr_red_sync_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ocr_red_sync_reg[11]' (FDE) to 'ocr_red_sync_reg[12]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ocr_red_sync_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ocr_blue_sync_reg[63] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6397 ; free virtual = 11820
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7329 ; free virtual = 12893
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -244,13 +282,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6299 ; free virtual = 11721
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7177 ; free virtual = 12700
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6298 ; free virtual = 11720
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7158 ; free virtual = 12681
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -262,7 +300,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7148 ; free virtual = 12672
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -286,7 +324,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7049 ; free virtual = 12593
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -299,7 +337,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7041 ; free virtual = 12593
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -311,25 +349,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7026 ; free virtual = 12589
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7026 ; free virtual = 12589
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7025 ; free virtual = 12588
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7025 ; free virtual = 12588
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -346,48 +384,56 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |     4|
-|3     |LUT1   |     1|
-|4     |LUT2   |     6|
-|5     |LUT3   |     6|
+|2     |CARRY4 |    32|
+|3     |LUT1   |     3|
+|4     |LUT2   |    43|
+|5     |LUT3   |   143|
 |6     |LUT4   |     1|
 |7     |LUT5   |     1|
 |8     |LUT6   |     2|
 |9     |FDCE   |    15|
-|10    |FDRE   |    12|
+|10    |FDRE   |    29|
 |11    |IBUF   |     1|
 |12    |OBUF   |    32|
-|13    |OBUFT  |     4|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |    86|
-+------+---------+-------+------+
++------+-----------------------------+----------------+------+
+|      |Instance                     |Module          |Cells |
++------+-----------------------------+----------------+------+
+|1     |top                          |                |   303|
+|2     |  row1                       |rows            |     5|
+|3     |    \multi_colors[3].COLORS  |color_channel   |     2|
+|4     |      pwm_green              |pwm_generator_3 |     1|
+|5     |      pwm_red                |pwm_generator_4 |     1|
+|6     |    \multi_colors[4].COLORS  |color_channel_0 |     3|
+|7     |      pwm_blue               |pwm_generator   |     1|
+|8     |      pwm_green              |pwm_generator_1 |     1|
+|9     |      pwm_red                |pwm_generator_2 |     1|
+|10    |  timer1                     |timer           |   205|
++------+-----------------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6297 ; free virtual = 11720
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7025 ; free virtual = 12588
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1793.422 ; gain = 124.648 ; free physical = 6355 ; free virtual = 11778
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.422 ; gain = 477.305 ; free physical = 6355 ; free virtual = 11778
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1799.680 ; gain = 97.648 ; free physical = 7082 ; free virtual = 12645
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1799.680 ; gain = 456.305 ; free physical = 7082 ; free virtual = 12645
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.422 ; gain = 0.000 ; free physical = 6295 ; free virtual = 11718
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1799.680 ; gain = 0.000 ; free physical = 7005 ; free virtual = 12575
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-43 Infos, 41 Warnings, 8 Critical Warnings and 0 Errors encountered.
+145 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1793.422 ; gain = 477.406 ; free physical = 6352 ; free virtual = 11775
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.422 ; gain = 0.000 ; free physical = 6352 ; free virtual = 11775
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1799.680 ; gain = 456.406 ; free physical = 7061 ; free virtual = 12631
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1799.680 ; gain = 0.000 ; free physical = 7061 ; free virtual = 12631
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab2/Lab2.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar  3 09:44:19 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 10 10:58:20 2021...
