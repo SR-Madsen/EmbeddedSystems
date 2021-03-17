@@ -1,0 +1,76 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Mar 17 09:20:39 2021
+| Host         : sebastian-ZBook running 64-bit Linux Mint 20
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |    20 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            2 |
+|      6 |            1 |
+|     15 |            1 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              20 |            6 |
+| No           | No                    | Yes                    |              19 |            5 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             589 |          146 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+------------------------------------+------------------+------------------+----------------+
+|    Clock Signal    |            Enable Signal           | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------+------------------------------------+------------------+------------------+----------------+
+|  clk_8ns_IBUF_BUFG |                                    | clear            |                1 |              4 |
+|  clk_8ns_IBUF_BUFG | FSM_onehot_memory_state[3]_i_1_n_0 |                  |                2 |              4 |
+|  clk_8ns_IBUF_BUFG | bram_addr                          |                  |                2 |              6 |
+|  clk_8ns_IBUF_BUFG |                                    | p_0_in           |                4 |             15 |
+|  clk_8ns_IBUF_BUFG |                                    |                  |                6 |             20 |
+|  clk_8ns_IBUF_BUFG | mem_addr                           | mem_addr0        |                8 |             32 |
+|  clk_8ns_IBUF_BUFG | values_red                         |                  |               51 |            192 |
+|  clk_8ns_IBUF_BUFG | ocr_red                            |                  |               48 |            192 |
+|  clk_8ns_IBUF_BUFG | ocr_blue_sync                      |                  |               43 |            195 |
++--------------------+------------------------------------+------------------+------------------+----------------+
+
+

@@ -1,3 +1,0 @@
-Lab3_blk_mem_gen_0_0.v,verilog,xil_defaultlib,../../../bd/Lab3/ip/Lab3_blk_mem_gen_0_0/sim/Lab3_blk_mem_gen_0_0.v,
-Lab3.vhd,vhdl,xil_defaultlib,../../../bd/Lab3/sim/Lab3.vhd,
-glbl.v,Verilog,xil_defaultlib,glbl.v

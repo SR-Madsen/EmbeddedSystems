@@ -77,7 +77,7 @@ set rc [catch {
   add_files -quiet /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.runs/synth_1/top.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/Lab3.bd
+  add_files /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/Lab4.bd
   set_param project.isImplRun false
   read_xdc /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/constrs_1/imports/Desktop/RGB_Matrix_constrains.xdc
   set_param project.isImplRun true

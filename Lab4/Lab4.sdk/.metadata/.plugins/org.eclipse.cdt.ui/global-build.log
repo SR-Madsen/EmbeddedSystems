@@ -1,0 +1,365 @@
+09:56:02 **** Incremental Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+
+09:56:02 Build Finished (took 518ms)
+
+09:56:02 **** Incremental Build of configuration Release for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28508	   1216	  22664	  52388	   cca4	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+09:56:04 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:56:13 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28908	   1216	  22664	  52788	   ce34	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+09:56:21 **** Incremental Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:57:55 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BramExample':
+../src/helloworld.c:153:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28884	   1216	  22664	  52764	   ce1c	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+09:58:52 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:167:6: warning: 'InitializeECC' defined but not used [-Wunused-function]
+ void InitializeECC(XBram_Config *ConfigPtr, u32 EffectiveAddr)
+      ^~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28820	   1216	  22664	  52700	   cddc	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+10:00:14 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:163:6: warning: 'InitializeECC' defined but not used [-Wunused-function]
+ void InitializeECC(XBram_Config *ConfigPtr, u32 EffectiveAddr)
+      ^~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28996	   1216	  22664	  52876	   ce8c	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+10:00:42 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:163:6: warning: 'InitializeECC' defined but not used [-Wunused-function]
+ void InitializeECC(XBram_Config *ConfigPtr, u32 EffectiveAddr)
+      ^~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29076	   1216	  22664	  52956	   cedc	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+10:00:49 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:158:6: warning: 'InitializeECC' defined but not used [-Wunused-function]
+ void InitializeECC(XBram_Config *ConfigPtr, u32 EffectiveAddr)
+      ^~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29076	   1216	  22664	  52956	   cedc	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+10:01:23 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:157:6: warning: 'InitializeECC' defined but not used [-Wunused-function]
+ void InitializeECC(XBram_Config *ConfigPtr, u32 EffectiveAddr)
+      ^~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29076	   1216	  22664	  52956	   cedc	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+10:01:45 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:157:6: warning: 'InitializeECC' defined but not used [-Wunused-function]
+ void InitializeECC(XBram_Config *ConfigPtr, u32 EffectiveAddr)
+      ^~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29076	   1216	  22664	  52956	   cedc	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+10:01:48 **** Incremental Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:02:04 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28884	   1216	  22664	  52764	   ce1c	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+10:12:38 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28884	   1216	  22664	  52764	   ce1c	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+10:12:58 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28884	   1216	  22664	  52764	   ce1c	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+10:13:20 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28820	   1216	  22664	  52700	   cddc	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+10:14:25 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:117:22: warning: passing argument 2 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+    XBram_Out32(Addr, Data);
+                      ^~~~
+In file included from ../../Lab4_bsp/ps7_cortexa9_0/include/xbram_hw.h:59:0,
+                 from ../../Lab4_bsp/ps7_cortexa9_0/include/xbram.h:135,
+                 from ../src/helloworld.c:52:
+../../Lab4_bsp/ps7_cortexa9_0/include/xil_io.h:219:20: note: expected 'u32 {aka long unsigned int}' but argument is of type 'u32 * {aka long unsigned int *}'
+ static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+                    ^~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28852	   1216	  22664	  52732	   cdfc	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+10:15:26 **** Auto Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab4_bsp/ps7_cortexa9_0/lib -o "Lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab4.elf  |tee "Lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28916	   1216	  22664	  52796	   ce3c	Lab4.elf
+Finished building: Lab4.elf.size
+ 
+10:15:44 **** Incremental Build of configuration Debug for project Lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.

@@ -51,14 +51,15 @@ signal count_out: STD_LOGIC_VECTOR(7 downto 0);
 signal row_addr: unsigned(2 downto 0) := "000";
 signal row_addr_shift: unsigned(2 downto 0) := "000";
 
-signal mem_data_in: STD_LOGIC_VECTOR(31 downto 0);
-signal mem_write_enable: STD_LOGIC_VECTOR(3 downto 0);
+signal mem_data_in: STD_LOGIC_VECTOR(31 downto 0) := x"00000000";
+signal mem_write_enable: STD_LOGIC_VECTOR(3 downto 0) := "0000";
 signal mem_addr: unsigned(31 downto 0) := x"00000000";
 signal bram_addr: STD_LOGIC_VECTOR(31 downto 0);
 
 signal start, done: STD_LOGIC := '0';
 
 signal clk_scaled: STD_LOGIC;
+signal clk_BRAM: STD_LOGIC;
 
 type state_type is (shift, get, waiting, ready);
 signal state: state_type := shift;
@@ -120,16 +121,24 @@ begin
 
     -- Slow down clock
     process(clk_8ns)
-    variable prescaler: integer range 0 to 18001;
+    variable prescaler_FSM: integer range 0 to 18001;
+    variable prescaler_BRAM: integer range 0 to 11;
     begin
         if rising_edge(clk_8ns) then
-            prescaler := prescaler + 1;
+            prescaler_FSM := prescaler_FSM + 1;
+            prescaler_BRAM := prescaler_BRAM + 1;
         end if;
-        if prescaler >= 18000 then
-            prescaler := 0;
+        if prescaler_FSM >= 18000 then
+            prescaler_FSM := 0;
             clk_scaled <= '1';
         else
             clk_scaled <= '0';
+        end if;
+        if prescaler_BRAM >= 10 then
+            prescaler_BRAM := 0;
+            clk_BRAM <= '1';
+        else
+            clk_BRAM <= '0';
         end if;
     end process;
 
@@ -145,7 +154,7 @@ begin
                     ocr_red_sync <= ocr_red;
                     row_addr <= row_addr_shift;
                     if clk_scaled = '1' then
-                        state <= ready;
+                        state <= get;
                     end if;
                     
                 when get =>
@@ -177,6 +186,7 @@ begin
 
 
     -- Finite State Machine for memory interfacing
+    -- The clock used within the state machine may need to be slowed down!
     process(clk_8ns)
     begin
         
@@ -185,24 +195,30 @@ begin
                 when reset =>
                     mem_addr <= x"00000000";
                     done <= '0';
-                    memory_state <= setup;
+                    if clk_BRAM = '1' then
+                        memory_state <= setup;
+                    end if;
                 
                 when setup =>
                     bram_addr <= std_logic_vector(to_unsigned((to_integer(row_addr_shift)*32) + (to_integer(mem_addr)*4), 32));
-                    memory_state <= latch;
+                    if clk_BRAM = '1' then
+                        memory_state <= latch;
+                    end if;
                 
                 when latch =>
                     values_red <= values_red(55 downto 0) & mem_data_out(23 downto 16);
                     values_green <= values_green(55 downto 0) & mem_data_out(15 downto 8);
                     values_blue <= values_blue(55 downto 0) & mem_data_out(7 downto 0);
 
-                    mem_addr <= mem_addr + 1;
-                    if mem_addr < 7 then
-                        memory_state <= setup;
-                    else
-                        memory_state <= ready;
+                    if clk_BRAM = '1' then
+                        mem_addr <= mem_addr + 1;
+                        if mem_addr < 7 then
+                            memory_state <= setup;
+                        else
+                            memory_state <= ready;
+                        end if;
                     end if;
-                
+                    
                 when ready =>
                     ocr_red <= values_red;
                     ocr_green <= values_green;
@@ -217,4 +233,3 @@ begin
     end process;
 
 end Behavioral;
-

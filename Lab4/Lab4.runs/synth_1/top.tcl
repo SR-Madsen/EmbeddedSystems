@@ -33,31 +33,31 @@ set_property ip_output_repo /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab
 set_property ip_cache_permissions {read write} [current_project]
 add_files /home/sebastian/Desktop/mem_pures.coe
 read_vhdl -library xil_defaultlib {
-  /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd
+  /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/hdl/Lab4_wrapper.vhd
   /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/imports/new/color_channel.vhd
   /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/imports/new/pwm_generator.vhd
   /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/imports/new/row.vhd
   /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/imports/new/timer.vhd
   /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/imports/new/top.vhd
 }
-add_files /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/Lab3.bd
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_blk_mem_gen_0_0/Lab3_blk_mem_gen_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_processing_system7_0_0/Lab3_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_axi_bram_ctrl_0_0/Lab3_axi_bram_ctrl_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_axi_smc_0/bd_0/ip/ip_1/bd_fbf2_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_axi_smc_0/bd_0/ip/ip_1/bd_fbf2_psr_aclk_0.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_axi_smc_0/bd_0/ip/ip_5/bd_fbf2_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_axi_smc_0/bd_0/ip/ip_6/bd_fbf2_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_axi_smc_0/bd_0/ip/ip_7/bd_fbf2_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_axi_smc_0/bd_0/ip/ip_8/bd_fbf2_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_axi_smc_0/bd_0/ip/ip_9/bd_fbf2_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_axi_smc_0/bd_0/ip/ip_10/bd_fbf2_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_axi_smc_0/bd_0/ip/ip_11/bd_fbf2_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_axi_smc_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_rst_ps7_0_100M_0/Lab3_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_rst_ps7_0_100M_0/Lab3_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/ip/Lab3_rst_ps7_0_100M_0/Lab3_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab3/Lab3_ooc.xdc]
+add_files /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/Lab4.bd
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_blk_mem_gen_0_0/Lab4_blk_mem_gen_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_processing_system7_0_0/Lab4_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_axi_bram_ctrl_0_0/Lab4_axi_bram_ctrl_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_axi_smc_0/bd_0/ip/ip_1/bd_8fe8_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_axi_smc_0/bd_0/ip/ip_1/bd_8fe8_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_axi_smc_0/bd_0/ip/ip_5/bd_8fe8_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_axi_smc_0/bd_0/ip/ip_6/bd_8fe8_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_axi_smc_0/bd_0/ip/ip_7/bd_8fe8_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_axi_smc_0/bd_0/ip/ip_8/bd_8fe8_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_axi_smc_0/bd_0/ip/ip_9/bd_8fe8_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_axi_smc_0/bd_0/ip/ip_10/bd_8fe8_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_axi_smc_0/bd_0/ip/ip_11/bd_8fe8_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_axi_smc_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_rst_ps7_0_100M_0/Lab4_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_rst_ps7_0_100M_0/Lab4_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_rst_ps7_0_100M_0/Lab4_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/Lab4_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

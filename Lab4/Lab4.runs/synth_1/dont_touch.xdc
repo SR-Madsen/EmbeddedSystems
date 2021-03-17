@@ -3,22 +3,22 @@
 
 # XDC: imports/Desktop/RGB_Matrix_constrains.xdc
 
-# Block Designs: bd/Lab3/Lab3.bd
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab3 || ORIG_REF_NAME==Lab3} -quiet] -quiet
+# Block Designs: bd/Lab4/Lab4.bd
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab4 || ORIG_REF_NAME==Lab4} -quiet] -quiet
 
-# IP: bd/Lab3/ip/Lab3_blk_mem_gen_0_0/Lab3_blk_mem_gen_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab3_blk_mem_gen_0_0 || ORIG_REF_NAME==Lab3_blk_mem_gen_0_0} -quiet] -quiet
+# IP: bd/Lab4/ip/Lab4_blk_mem_gen_0_0/Lab4_blk_mem_gen_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab4_blk_mem_gen_0_0 || ORIG_REF_NAME==Lab4_blk_mem_gen_0_0} -quiet] -quiet
 
-# IP: bd/Lab3/ip/Lab3_processing_system7_0_0/Lab3_processing_system7_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab3_processing_system7_0_0 || ORIG_REF_NAME==Lab3_processing_system7_0_0} -quiet] -quiet
+# IP: bd/Lab4/ip/Lab4_processing_system7_0_0/Lab4_processing_system7_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab4_processing_system7_0_0 || ORIG_REF_NAME==Lab4_processing_system7_0_0} -quiet] -quiet
 
-# IP: bd/Lab3/ip/Lab3_axi_bram_ctrl_0_0/Lab3_axi_bram_ctrl_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab3_axi_bram_ctrl_0_0 || ORIG_REF_NAME==Lab3_axi_bram_ctrl_0_0} -quiet] -quiet
+# IP: bd/Lab4/ip/Lab4_axi_bram_ctrl_0_0/Lab4_axi_bram_ctrl_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab4_axi_bram_ctrl_0_0 || ORIG_REF_NAME==Lab4_axi_bram_ctrl_0_0} -quiet] -quiet
 
-# IP: bd/Lab3/ip/Lab3_axi_smc_0/Lab3_axi_smc_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab3_axi_smc_0 || ORIG_REF_NAME==Lab3_axi_smc_0} -quiet] -quiet
+# IP: bd/Lab4/ip/Lab4_axi_smc_0/Lab4_axi_smc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab4_axi_smc_0 || ORIG_REF_NAME==Lab4_axi_smc_0} -quiet] -quiet
 
-# IP: bd/Lab3/ip/Lab3_rst_ps7_0_100M_0/Lab3_rst_ps7_0_100M_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab3_rst_ps7_0_100M_0 || ORIG_REF_NAME==Lab3_rst_ps7_0_100M_0} -quiet] -quiet
+# IP: bd/Lab4/ip/Lab4_rst_ps7_0_100M_0/Lab4_rst_ps7_0_100M_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab4_rst_ps7_0_100M_0 || ORIG_REF_NAME==Lab4_rst_ps7_0_100M_0} -quiet] -quiet
 
-# XDC: bd/Lab3/Lab3_ooc.xdc
+# XDC: bd/Lab4/Lab4_ooc.xdc
