@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
---Date        : Wed Mar 17 09:25:34 2021
+--Date        : Mon Mar 22 11:35:53 2021
 --Host        : sebastian-ZBook running 64-bit Linux Mint 20
 --Command     : generate_target Lab4_wrapper.bd
 --Design      : Lab4_wrapper
@@ -47,6 +47,19 @@ end Lab4_wrapper;
 architecture STRUCTURE of Lab4_wrapper is
   component Lab4 is
   port (
+    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    FIXED_IO_ddr_vrn : inout STD_LOGIC;
+    FIXED_IO_ddr_vrp : inout STD_LOGIC;
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    FIXED_IO_ps_clk : inout STD_LOGIC;
+    FIXED_IO_ps_porb : inout STD_LOGIC;
+    BRAM_PORTB_0_addr : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    BRAM_PORTB_0_clk : in STD_LOGIC;
+    BRAM_PORTB_0_din : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    BRAM_PORTB_0_dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    BRAM_PORTB_0_en : in STD_LOGIC;
+    BRAM_PORTB_0_rst : in STD_LOGIC;
+    BRAM_PORTB_0_we : in STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -61,20 +74,7 @@ architecture STRUCTURE of Lab4_wrapper is
     DDR_dm : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    BRAM_PORTB_0_addr : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    BRAM_PORTB_0_clk : in STD_LOGIC;
-    BRAM_PORTB_0_din : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    BRAM_PORTB_0_dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    BRAM_PORTB_0_en : in STD_LOGIC;
-    BRAM_PORTB_0_rst : in STD_LOGIC;
-    BRAM_PORTB_0_we : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    FIXED_IO_ddr_vrn : inout STD_LOGIC;
-    FIXED_IO_ddr_vrp : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC;
-    FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC
+    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component Lab4;
 begin

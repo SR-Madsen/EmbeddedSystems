@@ -112,7 +112,7 @@
         "xci_name": "Lab4_blk_mem_gen_0_0",
         "parameters": {
           "EN_SAFETY_CKT": {
-            "value": "true"
+            "value": "false"
           },
           "Enable_32bit_Address": {
             "value": "true"
@@ -1763,10 +1763,10 @@
       }
     },
     "interface_nets": {
-      "processing_system7_0_M_AXI_GP0": {
+      "BRAM_PORTB_0_1": {
         "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "axi_smc/S00_AXI"
+          "BRAM_PORTB_0",
+          "blk_mem_gen_0/BRAM_PORTB"
         ]
       },
       "axi_smc_M00_AXI": {
@@ -1781,10 +1781,10 @@
           "processing_system7_0/FIXED_IO"
         ]
       },
-      "BRAM_PORTB_0_1": {
+      "processing_system7_0_M_AXI_GP0": {
         "interface_ports": [
-          "BRAM_PORTB_0",
-          "blk_mem_gen_0/BRAM_PORTB"
+          "processing_system7_0/M_AXI_GP0",
+          "axi_smc/S00_AXI"
         ]
       },
       "axi_bram_ctrl_0_BRAM_PORTA": {

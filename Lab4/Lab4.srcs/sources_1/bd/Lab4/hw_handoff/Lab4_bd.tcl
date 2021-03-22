@@ -182,7 +182,7 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.Byte_Size {8} \
    CONFIG.Coe_File {no_coe_file_loaded} \
-   CONFIG.EN_SAFETY_CKT {true} \
+   CONFIG.EN_SAFETY_CKT {false} \
    CONFIG.Enable_32bit_Address {true} \
    CONFIG.Enable_A {Use_ENA_Pin} \
    CONFIG.Enable_B {Use_ENB_Pin} \

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Mar 17 09:39:56 2021
+| Date         : Mon Mar 22 12:19:50 2021
 | Host         : sebastian-ZBook running 64-bit Linux Mint 20
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,26 +23,15 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 10
+             Violations found: 8
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert  | 2          |
 | TIMING-18 | Warning  | Missing input or output delay | 8          |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-LUTAR-1#1 Warning
-LUT drives async reset alert  
-LUT cell prescaler_BRAM[3]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) prescaler_BRAM_reg[0]/CLR, prescaler_BRAM_reg[1]/CLR, prescaler_BRAM_reg[2]/CLR, prescaler_BRAM_reg[3]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#2 Warning
-LUT drives async reset alert  
-LUT cell prescaler_FSM[0]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) prescaler_FSM_reg[0]/CLR, prescaler_FSM_reg[10]/CLR, prescaler_FSM_reg[11]/CLR, prescaler_FSM_reg[12]/CLR, prescaler_FSM_reg[13]/CLR, prescaler_FSM_reg[14]/CLR, prescaler_FSM_reg[1]/CLR, prescaler_FSM_reg[2]/CLR, prescaler_FSM_reg[3]/CLR, prescaler_FSM_reg[4]/CLR, prescaler_FSM_reg[5]/CLR, prescaler_FSM_reg[6]/CLR, prescaler_FSM_reg[7]/CLR, prescaler_FSM_reg[8]/CLR, prescaler_FSM_reg[9]/CLR (the first 15 of 15 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
 TIMING-18#1 Warning
 Missing input or output delay  
 An output delay is missing on row_out[0] relative to clock(s) sys_clk_pin

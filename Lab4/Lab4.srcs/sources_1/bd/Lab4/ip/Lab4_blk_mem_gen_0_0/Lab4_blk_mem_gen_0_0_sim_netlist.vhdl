@@ -1,11 +1,11 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Wed Mar 10 09:57:19 2021
+-- Date        : Mon Mar 22 11:37:36 2021
 -- Host        : sebastian-ZBook running 64-bit Linux Mint 20
--- Command     : write_vhdl -force -mode funcsim -rename_top Lab4_blk_mem_gen_0_0 -prefix
---               Lab4_blk_mem_gen_0_0_ Lab3_blk_mem_gen_0_0_sim_netlist.vhdl
--- Design      : Lab3_blk_mem_gen_0_0
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_blk_mem_gen_0_0/Lab4_blk_mem_gen_0_0_sim_netlist.vhdl
+-- Design      : Lab4_blk_mem_gen_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7z010clg400-1
@@ -20,10 +20,10 @@ entity Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper is
     doutb : out STD_LOGIC_VECTOR ( 15 downto 0 );
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
-    ENA_I : in STD_LOGIC;
-    ENB_I : in STD_LOGIC;
-    ram_rstram_a : in STD_LOGIC;
-    ram_rstram_b : in STD_LOGIC;
+    ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
+    rsta : in STD_LOGIC;
+    rstb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 10 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -31,6 +31,8 @@ entity Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper is
     wea : in STD_LOGIC_VECTOR ( 1 downto 0 );
     web : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_prim_wrapper";
 end Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper;
 
 architecture STRUCTURE of Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper is
@@ -262,15 +264,15 @@ begin
       DOPBDOP(1) => \DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_n_74\,
       DOPBDOP(0) => \DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_n_75\,
       ECCPARITY(7 downto 0) => \NLW_DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_ECCPARITY_UNCONNECTED\(7 downto 0),
-      ENARDEN => ENA_I,
-      ENBWREN => ENB_I,
+      ENARDEN => ena,
+      ENBWREN => enb,
       INJECTDBITERR => '0',
       INJECTSBITERR => '0',
       RDADDRECC(8 downto 0) => \NLW_DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_RDADDRECC_UNCONNECTED\(8 downto 0),
       REGCEAREGCE => '0',
       REGCEB => '0',
-      RSTRAMARSTRAM => ram_rstram_a,
-      RSTRAMB => ram_rstram_b,
+      RSTRAMARSTRAM => rsta,
+      RSTRAMB => rstb,
       RSTREGARSTREG => '0',
       RSTREGB => '0',
       SBITERR => \NLW_DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_SBITERR_UNCONNECTED\,
@@ -289,26 +291,18 @@ entity \Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper__parameterized0\ is
   port (
     douta : out STD_LOGIC_VECTOR ( 15 downto 0 );
     doutb : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    ENA_I : out STD_LOGIC;
-    ENB_I : out STD_LOGIC;
-    ram_rstram_a : out STD_LOGIC;
-    ram_rstram_b : out STD_LOGIC;
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
+    ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
+    rsta : in STD_LOGIC;
+    rstb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 10 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 15 downto 0 );
     dinb : in STD_LOGIC_VECTOR ( 15 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    web : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    rsta : in STD_LOGIC;
-    POR_A : in STD_LOGIC;
-    ENA_dly_D : in STD_LOGIC;
-    ena : in STD_LOGIC;
-    rstb : in STD_LOGIC;
-    POR_B : in STD_LOGIC;
-    ENB_dly_D : in STD_LOGIC;
-    enb : in STD_LOGIC
+    web : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper__parameterized0\ : entity is "blk_mem_gen_prim_wrapper";
@@ -319,10 +313,6 @@ architecture STRUCTURE of \Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper__parame
   signal \DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_n_71\ : STD_LOGIC;
   signal \DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_n_74\ : STD_LOGIC;
   signal \DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_n_75\ : STD_LOGIC;
-  signal \^ena_i\ : STD_LOGIC;
-  signal \^enb_i\ : STD_LOGIC;
-  signal \^ram_rstram_a\ : STD_LOGIC;
-  signal \^ram_rstram_b\ : STD_LOGIC;
   signal \NLW_DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_CASCADEOUTA_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_CASCADEOUTB_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_DBITERR_UNCONNECTED\ : STD_LOGIC;
@@ -338,10 +328,6 @@ architecture STRUCTURE of \Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper__parame
   attribute box_type : string;
   attribute box_type of \DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram\ : label is "PRIMITIVE";
 begin
-  ENA_I <= \^ena_i\;
-  ENB_I <= \^enb_i\;
-  ram_rstram_a <= \^ram_rstram_a\;
-  ram_rstram_b <= \^ram_rstram_b\;
 \DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram\: unisim.vcomponents.RAMB36E1
     generic map(
       DOA_REG => 0,
@@ -551,15 +537,15 @@ begin
       DOPBDOP(1) => \DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_n_74\,
       DOPBDOP(0) => \DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_n_75\,
       ECCPARITY(7 downto 0) => \NLW_DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_ECCPARITY_UNCONNECTED\(7 downto 0),
-      ENARDEN => \^ena_i\,
-      ENBWREN => \^enb_i\,
+      ENARDEN => ena,
+      ENBWREN => enb,
       INJECTDBITERR => '0',
       INJECTSBITERR => '0',
       RDADDRECC(8 downto 0) => \NLW_DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_RDADDRECC_UNCONNECTED\(8 downto 0),
       REGCEAREGCE => '0',
       REGCEB => '0',
-      RSTRAMARSTRAM => \^ram_rstram_a\,
-      RSTRAMB => \^ram_rstram_b\,
+      RSTRAMARSTRAM => rsta,
+      RSTRAMB => rstb,
       RSTREGARSTREG => '0',
       RSTREGB => '0',
       SBITERR => \NLW_DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_SBITERR_UNCONNECTED\,
@@ -568,42 +554,6 @@ begin
       WEBWE(7 downto 4) => B"0000",
       WEBWE(3 downto 2) => web(1 downto 0),
       WEBWE(1 downto 0) => web(1 downto 0)
-    );
-\DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => ENA_dly_D,
-      I1 => ena,
-      O => \^ena_i\
-    );
-\DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => ENB_dly_D,
-      I1 => enb,
-      O => \^enb_i\
-    );
-\DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_i_3\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => rsta,
-      I1 => POR_A,
-      O => \^ram_rstram_a\
-    );
-\DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_i_4\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => rstb,
-      I1 => POR_B,
-      O => \^ram_rstram_b\
     );
 end STRUCTURE;
 library IEEE;
@@ -616,10 +566,10 @@ entity Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_width is
     doutb : out STD_LOGIC_VECTOR ( 15 downto 0 );
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
-    ENA_I : in STD_LOGIC;
-    ENB_I : in STD_LOGIC;
-    ram_rstram_a : in STD_LOGIC;
-    ram_rstram_b : in STD_LOGIC;
+    ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
+    rsta : in STD_LOGIC;
+    rstb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 10 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -627,14 +577,14 @@ entity Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_width is
     wea : in STD_LOGIC_VECTOR ( 1 downto 0 );
     web : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_width is
 begin
 \prim_noinit.ram\: entity work.Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper
      port map (
-      ENA_I => ENA_I,
-      ENB_I => ENB_I,
       addra(10 downto 0) => addra(10 downto 0),
       addrb(10 downto 0) => addrb(10 downto 0),
       clka => clka,
@@ -643,8 +593,10 @@ begin
       dinb(15 downto 0) => dinb(15 downto 0),
       douta(15 downto 0) => douta(15 downto 0),
       doutb(15 downto 0) => doutb(15 downto 0),
-      ram_rstram_a => ram_rstram_a,
-      ram_rstram_b => ram_rstram_b,
+      ena => ena,
+      enb => enb,
+      rsta => rsta,
+      rstb => rstb,
       wea(1 downto 0) => wea(1 downto 0),
       web(1 downto 0) => web(1 downto 0)
     );
@@ -657,259 +609,27 @@ entity \Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_width__parameterized0\ is
   port (
     douta : out STD_LOGIC_VECTOR ( 15 downto 0 );
     doutb : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    ENA_I : out STD_LOGIC;
-    ENB_I : out STD_LOGIC;
-    ram_rstram_a : out STD_LOGIC;
-    ram_rstram_b : out STD_LOGIC;
-    rsta_busy : out STD_LOGIC;
-    rstb_busy : out STD_LOGIC;
-    clkb : in STD_LOGIC;
     clka : in STD_LOGIC;
+    clkb : in STD_LOGIC;
+    ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
+    rsta : in STD_LOGIC;
+    rstb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 10 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 15 downto 0 );
     dinb : in STD_LOGIC_VECTOR ( 15 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    web : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    rsta : in STD_LOGIC;
-    ena : in STD_LOGIC;
-    rstb : in STD_LOGIC;
-    enb : in STD_LOGIC
+    web : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_width__parameterized0\ : entity is "blk_mem_gen_prim_width";
 end \Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_width__parameterized0\;
 
 architecture STRUCTURE of \Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_width__parameterized0\ is
-  signal ENA_dly : STD_LOGIC;
-  signal ENA_dly_D : STD_LOGIC;
-  signal ENB_dly : STD_LOGIC;
-  signal ENB_dly_D : STD_LOGIC;
-  signal POR_A : STD_LOGIC;
-  signal POR_B : STD_LOGIC;
-  signal \SAFETY_CKT_GEN.POR_A_i_1_n_0\ : STD_LOGIC;
-  signal \SAFETY_CKT_GEN.POR_B_i_1_n_0\ : STD_LOGIC;
-  signal \SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[3]_srl3_n_0\ : STD_LOGIC;
-  signal \SAFETY_CKT_GEN.RSTA_SHFT_REG_reg_n_0_[0]\ : STD_LOGIC;
-  signal \SAFETY_CKT_GEN.RSTA_SHFT_REG_reg_n_0_[4]\ : STD_LOGIC;
-  signal \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]_srl3_n_0\ : STD_LOGIC;
-  signal \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg_n_0_[0]\ : STD_LOGIC;
-  signal \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg_n_0_[4]\ : STD_LOGIC;
-  signal \^ram_rstram_a\ : STD_LOGIC;
-  signal ram_rstram_a_busy : STD_LOGIC;
-  signal \^ram_rstram_b\ : STD_LOGIC;
-  signal ram_rstram_b_busy : STD_LOGIC;
-  attribute srl_bus_name : string;
-  attribute srl_bus_name of \SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[3]_srl3\ : label is "U0/\inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg ";
-  attribute srl_name : string;
-  attribute srl_name of \SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[3]_srl3\ : label is "U0/\inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[3]_srl3 ";
-  attribute srl_bus_name of \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]_srl3\ : label is "U0/\inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg ";
-  attribute srl_name of \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]_srl3\ : label is "U0/\inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]_srl3 ";
 begin
-  ram_rstram_a <= \^ram_rstram_a\;
-  ram_rstram_b <= \^ram_rstram_b\;
-\SAFETY_CKT_GEN.ENA_NO_REG.ENA_dly_D_reg\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => clka,
-      CE => '1',
-      D => ENA_dly,
-      Q => ENA_dly_D,
-      R => '0'
-    );
-\SAFETY_CKT_GEN.ENA_NO_REG.ENA_dly_reg\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => clka,
-      CE => '1',
-      D => \^ram_rstram_a\,
-      Q => ENA_dly,
-      R => '0'
-    );
-\SAFETY_CKT_GEN.ENB_NO_REG.ENB_dly_D_reg\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => clkb,
-      CE => '1',
-      D => ENB_dly,
-      Q => ENB_dly_D,
-      R => '0'
-    );
-\SAFETY_CKT_GEN.ENB_NO_REG.ENB_dly_reg\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => clkb,
-      CE => '1',
-      D => \^ram_rstram_b\,
-      Q => ENB_dly,
-      R => '0'
-    );
-\SAFETY_CKT_GEN.POR_A_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => \SAFETY_CKT_GEN.RSTA_SHFT_REG_reg_n_0_[0]\,
-      I1 => \SAFETY_CKT_GEN.RSTA_SHFT_REG_reg_n_0_[4]\,
-      O => \SAFETY_CKT_GEN.POR_A_i_1_n_0\
-    );
-\SAFETY_CKT_GEN.POR_A_reg\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => clka,
-      CE => '1',
-      D => \SAFETY_CKT_GEN.POR_A_i_1_n_0\,
-      Q => POR_A,
-      R => '0'
-    );
-\SAFETY_CKT_GEN.POR_B_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg_n_0_[0]\,
-      I1 => \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg_n_0_[4]\,
-      O => \SAFETY_CKT_GEN.POR_B_i_1_n_0\
-    );
-\SAFETY_CKT_GEN.POR_B_reg\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => clkb,
-      CE => '1',
-      D => \SAFETY_CKT_GEN.POR_B_i_1_n_0\,
-      Q => POR_B,
-      R => '0'
-    );
-\SAFETY_CKT_GEN.RSTA_BUSY_NO_REG.RSTA_BUSY_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => POR_A,
-      I1 => rsta,
-      I2 => ENA_dly,
-      I3 => ENA_dly_D,
-      O => ram_rstram_a_busy
-    );
-\SAFETY_CKT_GEN.RSTA_BUSY_NO_REG.RSTA_BUSY_reg\: unisim.vcomponents.FDRE
-     port map (
-      C => clka,
-      CE => '1',
-      D => ram_rstram_a_busy,
-      Q => rsta_busy,
-      R => '0'
-    );
-\SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => clka,
-      CE => '1',
-      D => '1',
-      Q => \SAFETY_CKT_GEN.RSTA_SHFT_REG_reg_n_0_[0]\,
-      R => '0'
-    );
-\SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[3]_srl3\: unisim.vcomponents.SRL16E
-    generic map(
-      INIT => X"0000"
-    )
-        port map (
-      A0 => '0',
-      A1 => '1',
-      A2 => '0',
-      A3 => '0',
-      CE => '1',
-      CLK => clka,
-      D => \SAFETY_CKT_GEN.RSTA_SHFT_REG_reg_n_0_[0]\,
-      Q => \SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[3]_srl3_n_0\
-    );
-\SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[4]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => clka,
-      CE => '1',
-      D => \SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[3]_srl3_n_0\,
-      Q => \SAFETY_CKT_GEN.RSTA_SHFT_REG_reg_n_0_[4]\,
-      R => '0'
-    );
-\SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => clkb,
-      CE => '1',
-      D => '1',
-      Q => \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg_n_0_[0]\,
-      R => '0'
-    );
-\SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]_srl3\: unisim.vcomponents.SRL16E
-    generic map(
-      INIT => X"0000"
-    )
-        port map (
-      A0 => '0',
-      A1 => '1',
-      A2 => '0',
-      A3 => '0',
-      CE => '1',
-      CLK => clkb,
-      D => \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg_n_0_[0]\,
-      Q => \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]_srl3_n_0\
-    );
-\SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[4]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => clkb,
-      CE => '1',
-      D => \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]_srl3_n_0\,
-      Q => \SAFETY_CKT_GEN.RSTB_SHFT_REG_reg_n_0_[4]\,
-      R => '0'
-    );
-\SAFETY_CKT_GEN.nSPRAM_RST_BUSY.RSTB_BUSY_NO_REG.RSTB_BUSY_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => POR_B,
-      I1 => rstb,
-      I2 => ENB_dly,
-      I3 => ENB_dly_D,
-      O => ram_rstram_b_busy
-    );
-\SAFETY_CKT_GEN.nSPRAM_RST_BUSY.RSTB_BUSY_NO_REG.RSTB_BUSY_reg\: unisim.vcomponents.FDRE
-     port map (
-      C => clkb,
-      CE => '1',
-      D => ram_rstram_b_busy,
-      Q => rstb_busy,
-      R => '0'
-    );
 \prim_noinit.ram\: entity work.\Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper__parameterized0\
      port map (
-      ENA_I => ENA_I,
-      ENA_dly_D => ENA_dly_D,
-      ENB_I => ENB_I,
-      ENB_dly_D => ENB_dly_D,
-      POR_A => POR_A,
-      POR_B => POR_B,
       addra(10 downto 0) => addra(10 downto 0),
       addrb(10 downto 0) => addrb(10 downto 0),
       clka => clka,
@@ -920,8 +640,6 @@ begin
       doutb(15 downto 0) => doutb(15 downto 0),
       ena => ena,
       enb => enb,
-      ram_rstram_a => \^ram_rstram_a\,
-      ram_rstram_b => \^ram_rstram_b\,
       rsta => rsta,
       rstb => rstb,
       wea(1 downto 0) => wea(1 downto 0),
@@ -936,33 +654,27 @@ entity Lab4_blk_mem_gen_0_0_blk_mem_gen_generic_cstr is
   port (
     douta : out STD_LOGIC_VECTOR ( 31 downto 0 );
     doutb : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    rsta_busy : out STD_LOGIC;
-    rstb_busy : out STD_LOGIC;
-    clkb : in STD_LOGIC;
     clka : in STD_LOGIC;
+    clkb : in STD_LOGIC;
+    ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
+    rsta : in STD_LOGIC;
+    rstb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 10 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     dinb : in STD_LOGIC_VECTOR ( 31 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    web : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    rsta : in STD_LOGIC;
-    ena : in STD_LOGIC;
-    rstb : in STD_LOGIC;
-    enb : in STD_LOGIC
+    web : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of Lab4_blk_mem_gen_0_0_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end Lab4_blk_mem_gen_0_0_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of Lab4_blk_mem_gen_0_0_blk_mem_gen_generic_cstr is
-  signal ENA_I : STD_LOGIC;
-  signal ENB_I : STD_LOGIC;
-  signal ram_rstram_a : STD_LOGIC;
-  signal ram_rstram_b : STD_LOGIC;
 begin
 \ramloop[0].ram.r\: entity work.Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_width
      port map (
-      ENA_I => ENA_I,
-      ENB_I => ENB_I,
       addra(10 downto 0) => addra(10 downto 0),
       addrb(10 downto 0) => addrb(10 downto 0),
       clka => clka,
@@ -971,15 +683,15 @@ begin
       dinb(15 downto 0) => dinb(15 downto 0),
       douta(15 downto 0) => douta(15 downto 0),
       doutb(15 downto 0) => doutb(15 downto 0),
-      ram_rstram_a => ram_rstram_a,
-      ram_rstram_b => ram_rstram_b,
+      ena => ena,
+      enb => enb,
+      rsta => rsta,
+      rstb => rstb,
       wea(1 downto 0) => wea(1 downto 0),
       web(1 downto 0) => web(1 downto 0)
     );
 \ramloop[1].ram.r\: entity work.\Lab4_blk_mem_gen_0_0_blk_mem_gen_prim_width__parameterized0\
      port map (
-      ENA_I => ENA_I,
-      ENB_I => ENB_I,
       addra(10 downto 0) => addra(10 downto 0),
       addrb(10 downto 0) => addrb(10 downto 0),
       clka => clka,
@@ -990,12 +702,8 @@ begin
       doutb(15 downto 0) => doutb(31 downto 16),
       ena => ena,
       enb => enb,
-      ram_rstram_a => ram_rstram_a,
-      ram_rstram_b => ram_rstram_b,
       rsta => rsta,
-      rsta_busy => rsta_busy,
       rstb => rstb,
-      rstb_busy => rstb_busy,
       wea(1 downto 0) => wea(3 downto 2),
       web(1 downto 0) => web(3 downto 2)
     );
@@ -1008,21 +716,21 @@ entity Lab4_blk_mem_gen_0_0_blk_mem_gen_top is
   port (
     douta : out STD_LOGIC_VECTOR ( 31 downto 0 );
     doutb : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    rsta_busy : out STD_LOGIC;
-    rstb_busy : out STD_LOGIC;
-    clkb : in STD_LOGIC;
     clka : in STD_LOGIC;
+    clkb : in STD_LOGIC;
+    ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
+    rsta : in STD_LOGIC;
+    rstb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 10 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     dinb : in STD_LOGIC_VECTOR ( 31 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    web : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    rsta : in STD_LOGIC;
-    ena : in STD_LOGIC;
-    rstb : in STD_LOGIC;
-    enb : in STD_LOGIC
+    web : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of Lab4_blk_mem_gen_0_0_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end Lab4_blk_mem_gen_0_0_blk_mem_gen_top;
 
 architecture STRUCTURE of Lab4_blk_mem_gen_0_0_blk_mem_gen_top is
@@ -1040,9 +748,7 @@ begin
       ena => ena,
       enb => enb,
       rsta => rsta,
-      rsta_busy => rsta_busy,
       rstb => rstb,
-      rstb_busy => rstb_busy,
       wea(3 downto 0) => wea(3 downto 0),
       web(3 downto 0) => web(3 downto 0)
     );
@@ -1055,21 +761,21 @@ entity Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2_synth is
   port (
     douta : out STD_LOGIC_VECTOR ( 31 downto 0 );
     doutb : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    rsta_busy : out STD_LOGIC;
-    rstb_busy : out STD_LOGIC;
-    clkb : in STD_LOGIC;
     clka : in STD_LOGIC;
+    clkb : in STD_LOGIC;
+    ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
+    rsta : in STD_LOGIC;
+    rstb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 10 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     dinb : in STD_LOGIC_VECTOR ( 31 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    web : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    rsta : in STD_LOGIC;
-    ena : in STD_LOGIC;
-    rstb : in STD_LOGIC;
-    enb : in STD_LOGIC
+    web : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2_synth : entity is "blk_mem_gen_v8_4_2_synth";
 end Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2_synth;
 
 architecture STRUCTURE of Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2_synth is
@@ -1087,9 +793,7 @@ begin
       ena => ena,
       enb => enb,
       rsta => rsta,
-      rsta_busy => rsta_busy,
       rstb => rstb,
-      rstb_busy => rstb_busy,
       wea(3 downto 0) => wea(3 downto 0),
       web(3 downto 0) => web(3 downto 0)
     );
@@ -1205,7 +909,7 @@ entity Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2 is
   attribute C_EN_RDADDRB_CHG : integer;
   attribute C_EN_RDADDRB_CHG of Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2 : entity is 0;
   attribute C_EN_SAFETY_CKT : integer;
-  attribute C_EN_SAFETY_CKT of Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2 : entity is 1;
+  attribute C_EN_SAFETY_CKT of Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2 : entity is 0;
   attribute C_EN_SHUTDOWN_PIN : integer;
   attribute C_EN_SHUTDOWN_PIN of Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2 : entity is 0;
   attribute C_EN_SLEEP_PIN : integer;
@@ -1314,6 +1018,8 @@ entity Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2 is
   attribute C_WRITE_WIDTH_B of Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2 : entity is 32;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2 : entity is "zynq";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2 : entity is "blk_mem_gen_v8_4_2";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2 : entity is "yes";
 end Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2;
@@ -1354,6 +1060,8 @@ begin
   rdaddrecc(2) <= \<const0>\;
   rdaddrecc(1) <= \<const0>\;
   rdaddrecc(0) <= \<const0>\;
+  rsta_busy <= \<const0>\;
+  rstb_busy <= \<const0>\;
   s_axi_arready <= \<const0>\;
   s_axi_awready <= \<const0>\;
   s_axi_bid(3) <= \<const0>\;
@@ -1456,9 +1164,7 @@ inst_blk_mem_gen: entity work.Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2_synth
       ena => ena,
       enb => enb,
       rsta => rsta,
-      rsta_busy => rsta_busy,
       rstb => rstb,
-      rstb_busy => rstb_busy,
       wea(3 downto 0) => wea(3 downto 0),
       web(3 downto 0) => web(3 downto 0)
     );
@@ -1482,14 +1188,12 @@ entity Lab4_blk_mem_gen_0_0 is
     web : in STD_LOGIC_VECTOR ( 3 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 31 downto 0 );
     dinb : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    doutb : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    rsta_busy : out STD_LOGIC;
-    rstb_busy : out STD_LOGIC
+    doutb : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of Lab4_blk_mem_gen_0_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of Lab4_blk_mem_gen_0_0 : entity is "Lab3_blk_mem_gen_0_0,blk_mem_gen_v8_4_2,{}";
+  attribute CHECK_LICENSE_TYPE of Lab4_blk_mem_gen_0_0 : entity is "Lab4_blk_mem_gen_0_0,blk_mem_gen_v8_4_2,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of Lab4_blk_mem_gen_0_0 : entity is "yes";
   attribute x_core_info : string;
@@ -1498,6 +1202,8 @@ end Lab4_blk_mem_gen_0_0;
 
 architecture STRUCTURE of Lab4_blk_mem_gen_0_0 is
   signal NLW_U0_dbiterr_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_rsta_busy_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_rstb_busy_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_s_axi_arready_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_s_axi_awready_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_s_axi_bvalid_UNCONNECTED : STD_LOGIC;
@@ -1555,7 +1261,7 @@ architecture STRUCTURE of Lab4_blk_mem_gen_0_0 is
   attribute C_EN_RDADDRB_CHG : integer;
   attribute C_EN_RDADDRB_CHG of U0 : label is 0;
   attribute C_EN_SAFETY_CKT : integer;
-  attribute C_EN_SAFETY_CKT of U0 : label is 1;
+  attribute C_EN_SAFETY_CKT of U0 : label is 0;
   attribute C_EN_SHUTDOWN_PIN : integer;
   attribute C_EN_SHUTDOWN_PIN of U0 : label is 0;
   attribute C_EN_SLEEP_PIN : integer;
@@ -1705,9 +1411,9 @@ U0: entity work.Lab4_blk_mem_gen_0_0_blk_mem_gen_v8_4_2
       regcea => '0',
       regceb => '0',
       rsta => rsta,
-      rsta_busy => rsta_busy,
+      rsta_busy => NLW_U0_rsta_busy_UNCONNECTED,
       rstb => rstb,
-      rstb_busy => rstb_busy,
+      rstb_busy => NLW_U0_rstb_busy_UNCONNECTED,
       s_aclk => '0',
       s_aresetn => '0',
       s_axi_araddr(31 downto 0) => B"00000000000000000000000000000000",

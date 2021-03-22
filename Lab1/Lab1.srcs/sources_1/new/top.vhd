@@ -12,11 +12,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity top is
     Port ( clk_8ns : in STD_LOGIC;
-           led : out STD_LOGIC_VECTOR (3 downto 0));
-           --blue : out STD_LOGIC_VECTOR (7 downto 0);
-           --red : out STD_LOGIC_VECTOR (7 downto 0);
-           --green : out STD_LOGIC_VECTOR (7 downto 0);
-           --row : out STD_LOGIC_VECTOR (7 downto 0));
+           blue : out STD_LOGIC_VECTOR (7 downto 0);
+           red : out STD_LOGIC_VECTOR (7 downto 0);
+           green : out STD_LOGIC_VECTOR (7 downto 0);
+           row_out : out STD_LOGIC_VECTOR (7 downto 0));
 end top;
 
 architecture Behavioral of top is
@@ -57,9 +56,9 @@ signal ocr_red: STD_LOGIC_VECTOR(63 downto 0) := "00000000" & "00000000" & "0000
 signal ocr_green: STD_LOGIC_VECTOR(63 downto 0) := "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "01000000";
 signal ocr_blue: STD_LOGIC_VECTOR(63 downto 0) := "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "00000000" & "00000001";
 
-signal red_pwms: STD_LOGIC_VECTOR(7 downto 0);
-signal green_pwms: STD_LOGIC_VECTOR(7 downto 0);
-signal blue_pwms: STD_LOGIC_VECTOR(7 downto 0);
+--signal red_pwms: STD_LOGIC_VECTOR(7 downto 0);
+--signal green_pwms: STD_LOGIC_VECTOR(7 downto 0);
+--signal blue_pwms: STD_LOGIC_VECTOR(7 downto 0);
 
 begin
 
@@ -82,12 +81,10 @@ begin
                         red => ocr_red,
                         green => ocr_green,
                         blue => ocr_blue,
-                        red_pwm => red_pwms,
-                        green_pwm => green_pwms,
-                        blue_pwm => blue_pwms);
+                        red_pwm => red,
+                        green_pwm => green,
+                        blue_pwm => blue);
                         
-    led(0) <= red_pwms(0);
-    led(1) <= green_pwms(0);
-    led(2) <= blue_pwms(0);
+row_out <= "11111110";
 
 end Behavioral;

@@ -58,6 +58,7 @@ signal bram_addr: STD_LOGIC_VECTOR(31 downto 0);
 
 signal start, done: STD_LOGIC := '0';
 
+signal counter: unsigned(17 downto 0) := (others => '0');
 signal clk_scaled: STD_LOGIC;
 signal clk_BRAM: STD_LOGIC;
 
@@ -121,26 +122,14 @@ begin
 
     -- Slow down clock
     process(clk_8ns)
-    variable prescaler_FSM: integer range 0 to 18001;
-    variable prescaler_BRAM: integer range 0 to 11;
     begin
         if rising_edge(clk_8ns) then
-            prescaler_FSM := prescaler_FSM + 1;
-            prescaler_BRAM := prescaler_BRAM + 1;
-        end if;
-        if prescaler_FSM >= 18000 then
-            prescaler_FSM := 0;
-            clk_scaled <= '1';
-        else
-            clk_scaled <= '0';
-        end if;
-        if prescaler_BRAM >= 10 then
-            prescaler_BRAM := 0;
-            clk_BRAM <= '1';
-        else
-            clk_BRAM <= '0';
+            counter <= counter + 1;
         end if;
     end process;
+    
+    clk_scaled <= counter(16);
+    clk_BRAM <= counter(5);
 
 
     -- Finite State Machine for controlling LED outputs
@@ -186,7 +175,6 @@ begin
 
 
     -- Finite State Machine for memory interfacing
-    -- The clock used within the state machine may need to be slowed down!
     process(clk_8ns)
     begin
         
@@ -212,7 +200,7 @@ begin
 
                     if clk_BRAM = '1' then
                         mem_addr <= mem_addr + 1;
-                        if mem_addr < 7 then
+                        if mem_addr < 8 then
                             memory_state <= setup;
                         else
                             memory_state <= ready;

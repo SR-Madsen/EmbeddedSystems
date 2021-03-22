@@ -17,23 +17,23 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13659 
+INFO: Helper process launched with PID 80937 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1430.266 ; gain = 82.898 ; free physical = 7048 ; free virtual = 12478
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1430.992 ; gain = 81.898 ; free physical = 2827 ; free virtual = 10323
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:21]
-INFO: [Synth 8-3491] module 'timer' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/timer.vhd:15' bound to instance 'timer1' of component 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:94]
+INFO: [Synth 8-3491] module 'timer' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/timer.vhd:15' bound to instance 'timer1' of component 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:95]
 INFO: [Synth 8-638] synthesizing module 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/timer.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'timer' (1#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/timer.vhd:20]
-INFO: [Synth 8-3491] module 'Lab3_wrapper' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:14' bound to instance 'mem1' of component 'Lab3_wrapper' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:97]
+INFO: [Synth 8-3491] module 'Lab3_wrapper' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:14' bound to instance 'mem1' of component 'Lab3_wrapper' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:98]
 INFO: [Synth 8-638] synthesizing module 'Lab3_wrapper' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:24]
 INFO: [Synth 8-3491] module 'Lab3' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/synth/Lab3.vhd:14' bound to instance 'Lab3_i' of component 'Lab3' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:35]
 INFO: [Synth 8-638] synthesizing module 'Lab3' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/synth/Lab3.vhd:28]
-INFO: [Synth 8-3491] module 'Lab3_blk_mem_gen_0_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/.Xil/Vivado-13624-sebastian-ZBook/realtime/Lab3_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'Lab3_blk_mem_gen_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/synth/Lab3.vhd:64]
-INFO: [Synth 8-638] synthesizing module 'Lab3_blk_mem_gen_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/.Xil/Vivado-13624-sebastian-ZBook/realtime/Lab3_blk_mem_gen_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'Lab3_blk_mem_gen_0_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/.Xil/Vivado-80899-sebastian-ZBook/realtime/Lab3_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'Lab3_blk_mem_gen_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/synth/Lab3.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'Lab3_blk_mem_gen_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/.Xil/Vivado-80899-sebastian-ZBook/realtime/Lab3_blk_mem_gen_0_0_stub.vhdl:22]
 INFO: [Synth 8-256] done synthesizing module 'Lab3' (2#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/synth/Lab3.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'Lab3_wrapper' (3#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:24]
-INFO: [Synth 8-3491] module 'rows' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:13' bound to instance 'row1' of component 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:103]
+INFO: [Synth 8-3491] module 'rows' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:13' bound to instance 'row1' of component 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:104]
 INFO: [Synth 8-638] synthesizing module 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:23]
 INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:38]
 INFO: [Synth 8-638] synthesizing module 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:25]
@@ -51,10 +51,10 @@ INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop
 INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:38]
 INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/color_channel.vhd:15' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:38]
 INFO: [Synth 8-256] done synthesizing module 'rows' (6#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/row.vhd:23]
-INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:150]
+INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:139]
 INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:21]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1476.016 ; gain = 128.648 ; free physical = 7059 ; free virtual = 12490
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1475.742 ; gain = 126.648 ; free physical = 2840 ; free virtual = 10337
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -67,10 +67,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1476.016 ; gain = 128.648 ; free physical = 7056 ; free virtual = 12487
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1475.742 ; gain = 126.648 ; free physical = 2840 ; free virtual = 10337
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1476.016 ; gain = 128.648 ; free physical = 7056 ; free virtual = 12487
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1475.742 ; gain = 126.648 ; free physical = 2840 ; free virtual = 10337
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -85,25 +85,25 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1834.672 ; gain = 0.000 ; free physical = 6771 ; free virtual = 12234
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1833.406 ; gain = 0.000 ; free physical = 2594 ; free virtual = 10091
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1834.672 ; gain = 0.000 ; free physical = 6772 ; free virtual = 12235
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1833.406 ; gain = 0.000 ; free physical = 2595 ; free virtual = 10092
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1834.672 ; gain = 0.000 ; free physical = 6772 ; free virtual = 12235
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1834.672 ; gain = 0.000 ; free physical = 6772 ; free virtual = 12235
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1833.406 ; gain = 0.000 ; free physical = 2595 ; free virtual = 10092
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1833.406 ; gain = 0.000 ; free physical = 2595 ; free virtual = 10092
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mem1/Lab3_i/blk_mem_gen_0' at clock pin 'clkb' is different from the actual clock period '8.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6848 ; free virtual = 12312
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2671 ; free virtual = 10167
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6848 ; free virtual = 12312
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2671 ; free virtual = 10167
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -111,7 +111,7 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for mem1/Lab3_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for mem1/Lab3_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6850 ; free virtual = 12314
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2672 ; free virtual = 10169
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "mem_addr0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top'
@@ -135,7 +135,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'memory_state_reg' using en
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6845 ; free virtual = 12309
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2665 ; free virtual = 10162
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -148,11 +148,9 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      4 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	               64 Bit    Registers := 9     
-	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 2     
 	                1 Bit    Registers := 2     
 +---Muxes : 
@@ -173,11 +171,9 @@ Hierarchical RTL Component report
 Module top 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      4 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	               64 Bit    Registers := 9     
-	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 2     
 	                1 Bit    Registers := 2     
 +---Muxes : 
@@ -204,11 +200,11 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'row_addr_shift_reg[2:0]' into 'row_addr_shift_reg[2:0]' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:155]
+INFO: [Synth 8-4471] merging register 'row_addr_shift_reg[2:0]' into 'row_addr_shift_reg[2:0]' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.srcs/sources_1/imports/new/top.vhd:144]
 INFO: [Synth 8-3886] merging instance 'bram_addr_reg[0]' (FDE) to 'bram_addr_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bram_addr_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6826 ; free virtual = 12294
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2633 ; free virtual = 10147
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -220,13 +216,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6690 ; free virtual = 12165
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2501 ; free virtual = 10002
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6672 ; free virtual = 12147
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2490 ; free virtual = 9991
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -238,7 +234,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6672 ; free virtual = 12147
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2490 ; free virtual = 9991
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -262,7 +258,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6672 ; free virtual = 12147
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2490 ; free virtual = 9991
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -275,7 +271,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6672 ; free virtual = 12147
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2490 ; free virtual = 9991
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -287,25 +283,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6671 ; free virtual = 12147
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2490 ; free virtual = 9991
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6671 ; free virtual = 12147
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2490 ; free virtual = 9991
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6671 ; free virtual = 12147
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2491 ; free virtual = 9992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6671 ; free virtual = 12147
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2491 ; free virtual = 9992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -324,24 +320,23 @@ Report Cell Usage:
 +------+----------------------------+------+
 |1     |Lab3_blk_mem_gen_0_0_bbox_0 |     1|
 |2     |BUFG                        |     1|
-|3     |CARRY4                      |    47|
-|4     |LUT1                        |     4|
+|3     |CARRY4                      |    48|
+|4     |LUT1                        |     3|
 |5     |LUT2                        |     5|
-|6     |LUT3                        |    13|
-|7     |LUT4                        |   200|
-|8     |LUT5                        |     5|
-|9     |LUT6                        |     6|
-|10    |FDCE                        |    19|
-|11    |FDRE                        |   665|
-|12    |IBUF                        |     1|
-|13    |OBUF                        |    32|
+|6     |LUT3                        |    10|
+|7     |LUT4                        |   199|
+|8     |LUT5                        |     4|
+|9     |LUT6                        |     4|
+|10    |FDRE                        |   682|
+|11    |IBUF                        |     1|
+|12    |OBUF                        |    32|
 +------+----------------------------+------+
 
 Report Instance Areas: 
 +------+-----------------------------+-----------------+------+
 |      |Instance                     |Module           |Cells |
 +------+-----------------------------+-----------------+------+
-|1     |top                          |                 |  1062|
+|1     |top                          |                 |  1053|
 |2     |  row1                       |rows             |    24|
 |3     |    \multi_colors[0].COLORS  |color_channel    |     3|
 |4     |      pwm_blue               |pwm_generator_27 |     1|
@@ -380,27 +375,27 @@ Report Instance Areas:
 |37    |    Lab3_i                   |Lab3             |    64|
 +------+-----------------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6671 ; free virtual = 12147
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2491 ; free virtual = 9992
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1834.672 ; gain = 128.648 ; free physical = 6728 ; free virtual = 12204
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1834.672 ; gain = 487.305 ; free physical = 6728 ; free virtual = 12204
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1834.406 ; gain = 126.648 ; free physical = 2548 ; free virtual = 10049
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1834.406 ; gain = 485.312 ; free physical = 2548 ; free virtual = 10049
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1842.680 ; gain = 0.000 ; free physical = 6670 ; free virtual = 12146
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1842.414 ; gain = 0.000 ; free physical = 2489 ; free virtual = 9990
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 55 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1842.680 ; gain = 495.414 ; free physical = 6728 ; free virtual = 12204
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1842.680 ; gain = 0.000 ; free physical = 6728 ; free virtual = 12204
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1842.414 ; gain = 499.148 ; free physical = 2545 ; free virtual = 10046
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1842.414 ; gain = 0.000 ; free physical = 2545 ; free virtual = 10046
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab3/Lab3.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 17 09:20:06 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 22 10:50:44 2021...

@@ -50,6 +50,7 @@ signal count_out: STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
 signal row_addr: unsigned(2 downto 0) := "000";
 signal row_addr_shift: unsigned(2 downto 0) := "000";
 
+signal counter: unsigned(17 downto 0) := (others => '0');
 signal clk_scaled: STD_LOGIC;
 
 type state_type is (shift, ready);
@@ -96,18 +97,13 @@ begin
                         
     -- Slow down clock
     process(clk_8ns)
-    variable prescaler: integer range 0 to 18001;
     begin
         if rising_edge(clk_8ns) then
-            prescaler := prescaler + 1;
-        end if;
-        if prescaler >= 18000 then
-            prescaler := 0;
-            clk_scaled <= '1';
-        else
-            clk_scaled <= '0';
+            counter <= counter + 1;
         end if;
     end process;
+    
+    clk_scaled <= counter(16);
     
     
     -- Finite State Machine
@@ -131,7 +127,7 @@ begin
                     end if;
                     
                 when others =>
-                    row_addr <= "000";
+                    --row_addr <= "000";
                     state <= shift;
             end case;
         end if;
