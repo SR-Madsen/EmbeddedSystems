@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
---Date        : Mon Mar 22 11:35:53 2021
+--Date        : Wed Mar 24 10:05:31 2021
 --Host        : sebastian-ZBook running 64-bit Linux Mint 20
 --Command     : generate_target Lab4.bd
 --Design      : Lab4
@@ -64,7 +64,9 @@ architecture STRUCTURE of Lab4 is
     web : in STD_LOGIC_VECTOR ( 3 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 31 downto 0 );
     dinb : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    doutb : out STD_LOGIC_VECTOR ( 31 downto 0 )
+    doutb : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    rsta_busy : out STD_LOGIC;
+    rstb_busy : out STD_LOGIC
   );
   end component Lab4_blk_mem_gen_0_0;
   component Lab4_processing_system7_0_0 is
@@ -380,6 +382,8 @@ architecture STRUCTURE of Lab4 is
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_axi_smc_M00_AXI_arqos_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_axi_smc_M00_AXI_awqos_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_blk_mem_gen_0_rsta_busy_UNCONNECTED : STD_LOGIC;
+  signal NLW_blk_mem_gen_0_rstb_busy_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE0_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE1_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE2_OUT_UNCONNECTED : STD_LOGIC;
@@ -568,7 +572,9 @@ blk_mem_gen_0: component Lab4_blk_mem_gen_0_0
       ena => axi_bram_ctrl_0_BRAM_PORTA_EN,
       enb => BRAM_PORTB_0_1_EN,
       rsta => axi_bram_ctrl_0_BRAM_PORTA_RST,
+      rsta_busy => NLW_blk_mem_gen_0_rsta_busy_UNCONNECTED,
       rstb => BRAM_PORTB_0_1_RST,
+      rstb_busy => NLW_blk_mem_gen_0_rstb_busy_UNCONNECTED,
       wea(3 downto 0) => axi_bram_ctrl_0_BRAM_PORTA_WE(3 downto 0),
       web(3 downto 0) => BRAM_PORTB_0_1_WE(3 downto 0)
     );

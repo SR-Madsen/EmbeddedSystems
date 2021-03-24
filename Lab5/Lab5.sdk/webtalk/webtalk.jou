@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# 
+# Start of session at: Wed Mar 24 12:50:23 2021
+# Process ID: 176361
+# Current directory: /home/sebastian/Desktop/Git/EmbeddedSystems/Lab5/Lab5.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/sebastian/Desktop/Git/EmbeddedSystems/Lab5/Lab5.sdk/webtalk/webtalk.log
+# Journal file: /home/sebastian/Desktop/Git/EmbeddedSystems/Lab5/Lab5.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Mar 17 09:25:56 2021
-# Process ID: 20869
+# Start of session at: Wed Mar 24 10:05:59 2021
+# Process ID: 90669
 # Current directory: /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.runs/Lab4_processing_system7_0_0_synth_1
 # Command line: vivado -log Lab4_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab4_processing_system7_0_0.tcl
 # Log file: /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.runs/Lab4_processing_system7_0_0_synth_1/Lab4_processing_system7_0_0.vds

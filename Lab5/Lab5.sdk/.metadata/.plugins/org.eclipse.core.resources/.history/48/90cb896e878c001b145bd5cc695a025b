@@ -1,0 +1,31 @@
+/*
+ * led_matrix.c
+ *
+ *  Created on: Mar 24, 2021
+ *      Author: Sebastian
+ */
+
+// Functions
+
+void initLedMatrix(u8 deviceID) {
+	BramConfigPtr = XBram_LookupConfig(deviceID);
+	if (BramConfigPtr == (XBram_Config *) NULL) {
+		xil_printf("Config lookup failed");
+		while(1);
+	}
+
+	// Initialize BRAM from configuration
+	Status = XBram_CfgInitialize(&Bram, ConfigPtr, ConfigPtr->CtrlBaseAddress);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Initialization failed");
+		while(1);
+	}
+
+	// Do selftest of BRAM module to check that it's functional
+	Status = XBram_SelfTest(&Bram, 0);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Selftest failed");
+		while(1);
+	}
+}
+

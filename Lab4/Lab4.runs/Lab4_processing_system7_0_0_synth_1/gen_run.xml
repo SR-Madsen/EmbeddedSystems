@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="Lab4_processing_system7_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1615969554">
-  <File Type="RDS-UTIL" Name="Lab4_processing_system7_0_0_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Lab4_processing_system7_0_0_utilization_synth.pb"/>
-  <File Type="RDS-RDS" Name="Lab4_processing_system7_0_0.vds"/>
+<GenRun Id="Lab4_processing_system7_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1616576755">
+  <File Type="VDS-TIMING-PB" Name="Lab4_processing_system7_0_0_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Lab4_processing_system7_0_0_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="Lab4_processing_system7_0_0.dcp"/>
-  <File Type="PA-TCL" Name="Lab4_processing_system7_0_0.tcl"/>
+  <File Type="RDS-UTIL-PB" Name="Lab4_processing_system7_0_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="Lab4_processing_system7_0_0_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="Lab4_processing_system7_0_0_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="Lab4_processing_system7_0_0.vds"/>
   <File Type="REPORTS-TCL" Name="Lab4_processing_system7_0_0_reports.tcl"/>
+  <File Type="PA-TCL" Name="Lab4_processing_system7_0_0.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Lab4_processing_system7_0_0">
     <File Path="$PSRCDIR/sources_1/bd/Lab4/ip/Lab4_processing_system7_0_0/Lab4_processing_system7_0_0.xci">
       <FileInfo>

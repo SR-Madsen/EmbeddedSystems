@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xbram.h"
+#include "led_matrix.h"
+
+/************************** Constant Definitions *****************************/
+
+/*
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are defined here such that a user can easily
+ * change all the needed parameters in one place.
+ */
+#define BRAM_DEVICE_ID		XPAR_BRAM_0_DEVICE_ID
+
+
+/************************** Function Prototypes ******************************/
+
+
+/************************** Variable Definitions *****************************/
+
+
+// Main function for LED matrix
+int main(void)
+{
+	int status;
+
+	status = initLedMatrix(BRAM_DEVICE_ID);
+	if (status != XST_SUCCESS) {
+		xil_printf("LED matrix initialization failed.");
+		while(1);
+	}
+
+	writePixelValueDirect(1, 1, 255, 0, 0);
+	writePixelValueDirect(1, 8, 255, 0, 0);
+	writePixelValueDirect(8, 8, 255, 0, 0);
+	writePixelValueDirect(8, 1, 255, 0, 0);
+
+	setPixelValue(4, 5, 0, 255, 0);
+	setPixelValue(5, 4, 0, 255, 0);
+	setPixelValue(5, 5, 0, 255, 0);
+	setPixelValue(4, 4, 0, 255, 0);
+	writePixelValueToDevice(4, 4);
+	writePixelValueToDevice(4, 5);
+	writePixelValueToDevice(5, 4);
+	writePixelValueToDevice(5, 5);
+
+
+	xil_printf("Successfully ran code.\r\n");
+	while(1);
+	return XST_SUCCESS;
+}

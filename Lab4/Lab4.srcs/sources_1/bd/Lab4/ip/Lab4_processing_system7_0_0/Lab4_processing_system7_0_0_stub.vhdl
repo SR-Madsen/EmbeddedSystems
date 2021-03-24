@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Wed Mar 17 09:26:31 2021
+-- Date        : Wed Mar 24 10:06:35 2021
 -- Host        : sebastian-ZBook running 64-bit Linux Mint 20
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.srcs/sources_1/bd/Lab4/ip/Lab4_processing_system7_0_0/Lab4_processing_system7_0_0_stub.vhdl

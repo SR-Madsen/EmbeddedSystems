@@ -1,0 +1,78 @@
+/*
+ * led_matrix.c
+ *
+ *  Created on: Mar 24, 2021
+ *      Author: Sebastian
+ */
+
+#include "led_matrix.h"
+
+/*
+ 	 Functions
+*/
+
+// Initialization of LED Matrix by initialization of BRAM.
+u8 initLedMatrix(u8 deviceID) {
+	u8 status;
+
+	BramConfigPtr = XBram_LookupConfig(deviceID);
+	if (BramConfigPtr == (XBram_Config *) NULL) {
+		xil_printf("Config lookup failed");
+		return XST_FAILURE;
+	}
+
+	// Initialize BRAM from configuration
+	status = XBram_CfgInitialize(&Bram, BramConfigPtr, BramConfigPtr->CtrlBaseAddress);
+	if (status != XST_SUCCESS) {
+		xil_printf("Initialization failed");
+		return XST_FAILURE;
+	}
+
+	// Do selftest of BRAM module to check that it's functional
+	status = XBram_SelfTest(&Bram, 0);
+	if (status != XST_SUCCESS) {
+		xil_printf("Selftest failed");
+		return XST_FAILURE;
+	}
+
+	return XST_SUCCESS;
+}
+
+// Write 32-bit value to LED Matrix.
+void ledMatrixOut32(u32 data, u32 addr) {
+	XBram_Out32(BramConfigPtr->MemBaseAddress+addr, data);
+}
+
+// Set value of pixel by using integers
+void setPixelValue(u8 x, u8 y, u8 red, u8 green, u8 blue) {
+	pixels[x-1][y-1][RED] = red;
+	pixels[x-1][y-1][GREEN] = green;
+	pixels[x-1][y-1][BLUE] = blue;
+}
+
+// Set value of pixel by using structs
+void setPixel(position_t pos, color_t col) {
+	pixels[pos.x-1][pos.y-1][RED] = col.red;
+	pixels[pos.x-1][pos.y-1][GREEN] = col.red;
+	pixels[pos.x-1][pos.y-1][BLUE] = col.red;
+}
+
+// Get value of a pixel as integers
+void getPixelValue(u8 x, u8 y, u8 *red, u8 *green, u8 *blue) {
+	*red = pixels[x-1][y-1][RED];
+	*green = pixels[x-1][y-1][GREEN];
+	*blue = pixels[x-1][y-1][BLUE];
+}
+
+// Get value of a pixel as struct
+void getPixel(position_t pos, color_t *col) {
+	col->red = pixels[pos.x-1][pos.y-1][RED];
+	col->green = pixels[pos.x-1][pos.y-1][GREEN];
+	col->blue = pixels[pos.x-1][pos.y-1][BLUE];
+}
+
+// Write a pixel's value out to the LED Matrix
+void writePixelToDevice(position_t pos) {
+	u32 data = (pixels[pos.x-1][pos.y-1][RED]<<RED_SHIFT) | (pixels[pos.x-1][pos.y-1][GREEN]<<GREEN_SHIFT) | (pixels[pos.x-1][pos.y-1][BLUE]);
+	ledMatrixOut32(data, 4*(pos.x+(pos.y*8)));
+}

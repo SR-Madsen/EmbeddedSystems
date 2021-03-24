@@ -112,7 +112,7 @@
         "xci_name": "Lab4_blk_mem_gen_0_0",
         "parameters": {
           "EN_SAFETY_CKT": {
-            "value": "false"
+            "value": "true"
           },
           "Enable_32bit_Address": {
             "value": "true"

@@ -14,5 +14,4 @@ ps7_post_config
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785819A"} -index 0
 dow /home/sebastian/Desktop/Git/EmbeddedSystems/Lab4/Lab4.sdk/Lab4/Debug/Lab4.elf
 configparams force-mem-access 0
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279785819A"} -index 0
-con
+bpadd -addr &main

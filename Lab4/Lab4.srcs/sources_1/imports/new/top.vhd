@@ -32,28 +32,7 @@ component Lab4_wrapper is
             BRAM_PORTB_0_dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
             BRAM_PORTB_0_en : in STD_LOGIC;
             BRAM_PORTB_0_rst : in STD_LOGIC;
-            BRAM_PORTB_0_we : in STD_LOGIC_VECTOR ( 3 downto 0 );
-            DDR_addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
-            DDR_ba : inout STD_LOGIC_VECTOR ( 2 downto 0 );
-            DDR_cas_n : inout STD_LOGIC;
-            DDR_ck_n : inout STD_LOGIC;
-            DDR_ck_p : inout STD_LOGIC;
-            DDR_cke : inout STD_LOGIC;
-            DDR_cs_n : inout STD_LOGIC;
-            DDR_dm : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-            DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
-            DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-            DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-            DDR_odt : inout STD_LOGIC;
-            DDR_ras_n : inout STD_LOGIC;
-            DDR_reset_n : inout STD_LOGIC;
-            DDR_we_n : inout STD_LOGIC;
-            FIXED_IO_ddr_vrn : inout STD_LOGIC;
-            FIXED_IO_ddr_vrp : inout STD_LOGIC;
-            FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-            FIXED_IO_ps_clk : inout STD_LOGIC;
-            FIXED_IO_ps_porb : inout STD_LOGIC;
-            FIXED_IO_ps_srstb : inout STD_LOGIC);
+            BRAM_PORTB_0_we : in STD_LOGIC_VECTOR ( 3 downto 0 ));
 end component;
 
 component rows is
@@ -76,9 +55,8 @@ signal row_addr: unsigned(2 downto 0) := "000";
 signal row_addr_shift: unsigned(2 downto 0) := "000";
 
 signal mem_data_in: STD_LOGIC_VECTOR(31 downto 0) := x"00000000";
-signal mem_write_enable: STD_LOGIC_VECTOR(3 downto 0) := "0000";
 signal mem_addr: unsigned(31 downto 0) := x"00000000";
-signal bram_addr: STD_LOGIC_VECTOR(31 downto 0);
+signal bram_addr: STD_LOGIC_VECTOR(31 downto 0) := x"00000000";
 
 signal start, done: STD_LOGIC := '0';
 
@@ -114,29 +92,6 @@ signal values_red: STD_LOGIC_VECTOR(63 downto 0);
 signal values_green: STD_LOGIC_VECTOR(63 downto 0);
 signal values_blue: STD_LOGIC_VECTOR(63 downto 0);
 
--- Signals for constants used for unused DDR and I/O
-signal DDRaddr : STD_LOGIC_VECTOR( 14 downto 0 ) := "000000000000000";
-signal DDRba : STD_LOGIC_VECTOR ( 2 downto 0 ) := "000";
-signal DDRcas_n : STD_LOGIC := '0';
-signal DDRck_n : STD_LOGIC := '0';
-signal DDRck_p : STD_LOGIC := '0';
-signal DDRcke : STD_LOGIC := '0';
-signal DDRcs_n : STD_LOGIC := '1';
-signal DDRdm : STD_LOGIC_VECTOR ( 3 downto 0 ) := "0000";
-signal DDRdq : STD_LOGIC_VECTOR ( 31 downto 0 ) := x"00000000";
-signal DDRdqs_n : STD_LOGIC_VECTOR ( 3 downto 0 ) := "0000";
-signal DDRdqs_p : STD_LOGIC_VECTOR ( 3 downto 0 ) := "0000";
-signal DDRodt : STD_LOGIC := '0';
-signal DDRras_n : STD_LOGIC := '0';
-signal DDRreset_n : STD_LOGIC := '1';
-signal DDRwe_n : STD_LOGIC := '0';
-signal FIXEDIO_ddr_vrn : STD_LOGIC := '0';
-signal FIXEDIO_ddr_vrp : STD_LOGIC := '0';
-signal FIXEDIO_mio : STD_LOGIC_VECTOR ( 53 downto 0 ) := (others => '0');
-signal FIXEDIO_ps_clk : STD_LOGIC := '0';
-signal FIXEDIO_ps_porb : STD_LOGIC := '0';
-signal FIXEDIO_ps_srstb : STD_LOGIC := '0';
-
 begin
 
     timer1: timer port map (clk => clk_8ns,
@@ -144,33 +99,12 @@ begin
                             
     mem1: Lab4_wrapper port map (BRAM_PORTB_0_addr => bram_addr,
                                  BRAM_PORTB_0_clk => clk_8ns,
-                                 BRAM_PORTB_0_din => mem_data_in,
+                                 BRAM_PORTB_0_din => (others => '0'),
                                  BRAM_PORTB_0_dout => mem_data_out,
                                  BRAM_PORTB_0_en => '1',
-                                 BRAM_PORTB_0_rst => '1',
-                                 BRAM_PORTB_0_we => mem_write_enable,
-                                 DDR_addr => DDRaddr,
-                                 DDR_ba => DDRba,
-                                 DDR_cas_n => DDRcas_n,
-                                 DDR_ck_n => DDRck_n,
-                                 DDR_ck_p => DDRck_p,
-                                 DDR_cke => DDRcke,
-                                 DDR_cs_n => DDRcs_n,
-                                 DDR_dm => DDRdm,
-                                 DDR_dq => DDRdq,
-                                 DDR_dqs_n => DDRdqs_n,
-                                 DDR_dqs_p => DDRdqs_p,
-                                 DDR_odt => DDRodt,
-                                 DDR_ras_n => DDRras_n,
-                                 DDR_reset_n => DDRreset_n,
-                                 DDR_we_n => DDRwe_n,
-                                 FIXED_IO_ddr_vrn => FIXEDIO_ddr_vrn,
-                                 FIXED_IO_ddr_vrp => FIXEDIO_ddr_vrp,
-                                 FIXED_IO_mio => FIXEDIO_mio,
-                                 FIXED_IO_ps_clk => FIXEDIO_ps_clk,
-                                 FIXED_IO_ps_porb => FIXEDIO_ps_porb,
-                                 FIXED_IO_ps_srstb => FIXEDIO_ps_srstb);
-
+                                 BRAM_PORTB_0_rst => '0',
+                                 BRAM_PORTB_0_we => (others => '0'));
+                                 
     row1: rows port map (clk => clk_8ns,
                          counter => count_out,
                          red => values_red,
@@ -247,7 +181,6 @@ begin
 
 
     -- Finite State Machine for memory interfacing
-    -- The clock used within the state machine may need to be slowed down!
     process(clk_8ns)
     begin
         
