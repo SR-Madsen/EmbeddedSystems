@@ -19,7 +19,7 @@ end encoder_driver;
 
 architecture Behavioral of encoder_driver is
 
-signal clkdiv : integer := 0;
+signal clk_div : integer := 0;
 signal clk_scaled : std_logic := '1';
 
 type state_type is (GET_ABS, ZERO, ONE, TWO, THREE);
@@ -34,39 +34,41 @@ signal position : unsigned(DATA_LENGTH-1 downto 0) := (others => '0');
 begin
 
 
--- 100 MHz / 112 = 899 kHz
+	-- Scale down clock for serial communication
+    -- 100 MHz / 112 = 899 kHz
     process(S_AXI_ACLK)
     begin
         if rising_edge(S_AXI_ACLK) then
-            if (clkdiv >= CLOCK_SCALER) then
-                clkdiv <= 0;
+            if (clk_div >= CLOCK_SCALER) then
+                clk_div <= 0;
                 clk_scaled <= not clk_scaled;
             else
-                clkdiv <= clkdiv + 1;
+                clk_div <= clk_div + 1;
             end if;
         end if;
     end process;
     
-    SERIAL_CLOCK <= clk_scaled;
-    
     -- State Machine for both getting absolute position at startup and tracking position
     process(S_AXI_ACLK, clk_scaled)
+    variable inc_AB : std_logic_vector(1 downto 0);
+    
     begin
         case state is
             when GET_ABS =>
+                SERIAL_CLOCK <= clk_scaled;
                 if clk_scaled'event and clk_scaled = '0' then
                     if (index = -1) then
+                        SERIAL_CLOCK <= '1';
                         position <= data_temp(DATA_LENGTH-1 downto 0);
                         
-                        if INC_A = '0' and INC_B = '0' then
-                            state <= ZERO;
-                        elsif INC_A = '0' and INC_B = '1' then
-                            state <= ONE;
-                        elsif INC_A = '1' and INC_B = '0' then
-                            state <= TWO;
-                        elsif INC_A = '1' and INC_B = '1' then
-                            state <= THREE;
-                        end if;
+                        inc_AB := INC_A & INC_B;
+                        case inc_AB is
+                            when "00" => state <= ZERO;
+                            when "01" => state <= ONE;
+                            when "10" => state <= TWO;
+                            when "11" => state <= THREE;
+                            when others => state <= ZERO;
+                        end case;
                     else
                         data_temp(index) <= SERIAL_DATA;
                         index <= index - 1;
@@ -117,6 +119,5 @@ begin
     end process;
     
     slv_reg0 <= x"000000" & std_logic_vector(position);
-
 
 end Behavioral;

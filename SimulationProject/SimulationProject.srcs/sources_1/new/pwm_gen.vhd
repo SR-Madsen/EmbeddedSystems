@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity pwm_gen is
-  Generic ( PRESCALE_SELECT : integer := 1;
+  Generic ( CLOCK_SCALER : integer := 1;
             COUNTER_MAX : integer := 1172);
   Port ( S_AXI_ACLK: in std_logic;
          PWM_a : out std_logic;
@@ -15,7 +15,7 @@ end pwm_gen;
 architecture Behavioral of pwm_gen is
 
     -- Signals for PWM Generator
-    signal scaler       : unsigned(7 downto 0) := x"00";
+    signal clk_div      : unsigned(7 downto 0) := "00000000";
     signal clk_scaled   : std_logic := '0';
     
     type state_counter is (COUNT_UP, COUNT_DOWN);
@@ -23,23 +23,27 @@ architecture Behavioral of pwm_gen is
     
     signal counter : unsigned(31 downto 0) := x"00000000";
     
-   signal slv_reg0 : std_logic_vector(31 downto 0) := "00000000000000000000011000000000";
-   signal slv_reg1 : std_logic_vector(31 downto 0) := "00000000000000000000001100000000";
-   signal slv_reg2 : std_logic_vector(31 downto 0) := "00000000000000000000000110000000";
+   signal slv_reg0 : std_logic_vector(31 downto 0) := "00000000000000000000001100000000";
+   signal slv_reg1 : std_logic_vector(31 downto 0) := "00000000000000000000000110000000";
+   signal slv_reg2 : std_logic_vector(31 downto 0) := "00000000000000000000000011000000";
 
 begin
 
-	-- Process for slowing down counter clock
-    process (S_AXI_ACLK)
+
+    -- Process for slowing down counter clock
+    -- clk_scaled = 100 MHz / (CLOCK_SCALER + 1)
+    -- f_sw = clk_scaled / (4 * COUNTER_MAX)
+    process(S_AXI_ACLK)
     begin
         if rising_edge(S_AXI_ACLK) then
-            scaler <= scaler + 1;
+            if (clk_div >= CLOCK_SCALER) then
+                clk_div <= (others => '0');
+                clk_scaled <= not clk_scaled;
+            else
+                clk_div <= clk_div + 1;
+            end if;
         end if;
     end process;
-    
-    -- Counter clock frequency: 100 MHz / (2^(PRESCALE_SELECT+1)) = 25 MHz
-    -- With COUNTER_MAX, this results in 25 MHz / (2*COUNTER_MAX) = 10665 Hz
-    clk_scaled <= scaler(PRESCALE_SELECT);
     
     -- Process for triangular (phase-correct) counting
     process (clk_scaled)
