@@ -20,6 +20,7 @@ end encoder_driver;
 architecture Behavioral of encoder_driver is
 
 signal clk_div : integer := 0;
+signal temp_clock : std_logic := '1';
 signal clk_scaled : std_logic := '1';
 
 type state_type is (GET_ABS, ZERO, ONE, TWO, THREE);
@@ -30,23 +31,34 @@ signal index : integer := DATA_LENGTH;
 
 signal position : unsigned(DATA_LENGTH-1 downto 0) := (others => '0');
 
+signal S_AXI_ARESETN : std_logic := '1';
+
 
 begin
 
 
 	-- Scale down clock for serial communication
-    -- 100 MHz / 112 = 899 kHz
-    process(S_AXI_ACLK)
+	-- 100 MHz / 112 = 899 kHz
+    process(S_AXI_ACLK, S_AXI_ARESETN)
     begin
         if rising_edge(S_AXI_ACLK) then
-            if (clk_div >= CLOCK_SCALER) then
+            if (S_AXI_ARESETN = '0') then
                 clk_div <= 0;
-                clk_scaled <= not clk_scaled;
+                temp_clock <= '1';
             else
-                clk_div <= clk_div + 1;
+                if (clk_div >= CLOCK_SCALER) then
+                    clk_div <= 0;
+                    temp_clock <= not temp_clock;
+                else
+                    clk_div <= clk_div + 1;
+                end if;
             end if;
         end if;
+        
+        clk_scaled <= temp_clock;
+        
     end process;
+    
     
     -- State Machine for both getting absolute position at startup and tracking position
     process(S_AXI_ACLK, clk_scaled)
@@ -118,6 +130,8 @@ begin
         
     end process;
     
-    slv_reg0 <= x"000000" & std_logic_vector(position);
+    with S_AXI_ARESETN select slv_reg0 <=
+                    x"000000" & std_logic_vector(position) when '1',
+                    x"00000000" when others;
 
 end Behavioral;

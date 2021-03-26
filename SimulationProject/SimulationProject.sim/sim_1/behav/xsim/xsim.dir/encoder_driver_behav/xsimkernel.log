@@ -1,7 +1,7 @@
-Running: xsim.dir/encoder_driver_behav/xsimk -simmode gui -wdb encoder_driver_behav.wdb -simrunnum 0 -socket 41301
+Running: xsim.dir/encoder_driver_behav/xsimk -simmode gui -wdb encoder_driver_behav.wdb -simrunnum 0 -socket 41439
 Design successfully loaded
-Design Loading Memory Usage: 33084 KB (Peak: 33084 KB)
-Design Loading CPU Usage: 20 ms
+Design Loading Memory Usage: 33096 KB (Peak: 33216 KB)
+Design Loading CPU Usage: 10 ms
 Simulation completed
-Simulation Memory Usage: 123020 KB (Peak: 180356 KB)
-Simulation CPU Usage: 90 ms
+Simulation Memory Usage: 123032 KB (Peak: 180368 KB)
+Simulation CPU Usage: 140 ms
