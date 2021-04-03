@@ -46,15 +46,16 @@ typedef void (*funcp)(char *, char *);
 extern void execute_24(char*, char *);
 extern void execute_25(char*, char *);
 extern void execute_26(char*, char *);
+extern void execute_27(char*, char *);
 extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
 extern void transaction_5(char*, char*, unsigned, unsigned, unsigned);
 extern void transaction_9(char*, char*, unsigned, unsigned, unsigned);
-funcp funcTab[6] = {(funcp)execute_24, (funcp)execute_25, (funcp)execute_26, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_5, (funcp)transaction_9};
-const int NumRelocateId= 6;
+funcp funcTab[7] = {(funcp)execute_24, (funcp)execute_25, (funcp)execute_26, (funcp)execute_27, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_5, (funcp)transaction_9};
+const int NumRelocateId= 7;
 
 void relocate(char *dp)
 {
-	iki_relocate(dp, "xsim.dir/encoder_driver_behav/xsim.reloc",  (void **)funcTab, 6);
+	iki_relocate(dp, "xsim.dir/encoder_driver_behav/xsim.reloc",  (void **)funcTab, 7);
 	iki_vhdl_file_variable_register(dp + 4680);
 	iki_vhdl_file_variable_register(dp + 4736);
 

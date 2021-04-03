@@ -47,14 +47,13 @@ begin
                     clk_div <= clk_div + 1;
                 end if;
             else
+                temp_clock <= not temp_clock;
                 clk_div <= (others => '0');
-                temp_clock <= '0';
             end if;
         end if;
-        
-        clk_scaled <= temp_clock;
-        
     end process;
+    
+    clk_scaled <= temp_clock;
     
     -- Process for triangular (phase-correct) counting
     process (clk_scaled)
@@ -78,36 +77,37 @@ begin
                             state <= COUNT_UP;
                         end if;
                 end case;
+                
+                if std_logic_vector(counter) < slv_reg0 then
+                    PWM_a <= '1';
+                else
+                    PWM_a <= '0';
+                end if;
+                if std_logic_vector(counter) < slv_reg1 then
+                    PWM_b <= '1';
+                else
+                    PWM_b <= '0';
+                end if;
+                if std_logic_vector(counter) < slv_reg2 then
+                    PWM_c <= '1';
+                else
+                    PWM_c <= '0';
+                end if;
+                if counter = COUNTER_MAX or counter = 0 then
+                    XADC_conv_en <= '1';
+                else
+                    XADC_conv_en <= '0';
+                end if;
+            
             else
                 counter <= (others => '0');
-            end if;
-            
-            if std_logic_vector(counter) < slv_reg0 then
-                PWM_a <= '1';
-            else
+                state <= COUNT_UP;
                 PWM_a <= '0';
-            end if;
-            if std_logic_vector(counter) < slv_reg1 then
-                PWM_b <= '1';
-            else
                 PWM_b <= '0';
-            end if;
-            if std_logic_vector(counter) < slv_reg2 then
-                PWM_c <= '1';
-            else
                 PWM_c <= '0';
-            end if;
-            if counter = COUNTER_MAX or counter = 0 then
-                XADC_conv_en <= '1';
-            else
                 XADC_conv_en <= '0';
             end if;
         end if;
     end process;
-    
-    --PWM_a <= '1' when std_logic_vector(counter) < slv_reg0 else '0';
-    --PWM_b <= '1' when std_logic_vector(counter) < slv_reg1 else '0';
-    --PWM_c <= '1' when std_logic_vector(counter) < slv_reg2 else '0';
-    --XADC_conv_en <= '1' when counter = COUNTER_MAX or counter = 0 else '0';
 
 end Behavioral;

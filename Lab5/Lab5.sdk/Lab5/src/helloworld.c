@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "platform.h"
 #include "xil_printf.h"
 #include "xparameters.h"
 #include "xbram.h"
 #include "led_matrix.h"
+#include "sleep.h"
 
 /************************** Constant Definitions *****************************/
 
@@ -32,38 +34,92 @@ int main(void)
 		while(1);
 	}
 
-	writePixelValueDirect(1, 1, 255, 0, 0);
-	writePixelValueDirect(1, 8, 255, 0, 0);
-	writePixelValueDirect(8, 8, 255, 0, 0);
-	writePixelValueDirect(8, 1, 255, 0, 0);
+	// Running LED example
+	/*
+	while(1) {
+		for (int i = 1; i < 9; i++) {
+			for (int j = 1; j < 9; j++) {
+				if (j > 1) { resetPixelValue(j-1, i); }
+				else if (j == 1 && i > 1) { resetPixelValue(8,i-1); }
+				writePixelValueDirect(j, i, 255, 0, 0);
+				usleep(100000);
+			}
+		}
+		resetPixelValue(8,8);
+	}
+	*/
 
-	setPixelValue(4, 4, 0, 255, 0);
-	setPixelValue(4, 5, 0, 255, 0);
-	setPixelValue(5, 4, 0, 255, 0);
-	setPixelValue(5, 5, 0, 255, 0);
-	writePixelValueToDevice(4, 4);
-	writePixelValueToDevice(4, 5);
-	writePixelValueToDevice(5, 4);
-	writePixelValueToDevice(5, 5);
+	// Fading dots example
+	/*
+	u8 iterations = 0;
+	while(1) {
+		for (int i = 1; i < 9; i++) {
+			for (int j = 1; j < 9; j++) {
+				u8 curr_red, curr_green, curr_blue;
+				getPixelValue(i, j, &curr_red, &curr_green, &curr_blue);
+				if (curr_red > 9 && curr_green > 9 && curr_blue > 9) {
+					setPixelValue(i, j, curr_red-3, curr_green-3, curr_blue-3);
+				} else if (curr_red > 9 && curr_green > 9) {
+					setPixelValue(i, j, curr_red-3, curr_green-3, 0);
+				} else if (curr_red > 9 && curr_blue > 9) {
+					setPixelValue(i, j, curr_red-3, 0, curr_blue-3);
+				} else if (curr_red > 9) {
+					setPixelValue(i, j, curr_red-3, 0, 0);
+				} else if (curr_green > 9 && curr_blue > 9) {
+					setPixelValue(i, j, 0, curr_green-3, curr_blue-3);
+				} else if (curr_green > 9) {
+					setPixelValue(i, j, 0, curr_green-3, 0);
+				} else if (curr_blue > 9) {
+					setPixelValue(i, j, 0, 0, curr_blue-3);
+				} else {
+					setPixelValue(i, j, 0, 0, 0);
+				}
+			}
+		}
 
-	setPixelValue(2, 4, 0, 0, 255);
-	setPixelValue(2, 5, 0, 0, 255);
-	setPixelValue(7, 4, 0, 0, 255);
-	setPixelValue(7, 5, 0, 0, 255);
+		if (iterations++ == 20) {
+			u8 i = rand()%8 + 1;
+			u8 j = rand()%8 + 1;
+			u8 rand_red = rand()%255 + 1;
+			u8 rand_green = rand()%255 + 1;
+			u8 rand_blue = rand()%255 + 1;
+			setPixelValue(i, j, rand_red, rand_green, rand_blue);
+			iterations = 0;
+		}
 
-	setPixelValue(4, 8, 255, 0, 255);
-	setPixelValue(5, 8, 255, 0, 255);
-	setPixelValue(4, 1, 255, 0, 255);
-	setPixelValue(5, 1, 255, 0, 255);
+		writeAllPixelsToDevice();
+		usleep(25000);
+	}
+	*/
 
-	setPixelValue(1, 4, 0, 255, 255);
-	setPixelValue(1, 5, 0, 255, 255);
-	setPixelValue(8, 4, 0, 255, 255);
-	setPixelValue(8, 5, 0, 255, 255);
+	// Falling lights example
 
-	writeAllPixelsToDevice();
+	while (1) {
+		u8 random_column = rand()%8 + 1;
+		u8 red = 0, green = 0, blue = 0;
+		while (red == 0 && green == 0 && blue == 0) {
+			red = rand()%2;
+			green = rand()%2;
+			blue = rand()%2;
+		}
+		writePixelValueDirect(random_column, 1, 22*red, 22*green, 22*blue);
 
-	resetAllPixels();
+		for (int row = 2; row < 10; row++) {
+			usleep(50000);
+			for (int column = 1; column < 9; column++) {
+				if (row == 9) {
+					writePixelValueDirect(column, row-1, 0, 0, 0);
+				} else {
+					if (pixelActiveValue(column, row-1)) {
+						copyPixelValue(column, row-1, column, row);
+						decreasePixelValue(column, row, 3, 3, 3);
+						writePixelValueToDevice(column, row);
+						writePixelValueDirect(column, row-1, 0, 0, 0);
+					}
+				}
+			}
+		}
+	}
 
 
 	xil_printf("Successfully ran code.\r\n");
