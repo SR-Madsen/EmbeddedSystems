@@ -30,8 +30,7 @@ typedef struct sprite_t {
 
 /************************** Function Prototypes ******************************/
 sprite_t draw_sprite(position_t pos);
-u8 move_left_sprite(sprite_t *sprite);
-u8 move_right_sprite(sprite_t *sprite);
+sprite_t move_left_sprite(sprite_t sprite);
 
 /************************** Variable Definitions *****************************/
 
@@ -137,50 +136,10 @@ int main(void)
 
 	// Moving sprites example
 	sprite_t cannon;
-	position_t pos = {4,1};
-
-	for (int row = 1; row < 9; row++) {
-		for (int column = 1; column < 9; column++) {
-			if (row == 1) {
-				writePixelValueDirect(column, row, 0, 255, 0);
-			} else {
-				writePixelValueDirect(column, row, 0, 0, 255);
-			}
-		}
-	}
-
-	cannon = draw_sprite(pos);
-
-	u8 direction = 0;
-	u8 valid_dir = 0;
+	position_t pos = {7,7};
 	while(1) {
-		usleep(250000);
-
-		for (int row = 1; row < 9; row++) {
-			for (int column = 1; column < 9; column++) {
-				if (row == 1) {
-					writePixelValueDirect(column, row, 0, 255, 0);
-				} else {
-					writePixelValueDirect(column, row, 0, 0, 255);
-				}
-			}
-		}
-
-		if (direction == 0) {
-			valid_dir = move_left_sprite(&cannon);
-			if (valid_dir == 1) {
-				valid_dir = 0;
-			} else {
-				direction = 1;
-			}
-		} else {
-			valid_dir = move_right_sprite(&cannon);
-			if (valid_dir == 1) {
-				valid_dir = 0;
-			} else {
-				direction = 0;
-			}
-		}
+		cannon = draw_sprite(pos);
+		usleep(250000000);
 	}
 
 
@@ -198,7 +157,7 @@ sprite_t draw_sprite(position_t pos) {
 	sprite.left_arm.x = pos.x-1;
 	sprite.left_arm.y = pos.y;
 	sprite.right_arm.x = pos.x+1;
-	sprite.right_arm.y = pos.y;
+	sprite.left_arm.y = pos.y;
 	sprite.head.x = pos.x;
 	sprite.head.y = pos.y+1;
 	sprite.colors.red = 255;
@@ -213,50 +172,22 @@ sprite_t draw_sprite(position_t pos) {
 	return sprite;
 }
 
-u8 move_left_sprite(sprite_t *sprite) {
-	u8 status = 0;
-
-	if (sprite->left_arm.x > 1) {
-		sprite->core.x = sprite->core.x-1;
-		sprite->core.y = sprite->core.y;
-		sprite->left_arm.x = sprite->left_arm.x-1;
-		sprite->left_arm.y = sprite->left_arm.y;
-		sprite->right_arm.x = sprite->right_arm.x-1;
-		sprite->right_arm.y = sprite->right_arm.y;
-		sprite->head.x = sprite->head.x-1;
-		sprite->head.y = sprite->head.y;
-
-		status = 1;
+sprite_t move_left_sprite(sprite_t sprite) {
+	if (sprite.left_arm.x > 1) {
+		sprite.core.x = sprite.core.x-1;
+		sprite.core.y = sprite.core.y;
+		sprite.left_arm.x = sprite.core.x-1;
+		sprite.left_arm.y = sprite.core.y;
+		sprite.right_arm.x = sprite.core.x-1;
+		sprite.left_arm.y = sprite.core.y;
+		sprite.head.x = sprite.core.x-1;
+		sprite.head.y = sprite.core.y;
 	}
 
-	writePixelDirect(sprite->core, sprite->colors);
-	writePixelDirect(sprite->left_arm, sprite->colors);
-	writePixelDirect(sprite->right_arm, sprite->colors);
-	writePixelDirect(sprite->head, sprite->colors);
+	writePixelDirect(sprite.core, sprite.colors);
+	writePixelDirect(sprite.left_arm, sprite.colors);
+	writePixelDirect(sprite.right_arm, sprite.colors);
+	writePixelDirect(sprite.head, sprite.colors);
 
-	return status;
-}
-
-u8 move_right_sprite(sprite_t *sprite) {
-	u8 status = 0;
-
-	if (sprite->right_arm.x < 8) {
-		sprite->core.x = sprite->core.x+1;
-		sprite->core.y = sprite->core.y;
-		sprite->left_arm.x = sprite->left_arm.x+1;
-		sprite->left_arm.y = sprite->left_arm.y;
-		sprite->right_arm.x = sprite->right_arm.x+1;
-		sprite->right_arm.y = sprite->right_arm.y;
-		sprite->head.x = sprite->head.x+1;
-		sprite->head.y = sprite->head.y;
-
-		status = 1;
-	}
-
-	writePixelDirect(sprite->core, sprite->colors);
-	writePixelDirect(sprite->left_arm, sprite->colors);
-	writePixelDirect(sprite->right_arm, sprite->colors);
-	writePixelDirect(sprite->head, sprite->colors);
-
-	return status;
+	return sprite;
 }

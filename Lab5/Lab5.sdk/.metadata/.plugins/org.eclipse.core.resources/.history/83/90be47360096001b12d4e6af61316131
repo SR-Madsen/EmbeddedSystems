@@ -214,8 +214,6 @@ sprite_t draw_sprite(position_t pos) {
 }
 
 u8 move_left_sprite(sprite_t *sprite) {
-	u8 status = 0;
-
 	if (sprite->left_arm.x > 1) {
 		sprite->core.x = sprite->core.x-1;
 		sprite->core.y = sprite->core.y;
@@ -226,20 +224,18 @@ u8 move_left_sprite(sprite_t *sprite) {
 		sprite->head.x = sprite->head.x-1;
 		sprite->head.y = sprite->head.y;
 
-		status = 1;
+		writePixelDirect(sprite->core, sprite->colors);
+		writePixelDirect(sprite->left_arm, sprite->colors);
+		writePixelDirect(sprite->right_arm, sprite->colors);
+		writePixelDirect(sprite->head, sprite->colors);
+
+		return 1;
 	}
 
-	writePixelDirect(sprite->core, sprite->colors);
-	writePixelDirect(sprite->left_arm, sprite->colors);
-	writePixelDirect(sprite->right_arm, sprite->colors);
-	writePixelDirect(sprite->head, sprite->colors);
-
-	return status;
+	return 0;
 }
 
 u8 move_right_sprite(sprite_t *sprite) {
-	u8 status = 0;
-
 	if (sprite->right_arm.x < 8) {
 		sprite->core.x = sprite->core.x+1;
 		sprite->core.y = sprite->core.y;
@@ -250,13 +246,13 @@ u8 move_right_sprite(sprite_t *sprite) {
 		sprite->head.x = sprite->head.x+1;
 		sprite->head.y = sprite->head.y;
 
-		status = 1;
+		writePixelDirect(sprite->core, sprite->colors);
+		writePixelDirect(sprite->left_arm, sprite->colors);
+		writePixelDirect(sprite->right_arm, sprite->colors);
+		writePixelDirect(sprite->head, sprite->colors);
+
+		return 1;
 	}
 
-	writePixelDirect(sprite->core, sprite->colors);
-	writePixelDirect(sprite->left_arm, sprite->colors);
-	writePixelDirect(sprite->right_arm, sprite->colors);
-	writePixelDirect(sprite->head, sprite->colors);
-
-	return status;
+	return 0;
 }

@@ -9352,3 +9352,973 @@ make pre-build main-build
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
+12:48:13 **** Incremental Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:48:31 **** Incremental Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:48:40 **** Incremental Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:49:12 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38808	   1216	  22856	  62880	   f5a0	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+12:49:19 **** Incremental Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:52:41 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:21:1: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ sprite_t draw_sprite(position_t pos);
+ ^~~~~~~~
+ ssize_t
+make: *** [src/subdir.mk:29: src/helloworld.o] Error 1
+12:52:57 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37528	   1216	  22856	  61600	   f0a0	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+12:55:29 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'draw_sprite':
+../src/helloworld.c:148:1: error: expected identifier before '}' token
+ }
+ ^
+../src/helloworld.c:146:11: warning: variable 'sprite' set but not used [-Wunused-but-set-variable]
+  sprite_t sprite;
+           ^~~~~~
+../src/helloworld.c:148:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/helloworld.o] Error 1
+12:57:20 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'draw_sprite':
+../src/helloworld.c:155:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37592	   1216	  22856	  61664	   f0e0	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+12:58:25 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37784	   1216	  22856	  61856	   f1a0	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+12:59:32 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37848	   1216	  22856	  61920	   f1e0	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+12:59:49 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37784	   1216	  22856	  61856	   f1a0	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:00:42 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:140:12: error: too few arguments to function 'draw_sprite'
+   cannon = draw_sprite()
+            ^~~~~~~~~~~
+../src/helloworld.c:32:10: note: declared here
+ sprite_t draw_sprite(position_t pos);
+          ^~~~~~~~~~~
+../src/helloworld.c:141:2: error: expected ';' before '}' token
+  }
+  ^
+../src/helloworld.c:138:13: warning: unused variable 'pos' [-Wunused-variable]
+  position_t pos = {4,4};
+             ^~~
+../src/helloworld.c:137:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+make: *** [src/subdir.mk:29: src/helloworld.o] Error 1
+13:00:49 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:137:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37788	   1216	  22856	  61860	   f1a4	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:02:17 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:138:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+../src/helloworld.c: In function 'move_left_sprite':
+../src/helloworld.c:176:19: error: 'pos' undeclared (first use in this function)
+   sprite.core.x = pos.x-1;
+                   ^~~
+../src/helloworld.c:176:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:185:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/helloworld.o] Error 1
+13:02:46 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:138:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+../src/helloworld.c: In function 'move_left_sprite':
+../src/helloworld.c:185:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37980	   1216	  22856	  62052	   f264	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:02:57 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:138:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37980	   1216	  22856	  62052	   f264	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:03:06 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:138:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38044	   1216	  22856	  62116	   f2a4	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:03:38 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:138:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38236	   1216	  22856	  62308	   f364	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:04:11 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:176:10: error: conflicting types for 'move_left_sprite'
+ sprite_t move_left_sprite(sprite_t sprite) {
+          ^~~~~~~~~~~~~~~~
+../src/helloworld.c:33:4: note: previous declaration of 'move_left_sprite' was here
+ u8 move_left_sprite(sprite_t *sprite);
+    ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/helloworld.o] Error 1
+13:04:18 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:176:10: error: conflicting types for 'move_left_sprite'
+ sprite_t move_left_sprite(sprite_t *sprite) {
+          ^~~~~~~~~~~~~~~~
+../src/helloworld.c:33:4: note: previous declaration of 'move_left_sprite' was here
+ u8 move_left_sprite(sprite_t *sprite);
+    ^~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'move_left_sprite':
+../src/helloworld.c:177:12: error: 'sprite' is a pointer; did you mean to use '->'?
+  if (sprite.left_arm.x > 1) {
+            ^
+            ->
+../src/helloworld.c:178:9: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.core.x = sprite.core.x-1;
+         ^
+         ->
+../src/helloworld.c:178:25: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.core.x = sprite.core.x-1;
+                         ^
+                         ->
+../src/helloworld.c:179:9: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.core.y = sprite.core.y;
+         ^
+         ->
+../src/helloworld.c:179:25: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.core.y = sprite.core.y;
+                         ^
+                         ->
+../src/helloworld.c:180:9: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.left_arm.x = sprite.core.x-1;
+         ^
+         ->
+../src/helloworld.c:180:29: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.left_arm.x = sprite.core.x-1;
+                             ^
+                             ->
+../src/helloworld.c:181:9: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.left_arm.y = sprite.core.y;
+         ^
+         ->
+../src/helloworld.c:181:29: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.left_arm.y = sprite.core.y;
+                             ^
+                             ->
+../src/helloworld.c:182:9: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.right_arm.x = sprite.core.x-1;
+         ^
+         ->
+../src/helloworld.c:182:30: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.right_arm.x = sprite.core.x-1;
+                              ^
+                              ->
+../src/helloworld.c:183:9: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.left_arm.y = sprite.core.y;
+         ^
+         ->
+../src/helloworld.c:183:29: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.left_arm.y = sprite.core.y;
+                             ^
+                             ->
+../src/helloworld.c:184:9: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.head.x = sprite.core.x-1;
+         ^
+         ->
+../src/helloworld.c:184:25: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.head.x = sprite.core.x-1;
+                         ^
+                         ->
+../src/helloworld.c:185:9: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.head.y = sprite.core.y;
+         ^
+         ->
+../src/helloworld.c:185:25: error: 'sprite' is a pointer; did you mean to use '->'?
+   sprite.head.y = sprite.core.y;
+                         ^
+                         ->
+../src/helloworld.c:188:25: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.core, sprite.colors);
+                         ^
+                         ->
+../src/helloworld.c:188:38: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.core, sprite.colors);
+                                      ^
+                                      ->
+../src/helloworld.c:189:25: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                         ^
+                         ->
+../src/helloworld.c:189:42: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                                          ^
+                                          ->
+../src/helloworld.c:190:25: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                         ^
+                         ->
+../src/helloworld.c:190:43: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                                           ^
+                                           ->
+../src/helloworld.c:191:25: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.head, sprite.colors);
+                         ^
+                         ->
+../src/helloworld.c:191:38: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.head, sprite.colors);
+                                      ^
+                                      ->
+../src/helloworld.c:193:9: error: incompatible types when returning type 'sprite_t * {aka struct sprite_t *}' but 'sprite_t {aka struct sprite_t}' was expected
+  return sprite;
+         ^~~~~~
+../src/helloworld.c:194:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/helloworld.o] Error 1
+13:04:48 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:176:10: error: conflicting types for 'move_left_sprite'
+ sprite_t move_left_sprite(sprite_t *sprite) {
+          ^~~~~~~~~~~~~~~~
+../src/helloworld.c:33:4: note: previous declaration of 'move_left_sprite' was here
+ u8 move_left_sprite(sprite_t *sprite);
+    ^~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'move_left_sprite':
+../src/helloworld.c:188:25: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.core, sprite.colors);
+                         ^
+                         ->
+../src/helloworld.c:188:38: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.core, sprite.colors);
+                                      ^
+                                      ->
+../src/helloworld.c:189:25: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                         ^
+                         ->
+../src/helloworld.c:189:42: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                                          ^
+                                          ->
+../src/helloworld.c:190:25: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                         ^
+                         ->
+../src/helloworld.c:190:43: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                                           ^
+                                           ->
+../src/helloworld.c:191:25: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.head, sprite.colors);
+                         ^
+                         ->
+../src/helloworld.c:191:38: error: 'sprite' is a pointer; did you mean to use '->'?
+  writePixelDirect(sprite.head, sprite.colors);
+                                      ^
+                                      ->
+../src/helloworld.c:193:9: error: incompatible types when returning type 'sprite_t * {aka struct sprite_t *}' but 'sprite_t {aka struct sprite_t}' was expected
+  return sprite;
+         ^~~~~~
+../src/helloworld.c:194:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/helloworld.o] Error 1
+13:05:02 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:176:10: error: conflicting types for 'move_left_sprite'
+ sprite_t move_left_sprite(sprite_t *sprite) {
+          ^~~~~~~~~~~~~~~~
+../src/helloworld.c:33:4: note: previous declaration of 'move_left_sprite' was here
+ u8 move_left_sprite(sprite_t *sprite);
+    ^~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'move_left_sprite':
+../src/helloworld.c:193:9: error: incompatible types when returning type 'sprite_t * {aka struct sprite_t *}' but 'sprite_t {aka struct sprite_t}' was expected
+  return sprite;
+         ^~~~~~
+../src/helloworld.c:194:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/helloworld.o] Error 1
+13:05:48 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38492	   1216	  22856	  62564	   f464	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:06:17 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39004	   1216	  22856	  63076	   f664	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:07:55 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39196	   1216	  22856	  63268	   f724	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:08:08 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39196	   1216	  22856	  63268	   f724	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:08:10 **** Incremental Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:08:32 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39196	   1216	  22856	  63268	   f724	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:08:34 **** Incremental Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:08:57 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+../src/helloworld.c: In function 'draw_sprite':
+../src/helloworld.c:173:9: error: 'sprite_t {aka struct sprite_t}' has no member named 'right__arm'; did you mean 'right_arm'?
+  sprite.right__arm.y = pos.y;
+         ^~~~~~~~~~
+         right_arm
+../src/helloworld.c: In function 'move_left_sprite':
+../src/helloworld.c:195:11: error: 'sprite_t {aka struct sprite_t}' has no member named 'right__arm'; did you mean 'right_arm'?
+   sprite->right__arm.y = sprite->core.y;
+           ^~~~~~~~~~
+           right_arm
+make: *** [src/subdir.mk:29: src/helloworld.o] Error 1
+13:09:04 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:11: warning: variable 'cannon' set but not used [-Wunused-but-set-variable]
+  sprite_t cannon;
+           ^~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39196	   1216	  22856	  63268	   f724	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:09:08 **** Incremental Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:11:22 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:155:5: error: conflicting types for 'status'
+  u8 status = 0;
+     ^~~~~~
+../src/helloworld.c:42:6: note: previous declaration of 'status' was here
+  int status;
+      ^~~~~~
+../src/helloworld.c:159:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if (direction = 0) {
+       ^~~~~~~~~
+make: *** [src/subdir.mk:29: src/helloworld.o] Error 1
+13:11:27 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:155:5: error: conflicting types for 'status'
+  u8 status = 0;
+     ^~~~~~
+../src/helloworld.c:42:6: note: previous declaration of 'status' was here
+  int status;
+      ^~~~~~
+make: *** [src/subdir.mk:29: src/helloworld.o] Error 1
+13:11:54 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39388	   1216	  22856	  63460	   f7e4	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:11:57 **** Incremental Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:12:24 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39388	   1216	  22856	  63460	   f7e4	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:12:32 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39388	   1216	  22856	  63460	   f7e4	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:12:33 **** Incremental Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:13:00 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39388	   1216	  22856	  63460	   f7e4	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:13:05 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39516	   1216	  22856	  63588	   f864	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:13:08 **** Incremental Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:13:33 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39516	   1216	  22856	  63588	   f864	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:14:23 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39516	   1216	  22856	  63588	   f864	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:14:25 **** Incremental Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:15:22 **** Auto Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab5_bsp/ps7_cortexa9_0/lib -o "Lab5.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab5.elf  |tee "Lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39516	   1216	  22856	  63588	   f864	Lab5.elf
+Finished building: Lab5.elf.size
+ 
+13:15:25 **** Incremental Build of configuration Debug for project Lab5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
