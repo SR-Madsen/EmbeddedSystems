@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Wed Mar 24 10:49:06 2021
+| Date             : Tue Apr  6 10:40:03 2021
 | Host             : sebastian-ZBook running 64-bit Linux Mint 20
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.710        |
+| Total On-Chip Power (W)  | 1.709        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.585        |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.012 |        4 |       --- |             --- |
-| Slice Logic              |     0.007 |     5178 |       --- |             --- |
+| Slice Logic              |     0.007 |     5154 |       --- |             --- |
 |   LUT as Logic           |     0.006 |     1477 |     17600 |            8.39 |
 |   Register               |    <0.001 |     2515 |     35200 |            7.14 |
 |   LUT as Distributed RAM |    <0.001 |      100 |      6000 |            1.67 |
 |   LUT as Shift Register  |    <0.001 |      133 |      6000 |            2.22 |
 |   CARRY4                 |    <0.001 |       48 |      4400 |            1.09 |
-|   Others                 |     0.000 |      330 |       --- |             --- |
+|   Others                 |     0.000 |      306 |       --- |             --- |
 | Signals                  |     0.010 |     3521 |       --- |             --- |
 | Block RAM                |     0.006 |        2 |        60 |            3.33 |
 | I/O                      |     0.036 |       33 |       100 |           33.00 |
 | PS7                      |     1.515 |        1 |       --- |             --- |
 | Static Power             |     0.124 |          |           |                 |
-| Total                    |     1.710 |          |           |                 |
+| Total                    |     1.709 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 

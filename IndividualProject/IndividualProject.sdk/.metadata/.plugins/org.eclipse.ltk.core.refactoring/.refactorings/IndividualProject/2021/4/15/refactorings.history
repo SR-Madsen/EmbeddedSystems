@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;IndividualProject/src/gpois.c&apos; to &apos;gpios.c&apos;" description="Rename resource &apos;gpois.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/gpois.c" name="gpios.c" stamp="1617788184226" updateReferences="true"/>
+</session>

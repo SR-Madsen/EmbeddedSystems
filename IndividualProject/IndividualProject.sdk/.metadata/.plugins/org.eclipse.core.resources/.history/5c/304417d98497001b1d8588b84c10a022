@@ -1,0 +1,28 @@
+/*
+ * gpios.h
+ *
+ *  Created on: Apr 7, 2021
+ *      Author: sebastian
+ */
+
+#ifndef SRC_GPIOS_H_
+#define SRC_GPIOS_H_
+
+#include "platform.h"
+#include "xparameters.h"
+#include "xgpio.h"
+
+
+// Defines
+
+
+// Variables
+XAdcPs XAdc;
+XAdcPs_Config *XAdcConfigPtr;
+
+// Structs
+
+
+// Function prototypes
+
+#endif /* SRC_GPIOS_H_ */

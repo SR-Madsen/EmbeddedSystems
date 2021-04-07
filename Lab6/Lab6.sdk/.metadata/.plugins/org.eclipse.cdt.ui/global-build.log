@@ -1,0 +1,2683 @@
+09:30:18 **** Build of project Lab6_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling bram
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sysmon
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+09:30:27 **** Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19352	   1144	  22568	  43064	   a838	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+09:30:29 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:44:22 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:44:52 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/led_matrix.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39516	   1216	  22856	  63588	   f864	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+09:45:38 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:45:51 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39516	   1216	  22856	  63588	   f864	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+09:46:00 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39516	   1216	  22856	  63588	   f864	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+09:46:31 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:130:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t cannon;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:143:11: warning: implicit declaration of function 'draw_sprite' [-Wimplicit-function-declaration]
+  cannon = draw_sprite(pos);
+           ^~~~~~~~~~~
+../src/helloworld.c:161:16: warning: implicit declaration of function 'move_left_sprite' [-Wimplicit-function-declaration]
+    valid_dir = move_left_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~
+../src/helloworld.c:168:16: warning: implicit declaration of function 'move_right_sprite' [-Wimplicit-function-declaration]
+    valid_dir = move_right_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:184:1: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ sprite_t draw_sprite(position_t pos) {
+ ^~~~~~~~
+ ssize_t
+../src/helloworld.c: In function 'draw_sprite':
+../src/helloworld.c:185:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t sprite;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:187:8: error: request for member 'core' in something not a structure or union
+  sprite.core.x = pos.x;
+        ^
+../src/helloworld.c:188:8: error: request for member 'core' in something not a structure or union
+  sprite.core.y = pos.y;
+        ^
+../src/helloworld.c:189:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.x = pos.x-1;
+        ^
+../src/helloworld.c:190:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.y = pos.y;
+        ^
+../src/helloworld.c:191:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.x = pos.x+1;
+        ^
+../src/helloworld.c:192:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.y = pos.y;
+        ^
+../src/helloworld.c:193:8: error: request for member 'head' in something not a structure or union
+  sprite.head.x = pos.x;
+        ^
+../src/helloworld.c:194:8: error: request for member 'head' in something not a structure or union
+  sprite.head.y = pos.y+1;
+        ^
+../src/helloworld.c:195:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.red = 255;
+        ^
+../src/helloworld.c:196:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.green = 0;
+        ^
+../src/helloworld.c:197:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.blue = 0;
+        ^
+../src/helloworld.c:199:25: error: request for member 'core' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                         ^
+../src/helloworld.c:199:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                                      ^
+../src/helloworld.c:200:25: error: request for member 'left_arm' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                         ^
+../src/helloworld.c:200:42: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                                          ^
+../src/helloworld.c:201:25: error: request for member 'right_arm' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                         ^
+../src/helloworld.c:201:43: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                                           ^
+../src/helloworld.c:202:25: error: request for member 'head' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                         ^
+../src/helloworld.c:202:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                                      ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:207:21: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_left_sprite(sprite_t *sprite) {
+                     ^~~~~~~~
+                     ssize_t
+../src/helloworld.c:231:22: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_right_sprite(sprite_t *sprite) {
+                      ^~~~~~~~
+                      ssize_t
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+09:46:55 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:130:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t cannon;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:143:11: warning: implicit declaration of function 'draw_sprite' [-Wimplicit-function-declaration]
+  cannon = draw_sprite(pos);
+           ^~~~~~~~~~~
+../src/helloworld.c:161:16: warning: implicit declaration of function 'move_left_sprite' [-Wimplicit-function-declaration]
+    valid_dir = move_left_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~
+../src/helloworld.c:168:16: warning: implicit declaration of function 'move_right_sprite' [-Wimplicit-function-declaration]
+    valid_dir = move_right_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:184:1: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ sprite_t draw_sprite(position_t pos) {
+ ^~~~~~~~
+ ssize_t
+../src/helloworld.c: In function 'draw_sprite':
+../src/helloworld.c:185:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t sprite;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:187:8: error: request for member 'core' in something not a structure or union
+  sprite.core.x = pos.x;
+        ^
+../src/helloworld.c:188:8: error: request for member 'core' in something not a structure or union
+  sprite.core.y = pos.y;
+        ^
+../src/helloworld.c:189:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.x = pos.x-1;
+        ^
+../src/helloworld.c:190:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.y = pos.y;
+        ^
+../src/helloworld.c:191:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.x = pos.x+1;
+        ^
+../src/helloworld.c:192:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.y = pos.y;
+        ^
+../src/helloworld.c:193:8: error: request for member 'head' in something not a structure or union
+  sprite.head.x = pos.x;
+        ^
+../src/helloworld.c:194:8: error: request for member 'head' in something not a structure or union
+  sprite.head.y = pos.y+1;
+        ^
+../src/helloworld.c:195:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.red = 255;
+        ^
+../src/helloworld.c:196:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.green = 0;
+        ^
+../src/helloworld.c:197:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.blue = 0;
+        ^
+../src/helloworld.c:199:25: error: request for member 'core' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                         ^
+../src/helloworld.c:199:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                                      ^
+../src/helloworld.c:200:25: error: request for member 'left_arm' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                         ^
+../src/helloworld.c:200:42: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                                          ^
+../src/helloworld.c:201:25: error: request for member 'right_arm' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                         ^
+../src/helloworld.c:201:43: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                                           ^
+../src/helloworld.c:202:25: error: request for member 'head' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                         ^
+../src/helloworld.c:202:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                                      ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:207:21: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_left_sprite(sprite_t *sprite) {
+                     ^~~~~~~~
+                     ssize_t
+../src/helloworld.c:231:22: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_right_sprite(sprite_t *sprite) {
+                      ^~~~~~~~
+                      ssize_t
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+09:47:03 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t cannon;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:144:11: warning: implicit declaration of function 'draw_sprite' [-Wimplicit-function-declaration]
+  cannon = draw_sprite(pos);
+           ^~~~~~~~~~~
+../src/helloworld.c:162:16: warning: implicit declaration of function 'move_left_sprite' [-Wimplicit-function-declaration]
+    valid_dir = move_left_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~
+../src/helloworld.c:169:16: warning: implicit declaration of function 'move_right_sprite' [-Wimplicit-function-declaration]
+    valid_dir = move_right_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:185:1: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ sprite_t draw_sprite(position_t pos) {
+ ^~~~~~~~
+ ssize_t
+../src/helloworld.c: In function 'draw_sprite':
+../src/helloworld.c:186:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t sprite;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:188:8: error: request for member 'core' in something not a structure or union
+  sprite.core.x = pos.x;
+        ^
+../src/helloworld.c:189:8: error: request for member 'core' in something not a structure or union
+  sprite.core.y = pos.y;
+        ^
+../src/helloworld.c:190:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.x = pos.x-1;
+        ^
+../src/helloworld.c:191:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.y = pos.y;
+        ^
+../src/helloworld.c:192:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.x = pos.x+1;
+        ^
+../src/helloworld.c:193:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.y = pos.y;
+        ^
+../src/helloworld.c:194:8: error: request for member 'head' in something not a structure or union
+  sprite.head.x = pos.x;
+        ^
+../src/helloworld.c:195:8: error: request for member 'head' in something not a structure or union
+  sprite.head.y = pos.y+1;
+        ^
+../src/helloworld.c:196:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.red = 255;
+        ^
+../src/helloworld.c:197:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.green = 0;
+        ^
+../src/helloworld.c:198:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.blue = 0;
+        ^
+../src/helloworld.c:200:25: error: request for member 'core' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                         ^
+../src/helloworld.c:200:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                                      ^
+../src/helloworld.c:201:25: error: request for member 'left_arm' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                         ^
+../src/helloworld.c:201:42: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                                          ^
+../src/helloworld.c:202:25: error: request for member 'right_arm' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                         ^
+../src/helloworld.c:202:43: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                                           ^
+../src/helloworld.c:203:25: error: request for member 'head' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                         ^
+../src/helloworld.c:203:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                                      ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:208:21: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_left_sprite(sprite_t *sprite) {
+                     ^~~~~~~~
+                     ssize_t
+../src/helloworld.c:232:22: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_right_sprite(sprite_t *sprite) {
+                      ^~~~~~~~
+                      ssize_t
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+09:47:07 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+In file included from ../src/sprites.c:8:0:
+../src/sprites.h:14:2: error: unknown type name 'position_t'
+  position_t core;
+  ^~~~~~~~~~
+../src/sprites.h:15:2: error: unknown type name 'position_t'
+  position_t left_arm;
+  ^~~~~~~~~~
+../src/sprites.h:16:2: error: unknown type name 'position_t'
+  position_t right_arm;
+  ^~~~~~~~~~
+../src/sprites.h:17:2: error: unknown type name 'position_t'
+  position_t head;
+  ^~~~~~~~~~
+../src/sprites.h:18:2: error: unknown type name 'color_t'
+  color_t colors;
+  ^~~~~~~
+../src/sprites.h:25:22: error: unknown type name 'position_t'
+ sprite_t draw_sprite(position_t pos);
+                      ^~~~~~~~~~
+../src/sprites.h:26:1: error: unknown type name 'u8'
+ u8 move_left_sprite(sprite_t *sprite);
+ ^~
+../src/sprites.h:27:1: error: unknown type name 'u8'
+ u8 move_right_sprite(sprite_t *sprite);
+ ^~
+make: *** [src/subdir.mk:32: src/sprites.o] Error 1
+09:47:20 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39516	   1216	  22856	  63588	   f864	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+09:47:55 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/led_matrix.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39516	   1216	  22856	  63588	   f864	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+09:48:12 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39516	   1216	  22856	  63588	   f864	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+09:48:39 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t cannon;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:144:11: warning: implicit declaration of function 'draw_sprite' [-Wimplicit-function-declaration]
+  cannon = draw_sprite(pos);
+           ^~~~~~~~~~~
+../src/helloworld.c:162:16: warning: implicit declaration of function 'move_left_sprite'; did you mean 'move_left_cannon'? [-Wimplicit-function-declaration]
+    valid_dir = move_left_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~
+                move_left_cannon
+../src/helloworld.c:169:16: warning: implicit declaration of function 'move_right_sprite'; did you mean 'move_right_cannon'? [-Wimplicit-function-declaration]
+    valid_dir = move_right_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~~
+                move_right_cannon
+../src/helloworld.c: At top level:
+../src/helloworld.c:185:1: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ sprite_t draw_sprite(position_t pos) {
+ ^~~~~~~~
+ ssize_t
+../src/helloworld.c: In function 'draw_sprite':
+../src/helloworld.c:186:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t sprite;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:188:8: error: request for member 'core' in something not a structure or union
+  sprite.core.x = pos.x;
+        ^
+../src/helloworld.c:189:8: error: request for member 'core' in something not a structure or union
+  sprite.core.y = pos.y;
+        ^
+../src/helloworld.c:190:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.x = pos.x-1;
+        ^
+../src/helloworld.c:191:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.y = pos.y;
+        ^
+../src/helloworld.c:192:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.x = pos.x+1;
+        ^
+../src/helloworld.c:193:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.y = pos.y;
+        ^
+../src/helloworld.c:194:8: error: request for member 'head' in something not a structure or union
+  sprite.head.x = pos.x;
+        ^
+../src/helloworld.c:195:8: error: request for member 'head' in something not a structure or union
+  sprite.head.y = pos.y+1;
+        ^
+../src/helloworld.c:196:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.red = 255;
+        ^
+../src/helloworld.c:197:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.green = 0;
+        ^
+../src/helloworld.c:198:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.blue = 0;
+        ^
+../src/helloworld.c:200:25: error: request for member 'core' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                         ^
+../src/helloworld.c:200:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                                      ^
+../src/helloworld.c:201:25: error: request for member 'left_arm' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                         ^
+../src/helloworld.c:201:42: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                                          ^
+../src/helloworld.c:202:25: error: request for member 'right_arm' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                         ^
+../src/helloworld.c:202:43: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                                           ^
+../src/helloworld.c:203:25: error: request for member 'head' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                         ^
+../src/helloworld.c:203:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                                      ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:208:21: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_left_sprite(sprite_t *sprite) {
+                     ^~~~~~~~
+                     ssize_t
+../src/helloworld.c:232:22: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_right_sprite(sprite_t *sprite) {
+                      ^~~~~~~~
+                      ssize_t
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+09:49:39 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t cannon;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:144:11: warning: implicit declaration of function 'draw_sprite' [-Wimplicit-function-declaration]
+  cannon = draw_sprite(pos);
+           ^~~~~~~~~~~
+../src/helloworld.c:162:16: warning: implicit declaration of function 'move_left_sprite'; did you mean 'move_left_cannon'? [-Wimplicit-function-declaration]
+    valid_dir = move_left_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~
+                move_left_cannon
+../src/helloworld.c:169:16: warning: implicit declaration of function 'move_right_sprite'; did you mean 'move_right_cannon'? [-Wimplicit-function-declaration]
+    valid_dir = move_right_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~~
+                move_right_cannon
+../src/helloworld.c: At top level:
+../src/helloworld.c:185:1: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ sprite_t draw_sprite(position_t pos) {
+ ^~~~~~~~
+ ssize_t
+../src/helloworld.c: In function 'draw_sprite':
+../src/helloworld.c:186:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t sprite;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:188:8: error: request for member 'core' in something not a structure or union
+  sprite.core.x = pos.x;
+        ^
+../src/helloworld.c:189:8: error: request for member 'core' in something not a structure or union
+  sprite.core.y = pos.y;
+        ^
+../src/helloworld.c:190:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.x = pos.x-1;
+        ^
+../src/helloworld.c:191:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.y = pos.y;
+        ^
+../src/helloworld.c:192:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.x = pos.x+1;
+        ^
+../src/helloworld.c:193:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.y = pos.y;
+        ^
+../src/helloworld.c:194:8: error: request for member 'head' in something not a structure or union
+  sprite.head.x = pos.x;
+        ^
+../src/helloworld.c:195:8: error: request for member 'head' in something not a structure or union
+  sprite.head.y = pos.y+1;
+        ^
+../src/helloworld.c:196:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.red = 255;
+        ^
+../src/helloworld.c:197:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.green = 0;
+        ^
+../src/helloworld.c:198:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.blue = 0;
+        ^
+../src/helloworld.c:200:25: error: request for member 'core' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                         ^
+../src/helloworld.c:200:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                                      ^
+../src/helloworld.c:201:25: error: request for member 'left_arm' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                         ^
+../src/helloworld.c:201:42: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                                          ^
+../src/helloworld.c:202:25: error: request for member 'right_arm' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                         ^
+../src/helloworld.c:202:43: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                                           ^
+../src/helloworld.c:203:25: error: request for member 'head' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                         ^
+../src/helloworld.c:203:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                                      ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:208:21: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_left_sprite(sprite_t *sprite) {
+                     ^~~~~~~~
+                     ssize_t
+../src/helloworld.c:232:22: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_right_sprite(sprite_t *sprite) {
+                      ^~~~~~~~
+                      ssize_t
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+09:49:52 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t cannon;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:144:11: warning: implicit declaration of function 'draw_sprite' [-Wimplicit-function-declaration]
+  cannon = draw_sprite(pos);
+           ^~~~~~~~~~~
+../src/helloworld.c:162:16: warning: implicit declaration of function 'move_left_sprite'; did you mean 'move_left_cannon'? [-Wimplicit-function-declaration]
+    valid_dir = move_left_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~
+                move_left_cannon
+../src/helloworld.c:169:16: warning: implicit declaration of function 'move_right_sprite'; did you mean 'move_right_cannon'? [-Wimplicit-function-declaration]
+    valid_dir = move_right_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~~
+                move_right_cannon
+../src/helloworld.c: At top level:
+../src/helloworld.c:185:1: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ sprite_t draw_sprite(position_t pos) {
+ ^~~~~~~~
+ ssize_t
+../src/helloworld.c: In function 'draw_sprite':
+../src/helloworld.c:186:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t sprite;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:188:8: error: request for member 'core' in something not a structure or union
+  sprite.core.x = pos.x;
+        ^
+../src/helloworld.c:189:8: error: request for member 'core' in something not a structure or union
+  sprite.core.y = pos.y;
+        ^
+../src/helloworld.c:190:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.x = pos.x-1;
+        ^
+../src/helloworld.c:191:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.y = pos.y;
+        ^
+../src/helloworld.c:192:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.x = pos.x+1;
+        ^
+../src/helloworld.c:193:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.y = pos.y;
+        ^
+../src/helloworld.c:194:8: error: request for member 'head' in something not a structure or union
+  sprite.head.x = pos.x;
+        ^
+../src/helloworld.c:195:8: error: request for member 'head' in something not a structure or union
+  sprite.head.y = pos.y+1;
+        ^
+../src/helloworld.c:196:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.red = 255;
+        ^
+../src/helloworld.c:197:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.green = 0;
+        ^
+../src/helloworld.c:198:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.blue = 0;
+        ^
+../src/helloworld.c:200:25: error: request for member 'core' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                         ^
+../src/helloworld.c:200:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                                      ^
+../src/helloworld.c:201:25: error: request for member 'left_arm' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                         ^
+../src/helloworld.c:201:42: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                                          ^
+../src/helloworld.c:202:25: error: request for member 'right_arm' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                         ^
+../src/helloworld.c:202:43: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                                           ^
+../src/helloworld.c:203:25: error: request for member 'head' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                         ^
+../src/helloworld.c:203:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                                      ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:208:21: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_left_sprite(sprite_t *sprite) {
+                     ^~~~~~~~
+                     ssize_t
+../src/helloworld.c:232:22: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_right_sprite(sprite_t *sprite) {
+                      ^~~~~~~~
+                      ssize_t
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+09:50:43 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t cannon;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:144:11: warning: implicit declaration of function 'draw_sprite' [-Wimplicit-function-declaration]
+  cannon = draw_sprite(pos);
+           ^~~~~~~~~~~
+../src/helloworld.c:162:16: warning: implicit declaration of function 'move_left_sprite'; did you mean 'move_left_cannon'? [-Wimplicit-function-declaration]
+    valid_dir = move_left_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~
+                move_left_cannon
+../src/helloworld.c:169:16: warning: implicit declaration of function 'move_right_sprite'; did you mean 'move_right_cannon'? [-Wimplicit-function-declaration]
+    valid_dir = move_right_sprite(&cannon);
+                ^~~~~~~~~~~~~~~~~
+                move_right_cannon
+../src/helloworld.c: At top level:
+../src/helloworld.c:185:1: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ sprite_t draw_sprite(position_t pos) {
+ ^~~~~~~~
+ ssize_t
+../src/helloworld.c: In function 'draw_sprite':
+../src/helloworld.c:186:2: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+  sprite_t sprite;
+  ^~~~~~~~
+  ssize_t
+../src/helloworld.c:188:8: error: request for member 'core' in something not a structure or union
+  sprite.core.x = pos.x;
+        ^
+../src/helloworld.c:189:8: error: request for member 'core' in something not a structure or union
+  sprite.core.y = pos.y;
+        ^
+../src/helloworld.c:190:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.x = pos.x-1;
+        ^
+../src/helloworld.c:191:8: error: request for member 'left_arm' in something not a structure or union
+  sprite.left_arm.y = pos.y;
+        ^
+../src/helloworld.c:192:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.x = pos.x+1;
+        ^
+../src/helloworld.c:193:8: error: request for member 'right_arm' in something not a structure or union
+  sprite.right_arm.y = pos.y;
+        ^
+../src/helloworld.c:194:8: error: request for member 'head' in something not a structure or union
+  sprite.head.x = pos.x;
+        ^
+../src/helloworld.c:195:8: error: request for member 'head' in something not a structure or union
+  sprite.head.y = pos.y+1;
+        ^
+../src/helloworld.c:196:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.red = 255;
+        ^
+../src/helloworld.c:197:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.green = 0;
+        ^
+../src/helloworld.c:198:8: error: request for member 'colors' in something not a structure or union
+  sprite.colors.blue = 0;
+        ^
+../src/helloworld.c:200:25: error: request for member 'core' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                         ^
+../src/helloworld.c:200:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.core, sprite.colors);
+                                      ^
+../src/helloworld.c:201:25: error: request for member 'left_arm' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                         ^
+../src/helloworld.c:201:42: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.left_arm, sprite.colors);
+                                          ^
+../src/helloworld.c:202:25: error: request for member 'right_arm' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                         ^
+../src/helloworld.c:202:43: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.right_arm, sprite.colors);
+                                           ^
+../src/helloworld.c:203:25: error: request for member 'head' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                         ^
+../src/helloworld.c:203:38: error: request for member 'colors' in something not a structure or union
+  writePixelDirect(sprite.head, sprite.colors);
+                                      ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:208:21: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_left_sprite(sprite_t *sprite) {
+                     ^~~~~~~~
+                     ssize_t
+../src/helloworld.c:232:22: error: unknown type name 'sprite_t'; did you mean 'ssize_t'?
+ u8 move_right_sprite(sprite_t *sprite) {
+                      ^~~~~~~~
+                      ssize_t
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+09:51:02 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39516	   1216	  22856	  63588	   f864	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+09:52:35 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:52:48 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:53:15 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39516	   1216	  22856	  63588	   f864	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+09:53:17 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:57:26 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:43:38: error: 'deviceID' undeclared (first use in this function)
+  XAdcConfigPtr = XAdcPs_LookupConfig(deviceID);
+                                      ^~~~~~~~
+../src/helloworld.c:43:38: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:50:69: error: 'XAdcPs_Config {aka struct <anonymous>}' has no member named 'CtrlBaseAddress'; did you mean 'BaseAddress'?
+  status = XAdcPs_CfgInitialize(&XAdc, XAdcConfigPtr, XAdcConfigPtr->CtrlBaseAddress);
+                                                                     ^~~~~~~~~~~~~~~
+                                                                     BaseAddress
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+09:57:45 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:43:38: error: 'deviceID' undeclared (first use in this function)
+  XAdcConfigPtr = XAdcPs_LookupConfig(deviceID);
+                                      ^~~~~~~~
+../src/helloworld.c:43:38: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+09:58:23 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47372	   1224	  22872	  71468	  1172c	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+09:58:33 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/led_matrix.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47388	   1224	  22872	  71484	  1173c	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:01:23 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:169:6: warning: variable 'adc_data' set but not used [-Wunused-but-set-variable]
+  u16 adc_data = 0;
+      ^~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47388	   1224	  22872	  71484	  1173c	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:02:38 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47452	   1224	  22872	  71548	  1177c	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:02:54 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47452	   1224	  22872	  71548	  1177c	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:03:48 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47452	   1224	  22872	  71548	  1177c	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:04:09 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47452	   1224	  22872	  71548	  1177c	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:05:28 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:174:14: warning: character constant too long for its type
+   xil_printf('adc_data is: %s\n\r', adc_data);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:174:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+In file included from ../src/helloworld.c:4:0:
+../../Lab6_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: note: expected 'const char8 * {aka const char *}' but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+../src/helloworld.c:175:14: warning: character constant too long for its type
+   xil_printf('color_level is: %s\n\r', color_level);
+              ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:175:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+In file included from ../src/helloworld.c:4:0:
+../../Lab6_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: note: expected 'const char8 * {aka const char *}' but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47452	   1224	  22872	  71548	  1177c	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:07:31 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:174:14: warning: character constant too long for its type
+   xil_printf('adc_data is: %d\n\r', adc_data);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:174:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+In file included from ../src/helloworld.c:4:0:
+../../Lab6_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: note: expected 'const char8 * {aka const char *}' but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+../src/helloworld.c:175:14: warning: character constant too long for its type
+   xil_printf('color_level is: %d\n\r', color_level);
+              ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:175:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+In file included from ../src/helloworld.c:4:0:
+../../Lab6_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: note: expected 'const char8 * {aka const char *}' but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47452	   1224	  22872	  71548	  1177c	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:08:02 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:174:14: warning: character constant too long for its type
+   xil_printf('adc_data is: %d\n\r', *adc_data);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:174:37: error: invalid type argument of unary '*' (have 'int')
+   xil_printf('adc_data is: %d\n\r', *adc_data);
+                                     ^~~~~~~~~
+../src/helloworld.c:174:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+   xil_printf('adc_data is: %d\n\r', *adc_data);
+              ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../../Lab6_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: note: expected 'const char8 * {aka const char *}' but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+../src/helloworld.c:175:14: warning: character constant too long for its type
+   xil_printf('color_level is: %d\n\r', *color_level);
+              ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:175:40: error: invalid type argument of unary '*' (have 'int')
+   xil_printf('color_level is: %d\n\r', *color_level);
+                                        ^~~~~~~~~~~~
+../src/helloworld.c:175:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+   xil_printf('color_level is: %d\n\r', *color_level);
+              ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../../Lab6_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: note: expected 'const char8 * {aka const char *}' but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+10:08:05 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:174:14: warning: character constant too long for its type
+   xil_printf('adc_data is: %d\n\r', &adc_data);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:174:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+In file included from ../src/helloworld.c:4:0:
+../../Lab6_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: note: expected 'const char8 * {aka const char *}' but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+../src/helloworld.c:175:14: warning: character constant too long for its type
+   xil_printf('color_level is: %d\n\r', &color_level);
+              ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:175:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+In file included from ../src/helloworld.c:4:0:
+../../Lab6_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: note: expected 'const char8 * {aka const char *}' but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47452	   1224	  22872	  71548	  1177c	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:08:25 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47496	   1224	  22872	  71592	  117a8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:09:47 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:11:31 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47496	   1224	  22872	  71592	  117a8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:11:33 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:11:50 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47496	   1224	  22872	  71592	  117a8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:11:52 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:12:21 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47496	   1224	  22872	  71592	  117a8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:12:31 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47496	   1224	  22872	  71592	  117a8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:12:35 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47496	   1224	  22872	  71592	  117a8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:12:37 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:13:08 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47496	   1224	  22872	  71592	  117a8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:13:11 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:14:08 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47560	   1224	  22872	  71656	  117e8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:14:13 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:15:33 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:15:37 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47560	   1224	  22872	  71656	  117e8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:15:46 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47560	   1224	  22872	  71656	  117e8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:16:32 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47560	   1224	  22872	  71656	  117e8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:16:59 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47560	   1224	  22872	  71656	  117e8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:17:02 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47560	   1224	  22872	  71656	  117e8	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:17:44 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+../src/xadc.c: In function 'initXADC':
+../src/xadc.c:27:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47624	   1224	  22872	  71720	  11828	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:18:37 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+../src/xadc.c: In function 'initXADC':
+../src/xadc.c:28:38: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  XAdcConfigPtr = XAdcPs_LookupConfig(XADC_DEVICE_ID);
+                                      ^~~~~~~~~~~~~~
+                                      UART_DEVICE_ID
+../src/xadc.c:28:38: note: each undeclared identifier is reported only once for each function it appears in
+../src/xadc.c:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:35: src/xadc.o] Error 1
+10:18:43 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+../src/xadc.c: In function 'initXADC':
+../src/xadc.c:28:38: error: 'XADC_DEVICE_ID' undeclared (first use in this function); did you mean 'UART_DEVICE_ID'?
+  XAdcConfigPtr = XAdcPs_LookupConfig(XADC_DEVICE_ID);
+                                      ^~~~~~~~~~~~~~
+                                      UART_DEVICE_ID
+../src/xadc.c:28:38: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:35: src/xadc.o] Error 1
+10:18:52 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47896	   1224	  22872	  71992	  11938	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:19:34 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:43:11: warning: implicit declaration of function 'initXADC' [-Wimplicit-function-declaration]
+  status = initXADC(XADC_DEVICE_ID);
+           ^~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47716	   1224	  22872	  71812	  11884	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:19:46 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47716	   1224	  22872	  71812	  11884	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:21:05 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:21:33 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:147:13: warning: implicit declaration of function 'getAuxData'; did you mean 'getsubopt'? [-Wimplicit-function-declaration]
+  adc_data = getAuxData(15);
+             ^~~~~~~~~~
+             getsubopt
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:21:44 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:22:06 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:164:12: warning: operation on 'adc_data' may be undefined [-Wsequence-point]
+   adc_data = adc_data = getAuxData(15);
+   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:22:12 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:22:45 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:147:13: warning: implicit declaration of function 'getAuxData'; did you mean 'getXAdcAuxData'? [-Wimplicit-function-declaration]
+  adc_data = getAuxData(15);
+             ^~~~~~~~~~
+             getXAdcAuxData
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:22:47 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.sdk/Lab6/Debug/../src/helloworld.c:147: undefined reference to `getAuxData'
+/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.sdk/Lab6/Debug/../src/helloworld.c:164: undefined reference to `getAuxData'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:41: Lab6.elf] Error 1
+10:22:51 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:22:54 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:25:50 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:25:54 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:26:09 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:26:11 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:29:29 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:45:25 **** Clean-only build of project Lab6_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+10:45:26 **** Clean-only build of configuration Debug for project Lab6 ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o  ./src/helloworld.d ./src/led_matrix.d ./src/platform.d ./src/sprites.d ./src/xadc.d  Lab6.elf.size  Lab6.elf
+ 
+10:45:26 **** Build of project Lab6_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling bram
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sysmon
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+10:45:34 **** Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/led_matrix.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:45:45 **** Auto Build of project Lab6_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling bram
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sysmon
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+10:45:53 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/led_matrix.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:46:04 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:50:38 **** Clean-only build of project Lab6_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+10:50:38 **** Clean-only build of configuration Debug for project Lab6 ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o  ./src/helloworld.d ./src/led_matrix.d ./src/platform.d ./src/sprites.d ./src/xadc.d  Lab6.elf.size  Lab6.elf
+ 
+10:50:39 **** Build of project Lab6_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling bram
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sysmon
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+10:50:47 **** Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/led_matrix.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:50:57 **** Auto Build of project Lab6_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling bram
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sysmon
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+10:51:05 **** Auto Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/led_matrix.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building file: ../src/xadc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab6_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: Lab6.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab6_bsp/ps7_cortexa9_0/lib -o "Lab6.elf"  ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab6.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab6.elf  |tee "Lab6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47780	   1224	  22872	  71876	  118c4	Lab6.elf
+Finished building: Lab6.elf.size
+ 
+10:51:09 **** Incremental Build of configuration Debug for project Lab6 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
