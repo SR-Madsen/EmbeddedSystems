@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"Linux_Test": {
+			"proto_instances": {
+			}
+		}
+	}
+}
