@@ -50,5 +50,5 @@ u8 initXAdc(u8 deviceID) {
 
 // Get data from auxiliary channel conversion
 u16 getXAdcAuxData(u8 channel) {
-	return (XAdcPs_GetAdcData(&XAdc, XADCPS_CH_AUX_MIN + channel) >> 4);
+	return (XAdcPs_GetAdcData(&XAdc, XADCPS_CH_AUX_MIN + channel) >> SHIFT_LOWER_TWELVE);
 }

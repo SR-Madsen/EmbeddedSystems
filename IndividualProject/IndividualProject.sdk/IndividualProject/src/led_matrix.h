@@ -24,6 +24,7 @@
 #define BYTES_PER_WORD 4
 
 #define NUMBER_OF_COLS 8
+#define NUMBER_OF_ROWS 8
 
 #define PIXEL_ACTIVE 1
 #define PIXEL_INACTIVE 0

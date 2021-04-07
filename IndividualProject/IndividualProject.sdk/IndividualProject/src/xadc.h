@@ -15,7 +15,11 @@
 
 
 // Defines
+#define AUX6  6
+#define AUX7  7
+#define AUX15 15
 
+#define SHIFT_LOWER_TWELVE 4
 
 // Variables
 XAdcPs XAdc;

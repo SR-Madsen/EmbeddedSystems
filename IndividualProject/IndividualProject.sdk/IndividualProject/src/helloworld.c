@@ -38,7 +38,7 @@
 
 
 /************************** Variable Definitions *****************************/
-
+u8 player_health = 4;
 
 // Main function for Space Invaders
 int main(void)
@@ -67,7 +67,6 @@ int main(void)
 	}
 
 	setGpioDirection(GPIO0_DEVICE_ID, LEDS_OUTPUT);
-	writeGpio(GPIO0_DEVICE_ID, LED_1 | LED_2 | LED_3 | LED_4);
 
 	status = initGpio(GPIO1_DEVICE_ID);
 	if (status != XST_SUCCESS) {
@@ -77,65 +76,28 @@ int main(void)
 
 	setGpioDirection(GPIO1_DEVICE_ID, GYRO_INPUT);
 
-	// Fading dots example
-	/*
-	u8 iterations = 0;
-	while(1) {
-		for (int i = 1; i < 9; i++) {
-			for (int j = 1; j < 9; j++) {
-				u8 curr_red, curr_green, curr_blue;
-				getPixelValue(i, j, &curr_red, &curr_green, &curr_blue);
-				if (curr_red > 9 && curr_green > 9 && curr_blue > 9) {
-					setPixelValue(i, j, curr_red-3, curr_green-3, curr_blue-3);
-				} else if (curr_red > 9 && curr_green > 9) {
-					setPixelValue(i, j, curr_red-3, curr_green-3, 0);
-				} else if (curr_red > 9 && curr_blue > 9) {
-					setPixelValue(i, j, curr_red-3, 0, curr_blue-3);
-				} else if (curr_red > 9) {
-					setPixelValue(i, j, curr_red-3, 0, 0);
-				} else if (curr_green > 9 && curr_blue > 9) {
-					setPixelValue(i, j, 0, curr_green-3, curr_blue-3);
-				} else if (curr_green > 9) {
-					setPixelValue(i, j, 0, curr_green-3, 0);
-				} else if (curr_blue > 9) {
-					setPixelValue(i, j, 0, 0, curr_blue-3);
-				} else {
-					setPixelValue(i, j, 0, 0, 0);
-				}
-			}
-		}
-
-		if (iterations++ == 20) {
-			u8 i = rand()%8 + 1;
-			u8 j = rand()%8 + 1;
-			u8 rand_red = rand()%255 + 1;
-			u8 rand_green = rand()%255 + 1;
-			u8 rand_blue = rand()%255 + 1;
-			setPixelValue(i, j, rand_red, rand_green, rand_blue);
-			iterations = 0;
-		}
-
-		writeAllPixelsToDevice();
-		usleep(25000);
-	}
-	*/
-
 
 	// Moving sprites example
 	cannon_t cannon;
 	position_t pos = {4,1};
+
+	mediumUFO_t medium;
+	position_t ufo_pos = {2,8};
+
+	bullet_t bullet;
+	position_t bullet_pos = {pos.x, pos.y+1};
 
 	u8 direction = 0;
 	u8 valid_dir = 0;
 	u16 adc_data = 0;
 	u8 color_level = 0;
 
-	adc_data = getXAdcAuxData(15);
+	adc_data = getXAdcAuxData(AUX15);
 	color_level = (adc_data >> 4);
 
-	for (int row = 1; row < 9; row++) {
-		for (int column = 1; column < 9; column++) {
-			if (row == 1) {
+	for (int row = 1; row < NUMBER_OF_ROWS+1; row++) {
+		for (int column = 1; column < NUMBER_OF_COLS+1; column++) {
+			if (row == 1 || row == 2) {
 				writePixelValueDirect(column, row, 0, color_level, 0);
 			} else {
 				writePixelValueDirect(column, row, 0, 0, color_level);
@@ -144,17 +106,19 @@ int main(void)
 	}
 
 	cannon = draw_cannon(pos);
+	medium = draw_medium(ufo_pos);
+	bullet = draw_bullet(bullet_pos);
 
 	while(1) {
 		usleep(250000);
-		adc_data = getXAdcAuxData(15);
+		adc_data = getXAdcAuxData(AUX15);
 		color_level = (adc_data >> 4);
 		xil_printf("adc_data is: %d\n\r", adc_data);
 		xil_printf("color_level is: %d\n\r", color_level);
 
-		for (int row = 1; row < 9; row++) {
-			for (int column = 1; column < 9; column++) {
-				if (row == 1) {
+		for (int row = 1; row < NUMBER_OF_ROWS+1; row++) {
+			for (int column = 1; column < NUMBER_OF_COLS+1; column++) {
+				if (row == 1 || row == 2) {
 					writePixelValueDirect(column, row, 0, color_level, 0);
 				} else {
 					writePixelValueDirect(column, row, 0, 0, color_level);
@@ -164,18 +128,44 @@ int main(void)
 
 		if (direction == 0) {
 			valid_dir = move_left_cannon(&cannon);
-			if (valid_dir == 1) {
-				valid_dir = 0;
-			} else {
+			if (valid_dir != 1) {
 				direction = 1;
 			}
 		} else {
 			valid_dir = move_right_cannon(&cannon);
-			if (valid_dir == 1) {
-				valid_dir = 0;
-			} else {
+			if (valid_dir != 1) {
 				direction = 0;
 			}
+		}
+
+
+		if (medium.health > 0) {
+			valid_dir = move_down_medium(&medium);
+			if (valid_dir != 1) {
+				player_health -= 1;
+				medium = draw_medium(ufo_pos);
+			}
+		}
+
+		if (bullet.active == 1) {
+			valid_dir = move_up_bullet(&bullet);
+			if (valid_dir != 1) {
+				bullet_pos.x = cannon.head.x;
+				bullet_pos.y = cannon.head.y+1;
+				bullet = draw_bullet(bullet_pos);
+			}
+		}
+
+		if (player_health == 4) {
+			writeGpio(GPIO0_DEVICE_ID, LED_1 | LED_2 | LED_3 | LED_4);
+		} else if (player_health == 3) {
+			writeGpio(GPIO0_DEVICE_ID, LED_1 | LED_2 | LED_3);
+		} else if (player_health == 2) {
+			writeGpio(GPIO0_DEVICE_ID, LED_1 | LED_2);
+		} else if (player_health == 1) {
+			writeGpio(GPIO0_DEVICE_ID, LED_1);
+		} else {
+			writeGpio(GPIO0_DEVICE_ID, 0);
 		}
 	}
 

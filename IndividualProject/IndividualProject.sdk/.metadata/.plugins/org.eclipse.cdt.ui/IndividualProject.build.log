@@ -1,11 +1,11 @@
-12:02:36 **** Auto Build of configuration Debug for project IndividualProject ****
+21:29:40 **** Auto Build of configuration Debug for project IndividualProject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
-Building file: ../src/sprites.c
+Building file: ../src/helloworld.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
-Finished building: ../src/sprites.c
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
  
 Building target: IndividualProject.elf
 Invoking: ARM v7 gcc linker
@@ -15,9 +15,9 @@ Finished building target: IndividualProject.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  49760	   1256	  22904	  73920	  120c0	IndividualProject.elf
+  53924	   1264	  22904	  78092	  1310c	IndividualProject.elf
 Finished building: IndividualProject.elf.size
  
 
-12:02:37 Build Finished (took 563ms)
+21:29:41 Build Finished (took 566ms)
 
