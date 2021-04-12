@@ -1,0 +1,460 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 60873 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1450.992 ; gain = 92.895 ; free physical = 3715 ; free virtual = 11072
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:19]
+INFO: [Synth 8-3491] module 'timer' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/timer.vhd:6' bound to instance 'timer1' of component 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'timer' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/timer.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'timer' (1#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/timer.vhd:11]
+WARNING: [Synth 8-5640] Port 'ddr_addr' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_ba' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_cas_n' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_ck_n' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_ck_p' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_cke' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_cs_n' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_dm' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_dq' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_dqs_n' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_dqs_p' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_odt' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_ras_n' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_reset_n' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'ddr_we_n' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'fixed_io_ddr_vrn' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'fixed_io_ddr_vrp' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'fixed_io_mio' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'fixed_io_ps_clk' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'fixed_io_ps_porb' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+WARNING: [Synth 8-5640] Port 'fixed_io_ps_srstb' is missing in component declaration [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:26]
+INFO: [Synth 8-3491] module 'Lab6_wrapper' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/hdl/Lab6_wrapper.vhd:14' bound to instance 'mem1' of component 'Lab6_wrapper' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'Lab6_wrapper' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/hdl/Lab6_wrapper.vhd:53]
+INFO: [Synth 8-3491] module 'Lab6' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/synth/Lab6.vhd:14' bound to instance 'Lab6_i' of component 'Lab6' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/hdl/Lab6_wrapper.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'Lab6' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/synth/Lab6.vhd:57]
+INFO: [Synth 8-3491] module 'Lab6_axi_bram_ctrl_0_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/.Xil/Vivado-60844-sebastian-ZBook/realtime/Lab6_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'Lab6_axi_bram_ctrl_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/synth/Lab6.vhd:547]
+INFO: [Synth 8-638] synthesizing module 'Lab6_axi_bram_ctrl_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/.Xil/Vivado-60844-sebastian-ZBook/realtime/Lab6_axi_bram_ctrl_0_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'Lab6_axi_smc_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/.Xil/Vivado-60844-sebastian-ZBook/realtime/Lab6_axi_smc_0_stub.vhdl:5' bound to instance 'axi_smc' of component 'Lab6_axi_smc_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/synth/Lab6.vhd:590]
+INFO: [Synth 8-638] synthesizing module 'Lab6_axi_smc_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/.Xil/Vivado-60844-sebastian-ZBook/realtime/Lab6_axi_smc_0_stub.vhdl:103]
+INFO: [Synth 8-3491] module 'Lab6_blk_mem_gen_0_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/.Xil/Vivado-60844-sebastian-ZBook/realtime/Lab6_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'Lab6_blk_mem_gen_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/synth/Lab6.vhd:685]
+INFO: [Synth 8-638] synthesizing module 'Lab6_blk_mem_gen_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/.Xil/Vivado-60844-sebastian-ZBook/realtime/Lab6_blk_mem_gen_0_0_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'Lab6_processing_system7_0_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/.Xil/Vivado-60844-sebastian-ZBook/realtime/Lab6_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'Lab6_processing_system7_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/synth/Lab6.vhd:705]
+INFO: [Synth 8-638] synthesizing module 'Lab6_processing_system7_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/.Xil/Vivado-60844-sebastian-ZBook/realtime/Lab6_processing_system7_0_0_stub.vhdl:76]
+INFO: [Synth 8-3491] module 'Lab6_rst_ps7_0_100M_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/.Xil/Vivado-60844-sebastian-ZBook/realtime/Lab6_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'Lab6_rst_ps7_0_100M_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/synth/Lab6.vhd:773]
+INFO: [Synth 8-638] synthesizing module 'Lab6_rst_ps7_0_100M_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/.Xil/Vivado-60844-sebastian-ZBook/realtime/Lab6_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'Lab6_xadc_wiz_0_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/.Xil/Vivado-60844-sebastian-ZBook/realtime/Lab6_xadc_wiz_0_0_stub.vhdl:5' bound to instance 'xadc_wiz_0' of component 'Lab6_xadc_wiz_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/synth/Lab6.vhd:786]
+INFO: [Synth 8-638] synthesizing module 'Lab6_xadc_wiz_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/.Xil/Vivado-60844-sebastian-ZBook/realtime/Lab6_xadc_wiz_0_0_stub.vhdl:44]
+INFO: [Synth 8-256] done synthesizing module 'Lab6' (2#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/synth/Lab6.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'Lab6_wrapper' (3#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/hdl/Lab6_wrapper.vhd:53]
+INFO: [Synth 8-3491] module 'rows' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/row.vhd:5' bound to instance 'row1' of component 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'rows' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/row.vhd:15]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:6' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/row.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:16]
+INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/pwm_generator.vhd:4' bound to instance 'pwm_red' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/pwm_generator.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'pwm_generator' (4#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/pwm_generator.vhd:10]
+INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/pwm_generator.vhd:4' bound to instance 'pwm_green' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:29]
+INFO: [Synth 8-3491] module 'pwm_generator' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/pwm_generator.vhd:4' bound to instance 'pwm_blue' of component 'pwm_generator' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'color_channel' (5#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:16]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:6' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/row.vhd:30]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:6' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/row.vhd:30]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:6' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/row.vhd:30]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:6' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/row.vhd:30]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:6' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/row.vhd:30]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:6' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/row.vhd:30]
+INFO: [Synth 8-3491] module 'color_channel' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/color_channel.vhd:6' bound to instance 'COLORS' of component 'color_channel' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/row.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'rows' (6#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/row.vhd:15]
+INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:149]
+INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1497.742 ; gain = 139.645 ; free physical = 3726 ; free virtual = 11084
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1497.742 ; gain = 139.645 ; free physical = 3727 ; free virtual = 11085
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1497.742 ; gain = 139.645 ; free physical = 3727 ; free virtual = 11085
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/ip/Lab6_processing_system7_0_0/Lab6_processing_system7_0_0/Lab6_processing_system7_0_0_in_context.xdc] for cell 'mem1/Lab6_i/processing_system7_0'
+Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/ip/Lab6_processing_system7_0_0/Lab6_processing_system7_0_0/Lab6_processing_system7_0_0_in_context.xdc] for cell 'mem1/Lab6_i/processing_system7_0'
+Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/ip/Lab6_blk_mem_gen_0_0/Lab6_blk_mem_gen_0_0/Lab6_blk_mem_gen_0_0_in_context.xdc] for cell 'mem1/Lab6_i/blk_mem_gen_0'
+Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/ip/Lab6_blk_mem_gen_0_0/Lab6_blk_mem_gen_0_0/Lab6_blk_mem_gen_0_0_in_context.xdc] for cell 'mem1/Lab6_i/blk_mem_gen_0'
+Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/ip/Lab6_axi_bram_ctrl_0_0/Lab6_axi_bram_ctrl_0_0/Lab6_axi_bram_ctrl_0_0_in_context.xdc] for cell 'mem1/Lab6_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/ip/Lab6_axi_bram_ctrl_0_0/Lab6_axi_bram_ctrl_0_0/Lab6_axi_bram_ctrl_0_0_in_context.xdc] for cell 'mem1/Lab6_i/axi_bram_ctrl_0'
+Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/ip/Lab6_xadc_wiz_0_0/Lab6_xadc_wiz_0_0/Lab6_xadc_wiz_0_0_in_context.xdc] for cell 'mem1/Lab6_i/xadc_wiz_0'
+Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/ip/Lab6_xadc_wiz_0_0/Lab6_xadc_wiz_0_0/Lab6_xadc_wiz_0_0_in_context.xdc] for cell 'mem1/Lab6_i/xadc_wiz_0'
+Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/ip/Lab6_axi_smc_0/Lab6_axi_smc_0/Lab6_axi_smc_0_in_context.xdc] for cell 'mem1/Lab6_i/axi_smc'
+Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/ip/Lab6_axi_smc_0/Lab6_axi_smc_0/Lab6_axi_smc_0_in_context.xdc] for cell 'mem1/Lab6_i/axi_smc'
+Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/ip/Lab6_rst_ps7_0_100M_0/Lab6_rst_ps7_0_100M_0/Lab6_rst_ps7_0_100M_0_in_context.xdc] for cell 'mem1/Lab6_i/rst_ps7_0_100M'
+Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/bd/Lab6/ip/Lab6_rst_ps7_0_100M_0/Lab6_rst_ps7_0_100M_0/Lab6_rst_ps7_0_100M_0_in_context.xdc] for cell 'mem1/Lab6_i/rst_ps7_0_100M'
+Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/constrs_1/imports/new/RGB_Matrix.xdc]
+Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/constrs_1/imports/new/RGB_Matrix.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/constrs_1/imports/new/RGB_Matrix.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1858.406 ; gain = 0.000 ; free physical = 3472 ; free virtual = 10830
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1858.406 ; gain = 0.000 ; free physical = 3472 ; free virtual = 10830
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1858.406 ; gain = 0.000 ; free physical = 3472 ; free virtual = 10830
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1858.406 ; gain = 0.000 ; free physical = 3472 ; free virtual = 10830
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mem1/Lab6_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3553 ; free virtual = 10911
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3553 ; free virtual = 10911
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for mem1/Lab6_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mem1/Lab6_i/processing_system7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mem1/Lab6_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mem1/Lab6_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mem1/Lab6_i/xadc_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mem1/Lab6_i/axi_smc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mem1/Lab6_i/rst_ps7_0_100M. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3555 ; free virtual = 10913
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "mem_addr0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top'
+INFO: [Synth 8-802] inferred FSM for state register 'memory_state_reg' in module 'top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   ready |                             0001 |                               11
+                   reset |                             0010 |                               00
+                   setup |                             0100 |                               01
+                   latch |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'memory_state_reg' using encoding 'one-hot' in module 'top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   shift |                               00 |                               00
+                     get |                               01 |                               01
+                 waiting |                               10 |                               10
+                   ready |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3546 ; free virtual = 10904
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 9     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 9     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'row_addr_shift_reg[2:0]' into 'row_addr_shift_reg[2:0]' [/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.srcs/sources_1/imports/new/top.vhd:154]
+INFO: [Synth 8-3886] merging instance 'bram_addr_reg[0]' (FDE) to 'bram_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bram_addr_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3528 ; free virtual = 10889
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mem1/Lab6_i/processing_system7_0/FCLK_CLK0' to pin 'mem1/Lab6_i/processing_system7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mem1/Lab6_i/axi_bram_ctrl_0/bram_clk_a' to pin 'mem1/Lab6_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3364 ; free virtual = 10724
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3247 ; free virtual = 10607
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3233 ; free virtual = 10583
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3187 ; free virtual = 10552
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3187 ; free virtual = 10552
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3185 ; free virtual = 10550
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3184 ; free virtual = 10549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3182 ; free virtual = 10548
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3182 ; free virtual = 10548
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |Lab6_axi_bram_ctrl_0_0      |         1|
+|2     |Lab6_axi_smc_0              |         1|
+|3     |Lab6_blk_mem_gen_0_0        |         1|
+|4     |Lab6_processing_system7_0_0 |         1|
+|5     |Lab6_rst_ps7_0_100M_0       |         1|
+|6     |Lab6_xadc_wiz_0_0           |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |Lab6_axi_bram_ctrl_0_0_bbox_0      |     1|
+|2     |Lab6_axi_smc_0_bbox_1              |     1|
+|3     |Lab6_blk_mem_gen_0_0_bbox_2        |     1|
+|4     |Lab6_processing_system7_0_0_bbox_3 |     1|
+|5     |Lab6_rst_ps7_0_100M_0_bbox_4       |     1|
+|6     |Lab6_xadc_wiz_0_0_bbox_5           |     1|
+|7     |BUFG                               |     1|
+|8     |CARRY4                             |    48|
+|9     |LUT1                               |     3|
+|10    |LUT2                               |     5|
+|11    |LUT3                               |    10|
+|12    |LUT4                               |   199|
+|13    |LUT5                               |     4|
+|14    |LUT6                               |     4|
+|15    |FDRE                               |   682|
+|16    |IBUF                               |     7|
+|17    |OBUF                               |    32|
++------+-----------------------------------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-----------------+------+
+|      |Instance                     |Module           |Cells |
++------+-----------------------------+-----------------+------+
+|1     |top                          |                 |  1655|
+|2     |  row1                       |rows             |    24|
+|3     |    \multi_colors[0].COLORS  |color_channel    |     3|
+|4     |      pwm_blue               |pwm_generator_27 |     1|
+|5     |      pwm_green              |pwm_generator_28 |     1|
+|6     |      pwm_red                |pwm_generator_29 |     1|
+|7     |    \multi_colors[1].COLORS  |color_channel_0  |     3|
+|8     |      pwm_blue               |pwm_generator_24 |     1|
+|9     |      pwm_green              |pwm_generator_25 |     1|
+|10    |      pwm_red                |pwm_generator_26 |     1|
+|11    |    \multi_colors[2].COLORS  |color_channel_1  |     3|
+|12    |      pwm_blue               |pwm_generator_21 |     1|
+|13    |      pwm_green              |pwm_generator_22 |     1|
+|14    |      pwm_red                |pwm_generator_23 |     1|
+|15    |    \multi_colors[3].COLORS  |color_channel_2  |     3|
+|16    |      pwm_blue               |pwm_generator_18 |     1|
+|17    |      pwm_green              |pwm_generator_19 |     1|
+|18    |      pwm_red                |pwm_generator_20 |     1|
+|19    |    \multi_colors[4].COLORS  |color_channel_3  |     3|
+|20    |      pwm_blue               |pwm_generator_15 |     1|
+|21    |      pwm_green              |pwm_generator_16 |     1|
+|22    |      pwm_red                |pwm_generator_17 |     1|
+|23    |    \multi_colors[5].COLORS  |color_channel_4  |     3|
+|24    |      pwm_blue               |pwm_generator_12 |     1|
+|25    |      pwm_green              |pwm_generator_13 |     1|
+|26    |      pwm_red                |pwm_generator_14 |     1|
+|27    |    \multi_colors[6].COLORS  |color_channel_5  |     3|
+|28    |      pwm_blue               |pwm_generator_9  |     1|
+|29    |      pwm_green              |pwm_generator_10 |     1|
+|30    |      pwm_red                |pwm_generator_11 |     1|
+|31    |    \multi_colors[7].COLORS  |color_channel_6  |     3|
+|32    |      pwm_blue               |pwm_generator    |     1|
+|33    |      pwm_green              |pwm_generator_7  |     1|
+|34    |      pwm_red                |pwm_generator_8  |     1|
+|35    |  timer1                     |timer            |   210|
+|36    |  mem1                       |Lab6_wrapper     |   660|
+|37    |    Lab6_i                   |Lab6             |   660|
++------+-----------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3182 ; free virtual = 10547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1858.406 ; gain = 139.645 ; free physical = 3235 ; free virtual = 10600
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1858.406 ; gain = 500.309 ; free physical = 3235 ; free virtual = 10600
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1858.406 ; gain = 0.000 ; free physical = 3013 ; free virtual = 10429
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1858.406 ; gain = 506.141 ; free physical = 3053 ; free virtual = 10469
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1858.406 ; gain = 0.000 ; free physical = 3052 ; free virtual = 10468
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/sebastian/Desktop/Git/EmbeddedSystems/Lab6/Lab6.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  7 10:48:19 2021...
