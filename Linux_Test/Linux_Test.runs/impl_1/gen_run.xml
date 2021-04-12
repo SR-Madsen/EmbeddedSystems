@@ -1,74 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1617730225">
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-PWR-SUM" Name="Linux_Test_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Linux_Test_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="Linux_Test_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Linux_Test_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Linux_Test_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DCP" Name="Linux_Test_wrapper_routed.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Linux_Test_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Linux_Test_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-PWR" Name="Linux_Test_wrapper_power_routed.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Linux_Test_wrapper_physopt.dcp"/>
+  <File Type="ROUTE-DRC-PB" Name="Linux_Test_wrapper_drc_routed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Linux_Test_wrapper_postplace_pwropt.dcp"/>
+  <File Type="ROUTE-DRC" Name="Linux_Test_wrapper_drc_routed.rpt"/>
+  <File Type="OPT-DRC" Name="Linux_Test_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Linux_Test_wrapper_opt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Linux_Test_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="Linux_Test_wrapper_control_sets_placed.rpt"/>
+  <File Type="PA-TCL" Name="Linux_Test_wrapper.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Linux_Test_wrapper_bus_skew_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Linux_Test_wrapper_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Linux_Test_wrapper_bus_skew_routed.rpx"/>
+  <File Type="OPT-HWDEF" Name="Linux_Test_wrapper.hwdef"/>
+  <File Type="PLACE-UTIL-PB" Name="Linux_Test_wrapper_utilization_placed.pb"/>
+  <File Type="BG-BIT" Name="Linux_Test_wrapper.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="Linux_Test_wrapper_route_status.pb"/>
+  <File Type="BG-BIN" Name="Linux_Test_wrapper.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Linux_Test_wrapper_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="Linux_Test_wrapper.msk"/>
+  <File Type="ROUTE-TIMING-PB" Name="Linux_Test_wrapper_timing_summary_routed.pb"/>
+  <File Type="BITSTR-RBT" Name="Linux_Test_wrapper.rbt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Linux_Test_wrapper_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="Linux_Test_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="Linux_Test_wrapper_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="Linux_Test_wrapper_clock_utilization_routed.rpt"/>
   <File Type="BG-DRC" Name="Linux_Test_wrapper.drc"/>
+  <File Type="BITSTR-MMI" Name="Linux_Test_wrapper.mmi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Linux_Test_wrapper_bus_skew_routed.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-BGN" Name="Linux_Test_wrapper.bgn"/>
   <File Type="BITSTR-SYSDEF" Name="Linux_Test_wrapper.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="PLACE-UTIL" Name="Linux_Test_wrapper_utilization_placed.rpt"/>
   <File Type="BITSTR-LTX" Name="Linux_Test_wrapper.ltx"/>
-  <File Type="BITSTR-MMI" Name="Linux_Test_wrapper.mmi"/>
-  <File Type="BITSTR-BMM" Name="Linux_Test_wrapper_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="Linux_Test_wrapper.nky"/>
-  <File Type="BITSTR-RBT" Name="Linux_Test_wrapper.rbt"/>
-  <File Type="BITSTR-MSK" Name="Linux_Test_wrapper.msk"/>
-  <File Type="BG-BIN" Name="Linux_Test_wrapper.bin"/>
-  <File Type="BG-BIT" Name="Linux_Test_wrapper.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Linux_Test_wrapper_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Linux_Test_wrapper_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Linux_Test_wrapper_bus_skew_postroute_physopted.rpt"/>
   <File Type="RDI-RDI" Name="Linux_Test_wrapper.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Linux_Test_wrapper_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Linux_Test_wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Linux_Test_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="PLACE-IO" Name="Linux_Test_wrapper_io_placed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Linux_Test_wrapper_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Linux_Test_wrapper_postroute_physopt.dcp"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Linux_Test_wrapper_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Linux_Test_wrapper_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="Linux_Test_wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Linux_Test_wrapper_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="Linux_Test_wrapper_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Linux_Test_wrapper_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="Linux_Test_wrapper_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="Linux_Test_wrapper_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="Linux_Test_wrapper_power_routed.rpx"/>
-  <File Type="PLACE-UTIL-PB" Name="Linux_Test_wrapper_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="Linux_Test_wrapper_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Linux_Test_wrapper_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="Linux_Test_wrapper_io_placed.rpt"/>
   <File Type="PLACE-DCP" Name="Linux_Test_wrapper_placed.dcp"/>
   <File Type="PWROPT-DCP" Name="Linux_Test_wrapper_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="Linux_Test_wrapper_timing_summary_opted.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Linux_Test_wrapper_incremental_reuse_placed.rpt"/>
-  <File Type="OPT-HWDEF" Name="Linux_Test_wrapper.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="Linux_Test_wrapper_bus_skew_routed.rpx"/>
-  <File Type="REPORTS-TCL" Name="Linux_Test_wrapper_reports.tcl"/>
-  <File Type="PWROPT-DRC" Name="Linux_Test_wrapper_drc_pwropted.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Linux_Test_wrapper_bus_skew_routed.pb"/>
-  <File Type="PA-TCL" Name="Linux_Test_wrapper.tcl"/>
-  <File Type="INIT-TIMING" Name="Linux_Test_wrapper_timing_summary_init.rpt"/>
-  <File Type="PLACE-CTRL" Name="Linux_Test_wrapper_control_sets_placed.rpt"/>
-  <File Type="PWROPT-TIMING" Name="Linux_Test_wrapper_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Linux_Test_wrapper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="OPT-DCP" Name="Linux_Test_wrapper_opt.dcp"/>
-  <File Type="OPT-DRC" Name="Linux_Test_wrapper_drc_opted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Linux_Test_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="PLACE-TIMING" Name="Linux_Test_wrapper_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="Linux_Test_wrapper_drc_routed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Linux_Test_wrapper_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Linux_Test_wrapper_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="Linux_Test_wrapper_drc_routed.pb"/>
-  <File Type="PHYSOPT-DCP" Name="Linux_Test_wrapper_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Linux_Test_wrapper_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-TIMING" Name="Linux_Test_wrapper_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-PWR" Name="Linux_Test_wrapper_power_routed.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Linux_Test_wrapper_routed_error.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Linux_Test_wrapper_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-DCP" Name="Linux_Test_wrapper_routed.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Linux_Test_wrapper_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Linux_Test_wrapper_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC-RPX" Name="Linux_Test_wrapper_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Linux_Test_wrapper_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="Linux_Test_wrapper_power_summary_routed.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/Linux_Test/Linux_Test.bd">
@@ -104,9 +85,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -117,6 +96,6 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="Linux_Test_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Linux_Test_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Linux_Test_processing_system7_0_0"/>
 </GenRun>
