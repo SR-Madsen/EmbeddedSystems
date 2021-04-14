@@ -14,7 +14,6 @@
 #include "sprites.h"
 #include "xadc.h"
 #include "gpios.h"
-#include "tasks.h"
 
 /************************** Constant Definitions *****************************/
 

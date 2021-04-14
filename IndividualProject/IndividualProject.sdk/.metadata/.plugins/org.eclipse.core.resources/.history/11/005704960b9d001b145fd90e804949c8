@@ -1,0 +1,26 @@
+/*
+ * tasks.c
+ *
+ *  Created on: Apr 14, 2021
+ *      Author: sebastian
+ */
+
+#include "tasks.h"
+
+/*
+ * 	Examples of use
+ */
+
+/*
+
+
+
+
+*/
+
+
+/*
+ * 	Functions
+ */
+
+void backgroundTask();

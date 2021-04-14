@@ -14,7 +14,6 @@
 #include "sprites.h"
 #include "xadc.h"
 #include "gpios.h"
-#include "tasks.h"
 
 /************************** Constant Definitions *****************************/
 
@@ -85,6 +84,9 @@ int main(void)
 	mediumUFO_t medium;
 	position_t ufo_pos = {2,8};
 
+	bullet_t bullet;
+	position_t bullet_pos = {pos.x, pos.y+1};
+
 	u8 direction = 0;
 	u8 valid_dir = 0;
 	u16 adc_data = 0;
@@ -105,10 +107,6 @@ int main(void)
 
 	cannon = draw_cannon(pos);
 	medium = draw_medium(ufo_pos);
-
-	bullet_t bullet;
-	position_t bullet_pos = {cannon.head.x, cannon.head.y+1};
-
 	bullet = draw_bullet(bullet_pos);
 
 	while(1) {

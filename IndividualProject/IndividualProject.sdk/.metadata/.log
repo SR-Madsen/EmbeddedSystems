@@ -5629,3 +5629,43 @@ java.lang.IllegalStateException: Need an underlying widget to be able to set the
 
 !ENTRY com.xilinx.sdk.utils 0 0 2021-04-07 21:30:57.831
 !MESSAGE XSCT command with result: [disconnect tcfchan#17], Result: [null, ]. Thread: Thread-2060
+!SESSION 2021-04-14 10:21:56.067 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.sdk
+
+!ENTRY org.eclipse.ui 2 0 2021-04-14 10:22:02.119
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-04-14 10:22:02.119
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2021-04-14 10:22:05.479
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-04-14 10:22:05.479
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-14 10:22:41.146
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-14 10:22:41.146
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-14 10:23:06.084
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-14 10:23:06.084
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-14 10:23:06.085
+!MESSAGE XSCT Command: [setws /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.sdk], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-14 10:23:06.087
+!MESSAGE XSCT command with result: [setws /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.sdk], Result: [null, ]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-14 10:23:06.137
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.sdk/top_hw_platform_0/system.hdf], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-14 10:23:13.423
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.sdk/top_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-0
