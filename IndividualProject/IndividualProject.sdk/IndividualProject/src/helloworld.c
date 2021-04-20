@@ -30,16 +30,21 @@
 
 #define LEDS_OUTPUT			0xF
 #define GYRO_INPUT			0x0
-#define LED_1				1
-#define LED_2				2
-#define LED_3				4
-#define LED_4				8
 
 /************************** Struct Definitions *******************************/
 
 
 /************************** Variable Definitions *****************************/
 u8 player_health = 4;
+u16 tick_value = 0;
+u8 level = 0;
+u8 power_up = 0;
+u8 move_direction = NONE;
+u8 shot_request = NONE;
+u8 game_over = 0;
+u32 small_kills = 0;
+u32 medium_kills = 0;
+u32 big_kills = 0;
 
 // Main function for Space Invaders
 int main(void)

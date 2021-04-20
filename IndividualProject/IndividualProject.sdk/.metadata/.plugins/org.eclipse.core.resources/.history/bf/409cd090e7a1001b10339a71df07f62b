@@ -1,0 +1,36 @@
+/*
+ * stats.h
+ *
+ *  Created on: Apr 20, 2021
+ *      Author: sebastian
+ */
+
+#ifndef SRC_STATS_H_
+#define SRC_STATS_H_
+
+#include <stdio.h>
+#include "platform.h"
+#include "xparameters.h"
+#include "xbram.h"
+
+// Defines
+
+
+// Variables
+XBram Bram;
+XBram_Config *BramConfigPtr;
+
+// Structs
+
+
+// Function prototypes
+u8 initStatsBram(u8 deviceID);
+
+void writeLevel(u8 level);
+void writeSmallKills(u8 kills);
+void writeMedKills(u8 kills);
+void writeBigKills(u8 kills);
+void writeHealth(u8 health);
+void writePowerUp(u8 power_up);
+
+#endif /* SRC_STATS_H_ */

@@ -14,12 +14,30 @@
 #include "led_matrix.h"
 #include "xadc.h"
 #include "gpios.h"
+#include "stats.h"
 
 // Defines
+#define NONE  0
+#define SHOOT 1
+#define LEFT  1
+#define RIGHT 2
 
+#define LED_1 1
+#define LED_2 2
+#define LED_3 4
+#define LED_4 8
 
 // Variables
 extern u16 tick_value;
+extern u8 level;
+extern u8 power_up;
+extern u8 move_direction;
+extern u8 shot_request;
+extern u8 player_health;
+extern u8 game_over;
+extern u32 small_kills;
+extern u32 medium_kills;
+extern u32 big_kills;
 
 // Structs
 
@@ -29,7 +47,7 @@ extern u16 tick_value;
 void potentiometerTask();
 
 // Reads joystick analog value and button value and set movement and shooting with it.
-void joystickTask();
+void joystickTask(int GYRO_GPIO_ID);
 
 // Sets the colors of the background depending on level
 void backgroundTask();
@@ -42,10 +60,7 @@ void spritesTask();
 void matrixTask();
 
 // Handles updating the level and player HP, as well as writing statistics.
-void levelTask();
-
-// Writes statistics to the BRAM to be read by Embedded Linux
-void BRAMTask();
+void levelTask(int LED_GPIO_ID);
 
 
 #endif /* SRC_TASKS_H_ */
