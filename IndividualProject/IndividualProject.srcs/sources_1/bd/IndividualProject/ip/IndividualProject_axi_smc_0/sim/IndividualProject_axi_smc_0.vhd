@@ -184,7 +184,40 @@ ENTITY IndividualProject_axi_smc_0 IS
     M03_AXI_rdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     M03_AXI_rresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
     M03_AXI_rvalid : IN STD_LOGIC;
-    M03_AXI_rready : OUT STD_LOGIC
+    M03_AXI_rready : OUT STD_LOGIC;
+    M04_AXI_awaddr : OUT STD_LOGIC_VECTOR(12 DOWNTO 0);
+    M04_AXI_awlen : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+    M04_AXI_awsize : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    M04_AXI_awburst : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+    M04_AXI_awlock : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    M04_AXI_awcache : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    M04_AXI_awprot : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    M04_AXI_awqos : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    M04_AXI_awvalid : OUT STD_LOGIC;
+    M04_AXI_awready : IN STD_LOGIC;
+    M04_AXI_wdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    M04_AXI_wstrb : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    M04_AXI_wlast : OUT STD_LOGIC;
+    M04_AXI_wvalid : OUT STD_LOGIC;
+    M04_AXI_wready : IN STD_LOGIC;
+    M04_AXI_bresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+    M04_AXI_bvalid : IN STD_LOGIC;
+    M04_AXI_bready : OUT STD_LOGIC;
+    M04_AXI_araddr : OUT STD_LOGIC_VECTOR(12 DOWNTO 0);
+    M04_AXI_arlen : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+    M04_AXI_arsize : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    M04_AXI_arburst : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+    M04_AXI_arlock : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    M04_AXI_arcache : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    M04_AXI_arprot : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    M04_AXI_arqos : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    M04_AXI_arvalid : OUT STD_LOGIC;
+    M04_AXI_arready : IN STD_LOGIC;
+    M04_AXI_rdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    M04_AXI_rresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+    M04_AXI_rlast : IN STD_LOGIC;
+    M04_AXI_rvalid : IN STD_LOGIC;
+    M04_AXI_rready : OUT STD_LOGIC
   );
 END IndividualProject_axi_smc_0;
 
@@ -322,11 +355,79 @@ ARCHITECTURE IndividualProject_axi_smc_0_arch OF IndividualProject_axi_smc_0 IS
       M03_AXI_rdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       M03_AXI_rresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
       M03_AXI_rvalid : IN STD_LOGIC;
-      M03_AXI_rready : OUT STD_LOGIC
+      M03_AXI_rready : OUT STD_LOGIC;
+      M04_AXI_awaddr : OUT STD_LOGIC_VECTOR(12 DOWNTO 0);
+      M04_AXI_awlen : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+      M04_AXI_awsize : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M04_AXI_awburst : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+      M04_AXI_awlock : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+      M04_AXI_awcache : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      M04_AXI_awprot : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M04_AXI_awqos : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      M04_AXI_awvalid : OUT STD_LOGIC;
+      M04_AXI_awready : IN STD_LOGIC;
+      M04_AXI_wdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+      M04_AXI_wstrb : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      M04_AXI_wlast : OUT STD_LOGIC;
+      M04_AXI_wvalid : OUT STD_LOGIC;
+      M04_AXI_wready : IN STD_LOGIC;
+      M04_AXI_bresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+      M04_AXI_bvalid : IN STD_LOGIC;
+      M04_AXI_bready : OUT STD_LOGIC;
+      M04_AXI_araddr : OUT STD_LOGIC_VECTOR(12 DOWNTO 0);
+      M04_AXI_arlen : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+      M04_AXI_arsize : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M04_AXI_arburst : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+      M04_AXI_arlock : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+      M04_AXI_arcache : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      M04_AXI_arprot : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M04_AXI_arqos : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      M04_AXI_arvalid : OUT STD_LOGIC;
+      M04_AXI_arready : IN STD_LOGIC;
+      M04_AXI_rdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+      M04_AXI_rresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+      M04_AXI_rlast : IN STD_LOGIC;
+      M04_AXI_rvalid : IN STD_LOGIC;
+      M04_AXI_rready : OUT STD_LOGIC
     );
   END COMPONENT bd_8718;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI RREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_rvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI RVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_rlast: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI RLAST";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_rresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI RRESP";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_rdata: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI RDATA";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_arready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI ARREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_arvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI ARVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_arqos: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI ARQOS";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_arprot: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI ARPROT";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_arcache: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI ARCACHE";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_arlock: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI ARLOCK";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_arburst: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI ARBURST";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_arsize: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI ARSIZE";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_arlen: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI ARLEN";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_araddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI ARADDR";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_bready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI BREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_bvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI BVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_bresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI BRESP";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_wready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI WREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_wvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI WVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_wlast: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI WLAST";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_wstrb: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI WSTRB";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_wdata: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI WDATA";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_awready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI AWREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_awvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI AWVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_awqos: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI AWQOS";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_awprot: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI AWPROT";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_awcache: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI AWCACHE";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_awlock: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI AWLOCK";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_awburst: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI AWBURST";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_awsize: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI AWSIZE";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_awlen: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI AWLEN";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF M04_AXI_awaddr: SIGNAL IS "XIL_INTERFACENAME M04_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 13, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN IndividualProject_processing_system7_0_0_FCLK_CLK0, NUM_REA" & 
+"D_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF M04_AXI_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 M04_AXI AWADDR";
   ATTRIBUTE X_INTERFACE_INFO OF M03_AXI_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M03_AXI RREADY";
   ATTRIBUTE X_INTERFACE_INFO OF M03_AXI_rvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M03_AXI RVALID";
   ATTRIBUTE X_INTERFACE_INFO OF M03_AXI_rresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 M03_AXI RRESP";
@@ -467,7 +568,7 @@ ARCHITECTURE IndividualProject_axi_smc_0_arch OF IndividualProject_axi_smc_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF S00_AXI_awid: SIGNAL IS "xilinx.com:interface:aximm:1.0 S00_AXI AWID";
   ATTRIBUTE X_INTERFACE_PARAMETER OF aresetn: SIGNAL IS "XIL_INTERFACENAME RST.aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF aresetn: SIGNAL IS "xilinx.com:signal:reset:1.0 RST.aresetn RST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF aclk: SIGNAL IS "XIL_INTERFACENAME CLK.aclk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN IndividualProject_processing_system7_0_0_FCLK_CLK0, ASSOCIATED_BUSIF M00_AXI:M01_AXI:M02_AXI:M03_AXI:S00_AXI, INSERT_VIP 0, ASSOCIATED_CLKEN m_sc_aclken";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF aclk: SIGNAL IS "XIL_INTERFACENAME CLK.aclk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN IndividualProject_processing_system7_0_0_FCLK_CLK0, ASSOCIATED_BUSIF M00_AXI:M01_AXI:M02_AXI:M03_AXI:M04_AXI:S00_AXI, INSERT_VIP 0, ASSOCIATED_CLKEN m_sc_aclken";
   ATTRIBUTE X_INTERFACE_INFO OF aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 CLK.aclk CLK";
 BEGIN
   U0 : bd_8718
@@ -601,6 +702,39 @@ BEGIN
       M03_AXI_rdata => M03_AXI_rdata,
       M03_AXI_rresp => M03_AXI_rresp,
       M03_AXI_rvalid => M03_AXI_rvalid,
-      M03_AXI_rready => M03_AXI_rready
+      M03_AXI_rready => M03_AXI_rready,
+      M04_AXI_awaddr => M04_AXI_awaddr,
+      M04_AXI_awlen => M04_AXI_awlen,
+      M04_AXI_awsize => M04_AXI_awsize,
+      M04_AXI_awburst => M04_AXI_awburst,
+      M04_AXI_awlock => M04_AXI_awlock,
+      M04_AXI_awcache => M04_AXI_awcache,
+      M04_AXI_awprot => M04_AXI_awprot,
+      M04_AXI_awqos => M04_AXI_awqos,
+      M04_AXI_awvalid => M04_AXI_awvalid,
+      M04_AXI_awready => M04_AXI_awready,
+      M04_AXI_wdata => M04_AXI_wdata,
+      M04_AXI_wstrb => M04_AXI_wstrb,
+      M04_AXI_wlast => M04_AXI_wlast,
+      M04_AXI_wvalid => M04_AXI_wvalid,
+      M04_AXI_wready => M04_AXI_wready,
+      M04_AXI_bresp => M04_AXI_bresp,
+      M04_AXI_bvalid => M04_AXI_bvalid,
+      M04_AXI_bready => M04_AXI_bready,
+      M04_AXI_araddr => M04_AXI_araddr,
+      M04_AXI_arlen => M04_AXI_arlen,
+      M04_AXI_arsize => M04_AXI_arsize,
+      M04_AXI_arburst => M04_AXI_arburst,
+      M04_AXI_arlock => M04_AXI_arlock,
+      M04_AXI_arcache => M04_AXI_arcache,
+      M04_AXI_arprot => M04_AXI_arprot,
+      M04_AXI_arqos => M04_AXI_arqos,
+      M04_AXI_arvalid => M04_AXI_arvalid,
+      M04_AXI_arready => M04_AXI_arready,
+      M04_AXI_rdata => M04_AXI_rdata,
+      M04_AXI_rresp => M04_AXI_rresp,
+      M04_AXI_rlast => M04_AXI_rlast,
+      M04_AXI_rvalid => M04_AXI_rvalid,
+      M04_AXI_rready => M04_AXI_rready
     );
 END IndividualProject_axi_smc_0_arch;

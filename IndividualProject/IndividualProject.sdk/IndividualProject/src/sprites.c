@@ -41,10 +41,10 @@ cannon_t draw_cannon(position_t pos) {
 	sprite.colors.blue = 0;
 	sprite.speed_timer = CANNON_SPEED;
 
-	writePixelDirect(sprite.core, sprite.colors);
-	writePixelDirect(sprite.left_arm, sprite.colors);
-	writePixelDirect(sprite.right_arm, sprite.colors);
-	writePixelDirect(sprite.head, sprite.colors);
+	setPixel(sprite.core, sprite.colors);
+	setPixel(sprite.left_arm, sprite.colors);
+	setPixel(sprite.right_arm, sprite.colors);
+	setPixel(sprite.head, sprite.colors);
 
 	return sprite;
 }
@@ -62,10 +62,10 @@ u8 move_left_cannon(cannon_t *sprite) {
 		status = 1;
 	}
 
-	writePixelDirect(sprite->core, sprite->colors);
-	writePixelDirect(sprite->left_arm, sprite->colors);
-	writePixelDirect(sprite->right_arm, sprite->colors);
-	writePixelDirect(sprite->head, sprite->colors);
+	setPixel(sprite->core, sprite->colors);
+	setPixel(sprite->left_arm, sprite->colors);
+	setPixel(sprite->right_arm, sprite->colors);
+	setPixel(sprite->head, sprite->colors);
 
 	return status;
 }
@@ -83,12 +83,20 @@ u8 move_right_cannon(cannon_t *sprite) {
 		status = 1;
 	}
 
-	writePixelDirect(sprite->core, sprite->colors);
-	writePixelDirect(sprite->left_arm, sprite->colors);
-	writePixelDirect(sprite->right_arm, sprite->colors);
-	writePixelDirect(sprite->head, sprite->colors);
+	setPixel(sprite->core, sprite->colors);
+	setPixel(sprite->left_arm, sprite->colors);
+	setPixel(sprite->right_arm, sprite->colors);
+	setPixel(sprite->head, sprite->colors);
 
 	return status;
+}
+
+// Update the cannon at every tick; used if no movement is registered
+void update_cannon(cannon_t *sprite) {
+	setPixel(sprite->core, sprite->colors);
+	setPixel(sprite->left_arm, sprite->colors);
+	setPixel(sprite->right_arm, sprite->colors);
+	setPixel(sprite->head, sprite->colors);
 }
 
 /********************* BULLET SPRITE *********************/
@@ -103,13 +111,13 @@ bullet_t draw_bullet(position_t pos) {
 	sprite.colors.blue = 0;
 	sprite.speed_timer = BULLET_SPEED;
 
-	writePixelDirect(sprite.core, sprite.colors);
+	setPixel(sprite.core, sprite.colors);
 
 	return sprite;
 }
 
 // Move bullet sprite upwards if possible, returning 1 if possible and 0 if not.
-// Checks for collision with UFOs. Removes if out of bounds.
+// Removes if out of bounds.
 u8 move_up_bullet(bullet_t *sprite) {
 	u8 status = 0;
 
@@ -118,7 +126,7 @@ u8 move_up_bullet(bullet_t *sprite) {
 
 		status = 1;
 
-		writePixelDirect(sprite->core, sprite->colors);
+		setPixel(sprite->core, sprite->colors);
 	} else {
 		sprite->active = 0;
 		remove_bullet(sprite);
@@ -138,7 +146,7 @@ u8 move_left_bullet(bullet_t *sprite) {
 
 		status = 1;
 
-		writePixelDirect(sprite->core, sprite->colors);
+		setPixel(sprite->core, sprite->colors);
 	} else {
 		sprite->active = 0;
 		remove_bullet(sprite);
@@ -158,7 +166,7 @@ u8 move_right_bullet(bullet_t *sprite) {
 
 		status = 1;
 
-		writePixelDirect(sprite->core, sprite->colors);
+		setPixel(sprite->core, sprite->colors);
 	} else {
 		sprite->active = 0;
 		remove_bullet(sprite);
@@ -170,7 +178,12 @@ u8 move_right_bullet(bullet_t *sprite) {
 // Removes pixels for sprite.
 void remove_bullet(bullet_t *sprite) {
 	color_t colors = {0, 0, 255};
-	writePixelDirect(sprite->core, colors);
+	setPixel(sprite->core, colors);
+}
+
+// Update bullet, unused.
+void update_bullet(bullet_t *sprite) {
+	setPixel(sprite->core, sprite->colors);
 }
 
 /********************* SMALL UFO SPRITE *********************/
@@ -205,10 +218,9 @@ u8 move_down_small(smallUFO_t *sprite) {
 
 		status = 1;
 
-		writePixelDirect(sprite->left, sprite->colors);
-		writePixelDirect(sprite->right, sprite->colors);
+		setPixel(sprite->left, sprite->colors);
+		setPixel(sprite->right, sprite->colors);
 	} else {
-		sprite->health = 0;
 		remove_small(sprite);
 	}
 
@@ -218,8 +230,16 @@ u8 move_down_small(smallUFO_t *sprite) {
 // Removes pixels for sprite.
 void remove_small(smallUFO_t *sprite) {
 	color_t colors = {0, 0, 255};
-	writePixelDirect(sprite->left, colors);
-	writePixelDirect(sprite->right, colors);
+	sprite->active = 0;
+	sprite->health = 0;
+	setPixel(sprite->left, colors);
+	setPixel(sprite->right, colors);
+}
+
+// Update small UFO; used if no movement.
+void update_small(smallUFO_t *sprite) {
+	setPixel(sprite->left, sprite->colors);
+	setPixel(sprite->right, sprite->colors);
 }
 
 /********************* MEDIUM UFO SPRITE *********************/
@@ -258,11 +278,10 @@ u8 move_down_medium(mediumUFO_t *sprite) {
 
 		status = 1;
 
-		writePixelDirect(sprite->core, sprite->colors);
-		writePixelDirect(sprite->left, sprite->colors);
-		writePixelDirect(sprite->right, sprite->colors);
+		setPixel(sprite->core, sprite->colors);
+		setPixel(sprite->left, sprite->colors);
+		setPixel(sprite->right, sprite->colors);
 	} else {
-		sprite->health = 0;
 		remove_medium(sprite);
 	}
 
@@ -272,9 +291,18 @@ u8 move_down_medium(mediumUFO_t *sprite) {
 // Removes pixels for sprite.
 void remove_medium(mediumUFO_t *sprite) {
 	color_t colors = {0, 0, 255};
-	writePixelDirect(sprite->core, colors);
-	writePixelDirect(sprite->left, colors);
-	writePixelDirect(sprite->right, colors);
+	sprite->active = 0;
+	sprite->health = 0;
+	setPixel(sprite->core, colors);
+	setPixel(sprite->left, colors);
+	setPixel(sprite->right, colors);
+}
+
+// Update medium UFO; used if no movement.
+void update_medium(mediumUFO_t *sprite) {
+	setPixel(sprite->core, sprite->colors);
+	setPixel(sprite->left, sprite->colors);
+	setPixel(sprite->right, sprite->colors);
 }
 
 /********************* BIG UFO SPRITE *********************/
@@ -307,7 +335,6 @@ bigUFO_t draw_big(position_t pos) {
 	writePixelDirect(sprite.left_up, sprite.colors);
 	writePixelDirect(sprite.right_up, sprite.colors);
 
-
 	return sprite;
 }
 
@@ -326,14 +353,13 @@ u8 move_down_big(bigUFO_t *sprite) {
 
 		status = 1;
 
-		writePixelDirect(sprite->core, sprite->colors);
-		writePixelDirect(sprite->left, sprite->colors);
-		writePixelDirect(sprite->right, sprite->colors);
-		writePixelDirect(sprite->core_up, sprite->colors);
-		writePixelDirect(sprite->left_up, sprite->colors);
-		writePixelDirect(sprite->right_up, sprite->colors);
+		setPixel(sprite->core, sprite->colors);
+		setPixel(sprite->left, sprite->colors);
+		setPixel(sprite->right, sprite->colors);
+		setPixel(sprite->core_up, sprite->colors);
+		setPixel(sprite->left_up, sprite->colors);
+		setPixel(sprite->right_up, sprite->colors);
 	} else {
-		sprite->health = 0;
 		remove_big(sprite);
 	}
 
@@ -343,10 +369,22 @@ u8 move_down_big(bigUFO_t *sprite) {
 // Removes pixels for sprite.
 void remove_big(bigUFO_t *sprite) {
 	color_t colors = {0, 0, 255};
-	writePixelDirect(sprite->core, colors);
-	writePixelDirect(sprite->left, colors);
-	writePixelDirect(sprite->right, colors);
-	writePixelDirect(sprite->core_up, colors);
-	writePixelDirect(sprite->left_up, colors);
-	writePixelDirect(sprite->right_up, colors);
+	sprite->active = 0;
+	sprite->health = 0;
+	setPixel(sprite->core, colors);
+	setPixel(sprite->left, colors);
+	setPixel(sprite->right, colors);
+	setPixel(sprite->core_up, colors);
+	setPixel(sprite->left_up, colors);
+	setPixel(sprite->right_up, colors);
+}
+
+// Update big UFO; used if no movement.
+void update_big(bigUFO_t *sprite) {
+	setPixel(sprite->core, sprite->colors);
+	setPixel(sprite->left, sprite->colors);
+	setPixel(sprite->right, sprite->colors);
+	setPixel(sprite->core_up, sprite->colors);
+	setPixel(sprite->left_up, sprite->colors);
+	setPixel(sprite->right_up, sprite->colors);
 }

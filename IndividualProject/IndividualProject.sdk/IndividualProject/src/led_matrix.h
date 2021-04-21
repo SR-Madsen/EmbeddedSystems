@@ -73,7 +73,6 @@ void decreasePixel(position_t pos, color_t col);
 
 void copyPixelValue(u8 x1, u8 y1, u8 x2, u8 y2);
 void copyPixel(position_t pos1, position_t pos2);
-// FUNCTIONS FOR MOVE PIXEL?
 
 void writePixelValueToDevice(u8 x, u8 y);
 void writePixelToDevice(position_t pos);
@@ -85,5 +84,6 @@ void resetPixel(position_t pos);
 void resetPixelValue(u8 x, u8 y);
 void resetAllPixels();
 
+void gameOver();
 
 #endif /* SRC_LED_MATRIX_H_ */

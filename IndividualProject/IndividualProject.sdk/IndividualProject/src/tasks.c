@@ -23,6 +23,20 @@
  * 	Functions
  */
 
+// Initialization of variables
+void initVariables() {
+	player_health = 4;
+	level = 0;
+	move_direction = NONE;
+	shot_request = NONE;
+	power_up = NONE;
+	small_kills = 0;
+	medium_kills = 0;
+	big_kills = 0;
+
+	cannon = draw_cannon((position_t){4, 1});
+}
+
 // Reads the potentiometer value and sets the Run-to-Complete Scheduler timing with it.
 void potentiometerTask() {
 	u16 temp_data;
@@ -40,14 +54,14 @@ void joystickTask(int GYRO_GPIO_ID) {
 	temp_btn = readGpio(GYRO_GPIO_ID);
 
 	if (temp_data > 3048) {
-		move_direction = RIGHT;
-	} else if (temp_data < 1048) {
 		move_direction = LEFT;
+	} else if (temp_data < 1048) {
+		move_direction = RIGHT;
 	} else {
 		move_direction = NONE;
 	}
 
-	shot_request = temp_btn;
+	shot_request = !temp_btn;
 }
 
 // Sets the colors of the background depending on level
@@ -56,7 +70,7 @@ void backgroundTask() {
 	for (int row = 1; row < NUMBER_OF_ROWS+1; row++) {
 		for (int column = 1; column < NUMBER_OF_COLS+1; column++) {
 			if (row == 1 || row == 2) {
-				setPixelValue(column, row, 0, 255, 0);
+				writePixelValueDirect(column, row, 0, 255, 0);
 			} else {
 				setPixelValue(column, row, 0, 0, color_level);
 			}
@@ -68,11 +82,32 @@ void backgroundTask() {
 // Can be seen as main game logic task.
 void spritesTask() {
 
+
+
+	if (move_direction == RIGHT) {
+		move_right_cannon(&cannon);
+	} else if (move_direction == LEFT) {
+		move_left_cannon(&cannon);
+	} else {
+		update_cannon(&cannon);
+	}
+
+	if (shot_request && !bullet.active) {
+		bullet = draw_bullet((position_t){cannon.head.x, cannon.head.y+1});
+		smalls[0] = draw_small((position_t){2, 8});
+	} else if (bullet.active) {
+		move_up_bullet(&bullet);
+	}
+
+	if (smalls[0].active && !move_down_small(&smalls[0])) {
+		player_health--;
+	}
+
 }
 
 // Writes values to the matrix once background and sprites are set.
 void matrixTask() {
-	void writeAllPixelsToDevice();
+	writeAllPixelsToDevice();
 }
 
 // Handles updating the level and player HP, as well as writing statistics.
@@ -101,4 +136,13 @@ void levelTask(int LED_GPIO_ID) {
 	writeBigKills(big_kills);
 	writeHealth(player_health);
 	writePowerUp(power_up);
+}
+
+// Task that handles game over and restart
+void gameOverTask(){
+	gameOver();
+	if (shot_request) {
+		initVariables();
+		game_over = 0;
+	}
 }

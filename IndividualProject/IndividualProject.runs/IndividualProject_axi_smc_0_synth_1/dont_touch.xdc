@@ -139,6 +139,31 @@
 # IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_43/bd_8718_m03e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_44/bd_8718_m04s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_45/bd_8718_m04arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_46/bd_8718_m04rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_47/bd_8718_m04awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_48/bd_8718_m04wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_49/bd_8718_m04bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_50/bd_8718_m04e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/ooc.xdc
+# XDC: The top module name and the constraint reference have the same name: 'IndividualProject_axi_smc_0'. Do not add the DONT_TOUCH constraint.
+set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
+
 # XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_1/bd_8718_psr_aclk_0_board.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
@@ -215,9 +240,17 @@
 
 # XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_42/bd_8718_m03bn_0_ooc.xdc
 
-# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/ooc.xdc
-# XDC: The top module name and the constraint reference have the same name: 'IndividualProject_axi_smc_0'. Do not add the DONT_TOUCH constraint.
-set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_44/bd_8718_m04s2a_0_ooc.xdc
+
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_45/bd_8718_m04arn_0_ooc.xdc
+
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_46/bd_8718_m04rn_0_ooc.xdc
+
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_47/bd_8718_m04awn_0_ooc.xdc
+
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_48/bd_8718_m04wn_0_ooc.xdc
+
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_49/bd_8718_m04bn_0_ooc.xdc
 
 # IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/IndividualProject_axi_smc_0.xci
 # IP: The module: 'IndividualProject_axi_smc_0' is the root of the design. Do not add the DONT_TOUCH constraint.
@@ -357,6 +390,31 @@ set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
 # IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_43/bd_8718_m03e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_44/bd_8718_m04s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_45/bd_8718_m04arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_46/bd_8718_m04rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_47/bd_8718_m04awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_48/bd_8718_m04wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_49/bd_8718_m04bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_50/bd_8718_m04e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/ooc.xdc
+# XDC: The top module name and the constraint reference have the same name: 'IndividualProject_axi_smc_0'. Do not add the DONT_TOUCH constraint.
+#dup# set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
+
 # XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_1/bd_8718_psr_aclk_0_board.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
@@ -433,6 +491,14 @@ set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
 
 # XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_42/bd_8718_m03bn_0_ooc.xdc
 
-# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/ooc.xdc
-# XDC: The top module name and the constraint reference have the same name: 'IndividualProject_axi_smc_0'. Do not add the DONT_TOUCH constraint.
-#dup# set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_44/bd_8718_m04s2a_0_ooc.xdc
+
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_45/bd_8718_m04arn_0_ooc.xdc
+
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_46/bd_8718_m04rn_0_ooc.xdc
+
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_47/bd_8718_m04awn_0_ooc.xdc
+
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_48/bd_8718_m04wn_0_ooc.xdc
+
+# XDC: /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_49/bd_8718_m04bn_0_ooc.xdc

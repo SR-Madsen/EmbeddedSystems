@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="IndividualProject" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1617786802"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1617786802"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1617786802"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1617786802"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1618987657"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1618987657"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1618987657"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1618987657"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/IndividualProject_processing_system7_0_0/IndividualProject_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -79,6 +79,22 @@
       <File Name="sim/IndividualProject.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/IndividualProject_blk_mem_gen_0_1/IndividualProject_blk_mem_gen_0_1.xci" Type="IP">
+        <Instance HierarchyPath="blk_mem_gen_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/IndividualProject_axi_bram_ctrl_0_1/IndividualProject_axi_bram_ctrl_0_1.xci" Type="IP">
+        <Instance HierarchyPath="axi_bram_ctrl_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="IndividualProject.bmm" Type="BMM">

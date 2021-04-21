@@ -23,8 +23,8 @@
 #define PUP_ADDR   		BYTES_PER_WORD * 5
 
 // Variables
-XBram Bram;
-XBram_Config *BramConfigPtr;
+XBram StatsBram;
+XBram_Config *StatsBramConfigPtr;
 
 // Structs
 

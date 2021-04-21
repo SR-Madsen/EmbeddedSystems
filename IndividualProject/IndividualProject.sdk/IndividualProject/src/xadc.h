@@ -19,8 +19,8 @@
 #define AUX14 14
 #define AUX15 15
 
-#define GYRO_Y_CH 7
-#define GYRO_X_CH 14
+#define GYRO_X_CH 7
+#define GYRO_Y_CH 14
 #define POT_CH 	  15
 
 #define SHIFT_LOWER_TWELVE 4

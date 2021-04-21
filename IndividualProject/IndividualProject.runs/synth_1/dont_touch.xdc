@@ -30,4 +30,10 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==IndividualProje
 # IP: bd/IndividualProject/ip/IndividualProject_axi_gpio_0_3/IndividualProject_axi_gpio_0_3.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==IndividualProject_axi_gpio_0_3 || ORIG_REF_NAME==IndividualProject_axi_gpio_0_3} -quiet] -quiet
 
+# IP: bd/IndividualProject/ip/IndividualProject_blk_mem_gen_0_1/IndividualProject_blk_mem_gen_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==IndividualProject_blk_mem_gen_0_1 || ORIG_REF_NAME==IndividualProject_blk_mem_gen_0_1} -quiet] -quiet
+
+# IP: bd/IndividualProject/ip/IndividualProject_axi_bram_ctrl_0_1/IndividualProject_axi_bram_ctrl_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==IndividualProject_axi_bram_ctrl_0_1 || ORIG_REF_NAME==IndividualProject_axi_bram_ctrl_0_1} -quiet] -quiet
+
 # XDC: bd/IndividualProject/IndividualProject_ooc.xdc

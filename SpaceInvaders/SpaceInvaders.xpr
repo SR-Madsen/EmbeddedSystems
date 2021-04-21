@@ -67,29 +67,59 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_xbar_2/SpaceInvaders_xbar_2.xci">
-          <Proxy FileSetName="SpaceInvaders_xbar_2"/>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_rst_ps7_0_100M_0/SpaceInvaders_rst_ps7_0_100M_0.xci">
+          <Proxy FileSetName="SpaceInvaders_rst_ps7_0_100M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_xadc_wiz_0_0/SpaceInvaders_xadc_wiz_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_xadc_wiz_0_0"/>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_2_1/SpaceInvaders_axi_bram_ctrl_2_1.xci">
+          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_2_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_blk_mem_gen_0_0/SpaceInvaders_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_blk_mem_gen_0_0"/>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_smc_1/SpaceInvaders_axi_smc_1.xci">
+          <Proxy FileSetName="SpaceInvaders_axi_smc_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_blk_mem_gen_0_1/SpaceInvaders_blk_mem_gen_0_1.xci">
-          <Proxy FileSetName="SpaceInvaders_blk_mem_gen_0_1"/>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_auto_pc_0/SpaceInvaders_auto_pc_0.xci">
+          <Proxy FileSetName="SpaceInvaders_auto_pc_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_0_0/SpaceInvaders_axi_bram_ctrl_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_0_0"/>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_auto_pc_1/SpaceInvaders_auto_pc_1.xci">
+          <Proxy FileSetName="SpaceInvaders_auto_pc_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_dlmb_v10_2/SpaceInvaders_dlmb_v10_2.xci">
+          <Proxy FileSetName="SpaceInvaders_dlmb_v10_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_microblaze_0_1/SpaceInvaders_microblaze_0_1.xci">
+          <Proxy FileSetName="SpaceInvaders_microblaze_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_processing_system7_0_0/SpaceInvaders_processing_system7_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_processing_system7_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_gpio_0_1/SpaceInvaders_axi_gpio_0_1.xci">
           <Proxy FileSetName="SpaceInvaders_axi_gpio_0_1"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_0_1/SpaceInvaders_axi_bram_ctrl_0_1.xci">
+          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_ilmb_v10_2/SpaceInvaders_ilmb_v10_2.xci">
+          <Proxy FileSetName="SpaceInvaders_ilmb_v10_2"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_gpio_0_0/SpaceInvaders_axi_gpio_0_0.xci">
           <Proxy FileSetName="SpaceInvaders_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_0_1/SpaceInvaders_axi_bram_ctrl_0_1.xci">
-          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_0_1"/>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_0_0/SpaceInvaders_axi_bram_ctrl_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_mdm_1_2/SpaceInvaders_mdm_1_2.xci">
+          <Proxy FileSetName="SpaceInvaders_mdm_1_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_microblaze_0_axi_intc_2/SpaceInvaders_microblaze_0_axi_intc_2.xci">
+          <Proxy FileSetName="SpaceInvaders_microblaze_0_axi_intc_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_blk_mem_gen_0_1/SpaceInvaders_blk_mem_gen_0_1.xci">
+          <Proxy FileSetName="SpaceInvaders_blk_mem_gen_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_blk_mem_gen_0_0/SpaceInvaders_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_blk_mem_gen_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_xadc_wiz_0_0/SpaceInvaders_xadc_wiz_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_xadc_wiz_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_ilmb_bram_if_cntlr_2/SpaceInvaders_ilmb_bram_if_cntlr_2.xci">
           <Proxy FileSetName="SpaceInvaders_ilmb_bram_if_cntlr_2"/>
@@ -97,41 +127,11 @@
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_lmb_bram_2/SpaceInvaders_lmb_bram_2.xci">
           <Proxy FileSetName="SpaceInvaders_lmb_bram_2"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_xbar_2/SpaceInvaders_xbar_2.xci">
+          <Proxy FileSetName="SpaceInvaders_xbar_2"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_dlmb_bram_if_cntlr_2/SpaceInvaders_dlmb_bram_if_cntlr_2.xci">
           <Proxy FileSetName="SpaceInvaders_dlmb_bram_if_cntlr_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_microblaze_0_1/SpaceInvaders_microblaze_0_1.xci">
-          <Proxy FileSetName="SpaceInvaders_microblaze_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_ilmb_v10_2/SpaceInvaders_ilmb_v10_2.xci">
-          <Proxy FileSetName="SpaceInvaders_ilmb_v10_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_processing_system7_0_0/SpaceInvaders_processing_system7_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_dlmb_v10_2/SpaceInvaders_dlmb_v10_2.xci">
-          <Proxy FileSetName="SpaceInvaders_dlmb_v10_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_microblaze_0_axi_intc_2/SpaceInvaders_microblaze_0_axi_intc_2.xci">
-          <Proxy FileSetName="SpaceInvaders_microblaze_0_axi_intc_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_mdm_1_2/SpaceInvaders_mdm_1_2.xci">
-          <Proxy FileSetName="SpaceInvaders_mdm_1_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_rst_ps7_0_100M_0/SpaceInvaders_rst_ps7_0_100M_0.xci">
-          <Proxy FileSetName="SpaceInvaders_rst_ps7_0_100M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_auto_pc_1/SpaceInvaders_auto_pc_1.xci">
-          <Proxy FileSetName="SpaceInvaders_auto_pc_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_auto_pc_0/SpaceInvaders_auto_pc_0.xci">
-          <Proxy FileSetName="SpaceInvaders_auto_pc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_2_1/SpaceInvaders_axi_bram_ctrl_2_1.xci">
-          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_2_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_smc_1/SpaceInvaders_axi_smc_1.xci">
-          <Proxy FileSetName="SpaceInvaders_axi_smc_1"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/SpaceInvaders/hdl/SpaceInvaders_wrapper.vhd">
@@ -378,9 +378,7 @@
   <Runs Version="1" Minor="10">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -389,9 +387,7 @@
     </Run>
     <Run Id="SpaceInvaders_xbar_2_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_xbar_2" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_xbar_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_xbar_2_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -400,9 +396,7 @@
     </Run>
     <Run Id="SpaceInvaders_xadc_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_xadc_wiz_0_0" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_xadc_wiz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_xadc_wiz_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -411,9 +405,7 @@
     </Run>
     <Run Id="SpaceInvaders_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_blk_mem_gen_0_0" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_blk_mem_gen_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -422,9 +414,7 @@
     </Run>
     <Run Id="SpaceInvaders_blk_mem_gen_0_1_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_blk_mem_gen_0_1" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_blk_mem_gen_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_blk_mem_gen_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -433,9 +423,7 @@
     </Run>
     <Run Id="SpaceInvaders_axi_bram_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_axi_bram_ctrl_0_0" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_axi_bram_ctrl_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -444,9 +432,7 @@
     </Run>
     <Run Id="SpaceInvaders_axi_gpio_0_1_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_axi_gpio_0_1" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_axi_gpio_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_axi_gpio_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -455,9 +441,7 @@
     </Run>
     <Run Id="SpaceInvaders_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_axi_gpio_0_0" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_axi_gpio_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -466,9 +450,7 @@
     </Run>
     <Run Id="SpaceInvaders_axi_bram_ctrl_0_1_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_axi_bram_ctrl_0_1" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_axi_bram_ctrl_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_axi_bram_ctrl_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -477,9 +459,7 @@
     </Run>
     <Run Id="SpaceInvaders_ilmb_bram_if_cntlr_2_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_ilmb_bram_if_cntlr_2" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_ilmb_bram_if_cntlr_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_ilmb_bram_if_cntlr_2_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -488,9 +468,7 @@
     </Run>
     <Run Id="SpaceInvaders_lmb_bram_2_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_lmb_bram_2" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_lmb_bram_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_lmb_bram_2_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -499,9 +477,7 @@
     </Run>
     <Run Id="SpaceInvaders_dlmb_bram_if_cntlr_2_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_dlmb_bram_if_cntlr_2" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_dlmb_bram_if_cntlr_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_dlmb_bram_if_cntlr_2_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -510,9 +486,7 @@
     </Run>
     <Run Id="SpaceInvaders_microblaze_0_1_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_microblaze_0_1" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_microblaze_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_microblaze_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -521,9 +495,7 @@
     </Run>
     <Run Id="SpaceInvaders_ilmb_v10_2_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_ilmb_v10_2" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_ilmb_v10_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_ilmb_v10_2_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -532,9 +504,7 @@
     </Run>
     <Run Id="SpaceInvaders_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_processing_system7_0_0" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_processing_system7_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_processing_system7_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -543,9 +513,7 @@
     </Run>
     <Run Id="SpaceInvaders_dlmb_v10_2_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_dlmb_v10_2" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_dlmb_v10_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_dlmb_v10_2_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -554,9 +522,7 @@
     </Run>
     <Run Id="SpaceInvaders_microblaze_0_axi_intc_2_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_microblaze_0_axi_intc_2" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_microblaze_0_axi_intc_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_microblaze_0_axi_intc_2_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -565,9 +531,7 @@
     </Run>
     <Run Id="SpaceInvaders_mdm_1_2_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_mdm_1_2" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_mdm_1_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_mdm_1_2_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -576,9 +540,7 @@
     </Run>
     <Run Id="SpaceInvaders_rst_ps7_0_100M_0_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_rst_ps7_0_100M_0" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_rst_ps7_0_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_rst_ps7_0_100M_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -587,9 +549,7 @@
     </Run>
     <Run Id="SpaceInvaders_auto_pc_1_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_auto_pc_1" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_auto_pc_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_auto_pc_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -598,9 +558,7 @@
     </Run>
     <Run Id="SpaceInvaders_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_auto_pc_0" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_auto_pc_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -609,9 +567,7 @@
     </Run>
     <Run Id="SpaceInvaders_axi_bram_ctrl_2_1_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_axi_bram_ctrl_2_1" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_axi_bram_ctrl_2_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_axi_bram_ctrl_2_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -620,20 +576,16 @@
     </Run>
     <Run Id="SpaceInvaders_axi_smc_1_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_axi_smc_1" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_axi_smc_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_axi_smc_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -644,14 +596,13 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="SpaceInvaders_xbar_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_xbar_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_xbar_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -667,9 +618,7 @@
     </Run>
     <Run Id="SpaceInvaders_xadc_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_xadc_wiz_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_xadc_wiz_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -685,9 +634,7 @@
     </Run>
     <Run Id="SpaceInvaders_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_blk_mem_gen_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_blk_mem_gen_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -703,9 +650,7 @@
     </Run>
     <Run Id="SpaceInvaders_blk_mem_gen_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_blk_mem_gen_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_blk_mem_gen_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -721,9 +666,7 @@
     </Run>
     <Run Id="SpaceInvaders_axi_bram_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_axi_bram_ctrl_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -739,9 +682,7 @@
     </Run>
     <Run Id="SpaceInvaders_axi_gpio_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_axi_gpio_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_axi_gpio_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -757,9 +698,7 @@
     </Run>
     <Run Id="SpaceInvaders_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_axi_gpio_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_axi_gpio_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -775,9 +714,7 @@
     </Run>
     <Run Id="SpaceInvaders_axi_bram_ctrl_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_axi_bram_ctrl_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_axi_bram_ctrl_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -793,9 +730,7 @@
     </Run>
     <Run Id="SpaceInvaders_ilmb_bram_if_cntlr_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_ilmb_bram_if_cntlr_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_ilmb_bram_if_cntlr_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -811,9 +746,7 @@
     </Run>
     <Run Id="SpaceInvaders_lmb_bram_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_lmb_bram_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_lmb_bram_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -829,9 +762,7 @@
     </Run>
     <Run Id="SpaceInvaders_dlmb_bram_if_cntlr_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_dlmb_bram_if_cntlr_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_dlmb_bram_if_cntlr_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -847,9 +778,7 @@
     </Run>
     <Run Id="SpaceInvaders_microblaze_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_microblaze_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_microblaze_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -865,9 +794,7 @@
     </Run>
     <Run Id="SpaceInvaders_ilmb_v10_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_ilmb_v10_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_ilmb_v10_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -883,9 +810,7 @@
     </Run>
     <Run Id="SpaceInvaders_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -901,9 +826,7 @@
     </Run>
     <Run Id="SpaceInvaders_dlmb_v10_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_dlmb_v10_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_dlmb_v10_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -919,9 +842,7 @@
     </Run>
     <Run Id="SpaceInvaders_microblaze_0_axi_intc_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_microblaze_0_axi_intc_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_microblaze_0_axi_intc_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -937,9 +858,7 @@
     </Run>
     <Run Id="SpaceInvaders_mdm_1_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_mdm_1_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_mdm_1_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -955,9 +874,7 @@
     </Run>
     <Run Id="SpaceInvaders_rst_ps7_0_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_rst_ps7_0_100M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_rst_ps7_0_100M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -973,9 +890,7 @@
     </Run>
     <Run Id="SpaceInvaders_auto_pc_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_auto_pc_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_auto_pc_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -991,9 +906,7 @@
     </Run>
     <Run Id="SpaceInvaders_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_auto_pc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1009,9 +922,7 @@
     </Run>
     <Run Id="SpaceInvaders_axi_bram_ctrl_2_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_axi_bram_ctrl_2_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_axi_bram_ctrl_2_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1027,9 +938,7 @@
     </Run>
     <Run Id="SpaceInvaders_axi_smc_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_axi_smc_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_axi_smc_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

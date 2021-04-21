@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
---Date        : Wed Apr  7 11:12:59 2021
+--Date        : Wed Apr 21 08:47:31 2021
 --Host        : sebastian-ZBook running 64-bit Linux Mint 20
 --Command     : generate_target IndividualProject_wrapper.bd
 --Design      : IndividualProject_wrapper
@@ -76,21 +76,21 @@ architecture STRUCTURE of IndividualProject_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
+    Vaux7_0_v_n : in STD_LOGIC;
+    Vaux7_0_v_p : in STD_LOGIC;
+    GPIO_gyro_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
+    GPIO_leds_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    Vaux15_0_v_n : in STD_LOGIC;
+    Vaux15_0_v_p : in STD_LOGIC;
+    Vaux14_0_v_n : in STD_LOGIC;
+    Vaux14_0_v_p : in STD_LOGIC;
     BRAM_PORTB_0_addr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     BRAM_PORTB_0_clk : in STD_LOGIC;
     BRAM_PORTB_0_din : in STD_LOGIC_VECTOR ( 31 downto 0 );
     BRAM_PORTB_0_dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
     BRAM_PORTB_0_en : in STD_LOGIC;
     BRAM_PORTB_0_rst : in STD_LOGIC;
-    BRAM_PORTB_0_we : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    GPIO_gyro_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
-    GPIO_leds_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    Vaux7_0_v_n : in STD_LOGIC;
-    Vaux7_0_v_p : in STD_LOGIC;
-    Vaux14_0_v_n : in STD_LOGIC;
-    Vaux14_0_v_p : in STD_LOGIC;
-    Vaux15_0_v_n : in STD_LOGIC;
-    Vaux15_0_v_p : in STD_LOGIC
+    BRAM_PORTB_0_we : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component IndividualProject;
 begin

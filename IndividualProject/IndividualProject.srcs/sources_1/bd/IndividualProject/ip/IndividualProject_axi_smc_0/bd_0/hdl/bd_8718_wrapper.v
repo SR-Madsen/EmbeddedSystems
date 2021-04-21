@@ -97,6 +97,39 @@ module bd_8718_wrapper
     M03_AXI_wready,
     M03_AXI_wstrb,
     M03_AXI_wvalid,
+    M04_AXI_araddr,
+    M04_AXI_arburst,
+    M04_AXI_arcache,
+    M04_AXI_arlen,
+    M04_AXI_arlock,
+    M04_AXI_arprot,
+    M04_AXI_arqos,
+    M04_AXI_arready,
+    M04_AXI_arsize,
+    M04_AXI_arvalid,
+    M04_AXI_awaddr,
+    M04_AXI_awburst,
+    M04_AXI_awcache,
+    M04_AXI_awlen,
+    M04_AXI_awlock,
+    M04_AXI_awprot,
+    M04_AXI_awqos,
+    M04_AXI_awready,
+    M04_AXI_awsize,
+    M04_AXI_awvalid,
+    M04_AXI_bready,
+    M04_AXI_bresp,
+    M04_AXI_bvalid,
+    M04_AXI_rdata,
+    M04_AXI_rlast,
+    M04_AXI_rready,
+    M04_AXI_rresp,
+    M04_AXI_rvalid,
+    M04_AXI_wdata,
+    M04_AXI_wlast,
+    M04_AXI_wready,
+    M04_AXI_wstrb,
+    M04_AXI_wvalid,
     S00_AXI_araddr,
     S00_AXI_arburst,
     S00_AXI_arcache,
@@ -227,6 +260,39 @@ module bd_8718_wrapper
   input M03_AXI_wready;
   output [3:0]M03_AXI_wstrb;
   output M03_AXI_wvalid;
+  output [12:0]M04_AXI_araddr;
+  output [1:0]M04_AXI_arburst;
+  output [3:0]M04_AXI_arcache;
+  output [7:0]M04_AXI_arlen;
+  output [0:0]M04_AXI_arlock;
+  output [2:0]M04_AXI_arprot;
+  output [3:0]M04_AXI_arqos;
+  input M04_AXI_arready;
+  output [2:0]M04_AXI_arsize;
+  output M04_AXI_arvalid;
+  output [12:0]M04_AXI_awaddr;
+  output [1:0]M04_AXI_awburst;
+  output [3:0]M04_AXI_awcache;
+  output [7:0]M04_AXI_awlen;
+  output [0:0]M04_AXI_awlock;
+  output [2:0]M04_AXI_awprot;
+  output [3:0]M04_AXI_awqos;
+  input M04_AXI_awready;
+  output [2:0]M04_AXI_awsize;
+  output M04_AXI_awvalid;
+  output M04_AXI_bready;
+  input [1:0]M04_AXI_bresp;
+  input M04_AXI_bvalid;
+  input [31:0]M04_AXI_rdata;
+  input M04_AXI_rlast;
+  output M04_AXI_rready;
+  input [1:0]M04_AXI_rresp;
+  input M04_AXI_rvalid;
+  output [31:0]M04_AXI_wdata;
+  output M04_AXI_wlast;
+  input M04_AXI_wready;
+  output [3:0]M04_AXI_wstrb;
+  output M04_AXI_wvalid;
   input [31:0]S00_AXI_araddr;
   input [1:0]S00_AXI_arburst;
   input [3:0]S00_AXI_arcache;
@@ -358,6 +424,39 @@ module bd_8718_wrapper
   wire M03_AXI_wready;
   wire [3:0]M03_AXI_wstrb;
   wire M03_AXI_wvalid;
+  wire [12:0]M04_AXI_araddr;
+  wire [1:0]M04_AXI_arburst;
+  wire [3:0]M04_AXI_arcache;
+  wire [7:0]M04_AXI_arlen;
+  wire [0:0]M04_AXI_arlock;
+  wire [2:0]M04_AXI_arprot;
+  wire [3:0]M04_AXI_arqos;
+  wire M04_AXI_arready;
+  wire [2:0]M04_AXI_arsize;
+  wire M04_AXI_arvalid;
+  wire [12:0]M04_AXI_awaddr;
+  wire [1:0]M04_AXI_awburst;
+  wire [3:0]M04_AXI_awcache;
+  wire [7:0]M04_AXI_awlen;
+  wire [0:0]M04_AXI_awlock;
+  wire [2:0]M04_AXI_awprot;
+  wire [3:0]M04_AXI_awqos;
+  wire M04_AXI_awready;
+  wire [2:0]M04_AXI_awsize;
+  wire M04_AXI_awvalid;
+  wire M04_AXI_bready;
+  wire [1:0]M04_AXI_bresp;
+  wire M04_AXI_bvalid;
+  wire [31:0]M04_AXI_rdata;
+  wire M04_AXI_rlast;
+  wire M04_AXI_rready;
+  wire [1:0]M04_AXI_rresp;
+  wire M04_AXI_rvalid;
+  wire [31:0]M04_AXI_wdata;
+  wire M04_AXI_wlast;
+  wire M04_AXI_wready;
+  wire [3:0]M04_AXI_wstrb;
+  wire M04_AXI_wvalid;
   wire [31:0]S00_AXI_araddr;
   wire [1:0]S00_AXI_arburst;
   wire [3:0]S00_AXI_arcache;
@@ -490,6 +589,39 @@ module bd_8718_wrapper
         .M03_AXI_wready(M03_AXI_wready),
         .M03_AXI_wstrb(M03_AXI_wstrb),
         .M03_AXI_wvalid(M03_AXI_wvalid),
+        .M04_AXI_araddr(M04_AXI_araddr),
+        .M04_AXI_arburst(M04_AXI_arburst),
+        .M04_AXI_arcache(M04_AXI_arcache),
+        .M04_AXI_arlen(M04_AXI_arlen),
+        .M04_AXI_arlock(M04_AXI_arlock),
+        .M04_AXI_arprot(M04_AXI_arprot),
+        .M04_AXI_arqos(M04_AXI_arqos),
+        .M04_AXI_arready(M04_AXI_arready),
+        .M04_AXI_arsize(M04_AXI_arsize),
+        .M04_AXI_arvalid(M04_AXI_arvalid),
+        .M04_AXI_awaddr(M04_AXI_awaddr),
+        .M04_AXI_awburst(M04_AXI_awburst),
+        .M04_AXI_awcache(M04_AXI_awcache),
+        .M04_AXI_awlen(M04_AXI_awlen),
+        .M04_AXI_awlock(M04_AXI_awlock),
+        .M04_AXI_awprot(M04_AXI_awprot),
+        .M04_AXI_awqos(M04_AXI_awqos),
+        .M04_AXI_awready(M04_AXI_awready),
+        .M04_AXI_awsize(M04_AXI_awsize),
+        .M04_AXI_awvalid(M04_AXI_awvalid),
+        .M04_AXI_bready(M04_AXI_bready),
+        .M04_AXI_bresp(M04_AXI_bresp),
+        .M04_AXI_bvalid(M04_AXI_bvalid),
+        .M04_AXI_rdata(M04_AXI_rdata),
+        .M04_AXI_rlast(M04_AXI_rlast),
+        .M04_AXI_rready(M04_AXI_rready),
+        .M04_AXI_rresp(M04_AXI_rresp),
+        .M04_AXI_rvalid(M04_AXI_rvalid),
+        .M04_AXI_wdata(M04_AXI_wdata),
+        .M04_AXI_wlast(M04_AXI_wlast),
+        .M04_AXI_wready(M04_AXI_wready),
+        .M04_AXI_wstrb(M04_AXI_wstrb),
+        .M04_AXI_wvalid(M04_AXI_wvalid),
         .S00_AXI_araddr(S00_AXI_araddr),
         .S00_AXI_arburst(S00_AXI_arburst),
         .S00_AXI_arcache(S00_AXI_arcache),

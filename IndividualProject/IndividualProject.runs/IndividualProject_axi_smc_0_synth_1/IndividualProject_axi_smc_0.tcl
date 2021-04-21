@@ -34,6 +34,7 @@ set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
 set_property ip_output_repo /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/IndividualProject_axi_smc_0.xci
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_1/bd_8718_psr_aclk_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_1/bd_8718_psr_aclk_0.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_2/bd_8718_arsw_0_ooc.xdc]
@@ -71,7 +72,12 @@ set_property used_in_implementation false [get_files -all /home/sebastian/Deskto
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_40/bd_8718_m03awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_41/bd_8718_m03wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_42/bd_8718_m03bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_44/bd_8718_m04s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_45/bd_8718_m04arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_46/bd_8718_m04rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_47/bd_8718_m04awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_48/bd_8718_m04wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/IndividualProject/IndividualProject.srcs/sources_1/bd/IndividualProject/ip/IndividualProject_axi_smc_0/bd_0/ip/ip_49/bd_8718_m04bn_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

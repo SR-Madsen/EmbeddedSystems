@@ -57,6 +57,7 @@ typedef struct mediumUFO_t {
 	color_t colors;
 	u8 health;
 	u8 speed_timer;
+	u8 active;
 } mediumUFO_t;
 
 typedef struct bigUFO_t {
@@ -69,30 +70,36 @@ typedef struct bigUFO_t {
 	color_t colors;
 	u8 health;
 	u8 speed_timer;
+	u8 active;
 } bigUFO_t;
 
 // Function prototypes
 cannon_t draw_cannon(position_t pos);
 u8 move_left_cannon(cannon_t *sprite);
 u8 move_right_cannon(cannon_t *sprite);
+void update_cannon(cannon_t *sprite);
 
 bullet_t draw_bullet(position_t pos);
 u8 move_up_bullet(bullet_t *sprite);
 u8 move_left_bullet(bullet_t *sprite);
 u8 move_right_bullet(bullet_t *sprite);
 void remove_bullet(bullet_t *sprite);
+void update_bullet(bullet_t *sprite);
 
 smallUFO_t draw_small(position_t pos);
 u8 move_down_small(smallUFO_t *sprite);
 void remove_small(smallUFO_t *sprite);
+void update_small(smallUFO_t *sprite);
 
 mediumUFO_t draw_medium(position_t pos);
 u8 move_down_medium(mediumUFO_t *sprite);
 void remove_medium(mediumUFO_t *sprite);
+void update_medium(mediumUFO_t *sprite);
 
 bigUFO_t draw_big(position_t pos);
 u8 move_down_big(bigUFO_t *sprite);
 void remove_big(bigUFO_t *sprite);
+void update_big(bigUFO_t *sprite);
 
 
 #endif /* SRC_SPRITES_H_ */

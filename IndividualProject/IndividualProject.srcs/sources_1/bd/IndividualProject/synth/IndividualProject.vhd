@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
---Date        : Wed Apr  7 11:12:59 2021
+--Date        : Wed Apr 21 08:47:30 2021
 --Host        : sebastian-ZBook running 64-bit Linux Mint 20
 --Command     : generate_target IndividualProject.bd
 --Design      : IndividualProject
@@ -51,7 +51,7 @@ entity IndividualProject is
     Vaux7_0_v_p : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of IndividualProject : entity is "IndividualProject,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=IndividualProject,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=8,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of IndividualProject : entity is "IndividualProject,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=IndividualProject,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=10,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of IndividualProject : entity is "IndividualProject.hwdef";
 end IndividualProject;
@@ -335,7 +335,40 @@ architecture STRUCTURE of IndividualProject is
     M03_AXI_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     M03_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M03_AXI_rvalid : in STD_LOGIC;
-    M03_AXI_rready : out STD_LOGIC
+    M03_AXI_rready : out STD_LOGIC;
+    M04_AXI_awaddr : out STD_LOGIC_VECTOR ( 12 downto 0 );
+    M04_AXI_awlen : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    M04_AXI_awsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M04_AXI_awburst : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M04_AXI_awlock : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M04_AXI_awcache : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M04_AXI_awprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M04_AXI_awqos : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M04_AXI_awvalid : out STD_LOGIC;
+    M04_AXI_awready : in STD_LOGIC;
+    M04_AXI_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M04_AXI_wstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M04_AXI_wlast : out STD_LOGIC;
+    M04_AXI_wvalid : out STD_LOGIC;
+    M04_AXI_wready : in STD_LOGIC;
+    M04_AXI_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M04_AXI_bvalid : in STD_LOGIC;
+    M04_AXI_bready : out STD_LOGIC;
+    M04_AXI_araddr : out STD_LOGIC_VECTOR ( 12 downto 0 );
+    M04_AXI_arlen : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    M04_AXI_arsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M04_AXI_arburst : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M04_AXI_arlock : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M04_AXI_arcache : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M04_AXI_arprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M04_AXI_arqos : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M04_AXI_arvalid : out STD_LOGIC;
+    M04_AXI_arready : in STD_LOGIC;
+    M04_AXI_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    M04_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M04_AXI_rlast : in STD_LOGIC;
+    M04_AXI_rvalid : in STD_LOGIC;
+    M04_AXI_rready : out STD_LOGIC
   );
   end component IndividualProject_axi_smc_0;
   component IndividualProject_xadc_wiz_0_1 is
@@ -423,6 +456,70 @@ architecture STRUCTURE of IndividualProject is
     gpio_io_i : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component IndividualProject_axi_gpio_0_3;
+  component IndividualProject_blk_mem_gen_0_1 is
+  port (
+    clka : in STD_LOGIC;
+    rsta : in STD_LOGIC;
+    ena : in STD_LOGIC;
+    wea : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    addra : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    douta : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    clkb : in STD_LOGIC;
+    rstb : in STD_LOGIC;
+    enb : in STD_LOGIC;
+    web : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    addrb : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    dinb : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    doutb : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    rsta_busy : out STD_LOGIC;
+    rstb_busy : out STD_LOGIC
+  );
+  end component IndividualProject_blk_mem_gen_0_1;
+  component IndividualProject_axi_bram_ctrl_0_1 is
+  port (
+    s_axi_aclk : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 12 downto 0 );
+    s_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_awlock : in STD_LOGIC;
+    s_axi_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axi_awvalid : in STD_LOGIC;
+    s_axi_awready : out STD_LOGIC;
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_wlast : in STD_LOGIC;
+    s_axi_wvalid : in STD_LOGIC;
+    s_axi_wready : out STD_LOGIC;
+    s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_bvalid : out STD_LOGIC;
+    s_axi_bready : in STD_LOGIC;
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 12 downto 0 );
+    s_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_arlock : in STD_LOGIC;
+    s_axi_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axi_arvalid : in STD_LOGIC;
+    s_axi_arready : out STD_LOGIC;
+    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_rlast : out STD_LOGIC;
+    s_axi_rvalid : out STD_LOGIC;
+    s_axi_rready : in STD_LOGIC;
+    bram_rst_a : out STD_LOGIC;
+    bram_clk_a : out STD_LOGIC;
+    bram_en_a : out STD_LOGIC;
+    bram_we_a : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    bram_addr_a : out STD_LOGIC_VECTOR ( 12 downto 0 );
+    bram_wrdata_a : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    bram_rddata_a : in STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component IndividualProject_axi_bram_ctrl_0_1;
   signal BRAM_PORTB_0_1_ADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal BRAM_PORTB_0_1_CLK : STD_LOGIC;
   signal BRAM_PORTB_0_1_DIN : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -443,6 +540,13 @@ architecture STRUCTURE of IndividualProject is
   signal axi_bram_ctrl_0_BRAM_PORTA_EN : STD_LOGIC;
   signal axi_bram_ctrl_0_BRAM_PORTA_RST : STD_LOGIC;
   signal axi_bram_ctrl_0_BRAM_PORTA_WE : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal axi_bram_ctrl_1_BRAM_PORTA_ADDR : STD_LOGIC_VECTOR ( 12 downto 0 );
+  signal axi_bram_ctrl_1_BRAM_PORTA_CLK : STD_LOGIC;
+  signal axi_bram_ctrl_1_BRAM_PORTA_DIN : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_bram_ctrl_1_BRAM_PORTA_DOUT : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_bram_ctrl_1_BRAM_PORTA_EN : STD_LOGIC;
+  signal axi_bram_ctrl_1_BRAM_PORTA_RST : STD_LOGIC;
+  signal axi_bram_ctrl_1_BRAM_PORTA_WE : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_gpio_0_GPIO_TRI_O : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_gpio_1_GPIO_TRI_I : STD_LOGIC_VECTOR ( 0 to 0 );
   signal axi_smc_M00_AXI_ARADDR : STD_LOGIC_VECTOR ( 12 downto 0 );
@@ -527,6 +631,37 @@ architecture STRUCTURE of IndividualProject is
   signal axi_smc_M03_AXI_WREADY : STD_LOGIC;
   signal axi_smc_M03_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_smc_M03_AXI_WVALID : STD_LOGIC;
+  signal axi_smc_M04_AXI_ARADDR : STD_LOGIC_VECTOR ( 12 downto 0 );
+  signal axi_smc_M04_AXI_ARBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal axi_smc_M04_AXI_ARCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal axi_smc_M04_AXI_ARLEN : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal axi_smc_M04_AXI_ARLOCK : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal axi_smc_M04_AXI_ARPROT : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal axi_smc_M04_AXI_ARREADY : STD_LOGIC;
+  signal axi_smc_M04_AXI_ARSIZE : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal axi_smc_M04_AXI_ARVALID : STD_LOGIC;
+  signal axi_smc_M04_AXI_AWADDR : STD_LOGIC_VECTOR ( 12 downto 0 );
+  signal axi_smc_M04_AXI_AWBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal axi_smc_M04_AXI_AWCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal axi_smc_M04_AXI_AWLEN : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal axi_smc_M04_AXI_AWLOCK : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal axi_smc_M04_AXI_AWPROT : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal axi_smc_M04_AXI_AWREADY : STD_LOGIC;
+  signal axi_smc_M04_AXI_AWSIZE : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal axi_smc_M04_AXI_AWVALID : STD_LOGIC;
+  signal axi_smc_M04_AXI_BREADY : STD_LOGIC;
+  signal axi_smc_M04_AXI_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal axi_smc_M04_AXI_BVALID : STD_LOGIC;
+  signal axi_smc_M04_AXI_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_smc_M04_AXI_RLAST : STD_LOGIC;
+  signal axi_smc_M04_AXI_RREADY : STD_LOGIC;
+  signal axi_smc_M04_AXI_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal axi_smc_M04_AXI_RVALID : STD_LOGIC;
+  signal axi_smc_M04_AXI_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_smc_M04_AXI_WLAST : STD_LOGIC;
+  signal axi_smc_M04_AXI_WREADY : STD_LOGIC;
+  signal axi_smc_M04_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal axi_smc_M04_AXI_WVALID : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -597,8 +732,13 @@ architecture STRUCTURE of IndividualProject is
   signal NLW_axi_smc_M02_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_axi_smc_M03_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_axi_smc_M03_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_axi_smc_M04_AXI_arqos_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_axi_smc_M04_AXI_awqos_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_blk_mem_gen_0_rsta_busy_UNCONNECTED : STD_LOGIC;
   signal NLW_blk_mem_gen_0_rstb_busy_UNCONNECTED : STD_LOGIC;
+  signal NLW_blk_mem_gen_1_rsta_busy_UNCONNECTED : STD_LOGIC;
+  signal NLW_blk_mem_gen_1_rstb_busy_UNCONNECTED : STD_LOGIC;
+  signal NLW_blk_mem_gen_1_doutb_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_processing_system7_0_TTC0_WAVE0_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE1_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE2_OUT_UNCONNECTED : STD_LOGIC;
@@ -616,8 +756,10 @@ architecture STRUCTURE of IndividualProject is
   attribute BMM_INFO_ADDRESS_SPACE of axi_bram_ctrl_0 : label is "byte  0x40000000 32 > IndividualProject blk_mem_gen_0";
   attribute KEEP_HIERARCHY : string;
   attribute KEEP_HIERARCHY of axi_bram_ctrl_0 : label is "yes";
+  attribute BMM_INFO_ADDRESS_SPACE of axi_bram_ctrl_1 : label is "byte  0x42000000 32 > IndividualProject blk_mem_gen_1";
+  attribute KEEP_HIERARCHY of axi_bram_ctrl_1 : label is "yes";
   attribute BMM_INFO_PROCESSOR : string;
-  attribute BMM_INFO_PROCESSOR of processing_system7_0 : label is "arm > IndividualProject axi_bram_ctrl_0";
+  attribute BMM_INFO_PROCESSOR of processing_system7_0 : label is "arm > IndividualProject axi_bram_ctrl_0 IndividualProject axi_bram_ctrl_1";
   attribute KEEP_HIERARCHY of processing_system7_0 : label is "yes";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of BRAM_PORTB_0_clk : signal is "xilinx.com:interface:bram:1.0 BRAM_PORTB_0 CLK";
@@ -658,8 +800,8 @@ architecture STRUCTURE of IndividualProject is
   attribute X_INTERFACE_INFO of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
-  attribute X_INTERFACE_INFO of GPIO_gyro_tri_i : signal is "xilinx.com:interface:gpio:1.0 GPIO_gyro ";
-  attribute X_INTERFACE_INFO of GPIO_leds_tri_o : signal is "xilinx.com:interface:gpio:1.0 GPIO_leds ";
+  attribute X_INTERFACE_INFO of GPIO_gyro_tri_i : signal is "xilinx.com:interface:gpio:1.0 GPIO_gyro TRI_I";
+  attribute X_INTERFACE_INFO of GPIO_leds_tri_o : signal is "xilinx.com:interface:gpio:1.0 GPIO_leds TRI_O";
 begin
   BRAM_PORTB_0_1_ADDR(31 downto 0) <= BRAM_PORTB_0_addr(31 downto 0);
   BRAM_PORTB_0_1_CLK <= BRAM_PORTB_0_clk;
@@ -718,6 +860,49 @@ axi_bram_ctrl_0: component IndividualProject_axi_bram_ctrl_0_0
       s_axi_wready => axi_smc_M00_AXI_WREADY,
       s_axi_wstrb(3 downto 0) => axi_smc_M00_AXI_WSTRB(3 downto 0),
       s_axi_wvalid => axi_smc_M00_AXI_WVALID
+    );
+axi_bram_ctrl_1: component IndividualProject_axi_bram_ctrl_0_1
+     port map (
+      bram_addr_a(12 downto 0) => axi_bram_ctrl_1_BRAM_PORTA_ADDR(12 downto 0),
+      bram_clk_a => axi_bram_ctrl_1_BRAM_PORTA_CLK,
+      bram_en_a => axi_bram_ctrl_1_BRAM_PORTA_EN,
+      bram_rddata_a(31 downto 0) => axi_bram_ctrl_1_BRAM_PORTA_DOUT(31 downto 0),
+      bram_rst_a => axi_bram_ctrl_1_BRAM_PORTA_RST,
+      bram_we_a(3 downto 0) => axi_bram_ctrl_1_BRAM_PORTA_WE(3 downto 0),
+      bram_wrdata_a(31 downto 0) => axi_bram_ctrl_1_BRAM_PORTA_DIN(31 downto 0),
+      s_axi_aclk => processing_system7_0_FCLK_CLK0,
+      s_axi_araddr(12 downto 0) => axi_smc_M04_AXI_ARADDR(12 downto 0),
+      s_axi_arburst(1 downto 0) => axi_smc_M04_AXI_ARBURST(1 downto 0),
+      s_axi_arcache(3 downto 0) => axi_smc_M04_AXI_ARCACHE(3 downto 0),
+      s_axi_aresetn => rst_ps7_0_100M_peripheral_aresetn(0),
+      s_axi_arlen(7 downto 0) => axi_smc_M04_AXI_ARLEN(7 downto 0),
+      s_axi_arlock => axi_smc_M04_AXI_ARLOCK(0),
+      s_axi_arprot(2 downto 0) => axi_smc_M04_AXI_ARPROT(2 downto 0),
+      s_axi_arready => axi_smc_M04_AXI_ARREADY,
+      s_axi_arsize(2 downto 0) => axi_smc_M04_AXI_ARSIZE(2 downto 0),
+      s_axi_arvalid => axi_smc_M04_AXI_ARVALID,
+      s_axi_awaddr(12 downto 0) => axi_smc_M04_AXI_AWADDR(12 downto 0),
+      s_axi_awburst(1 downto 0) => axi_smc_M04_AXI_AWBURST(1 downto 0),
+      s_axi_awcache(3 downto 0) => axi_smc_M04_AXI_AWCACHE(3 downto 0),
+      s_axi_awlen(7 downto 0) => axi_smc_M04_AXI_AWLEN(7 downto 0),
+      s_axi_awlock => axi_smc_M04_AXI_AWLOCK(0),
+      s_axi_awprot(2 downto 0) => axi_smc_M04_AXI_AWPROT(2 downto 0),
+      s_axi_awready => axi_smc_M04_AXI_AWREADY,
+      s_axi_awsize(2 downto 0) => axi_smc_M04_AXI_AWSIZE(2 downto 0),
+      s_axi_awvalid => axi_smc_M04_AXI_AWVALID,
+      s_axi_bready => axi_smc_M04_AXI_BREADY,
+      s_axi_bresp(1 downto 0) => axi_smc_M04_AXI_BRESP(1 downto 0),
+      s_axi_bvalid => axi_smc_M04_AXI_BVALID,
+      s_axi_rdata(31 downto 0) => axi_smc_M04_AXI_RDATA(31 downto 0),
+      s_axi_rlast => axi_smc_M04_AXI_RLAST,
+      s_axi_rready => axi_smc_M04_AXI_RREADY,
+      s_axi_rresp(1 downto 0) => axi_smc_M04_AXI_RRESP(1 downto 0),
+      s_axi_rvalid => axi_smc_M04_AXI_RVALID,
+      s_axi_wdata(31 downto 0) => axi_smc_M04_AXI_WDATA(31 downto 0),
+      s_axi_wlast => axi_smc_M04_AXI_WLAST,
+      s_axi_wready => axi_smc_M04_AXI_WREADY,
+      s_axi_wstrb(3 downto 0) => axi_smc_M04_AXI_WSTRB(3 downto 0),
+      s_axi_wvalid => axi_smc_M04_AXI_WVALID
     );
 axi_gpio_0: component IndividualProject_axi_gpio_0_2
      port map (
@@ -857,6 +1042,39 @@ axi_smc: component IndividualProject_axi_smc_0
       M03_AXI_wready => axi_smc_M03_AXI_WREADY,
       M03_AXI_wstrb(3 downto 0) => axi_smc_M03_AXI_WSTRB(3 downto 0),
       M03_AXI_wvalid => axi_smc_M03_AXI_WVALID,
+      M04_AXI_araddr(12 downto 0) => axi_smc_M04_AXI_ARADDR(12 downto 0),
+      M04_AXI_arburst(1 downto 0) => axi_smc_M04_AXI_ARBURST(1 downto 0),
+      M04_AXI_arcache(3 downto 0) => axi_smc_M04_AXI_ARCACHE(3 downto 0),
+      M04_AXI_arlen(7 downto 0) => axi_smc_M04_AXI_ARLEN(7 downto 0),
+      M04_AXI_arlock(0) => axi_smc_M04_AXI_ARLOCK(0),
+      M04_AXI_arprot(2 downto 0) => axi_smc_M04_AXI_ARPROT(2 downto 0),
+      M04_AXI_arqos(3 downto 0) => NLW_axi_smc_M04_AXI_arqos_UNCONNECTED(3 downto 0),
+      M04_AXI_arready => axi_smc_M04_AXI_ARREADY,
+      M04_AXI_arsize(2 downto 0) => axi_smc_M04_AXI_ARSIZE(2 downto 0),
+      M04_AXI_arvalid => axi_smc_M04_AXI_ARVALID,
+      M04_AXI_awaddr(12 downto 0) => axi_smc_M04_AXI_AWADDR(12 downto 0),
+      M04_AXI_awburst(1 downto 0) => axi_smc_M04_AXI_AWBURST(1 downto 0),
+      M04_AXI_awcache(3 downto 0) => axi_smc_M04_AXI_AWCACHE(3 downto 0),
+      M04_AXI_awlen(7 downto 0) => axi_smc_M04_AXI_AWLEN(7 downto 0),
+      M04_AXI_awlock(0) => axi_smc_M04_AXI_AWLOCK(0),
+      M04_AXI_awprot(2 downto 0) => axi_smc_M04_AXI_AWPROT(2 downto 0),
+      M04_AXI_awqos(3 downto 0) => NLW_axi_smc_M04_AXI_awqos_UNCONNECTED(3 downto 0),
+      M04_AXI_awready => axi_smc_M04_AXI_AWREADY,
+      M04_AXI_awsize(2 downto 0) => axi_smc_M04_AXI_AWSIZE(2 downto 0),
+      M04_AXI_awvalid => axi_smc_M04_AXI_AWVALID,
+      M04_AXI_bready => axi_smc_M04_AXI_BREADY,
+      M04_AXI_bresp(1 downto 0) => axi_smc_M04_AXI_BRESP(1 downto 0),
+      M04_AXI_bvalid => axi_smc_M04_AXI_BVALID,
+      M04_AXI_rdata(31 downto 0) => axi_smc_M04_AXI_RDATA(31 downto 0),
+      M04_AXI_rlast => axi_smc_M04_AXI_RLAST,
+      M04_AXI_rready => axi_smc_M04_AXI_RREADY,
+      M04_AXI_rresp(1 downto 0) => axi_smc_M04_AXI_RRESP(1 downto 0),
+      M04_AXI_rvalid => axi_smc_M04_AXI_RVALID,
+      M04_AXI_wdata(31 downto 0) => axi_smc_M04_AXI_WDATA(31 downto 0),
+      M04_AXI_wlast => axi_smc_M04_AXI_WLAST,
+      M04_AXI_wready => axi_smc_M04_AXI_WREADY,
+      M04_AXI_wstrb(3 downto 0) => axi_smc_M04_AXI_WSTRB(3 downto 0),
+      M04_AXI_wvalid => axi_smc_M04_AXI_WVALID,
       S00_AXI_araddr(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
       S00_AXI_arburst(1 downto 0) => processing_system7_0_M_AXI_GP0_ARBURST(1 downto 0),
       S00_AXI_arcache(3 downto 0) => processing_system7_0_M_AXI_GP0_ARCACHE(3 downto 0),
@@ -917,6 +1135,26 @@ blk_mem_gen_0: component IndividualProject_blk_mem_gen_0_0
       rstb_busy => NLW_blk_mem_gen_0_rstb_busy_UNCONNECTED,
       wea(3 downto 0) => axi_bram_ctrl_0_BRAM_PORTA_WE(3 downto 0),
       web(3 downto 0) => BRAM_PORTB_0_1_WE(3 downto 0)
+    );
+blk_mem_gen_1: component IndividualProject_blk_mem_gen_0_1
+     port map (
+      addra(31 downto 13) => B"0000000000000000000",
+      addra(12 downto 0) => axi_bram_ctrl_1_BRAM_PORTA_ADDR(12 downto 0),
+      addrb(31 downto 0) => B"00000000000000000000000000000000",
+      clka => axi_bram_ctrl_1_BRAM_PORTA_CLK,
+      clkb => '0',
+      dina(31 downto 0) => axi_bram_ctrl_1_BRAM_PORTA_DIN(31 downto 0),
+      dinb(31 downto 0) => B"00000000000000000000000000001000",
+      douta(31 downto 0) => axi_bram_ctrl_1_BRAM_PORTA_DOUT(31 downto 0),
+      doutb(31 downto 0) => NLW_blk_mem_gen_1_doutb_UNCONNECTED(31 downto 0),
+      ena => axi_bram_ctrl_1_BRAM_PORTA_EN,
+      enb => '0',
+      rsta => axi_bram_ctrl_1_BRAM_PORTA_RST,
+      rsta_busy => NLW_blk_mem_gen_1_rsta_busy_UNCONNECTED,
+      rstb => '0',
+      rstb_busy => NLW_blk_mem_gen_1_rstb_busy_UNCONNECTED,
+      wea(3 downto 0) => axi_bram_ctrl_1_BRAM_PORTA_WE(3 downto 0),
+      web(3 downto 0) => B"0000"
     );
 processing_system7_0: component IndividualProject_processing_system7_0_0
      port map (
