@@ -9,6 +9,7 @@
 #define SRC_TASKS_H_
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "platform.h"
 #include "xparameters.h"
 #include "led_matrix.h"
@@ -43,6 +44,8 @@ u8 move_direction;
 u8 shot_request;
 
 u8 power_up;
+u16 power_up_timer;
+
 u32 small_kills;
 u32 medium_kills;
 u32 big_kills;
@@ -52,6 +55,7 @@ u8 valid;
 // Structs
 cannon_t cannon;
 bullet_t bullet;
+bullet_t tri_bullet[2];
 smallUFO_t smalls[10];
 mediumUFO_t meds[5];
 bigUFO_t bigs[3];
@@ -82,6 +86,11 @@ void levelTask(int LED_GPIO_ID);
 
 // Task that handles game over and restart
 void gameOverTask();
+
+// Function to check for collision between UFOs and bullets
+void collisionCheckStraight();
+void collisionCheckLeft();
+void collisionCheckRight();
 
 
 #endif /* SRC_TASKS_H_ */

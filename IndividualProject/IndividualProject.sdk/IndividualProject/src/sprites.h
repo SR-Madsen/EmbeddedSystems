@@ -12,17 +12,18 @@
 
 
 // Defines
-#define CANNON_SPEED	1
-#define BULLET_SPEED	1
-#define SMALL_SPEED		5
-#define MEDIUM_SPEED	7
+#define CANNON_SPEED	0
+#define BULLET_SPEED	0
+#define SMALL_SPEED		4
+#define MEDIUM_SPEED	6
 #define BIG_SPEED 		10
 #define SMALL_HP		1
 #define MEDIUM_HP		3
 #define BIG_HP			5
 
 // Variables
-
+color_t bullet_color;
+color_t cannon_color;
 
 // Structs
 typedef struct cannon_t {
@@ -78,6 +79,10 @@ cannon_t draw_cannon(position_t pos);
 u8 move_left_cannon(cannon_t *sprite);
 u8 move_right_cannon(cannon_t *sprite);
 void update_cannon(cannon_t *sprite);
+void color_cannon_big(cannon_t *sprite);
+void color_cannon_tri(cannon_t *sprite);
+void color_cannon_freeze(cannon_t *sprite);
+void color_cannon_normal(cannon_t *sprite);
 
 bullet_t draw_bullet(position_t pos);
 u8 move_up_bullet(bullet_t *sprite);
@@ -85,6 +90,9 @@ u8 move_left_bullet(bullet_t *sprite);
 u8 move_right_bullet(bullet_t *sprite);
 void remove_bullet(bullet_t *sprite);
 void update_bullet(bullet_t *sprite);
+void color_bullet_big();
+void color_bullet_normal();
+void change_bullet_color(bullet_t *sprite);
 
 smallUFO_t draw_small(position_t pos);
 u8 move_down_small(smallUFO_t *sprite);

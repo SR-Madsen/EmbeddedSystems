@@ -110,16 +110,20 @@ void ledMatrixOut32(u32 data, u32 addr) {
 
 // Set value of pixel by using integers
 void setPixelValue(u8 x, u8 y, u8 red, u8 green, u8 blue) {
-	pixels[x-1][y-1][RED] = red;
-	pixels[x-1][y-1][GREEN] = green;
-	pixels[x-1][y-1][BLUE] = blue;
+	if (y >= 0 && y < 9) {
+		pixels[x-1][y-1][RED] = red;
+		pixels[x-1][y-1][GREEN] = green;
+		pixels[x-1][y-1][BLUE] = blue;
+	}
 }
 
 // Set value of pixel by using structs
 void setPixel(position_t pos, color_t col) {
-	pixels[pos.x-1][pos.y-1][RED] = col.red;
-	pixels[pos.x-1][pos.y-1][GREEN] = col.green;
-	pixels[pos.x-1][pos.y-1][BLUE] = col.blue;
+	if (pos.y >= 0 && pos.y < 9) {
+		pixels[pos.x-1][pos.y-1][RED] = col.red;
+		pixels[pos.x-1][pos.y-1][GREEN] = col.green;
+		pixels[pos.x-1][pos.y-1][BLUE] = col.blue;
+	}
 }
 
 // Set value of a pixel using enum color input and struct
@@ -357,14 +361,18 @@ void copyPixel(position_t pos1, position_t pos2) {
 
 // Write a pixel's value out to the LED Matrix using integers
 void writePixelValueToDevice(u8 x, u8 y) {
-	u32 data = (pixels[x-1][y-1][RED]<<RED_SHIFT) | (pixels[x-1][y-1][GREEN]<<GREEN_SHIFT) | (pixels[x-1][y-1][BLUE]);
-	ledMatrixOut32(data, BYTES_PER_WORD*((x-1)+((y-1)*NUMBER_OF_COLS)));
+	if (y >= 0 && y < 9) {
+		u32 data = (pixels[x-1][y-1][RED]<<RED_SHIFT) | (pixels[x-1][y-1][GREEN]<<GREEN_SHIFT) | (pixels[x-1][y-1][BLUE]);
+		ledMatrixOut32(data, BYTES_PER_WORD*((x-1)+((y-1)*NUMBER_OF_COLS)));
+	}
 }
 
 // Write a pixel's value out to the LED Matrix using struct
 void writePixelToDevice(position_t pos) {
-	u32 data = (pixels[pos.x-1][pos.y-1][RED]<<RED_SHIFT) | (pixels[pos.x-1][pos.y-1][GREEN]<<GREEN_SHIFT) | (pixels[pos.x-1][pos.y-1][BLUE]);
-	ledMatrixOut32(data, BYTES_PER_WORD*((pos.x-1)+((pos.y-1)*NUMBER_OF_COLS)));
+	if (pos.y >= 0 && pos.y < 9) {
+		u32 data = (pixels[pos.x-1][pos.y-1][RED]<<RED_SHIFT) | (pixels[pos.x-1][pos.y-1][GREEN]<<GREEN_SHIFT) | (pixels[pos.x-1][pos.y-1][BLUE]);
+		ledMatrixOut32(data, BYTES_PER_WORD*((pos.x-1)+((pos.y-1)*NUMBER_OF_COLS)));
+	}
 }
 
 // Set value of pixel and write it to the LED Matrix using integers

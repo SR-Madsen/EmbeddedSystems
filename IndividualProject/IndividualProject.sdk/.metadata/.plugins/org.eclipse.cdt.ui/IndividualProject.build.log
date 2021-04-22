@@ -1,4 +1,4 @@
-10:49:34 **** Auto Build of configuration Debug for project IndividualProject ****
+11:21:56 **** Auto Build of configuration Debug for project IndividualProject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -15,9 +15,9 @@ Finished building target: IndividualProject.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  57140	   1328	  23256	  81724	  13f3c	IndividualProject.elf
+  68216	   1328	  23272	  92816	  16a90	IndividualProject.elf
 Finished building: IndividualProject.elf.size
  
 
-10:49:35 Build Finished (took 613ms)
+11:21:57 Build Finished (took 662ms)
 

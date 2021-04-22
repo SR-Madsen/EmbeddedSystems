@@ -99,6 +99,34 @@ void update_cannon(cannon_t *sprite) {
 	setPixel(sprite->head, sprite->colors);
 }
 
+// Color the cannon if the Big Bullets power-up is active.
+void color_cannon_big(cannon_t *sprite) {
+	sprite->colors.red = 255;
+	sprite->colors.green = 255;
+	sprite->colors.blue = 255;
+}
+
+// Color the cannon if the Tri Bullets power-up is active.
+void color_cannon_tri(cannon_t *sprite) {
+	sprite->colors.red = 255;
+	sprite->colors.green = 50;
+	sprite->colors.blue = 0;
+}
+
+// Color the cannon if the Freeze power-up is active.
+void color_cannon_freeze(cannon_t *sprite) {
+	sprite->colors.red = 0;
+	sprite->colors.green = 255;
+	sprite->colors.blue = 255;
+}
+
+// Color the cannon if the no power-up is active.
+void color_cannon_normal(cannon_t *sprite) {
+	sprite->colors.red = 255;
+	sprite->colors.green = 0;
+	sprite->colors.blue = 0;
+}
+
 /********************* BULLET SPRITE *********************/
 // Draw and initialize bullet sprite, returning a struct to it.
 bullet_t draw_bullet(position_t pos) {
@@ -106,9 +134,9 @@ bullet_t draw_bullet(position_t pos) {
 
 	sprite.core = pos;
 	sprite.active = 1;
-	sprite.colors.red = 255;
-	sprite.colors.green = 0;
-	sprite.colors.blue = 0;
+	sprite.colors.red = bullet_color.red;
+	sprite.colors.green = bullet_color.green;
+	sprite.colors.blue = bullet_color.blue;
 	sprite.speed_timer = BULLET_SPEED;
 
 	setPixel(sprite.core, sprite.colors);
@@ -178,12 +206,34 @@ u8 move_right_bullet(bullet_t *sprite) {
 // Removes pixels for sprite.
 void remove_bullet(bullet_t *sprite) {
 	color_t colors = {0, 0, 255};
+	sprite->active = 0;
 	setPixel(sprite->core, colors);
 }
 
 // Update bullet, unused.
 void update_bullet(bullet_t *sprite) {
 	setPixel(sprite->core, sprite->colors);
+}
+
+// Change color to big bullet.
+void color_bullet_big() {
+	bullet_color.red = 255;
+	bullet_color.green = 255;
+	bullet_color.blue = 255;
+}
+
+// Revert color to normal.
+void color_bullet_normal() {
+	bullet_color.red = 255;
+	bullet_color.green = 0;
+	bullet_color.blue = 0;
+}
+
+// Changes bullet color instantly.
+void change_bullet_color(bullet_t *sprite) {
+	sprite->colors.red = bullet_color.red;
+	sprite->colors.green = bullet_color.green;
+	sprite->colors.blue = bullet_color.blue;
 }
 
 /********************* SMALL UFO SPRITE *********************/
@@ -197,12 +247,13 @@ smallUFO_t draw_small(position_t pos) {
 	sprite.right.y = pos.y;
 	sprite.colors.red = 255;
 	sprite.colors.green = 0;
-	sprite.colors.blue = 0;
+	sprite.colors.blue = 25;
 	sprite.health = SMALL_HP;
 	sprite.speed_timer = SMALL_SPEED;
+	sprite.active = 1;
 
-	writePixelDirect(sprite.left, sprite.colors);
-	writePixelDirect(sprite.right, sprite.colors);
+	setPixel(sprite.left, sprite.colors);
+	setPixel(sprite.right, sprite.colors);
 
 	return sprite;
 }
@@ -258,10 +309,11 @@ mediumUFO_t draw_medium(position_t pos) {
 	sprite.colors.blue = 0;
 	sprite.health = MEDIUM_HP;
 	sprite.speed_timer = MEDIUM_SPEED;
+	sprite.active = 1;
 
-	writePixelDirect(sprite.core, sprite.colors);
-	writePixelDirect(sprite.left, sprite.colors);
-	writePixelDirect(sprite.right, sprite.colors);
+	setPixel(sprite.core, sprite.colors);
+	setPixel(sprite.left, sprite.colors);
+	setPixel(sprite.right, sprite.colors);
 
 	return sprite;
 }
@@ -322,18 +374,19 @@ bigUFO_t draw_big(position_t pos) {
 	sprite.left_up.y = pos.y+1;
 	sprite.right_up.x = pos.x+1;
 	sprite.right_up.y = pos.y+1;
-	sprite.colors.red = 0;
-	sprite.colors.green = 255;
-	sprite.colors.blue = 255;
+	sprite.colors.red = 255;
+	sprite.colors.green = 25;
+	sprite.colors.blue = 0;
 	sprite.health = BIG_HP;
 	sprite.speed_timer = BIG_SPEED;
+	sprite.active = 1;
 
-	writePixelDirect(sprite.core, sprite.colors);
-	writePixelDirect(sprite.left, sprite.colors);
-	writePixelDirect(sprite.right, sprite.colors);
-	writePixelDirect(sprite.core_up, sprite.colors);
-	writePixelDirect(sprite.left_up, sprite.colors);
-	writePixelDirect(sprite.right_up, sprite.colors);
+	setPixel(sprite.core, sprite.colors);
+	setPixel(sprite.left, sprite.colors);
+	setPixel(sprite.right, sprite.colors);
+	setPixel(sprite.core_up, sprite.colors);
+	setPixel(sprite.left_up, sprite.colors);
+	setPixel(sprite.right_up, sprite.colors);
 
 	return sprite;
 }
