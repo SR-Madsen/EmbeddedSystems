@@ -30,24 +30,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_a
 # IP: bd/SpaceInvaders/ip/SpaceInvaders_processing_system7_0_0/SpaceInvaders_processing_system7_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_processing_system7_0_0 || ORIG_REF_NAME==SpaceInvaders_processing_system7_0_0} -quiet] -quiet
 
-# IP: bd/SpaceInvaders/ip/SpaceInvaders_microblaze_0_1/SpaceInvaders_microblaze_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_microblaze_0_1 || ORIG_REF_NAME==SpaceInvaders_microblaze_0_1} -quiet] -quiet
-
-# IP: bd/SpaceInvaders/ip/SpaceInvaders_dlmb_v10_2/SpaceInvaders_dlmb_v10_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_dlmb_v10_2 || ORIG_REF_NAME==SpaceInvaders_dlmb_v10_2} -quiet] -quiet
-
-# IP: bd/SpaceInvaders/ip/SpaceInvaders_ilmb_v10_2/SpaceInvaders_ilmb_v10_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_ilmb_v10_2 || ORIG_REF_NAME==SpaceInvaders_ilmb_v10_2} -quiet] -quiet
-
-# IP: bd/SpaceInvaders/ip/SpaceInvaders_dlmb_bram_if_cntlr_2/SpaceInvaders_dlmb_bram_if_cntlr_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_dlmb_bram_if_cntlr_2 || ORIG_REF_NAME==SpaceInvaders_dlmb_bram_if_cntlr_2} -quiet] -quiet
-
-# IP: bd/SpaceInvaders/ip/SpaceInvaders_ilmb_bram_if_cntlr_2/SpaceInvaders_ilmb_bram_if_cntlr_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_ilmb_bram_if_cntlr_2 || ORIG_REF_NAME==SpaceInvaders_ilmb_bram_if_cntlr_2} -quiet] -quiet
-
-# IP: bd/SpaceInvaders/ip/SpaceInvaders_lmb_bram_2/SpaceInvaders_lmb_bram_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_lmb_bram_2 || ORIG_REF_NAME==SpaceInvaders_lmb_bram_2} -quiet] -quiet
-
 # IP: bd/SpaceInvaders/ip/SpaceInvaders_xbar_2/SpaceInvaders_xbar_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_xbar_2 || ORIG_REF_NAME==SpaceInvaders_xbar_2} -quiet] -quiet
 
@@ -71,6 +53,24 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_a
 
 # IP: bd/SpaceInvaders/ip/SpaceInvaders_axi_smc_1/SpaceInvaders_axi_smc_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_axi_smc_1 || ORIG_REF_NAME==SpaceInvaders_axi_smc_1} -quiet] -quiet
+
+# IP: bd/SpaceInvaders/ip/SpaceInvaders_microblaze_0_0/SpaceInvaders_microblaze_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_microblaze_0_0 || ORIG_REF_NAME==SpaceInvaders_microblaze_0_0} -quiet] -quiet
+
+# IP: bd/SpaceInvaders/ip/SpaceInvaders_dlmb_v10_0/SpaceInvaders_dlmb_v10_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_dlmb_v10_0 || ORIG_REF_NAME==SpaceInvaders_dlmb_v10_0} -quiet] -quiet
+
+# IP: bd/SpaceInvaders/ip/SpaceInvaders_ilmb_v10_0/SpaceInvaders_ilmb_v10_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_ilmb_v10_0 || ORIG_REF_NAME==SpaceInvaders_ilmb_v10_0} -quiet] -quiet
+
+# IP: bd/SpaceInvaders/ip/SpaceInvaders_dlmb_bram_if_cntlr_0/SpaceInvaders_dlmb_bram_if_cntlr_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_dlmb_bram_if_cntlr_0 || ORIG_REF_NAME==SpaceInvaders_dlmb_bram_if_cntlr_0} -quiet] -quiet
+
+# IP: bd/SpaceInvaders/ip/SpaceInvaders_ilmb_bram_if_cntlr_0/SpaceInvaders_ilmb_bram_if_cntlr_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_ilmb_bram_if_cntlr_0 || ORIG_REF_NAME==SpaceInvaders_ilmb_bram_if_cntlr_0} -quiet] -quiet
+
+# IP: bd/SpaceInvaders/ip/SpaceInvaders_lmb_bram_0/SpaceInvaders_lmb_bram_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_lmb_bram_0 || ORIG_REF_NAME==SpaceInvaders_lmb_bram_0} -quiet] -quiet
 
 # IP: bd/SpaceInvaders/ip/SpaceInvaders_auto_pc_0/SpaceInvaders_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_auto_pc_0 || ORIG_REF_NAME==SpaceInvaders_auto_pc_0} -quiet] -quiet

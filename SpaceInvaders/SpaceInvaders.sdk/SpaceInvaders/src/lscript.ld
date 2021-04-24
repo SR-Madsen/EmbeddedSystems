@@ -11,15 +11,15 @@
 /*******************************************************************/
 
 _STACK_SIZE = DEFINED(_STACK_SIZE) ? _STACK_SIZE : 0x400;
-_HEAP_SIZE = DEFINED(_HEAP_SIZE) ? _HEAP_SIZE : 0x800;
+_HEAP_SIZE = DEFINED(_HEAP_SIZE) ? _HEAP_SIZE : 0x400;
 
 /* Define Memories in the system */
 
 MEMORY
 {
-   microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem : ORIGIN = 0x50, LENGTH = 0x1FB0
+   microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem : ORIGIN = 0x50, LENGTH = 0xFFB0
+   axi_bram_ctrl_1_Mem0 : ORIGIN = 0x42000000, LENGTH = 0x2000
    axi_bram_ctrl_0_Mem0 : ORIGIN = 0xC0000000, LENGTH = 0x2000
-   axi_bram_ctrl_1_Mem0 : ORIGIN = 0xC2000000, LENGTH = 0x2000
 }
 
 /* Specify the default entry point to the program */

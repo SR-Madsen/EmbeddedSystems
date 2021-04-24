@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Tue Apr 20 17:57:04 2021
+-- Date        : Tue Apr 20 17:57:03 2021
 -- Host        : sebastian-ZBook running 64-bit Linux Mint 20
--- Command     : write_vhdl -force -mode synth_stub
---               /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_auto_pc_1/SpaceInvaders_auto_pc_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top SpaceInvaders_auto_pc_1 -prefix
+--               SpaceInvaders_auto_pc_1_ SpaceInvaders_auto_pc_1_stub.vhdl
 -- Design      : SpaceInvaders_auto_pc_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1
