@@ -36,6 +36,7 @@
 // Variables
 extern u16 tick_value;
 extern u8 game_over;
+extern u8 victorious;
 
 u8 player_health;
 u8 level;
@@ -50,7 +51,9 @@ u32 small_kills;
 u32 medium_kills;
 u32 big_kills;
 
-u8 valid;
+u8 active_bigs;
+u8 active_meds;
+u8 active_smalls;
 
 // Structs
 cannon_t cannon;
@@ -86,6 +89,9 @@ void levelTask(int LED_GPIO_ID);
 
 // Task that handles game over and restart
 void gameOverTask();
+
+// Task that handles game victory and restart
+void victoryTask();
 
 // Function to check for collision between UFOs and bullets
 void collisionCheckStraight();

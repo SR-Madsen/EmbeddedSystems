@@ -85,5 +85,6 @@ void resetPixelValue(u8 x, u8 y);
 void resetAllPixels();
 
 void gameOver();
+void victory();
 
 #endif /* SRC_LED_MATRIX_H_ */

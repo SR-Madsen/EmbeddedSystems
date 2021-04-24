@@ -34,14 +34,30 @@ void initVariables() {
 	small_kills = 0;
 	medium_kills = 0;
 	big_kills = 0;
+	active_smalls = 0;
+	active_meds = 0;
+	active_bigs = 0;
 
-	color_bullet_normal();
+	for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
+		remove_small(&smalls[i]);
+	}
 
-	smalls[0] = draw_small((position_t){2,8});
-	meds[0] = draw_medium((position_t){6,8});
+	for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
+		remove_medium(&meds[i]);
+	}
+
+	for (int i = 0; i < sizeof(bigs)/sizeof(bigs[0]); i++) {
+		remove_big(&bigs[i]);
+	}
+
+	//smalls[0] = draw_small((position_t){2,8});
+	//meds[0] = draw_medium((position_t){2,6});
+	//bigs[0] = draw_big((position_t){2,8});
 
 	cannon = draw_cannon((position_t){4,1});
 	color_cannon_normal(&cannon);
+	color_bullet_normal();
+	set_background((color_t){0, 0, 255});
 }
 
 // Reads the potentiometer value and sets the Run-to-Complete Scheduler timing with it.
@@ -49,7 +65,7 @@ void potentiometerTask() {
 	u16 temp_data;
 	temp_data = getXAdcAuxData(POT_CH);
 
-	tick_value = 100 - (temp_data >> 6);
+	tick_value = 110 - (temp_data >> 6) - 10;
 }
 
 // Reads joystick analog value and button value and set movement and shooting with it.
@@ -74,6 +90,7 @@ void joystickTask(int GYRO_GPIO_ID) {
 // Sets the colors of the background depending on level
 void backgroundTask() {
 	u16 color_level = 255 - level * 51;
+	set_background((color_t){0, 0, color_level});
 	for (int row = 1; row < NUMBER_OF_ROWS+1; row++) {
 		for (int column = 1; column < NUMBER_OF_COLS+1; column++) {
 			if (row == 1 || row == 2) {
@@ -88,16 +105,6 @@ void backgroundTask() {
 // Handles timing and moving sprites, as well as checking for collision.
 // Can be seen as main game logic task.
 void spritesTask() {
-	// Create UFOs depending on level
-	/*
-	 *
-	 *
-	 *
-	 *
-	 *
-	 *
-	 *
-	 */
 
 	// Count down power-up timer
 	if (power_up != NONE) {
@@ -133,56 +140,20 @@ void spritesTask() {
 			} else {
 				bullet = draw_bullet((position_t){cannon.head.x, cannon.head.y+1});
 			}
-		} else if (bullet.active || tri_bullet[0].active || tri_bullet[1].active) {
-			if (bullet.active) {
+		} else if (bullet.active) {
 				move_up_bullet(&bullet);
 				collisionCheckStraight();
-			}
-
-			if (tri_bullet[0].active) {
+		} else if (tri_bullet[0].active) {
 				move_left_bullet(&tri_bullet[0]);
 				collisionCheckLeft();
-			}
-
-			if (tri_bullet[1].active) {
+		} else if (tri_bullet[1].active) {
 				move_right_bullet(&tri_bullet[1]);
 				collisionCheckRight();
-			}
 		}
 
 		bullet.speed_timer = BULLET_SPEED;
 		tri_bullet[0].speed_timer = BULLET_SPEED;
 		tri_bullet[1].speed_timer = BULLET_SPEED;
-	}
-
-	// Move all small UFOs
-	for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
-		if (power_up != FREEZE) {
-			if (!smalls[i].speed_timer--) {
-				if (smalls[i].active && !move_down_small(&smalls[i])) {
-					player_health--;
-				}
-				smalls[i].speed_timer = SMALL_SPEED;
-			}
-		}
-		if (smalls[i].active) {
-			update_small(&smalls[i]);
-		}
-	}
-
-	// Move all medium UFOs
-	for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
-		if (power_up != FREEZE) {
-			if (!meds[i].speed_timer--) {
-				if (meds[i].active && !move_down_medium(&meds[i])) {
-					player_health--;
-				}
-				meds[i].speed_timer = MEDIUM_SPEED;
-			}
-		}
-		if (meds[i].active) {
-			update_medium(&meds[i]);
-		}
 	}
 
 	// Move all big UFOs
@@ -191,6 +162,7 @@ void spritesTask() {
 			if (!bigs[i].speed_timer--) {
 				if (bigs[i].active && !move_down_big(&bigs[i])) {
 					player_health--;
+					active_bigs--;
 				}
 				bigs[i].speed_timer = BIG_SPEED;
 			}
@@ -200,20 +172,303 @@ void spritesTask() {
 		}
 	}
 
-	// Check if UFO has moved into a bullet.
-	if (bullet.active || tri_bullet[0].active || tri_bullet[1].active) {
-		if (bullet.active) {
-			collisionCheckStraight();
+	// Move all medium UFOs, if they are not blocked
+	for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
+		if (power_up != FREEZE) {
+			if (!meds[i].speed_timer--) {
+				if (meds[i].active) {
+					color_t next_pos_color_left, next_pos_color_core, next_pos_color_right;
+					getPixel((position_t){meds[i].left.x, meds[i].left.y-1}, &next_pos_color_left);
+					getPixel((position_t){meds[i].core.x, meds[i].core.y-1}, &next_pos_color_core);
+					getPixel((position_t){meds[i].right.x, meds[i].right.y-1}, &next_pos_color_right);
+					if ((next_pos_color_left.blue == 255 - level * 51 && next_pos_color_core.blue == 255 - level * 51
+						&& next_pos_color_right.blue == 255 - level * 51) || meds[i].core.y == 3) {
+						if (!move_down_medium(&meds[i])) {
+							player_health--;
+							active_meds--;
+						}
+					}
+				}
+				meds[i].speed_timer = MEDIUM_SPEED;
+			}
 		}
-
-		if (tri_bullet[0].active) {
-			collisionCheckLeft();
-		}
-
-		if (tri_bullet[1].active) {
-			collisionCheckRight();
+		if (meds[i].active) {
+			update_medium(&meds[i]);
 		}
 	}
+
+	// Move all small UFOs, if they are not blocked
+	for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
+		if (power_up != FREEZE) {
+			if (!smalls[i].speed_timer--) {
+				if (smalls[i].active) {
+					color_t next_pos_color_left, next_pos_color_right;
+					getPixel((position_t){smalls[i].left.x, smalls[i].left.y-1}, &next_pos_color_left);
+					getPixel((position_t){smalls[i].right.x, smalls[i].right.y-1}, &next_pos_color_right);
+					if ((next_pos_color_left.blue == 255 - level * 51 && next_pos_color_right.blue == 255 - level * 51)
+						 || (smalls[i].left.y == 3)) {
+						if (smalls[i].active && !move_down_small(&smalls[i])) {
+							player_health--;
+							active_smalls--;
+						}
+					}
+				}
+				smalls[i].speed_timer = SMALL_SPEED;
+			}
+		}
+		if (smalls[i].active) {
+			update_small(&smalls[i]);
+		}
+	}
+
+	// Check if UFO has moved into a bullet.
+	if (bullet.active) {
+		collisionCheckStraight();
+	}
+
+	if (tri_bullet[0].active) {
+		collisionCheckLeft();
+	}
+
+	if (tri_bullet[1].active) {
+		collisionCheckRight();
+	}
+
+
+	// Create UFOs depending on level
+	u8 spawn_possible = 1;
+	switch (level)
+	{
+		case 0:
+		for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
+			if (smalls[i].active && (smalls[i].left.y == 8 || smalls[i].left.y == 7)) {
+				spawn_possible = 0;
+			}
+		}
+		if (active_smalls < 4 && spawn_possible) {
+			int i = 0;
+			while (smalls[i].active) {
+				i++;
+			}
+			u8 pos_x = rand()%7;
+			smalls[i] = draw_small((position_t){pos_x+1, 8});
+			active_smalls++;
+		}
+		break;
+
+
+		case 1:
+		for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
+			if (smalls[i].active && (smalls[i].left.y == 8 || smalls[i].left.y == 7)) {
+				spawn_possible = 0;
+			}
+		}
+		for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
+			if (meds[i].active && meds[i].core.y == 8) {
+				spawn_possible = 0;
+			}
+		}
+
+		if (active_meds < 1 && spawn_possible) {
+			int i = 0;
+			while (meds[i].active) {
+				i++;
+			}
+			u8 pos_x = rand()%6;
+			meds[i] = draw_medium((position_t){pos_x+2, 8});
+			active_meds++;
+			spawn_possible = 0;
+		}
+
+		if (active_smalls < 2 && spawn_possible) {
+			int i = 0;
+			while (smalls[i].active) {
+				i++;
+			}
+			u8 pos_x = rand()%7;
+			smalls[i] = draw_small((position_t){pos_x+1, 8});
+			active_smalls++;
+		}
+		break;
+
+
+		case 2:
+			for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
+				if (smalls[i].active && (smalls[i].left.y == 8 || smalls[i].left.y == 7)) {
+					spawn_possible = 0;
+				}
+			}
+			for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
+				if (meds[i].active && (meds[i].core.y == 8 || meds[i].core.y == 7)) {
+					spawn_possible = 0;
+				}
+			}
+
+			if (active_meds < 4 && spawn_possible) {
+				int i = 0;
+				while (meds[i].active) {
+					i++;
+				}
+				u8 pos_x = rand()%6;
+				meds[i] = draw_medium((position_t){pos_x+2, 8});
+				active_meds++;
+				spawn_possible = 0;
+			}
+
+			if (active_smalls < 6 && spawn_possible) {
+				int i = 0;
+				while (smalls[i].active) {
+					i++;
+				}
+				u8 pos_x = rand()%7;
+				smalls[i] = draw_small((position_t){pos_x+1, 8});
+				active_smalls++;
+			}
+		break;
+
+
+		case 3:
+		for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
+			if (smalls[i].active && (smalls[i].left.y == 8 || smalls[i].left.y == 7)) {
+				spawn_possible = 0;
+			}
+		}
+		for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
+			if (meds[i].active && (meds[i].core.y == 8 || meds[i].core.y == 7)) {
+				spawn_possible = 0;
+			}
+		}
+
+		if (active_meds < 6 && spawn_possible) {
+			int i = 0;
+			while (meds[i].active) {
+				i++;
+			}
+			u8 pos_x = rand()%6;
+			meds[i] = draw_medium((position_t){pos_x+2, 8});
+			active_meds++;
+			spawn_possible = 0;
+		}
+
+		if (active_smalls < 3 && spawn_possible) {
+			int i = 0;
+			while (smalls[i].active) {
+				i++;
+			}
+			u8 pos_x = rand()%7;
+			smalls[i] = draw_small((position_t){pos_x+1, 8});
+			active_smalls++;
+		}
+
+		break;
+
+
+		case 4:
+		for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
+			if (smalls[i].active && (smalls[i].left.y == 8 || smalls[i].left.y == 7)) {
+				spawn_possible = 0;
+			}
+		}
+		for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
+			if (meds[i].active && (meds[i].core.y == 8 || meds[i].core.y == 7)) {
+				spawn_possible = 0;
+			}
+		}
+		for (int i = 0; i < sizeof(bigs)/sizeof(bigs[0]); i++) {
+			if (bigs[i].active && (bigs[i].core_up.y == 8 || bigs[i].core_up.y == 7)) {
+				spawn_possible = 0;
+			}
+		}
+
+		if (active_bigs < 1 && spawn_possible) {
+			int i = 0;
+			while (bigs[i].active) {
+				i++;
+			}
+			u8 pos_x = rand()%6;
+			bigs[i] = draw_big((position_t){pos_x+2, 8});
+			active_bigs++;
+			spawn_possible = 0;
+		}
+
+		if (active_meds < 0 && spawn_possible) {
+			int i = 0;
+			while (meds[i].active) {
+				i++;
+			}
+			u8 pos_x = rand()%6;
+			meds[i] = draw_medium((position_t){pos_x+2, 8});
+			active_meds++;
+			spawn_possible = 0;
+		}
+
+		if (active_smalls < 4 && spawn_possible) {
+			int i = 0;
+			while (smalls[i].active) {
+				i++;
+			}
+			u8 pos_x = rand()%7;
+			smalls[i] = draw_small((position_t){pos_x+1, 8});
+			active_smalls++;
+		}
+		break;
+
+
+		case 5:
+		for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
+			if (smalls[i].active && (smalls[i].left.y == 8 || smalls[i].left.y == 7)) {
+				spawn_possible = 0;
+			}
+		}
+		for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
+			if (meds[i].active && (meds[i].core.y == 8 || meds[i].core.y == 7)) {
+				spawn_possible = 0;
+			}
+		}
+		for (int i = 0; i < sizeof(bigs)/sizeof(bigs[0]); i++) {
+			if (bigs[i].active && (bigs[i].core_up.y == 8 || bigs[i].core_up.y == 7)) {
+				spawn_possible = 0;
+			}
+		}
+
+		if (active_bigs < 3 && spawn_possible) {
+			int i = 0;
+			while (bigs[i].active) {
+				i++;
+			}
+			u8 pos_x = rand()%6;
+			bigs[i] = draw_big((position_t){pos_x+2, 8});
+			active_bigs++;
+			spawn_possible = 0;
+		}
+
+		if (active_meds < 3 && spawn_possible) {
+			int i = 0;
+			while (meds[i].active) {
+				i++;
+			}
+			u8 pos_x = rand()%6;
+			meds[i] = draw_medium((position_t){pos_x+2, 8});
+			active_meds++;
+			spawn_possible = 0;
+		}
+
+		if (active_smalls < 0 && spawn_possible) {
+			int i = 0;
+			while (smalls[i].active) {
+				i++;
+			}
+			u8 pos_x = rand()%7;
+			smalls[i] = draw_small((position_t){pos_x+1, 8});
+			active_smalls++;
+		}
+		break;
+
+
+		default:
+		break;
+	}
+
 }
 
 // Writes values to the matrix once background and sprites are set.
@@ -224,8 +479,11 @@ void matrixTask() {
 // Handles updating the level and player HP, as well as writing statistics.
 void levelTask(int LED_GPIO_ID) {
 
-	if (level < 5 && (small_kills+medium_kills+big_kills) > level*10) {
+	if (level < 5 && (small_kills+medium_kills+big_kills) > level*10+10) {
 		level++;
+	}
+	if (small_kills+medium_kills+big_kills > 60) {
+		victorious = 1;
 	}
 
 	if (player_health == 4) {
@@ -258,6 +516,16 @@ void gameOverTask(){
 	}
 }
 
+// Task that handles game victory and restart
+void victoryTask() {
+	victory();
+	if (shot_request) {
+		initVariables();
+		victorious = 0;
+	}
+}
+
+
 // Function to check for collision between UFOs and straight flying bullets
 void collisionCheckStraight() {
 	for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
@@ -270,12 +538,14 @@ void collisionCheckStraight() {
 				} else {
 					remove_small(&smalls[i]);
 					small_kills++;
+					active_smalls--;
 				}
 			} else {
 				smalls[i].health--;
 				if (smalls[i].health == 0) {
 					remove_small(&smalls[i]);
 					small_kills++;
+					active_smalls--;
 				}
 			}
 			remove_bullet(&bullet);
@@ -292,12 +562,14 @@ void collisionCheckStraight() {
 				} else {
 					remove_medium(&meds[i]);
 					medium_kills++;
+					active_meds--;
 				}
 			} else {
 				meds[i].health--;
 				if (meds[i].health == 0) {
 					remove_medium(&meds[i]);
 					medium_kills++;
+					active_meds--;
 					if (power_up == NONE) {
 						u16 rng = rand()%20;
 						if (rng == 1) {
@@ -341,12 +613,14 @@ void collisionCheckStraight() {
 				} else {
 					remove_big(&bigs[i]);
 					big_kills++;
+					active_bigs--;
 				}
 			} else {
 				bigs[i].health--;
 				if (bigs[i].health == 0) {
 					remove_big(&bigs[i]);
 					big_kills++;
+					active_bigs--;
 					if (power_up == NONE) {
 						u16 rng = rand()%10;
 						if (rng == 0) {
@@ -384,6 +658,7 @@ void collisionCheckLeft() {
 			if (smalls[i].health == 0) {
 				remove_small(&smalls[i]);
 				small_kills++;
+				active_smalls--;
 			}
 			remove_bullet(&tri_bullet[0]);
 		}
@@ -397,6 +672,7 @@ void collisionCheckLeft() {
 			if (meds[i].health == 0) {
 				remove_medium(&meds[i]);
 				medium_kills++;
+				active_meds--;
 			}
 			remove_bullet(&tri_bullet[0]);
 		}
@@ -413,6 +689,7 @@ void collisionCheckLeft() {
 			if (bigs[i].health == 0) {
 				remove_big(&bigs[i]);
 				big_kills++;
+				active_bigs--;
 			}
 			remove_bullet(&tri_bullet[0]);
 		}
@@ -429,6 +706,7 @@ void collisionCheckRight() {
 			if (smalls[i].health == 0) {
 				remove_small(&smalls[i]);
 				small_kills++;
+				active_smalls--;
 			}
 			remove_bullet(&tri_bullet[1]);
 		}
@@ -442,6 +720,7 @@ void collisionCheckRight() {
 			if (meds[i].health == 0) {
 				remove_medium(&meds[i]);
 				medium_kills++;
+				active_meds--;
 			}
 			remove_bullet(&tri_bullet[1]);
 		}
@@ -458,6 +737,7 @@ void collisionCheckRight() {
 			if (bigs[i].health == 0) {
 				remove_big(&bigs[i]);
 				big_kills++;
+				active_bigs--;
 			}
 			remove_bullet(&tri_bullet[1]);
 		}

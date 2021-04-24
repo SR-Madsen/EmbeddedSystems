@@ -12382,3 +12382,2040 @@ arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
   68216	   1328	  23272	  92816	  16a90	IndividualProject.elf
 Finished building: IndividualProject.elf.size
  
+09:42:52 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68216	   1328	  23272	  92816	  16a90	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+09:44:08 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/led_matrix.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68216	   1328	  23272	  92816	  16a90	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+09:47:18 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'spritesTask':
+../src/tasks.c:162:9: error: too few arguments to function 'getPixel'
+     if (getPixel((position_t){smalls[i].left.y-1}) == (position_t){0, 0, 255 - level * 51}) {
+         ^~~~~~~~
+In file included from ../src/tasks.h:15:0,
+                 from ../src/tasks.c:8:
+../src/led_matrix.h:64:6: note: declared here
+ void getPixel(position_t pos, color_t *col);
+      ^~~~~~~~
+../src/tasks.c:162:74: warning: excess elements in struct initializer
+     if (getPixel((position_t){smalls[i].left.y-1}) == (position_t){0, 0, 255 - level * 51}) {
+                                                                          ^~~
+../src/tasks.c:162:74: note: (near initialization for '(anonymous)')
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+09:48:48 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'spritesTask':
+../src/tasks.c:162:30: error: too few arguments to function 'getPixel'
+     color_t next_pos_color = getPixel((position_t){smalls[i].left.x, smalls[i].left.y-1});
+                              ^~~~~~~~
+In file included from ../src/tasks.h:15:0,
+                 from ../src/tasks.c:8:
+../src/led_matrix.h:64:6: note: declared here
+ void getPixel(position_t pos, color_t *col);
+      ^~~~~~~~
+../src/tasks.c:163:24: error: invalid operands to binary == (have 'color_t {aka struct color_t}' and 'color_t {aka struct color_t}')
+     if (next_pos_color == (color_t){0, 0, 255 - level * 51}) {
+                        ^~
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+09:49:07 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'spritesTask':
+../src/tasks.c:164:24: error: invalid operands to binary == (have 'color_t {aka struct color_t}' and 'color_t {aka struct color_t}')
+     if (next_pos_color == (color_t){0, 0, 255 - level * 51}) {
+                        ^~
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+09:49:31 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68344	   1328	  23272	  92944	  16b10	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+09:50:33 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68472	   1328	  23272	  93072	  16b90	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+09:51:25 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68536	   1328	  23272	  93136	  16bd0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+09:52:10 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68536	   1328	  23272	  93136	  16bd0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+09:55:35 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69048	   1328	  23272	  93648	  16dd0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+09:57:22 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68920	   1328	  23272	  93520	  16d50	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:05:09 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68984	   1328	  23272	  93584	  16d90	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:05:29 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68984	   1328	  23272	  93584	  16d90	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:05:38 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68984	   1328	  23272	  93584	  16d90	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:06:07 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68984	   1328	  23272	  93584	  16d90	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:06:22 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68984	   1328	  23272	  93584	  16d90	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:08:57 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68984	   1328	  23272	  93584	  16d90	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:09:15 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69048	   1328	  23272	  93648	  16dd0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:09:59 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69048	   1328	  23272	  93648	  16dd0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:10:05 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69048	   1328	  23272	  93648	  16dd0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:10:19 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69048	   1328	  23272	  93648	  16dd0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:11:50 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69048	   1328	  23272	  93648	  16dd0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:12:06 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'initVariables':
+../src/tasks.c:37:2: error: 'active_ufos' undeclared (first use in this function); did you mean 'active_meds'?
+  active_ufos = 0;
+  ^~~~~~~~~~~
+  active_meds
+../src/tasks.c:37:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+10:12:11 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'initVariables':
+../src/tasks.c:37:2: error: 'active_ufos' undeclared (first use in this function); did you mean 'active_meds'?
+  active_ufos = 0;
+  ^~~~~~~~~~~
+  active_meds
+../src/tasks.c:37:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+10:12:29 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69112	   1328	  23288	  93728	  16e20	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:12:57 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69304	   1328	  23288	  93920	  16ee0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:13:39 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69496	   1328	  23288	  94112	  16fa0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:30:31 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69496	   1328	  23288	  94112	  16fa0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:32:04 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/led_matrix.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69752	   1328	  23288	  94368	  170a0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:32:07 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/led_matrix.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69752	   1328	  23288	  94368	  170a0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:32:09 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'victoryTask':
+../src/tasks.c:305:11: error: lvalue required as left operand of assignment
+   victory = 0;
+           ^
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+10:32:29 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:17:0:
+../src/tasks.h:39:11: error: 'victory' redeclared as different kind of symbol
+ extern u8 victory;
+           ^~~~~~~
+In file included from ../src/helloworld.c:13:0:
+../src/led_matrix.h:88:6: note: previous declaration of 'victory' was here
+ void victory();
+      ^~~~~~~
+make: *** [src/subdir.mk:44: src/helloworld.o] Error 1
+10:32:41 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:17:0:
+../src/tasks.h:39:11: error: 'victory' redeclared as different kind of symbol
+ extern u8 victory;
+           ^~~~~~~
+In file included from ../src/helloworld.c:13:0:
+../src/led_matrix.h:88:6: note: previous declaration of 'victory' was here
+ void victory();
+      ^~~~~~~
+../src/helloworld.c:43:4: error: 'victory' redeclared as different kind of symbol
+ u8 victory = 0;
+    ^~~~~~~
+In file included from ../src/helloworld.c:13:0:
+../src/led_matrix.h:88:6: note: previous declaration of 'victory' was here
+ void victory();
+      ^~~~~~~
+make: *** [src/subdir.mk:44: src/helloworld.o] Error 1
+10:32:45 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:17:0:
+../src/tasks.h:39:11: error: 'victory' redeclared as different kind of symbol
+ extern u8 victory;
+           ^~~~~~~
+In file included from ../src/helloworld.c:13:0:
+../src/led_matrix.h:88:6: note: previous declaration of 'victory' was here
+ void victory();
+      ^~~~~~~
+../src/helloworld.c:43:4: error: 'victory' redeclared as different kind of symbol
+ u8 victory = 0;
+    ^~~~~~~
+In file included from ../src/helloworld.c:13:0:
+../src/led_matrix.h:88:6: note: previous declaration of 'victory' was here
+ void victory();
+      ^~~~~~~
+make: *** [src/subdir.mk:44: src/helloworld.o] Error 1
+10:32:59 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:17:0:
+../src/tasks.h:39:11: error: 'victory' redeclared as different kind of symbol
+ extern u8 victory;
+           ^~~~~~~
+In file included from ../src/helloworld.c:13:0:
+../src/led_matrix.h:88:6: note: previous declaration of 'victory' was here
+ void victory();
+      ^~~~~~~
+make: *** [src/subdir.mk:44: src/helloworld.o] Error 1
+10:33:03 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:34: warning: the comparison will always evaluate as 'false' for the address of 'victory' will never be NULL [-Waddress]
+    if (game_over == 0 && victory == 0) {
+                                  ^~
+../src/helloworld.c:106:23: warning: comparison between pointer and integer
+    } else if (victory == 1) {
+                       ^~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'victoryTask':
+../src/tasks.c:305:11: error: lvalue required as left operand of assignment
+   victory = 0;
+           ^
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+10:33:15 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'victoryTask':
+../src/tasks.c:305:11: error: lvalue required as left operand of assignment
+   victory = 0;
+           ^
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+10:33:19 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69880	   1328	  23288	  94496	  17120	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:35:01 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69944	   1328	  23288	  94560	  17160	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:38:01 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'spritesTask':
+../src/tasks.c:224:3: error: a label can only be part of a statement and a declaration is not a statement
+   u8 spawn_possible = 1;
+   ^~
+../src/tasks.c:231:3: error: expected expression before 'break'
+   break;
+   ^~~~~
+../src/tasks.c:261:2: error: expected expression before '}' token
+  }
+  ^
+../src/tasks.c:224:6: warning: variable 'spawn_possible' set but not used [-Wunused-but-set-variable]
+   u8 spawn_possible = 1;
+      ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+10:38:27 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'spritesTask':
+../src/tasks.c:224:3: error: a label can only be part of a statement and a declaration is not a statement
+   u8 spawn_possible;
+   ^~
+../src/tasks.c:232:3: error: expected expression before 'break'
+   break;
+   ^~~~~
+../src/tasks.c:262:2: error: expected expression before '}' token
+  }
+  ^
+../src/tasks.c:224:6: warning: variable 'spawn_possible' set but not used [-Wunused-but-set-variable]
+   u8 spawn_possible;
+      ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+10:39:24 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'spritesTask':
+../src/tasks.c:232:3: error: expected expression before 'break'
+   break;
+   ^~~~~
+../src/tasks.c:262:2: error: expected expression before '}' token
+  }
+  ^
+../src/tasks.c:224:6: warning: variable 'spawn_possible' set but not used [-Wunused-but-set-variable]
+   u8 spawn_possible;
+      ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+10:39:46 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'spritesTask':
+../src/tasks.c:231:3: error: expected expression before 'break'
+   break;
+   ^~~~~
+../src/tasks.c:261:2: error: expected expression before '}' token
+  }
+  ^
+../src/tasks.c:223:6: warning: variable 'spawn_possible' set but not used [-Wunused-but-set-variable]
+   u8 spawn_possible = 1;
+      ^~~~~~~~~~~~~~
+../src/tasks.c:223:6: warning: statement will never be executed [-Wswitch-unreachable]
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+10:41:40 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'spritesTask':
+../src/tasks.c:223:6: warning: statement will never be executed [-Wswitch-unreachable]
+   u8 spawn_possible = 1;
+      ^~~~~~~~~~~~~~
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70072	   1328	  23288	  94688	  171e0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:41:53 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70072	   1328	  23288	  94688	  171e0	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:45:07 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70200	   1328	  23288	  94816	  17260	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:47:23 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70392	   1328	  23288	  95008	  17320	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+10:50:05 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70256	   1328	  23288	  94872	  17298	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:15:00 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:16:06 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70320	   1328	  23288	  94936	  172d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:16:09 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:16:37 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:17:11 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:18:33 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:18:48 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:20:45 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:24:18 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70320	   1328	  23288	  94936	  172d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:24:32 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:25:57 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70384	   1328	  23288	  95000	  17318	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:26:00 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:26:19 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70384	   1328	  23288	  95000	  17318	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:26:23 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:27:43 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70320	   1328	  23288	  94936	  172d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:27:45 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:30:34 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/led_matrix.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70320	   1328	  23288	  94936	  172d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:33:22 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'initVariables':
+../src/tasks.c:42:17: error: incompatible type for argument 1 of 'remove_small'
+    remove_small(smalls[i]);
+                 ^~~~~~
+In file included from ../src/tasks.h:19:0,
+                 from ../src/tasks.c:8:
+../src/sprites.h:99:6: note: expected 'smallUFO_t * {aka struct smallUFO_t *}' but argument is of type 'smallUFO_t {aka struct smallUFO_t}'
+ void remove_small(smallUFO_t *sprite);
+      ^~~~~~~~~~~~
+../src/tasks.c:46:18: error: incompatible type for argument 1 of 'remove_medium'
+    remove_medium(meds[i]);
+                  ^~~~
+In file included from ../src/tasks.h:19:0,
+                 from ../src/tasks.c:8:
+../src/sprites.h:104:6: note: expected 'mediumUFO_t * {aka struct mediumUFO_t *}' but argument is of type 'mediumUFO_t {aka struct mediumUFO_t}'
+ void remove_medium(mediumUFO_t *sprite);
+      ^~~~~~~~~~~~~
+../src/tasks.c:50:14: error: incompatible type for argument 1 of 'remove_big'
+   remove_big(bigs[i]);
+              ^~~~
+In file included from ../src/tasks.h:19:0,
+                 from ../src/tasks.c:8:
+../src/sprites.h:109:6: note: expected 'bigUFO_t * {aka struct bigUFO_t *}' but argument is of type 'bigUFO_t {aka struct bigUFO_t}'
+ void remove_big(bigUFO_t *sprite);
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+12:33:33 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70512	   1328	  23288	  95128	  17398	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:34:21 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70512	   1328	  23288	  95128	  17398	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:34:27 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70512	   1328	  23288	  95128	  17398	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:34:59 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70576	   1328	  23288	  95192	  173d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:35:02 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:35:27 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70576	   1328	  23288	  95192	  173d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:35:29 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:36:20 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70576	   1328	  23288	  95192	  173d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:38:04 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70576	   1328	  23288	  95192	  173d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:38:46 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   1328	  23288	  95320	  17458	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:39:31 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70768	   1328	  23288	  95384	  17498	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:40:24 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'initVariables':
+../src/tasks.c:59:17: error: incompatible type for argument 1 of 'set_background'
+  set_background((color_t){0, 0, 255});
+                 ^
+In file included from ../src/tasks.h:19:0,
+                 from ../src/tasks.c:8:
+../src/sprites.h:113:6: note: expected 'color_t * {aka struct color_t *}' but argument is of type 'color_t {aka struct color_t}'
+ void set_background(color_t *col);
+      ^~~~~~~~~~~~~~
+../src/tasks.c: In function 'backgroundTask':
+../src/tasks.c:92:17: error: incompatible type for argument 1 of 'set_background'
+  set_background((color_t){0, 0, color_level});
+                 ^
+In file included from ../src/tasks.h:19:0,
+                 from ../src/tasks.c:8:
+../src/sprites.h:113:6: note: expected 'color_t * {aka struct color_t *}' but argument is of type 'color_t {aka struct color_t}'
+ void set_background(color_t *col);
+      ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:44: src/tasks.o] Error 1
+12:40:55 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+../src/sprites.c:446:6: error: conflicting types for 'set_background'
+ void set_background(color_t *col) {
+      ^~~~~~~~~~~~~~
+In file included from ../src/sprites.c:8:0:
+../src/sprites.h:113:6: note: previous declaration of 'set_background' was here
+ void set_background(color_t col);
+      ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:44: src/sprites.o] Error 1
+12:41:04 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70832	   1328	  23288	  95448	  174d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:41:08 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70832	   1328	  23288	  95448	  174d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:42:07 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/sprites.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70832	   1328	  23288	  95448	  174d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:42:20 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70392	   1328	  23288	  95008	  17320	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:42:22 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:42:48 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:43:07 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:44:45 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:47:14 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:48:11 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70392	   1328	  23288	  95008	  17320	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:48:14 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:50:01 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:50:21 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70256	   1328	  23288	  94872	  17298	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:50:21 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:50:45 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70324	   1328	  23288	  94940	  172dc	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:50:48 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:50:49 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:51:35 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70832	   1328	  23288	  95448	  174d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:51:40 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:54:05 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71152	   1328	  23288	  95768	  17618	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:55:44 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'spritesTask':
+../src/tasks.c:277:7: warning: unused variable 'pos_x' [-Wunused-variable]
+    u8 pos_x = rand()%6+1;
+       ^~~~~
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71344	   1328	  23288	  95960	  176d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:56:00 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+../src/tasks.c: In function 'spritesTask':
+../src/tasks.c:277:7: warning: unused variable 'pos_x' [-Wunused-variable]
+    u8 pos_x = rand()%7+1;
+       ^~~~~
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71344	   1328	  23288	  95960	  176d8	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:56:27 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71472	   1328	  23288	  96088	  17758	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:58:12 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71792	   1328	  23288	  96408	  17898	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:58:19 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71792	   1328	  23288	  96408	  17898	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:58:24 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+12:59:22 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71792	   1328	  23288	  96408	  17898	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:59:29 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71792	   1328	  23288	  96408	  17898	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+12:59:31 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:01:37 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72752	   1328	  23288	  97368	  17c58	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+13:01:49 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:03:22 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72752	   1328	  23288	  97368	  17c58	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+13:46:52 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  73776	   1328	  23288	  98392	  18058	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+13:48:25 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75248	   1328	  23288	  99864	  18618	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+13:49:01 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74992	   1328	  23288	  99608	  18518	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+13:49:31 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76144	   1328	  23288	 100760	  18998	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+13:49:36 **** Incremental Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:49:41 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76144	   1328	  23288	 100760	  18998	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+13:53:21 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76144	   1328	  23288	 100760	  18998	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 
+13:53:49 **** Auto Build of configuration Debug for project IndividualProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/tasks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../IndividualProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: IndividualProject.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../IndividualProject_bsp/ps7_cortexa9_0/lib -o "IndividualProject.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: IndividualProject.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76144	   1328	  23288	 100760	  18998	IndividualProject.elf
+Finished building: IndividualProject.elf.size
+ 

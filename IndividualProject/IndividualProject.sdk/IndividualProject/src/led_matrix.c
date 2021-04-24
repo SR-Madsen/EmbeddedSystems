@@ -427,3 +427,15 @@ void gameOver() {
 	writePixelValueDirect(6, 4, 255, 0, 0);
 	writePixelValueDirect(7, 3, 255, 0, 0);
 }
+
+// Victory
+void victory() {
+	writePixelValueDirect(3, 6, 0, 255, 0);
+	writePixelValueDirect(6, 6, 0, 255, 0);
+	writePixelValueDirect(2, 4, 0, 255, 0);
+	writePixelValueDirect(3, 3, 0, 255, 0);
+	writePixelValueDirect(4, 3, 0, 255, 0);
+	writePixelValueDirect(5, 3, 0, 255, 0);
+	writePixelValueDirect(6, 3, 0, 255, 0);
+	writePixelValueDirect(7, 4, 0, 255, 0);
+}

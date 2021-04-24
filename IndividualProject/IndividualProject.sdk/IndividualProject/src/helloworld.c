@@ -40,6 +40,7 @@ u16 tick_value = 0;
 u16 counter = 0;
 
 u8 game_over = 0;
+u8 victorious = 0;
 
 // Main function for Space Invaders
 int main(void)
@@ -92,16 +93,20 @@ int main(void)
 		potentiometerTask();
 		if (!(counter++ < tick_value)) {
 
-			if (game_over == 0) {
+			if (game_over == 0 && victorious == 0) {
 				joystickTask(GYRO_GPIO_DEVICE_ID);
 				backgroundTask();
 				spritesTask();
 				matrixTask();
 				levelTask(LED_GPIO_DEVICE_ID);
-			} else {
+			} else if (game_over == 1) {
 				resetAllPixels();
 				joystickTask(GYRO_GPIO_DEVICE_ID);
 				gameOverTask();
+			} else if (victorious == 1) {
+				resetAllPixels();
+				joystickTask(GYRO_GPIO_DEVICE_ID);
+				victoryTask();
 			}
 
 			counter = 0;
