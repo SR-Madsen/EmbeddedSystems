@@ -65,6 +65,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z010clg400-1
   set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
@@ -79,6 +80,9 @@ set rc [catch {
   set_param project.isImplRun true
   add_files /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/SpaceInvaders.bd
   set_param project.isImplRun false
+  add_files /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/SpaceInvaders/Debug/SpaceInvaders.elf
+  set_property SCOPED_TO_REF SpaceInvaders [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/SpaceInvaders/Debug/SpaceInvaders.elf]
+  set_property SCOPED_TO_CELLS microblaze_0 [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/SpaceInvaders/Debug/SpaceInvaders.elf]
   read_xdc /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/constrs_1/imports/new/RGB_Matrix.xdc
   set_param project.isImplRun true
   link_design -top top -part xc7z010clg400-1

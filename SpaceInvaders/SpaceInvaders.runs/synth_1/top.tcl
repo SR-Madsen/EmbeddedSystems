@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -31,6 +32,9 @@ set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
 set_property ip_output_repo /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
+add_files /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/SpaceInvaders/Debug/SpaceInvaders.elf
+set_property SCOPED_TO_REF SpaceInvaders [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/SpaceInvaders/Debug/SpaceInvaders.elf]
+set_property SCOPED_TO_CELLS microblaze_0 [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/SpaceInvaders/Debug/SpaceInvaders.elf]
 read_vhdl -library xil_defaultlib {
   /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/hdl/SpaceInvaders_wrapper.vhd
   /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/imports/new/color_channel.vhd

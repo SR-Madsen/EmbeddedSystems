@@ -1,4 +1,4 @@
-13:53:49 **** Auto Build of configuration Debug for project IndividualProject ****
+11:11:32 **** Auto Build of configuration Debug for project IndividualProject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -19,5 +19,5 @@ arm-none-eabi-size IndividualProject.elf  |tee "IndividualProject.elf.size"
 Finished building: IndividualProject.elf.size
  
 
-13:53:49 Build Finished (took 713ms)
+11:11:33 Build Finished (took 715ms)
 

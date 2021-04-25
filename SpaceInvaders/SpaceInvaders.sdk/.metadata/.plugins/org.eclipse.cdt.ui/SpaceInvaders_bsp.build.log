@@ -1,4 +1,4 @@
-19:20:11 **** Build of project SpaceInvaders_bsp ****
+11:20:42 **** Auto Build of project SpaceInvaders_bsp ****
 make -k all 
 Running Make include in microblaze_0/libsrc/standalone_v6_8/src
 make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -44,5 +44,5 @@ make -C microblaze_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=m
 Compiling sysmon
 Finished building libraries
 
-19:20:13 Build Finished (took 2s.70ms)
+11:20:45 Build Finished (took 2s.984ms)
 

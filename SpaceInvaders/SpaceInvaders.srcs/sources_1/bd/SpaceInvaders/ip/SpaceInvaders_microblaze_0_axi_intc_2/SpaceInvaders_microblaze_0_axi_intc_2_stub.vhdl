@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Tue Apr 20 17:55:48 2021
+-- Date        : Tue Apr 20 17:55:47 2021
 -- Host        : sebastian-ZBook running 64-bit Linux Mint 20
--- Command     : write_vhdl -force -mode synth_stub
---               /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_microblaze_0_axi_intc_2/SpaceInvaders_microblaze_0_axi_intc_2_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top SpaceInvaders_microblaze_0_axi_intc_2 -prefix
+--               SpaceInvaders_microblaze_0_axi_intc_2_ SpaceInvaders_microblaze_0_axi_intc_2_stub.vhdl
 -- Design      : SpaceInvaders_microblaze_0_axi_intc_2
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

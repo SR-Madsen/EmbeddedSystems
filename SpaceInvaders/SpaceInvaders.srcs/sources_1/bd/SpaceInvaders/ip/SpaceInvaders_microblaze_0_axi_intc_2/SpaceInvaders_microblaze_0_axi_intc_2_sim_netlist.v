@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Tue Apr 20 17:55:48 2021
+// Date        : Tue Apr 20 17:55:47 2021
 // Host        : sebastian-ZBook running 64-bit Linux Mint 20
-// Command     : write_verilog -force -mode funcsim
-//               /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_microblaze_0_axi_intc_2/SpaceInvaders_microblaze_0_axi_intc_2_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top SpaceInvaders_microblaze_0_axi_intc_2 -prefix
+//               SpaceInvaders_microblaze_0_axi_intc_2_ SpaceInvaders_microblaze_0_axi_intc_2_sim_netlist.v
 // Design      : SpaceInvaders_microblaze_0_axi_intc_2
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -156,7 +156,6 @@ module SpaceInvaders_microblaze_0_axi_intc_2
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "address_decoder" *) 
 module SpaceInvaders_microblaze_0_axi_intc_2_address_decoder
    (\GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]_0 ,
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_0 ,
@@ -1231,9 +1230,9 @@ endmodule
 (* C_IRQ_IS_LEVEL = "1" *) (* C_IVAR_RESET_VALUE = "64'b0000000000000000000000000000000000000000000000000000000000010000" *) (* C_KIND_OF_EDGE = "-1" *) 
 (* C_KIND_OF_INTR = "-1" *) (* C_KIND_OF_LVL = "-1" *) (* C_MB_CLK_NOT_CONNECTED = "1" *) 
 (* C_NUM_INTR_INPUTS = "2" *) (* C_NUM_SW_INTR = "0" *) (* C_NUM_SYNC_FF = "2" *) 
-(* C_S_AXI_ADDR_WIDTH = "9" *) (* C_S_AXI_DATA_WIDTH = "32" *) (* ORIG_REF_NAME = "axi_intc" *) 
-(* hdl = "VHDL" *) (* imp_netlist = "TRUE" *) (* ip_group = "LOGICORE" *) 
-(* iptype = "PERIPHERAL" *) (* run_ngcbuild = "TRUE" *) (* style = "HDL" *) 
+(* C_S_AXI_ADDR_WIDTH = "9" *) (* C_S_AXI_DATA_WIDTH = "32" *) (* hdl = "VHDL" *) 
+(* imp_netlist = "TRUE" *) (* ip_group = "LOGICORE" *) (* iptype = "PERIPHERAL" *) 
+(* run_ngcbuild = "TRUE" *) (* style = "HDL" *) 
 module SpaceInvaders_microblaze_0_axi_intc_2_axi_intc
    (s_axi_aclk,
     s_axi_aresetn,
@@ -1490,7 +1489,6 @@ module SpaceInvaders_microblaze_0_axi_intc_2_axi_intc
         .R(INTC_CORE_I_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_lite_ipif" *) 
 module SpaceInvaders_microblaze_0_axi_intc_2_axi_lite_ipif
    (p_16_in,
     p_17_in,
@@ -1731,7 +1729,6 @@ module SpaceInvaders_microblaze_0_axi_intc_2_axi_lite_ipif
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "intc_core" *) 
 module SpaceInvaders_microblaze_0_axi_intc_2_intc_core
    (SR,
     \IVR_GEN.ivr_reg[1]_0 ,
@@ -2485,7 +2482,6 @@ module SpaceInvaders_microblaze_0_axi_intc_2_intc_core
         .O(\s_axi_rdata_i[0]_i_4_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "shared_ram_ivar" *) 
 module SpaceInvaders_microblaze_0_axi_intc_2_shared_ram_ivar
    (Douta,
     interrupt_address,
@@ -3665,7 +3661,6 @@ module SpaceInvaders_microblaze_0_axi_intc_2_shared_ram_ivar
         .WE(bus2ip_wrce));
 endmodule
 
-(* ORIG_REF_NAME = "slave_attachment" *) 
 module SpaceInvaders_microblaze_0_axi_intc_2_slave_attachment
    (\GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3] ,
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2] ,
