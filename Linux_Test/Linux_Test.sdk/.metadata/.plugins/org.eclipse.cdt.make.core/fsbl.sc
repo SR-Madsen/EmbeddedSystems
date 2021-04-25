@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="xilinx.gnu.armv7.exe.debug.719491680;xilinx.gnu.armv7.exe.debug.719491680.">
+<instance id="xilinx.gnu.armv7.exe.debug.673350594;xilinx.gnu.armv7.exe.debug.673350594.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/include"/>
 <includePath path="/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/include-fixed"/>
@@ -417,7 +417,7 @@
 <definedSymbol symbol="__USES_INITFINI__=1"/>
 </collector>
 </instance>
-<instance id="xilinx.gnu.armv7.exe.release.84109766;xilinx.gnu.armv7.exe.release.84109766.">
+<instance id="xilinx.gnu.armv7.exe.release.49305372;xilinx.gnu.armv7.exe.release.49305372.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/include"/>
 <includePath path="/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/include-fixed"/>

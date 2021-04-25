@@ -10,4 +10,13 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Linux_Test_proc
 # IP: bd/Linux_Test/ip/Linux_Test_proc_sys_reset_0_0/Linux_Test_proc_sys_reset_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Linux_Test_proc_sys_reset_0_0 || ORIG_REF_NAME==Linux_Test_proc_sys_reset_0_0} -quiet] -quiet
 
+# IP: bd/Linux_Test/ip/Linux_Test_blk_mem_gen_0_0/Linux_Test_blk_mem_gen_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Linux_Test_blk_mem_gen_0_0 || ORIG_REF_NAME==Linux_Test_blk_mem_gen_0_0} -quiet] -quiet
+
+# IP: bd/Linux_Test/ip/Linux_Test_axi_bram_ctrl_0_0/Linux_Test_axi_bram_ctrl_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Linux_Test_axi_bram_ctrl_0_0 || ORIG_REF_NAME==Linux_Test_axi_bram_ctrl_0_0} -quiet] -quiet
+
+# IP: bd/Linux_Test/ip/Linux_Test_axi_smc_0/Linux_Test_axi_smc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Linux_Test_axi_smc_0 || ORIG_REF_NAME==Linux_Test_axi_smc_0} -quiet] -quiet
+
 # XDC: bd/Linux_Test/Linux_Test_ooc.xdc

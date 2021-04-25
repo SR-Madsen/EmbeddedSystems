@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Tue Apr  6 19:31:08 2021
+-- Date        : Sun Apr 25 09:31:08 2021
 -- Host        : sebastian-ThinkPad running 64-bit Ubuntu 18.04.5 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/ip/Linux_Test_processing_system7_0_0/Linux_Test_processing_system7_0_0_sim_netlist.vhdl

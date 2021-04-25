@@ -1,8 +1,8 @@
-10:11:42 **** Auto Build of configuration Debug for project fsbl ****
+09:48:22 **** Auto Build of configuration Debug for project fsbl ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
 
-10:11:42 Build Finished (took 523ms)
+09:48:23 Build Finished (took 474ms)
 

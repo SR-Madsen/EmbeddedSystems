@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Apr  6 19:31:10 2021
-# Process ID: 31507
+# Start of session at: Sun Apr 25 09:32:40 2021
+# Process ID: 18208
 # Current directory: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1
 # Command line: vivado -log Linux_Test_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Linux_Test_wrapper.tcl
 # Log file: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/Linux_Test_wrapper.vds
@@ -18,23 +18,26 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 31525 
+INFO: Helper process launched with PID 18226 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1465.730 ; gain = 81.914 ; free physical = 1547 ; free virtual = 6302
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1475.504 ; gain = 90.914 ; free physical = 2274 ; free virtual = 6952
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Linux_Test_wrapper' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/hdl/Linux_Test_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'Linux_Test' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/synth/Linux_Test.v:13]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/synth/Linux_Test.v:81]
-INFO: [Synth 8-6157] synthesizing module 'Linux_Test_proc_sys_reset_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-31507-sebastian-ThinkPad/realtime/Linux_Test_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Linux_Test_proc_sys_reset_0_0' (1#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-31507-sebastian-ThinkPad/realtime/Linux_Test_proc_sys_reset_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'proc_sys_reset_0' of module 'Linux_Test_proc_sys_reset_0_0' requires 10 connections, but only 5 given [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/synth/Linux_Test.v:81]
-INFO: [Synth 8-6157] synthesizing module 'Linux_Test_processing_system7_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-31507-sebastian-ThinkPad/realtime/Linux_Test_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Linux_Test_processing_system7_0_0' (2#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-31507-sebastian-ThinkPad/realtime/Linux_Test_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'Linux_Test_processing_system7_0_0' requires 69 connections, but only 37 given [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/synth/Linux_Test.v:87]
-INFO: [Synth 8-6155] done synthesizing module 'Linux_Test' (3#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/synth/Linux_Test.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'Linux_Test_wrapper' (4#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/hdl/Linux_Test_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'Linux_Test' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/synth/Linux_Test.vhd:44]
+INFO: [Synth 8-3491] module 'Linux_Test_axi_bram_ctrl_0_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-18208-sebastian-ThinkPad/realtime/Linux_Test_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'Linux_Test_axi_bram_ctrl_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/synth/Linux_Test.vhd:420]
+INFO: [Synth 8-638] synthesizing module 'Linux_Test_axi_bram_ctrl_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-18208-sebastian-ThinkPad/realtime/Linux_Test_axi_bram_ctrl_0_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'Linux_Test_axi_smc_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-18208-sebastian-ThinkPad/realtime/Linux_Test_axi_smc_0_stub.vhdl:5' bound to instance 'axi_smc' of component 'Linux_Test_axi_smc_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/synth/Linux_Test.vhd:463]
+INFO: [Synth 8-638] synthesizing module 'Linux_Test_axi_smc_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-18208-sebastian-ThinkPad/realtime/Linux_Test_axi_smc_0_stub.vhdl:84]
+INFO: [Synth 8-3491] module 'Linux_Test_blk_mem_gen_0_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-18208-sebastian-ThinkPad/realtime/Linux_Test_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'Linux_Test_blk_mem_gen_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/synth/Linux_Test.vhd:539]
+INFO: [Synth 8-638] synthesizing module 'Linux_Test_blk_mem_gen_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-18208-sebastian-ThinkPad/realtime/Linux_Test_blk_mem_gen_0_0_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'Linux_Test_proc_sys_reset_0_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-18208-sebastian-ThinkPad/realtime/Linux_Test_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'Linux_Test_proc_sys_reset_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/synth/Linux_Test.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'Linux_Test_proc_sys_reset_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-18208-sebastian-ThinkPad/realtime/Linux_Test_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'Linux_Test_processing_system7_0_0' declared at '/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-18208-sebastian-ThinkPad/realtime/Linux_Test_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'Linux_Test_processing_system7_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/synth/Linux_Test.vhd:572]
+INFO: [Synth 8-638] synthesizing module 'Linux_Test_processing_system7_0_0' [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/.Xil/Vivado-18208-sebastian-ThinkPad/realtime/Linux_Test_processing_system7_0_0_stub.vhdl:80]
+INFO: [Synth 8-256] done synthesizing module 'Linux_Test' (1#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/synth/Linux_Test.vhd:44]
+INFO: [Synth 8-6155] done synthesizing module 'Linux_Test_wrapper' (2#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/hdl/Linux_Test_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1511.480 ; gain = 127.664 ; free physical = 1559 ; free virtual = 6315
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1522.254 ; gain = 137.664 ; free physical = 2288 ; free virtual = 6966
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -47,10 +50,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1511.480 ; gain = 127.664 ; free physical = 1559 ; free virtual = 6314
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1522.254 ; gain = 137.664 ; free physical = 2289 ; free virtual = 6967
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1511.480 ; gain = 127.664 ; free physical = 1559 ; free virtual = 6314
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1522.254 ; gain = 137.664 ; free physical = 2289 ; free virtual = 6967
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -61,25 +64,32 @@ Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_T
 Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/ip/Linux_Test_processing_system7_0_0/Linux_Test_processing_system7_0_0/Linux_Test_processing_system7_0_0_in_context.xdc] for cell 'Linux_Test_i/processing_system7_0'
 Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/ip/Linux_Test_proc_sys_reset_0_0/Linux_Test_proc_sys_reset_0_0/Linux_Test_proc_sys_reset_0_0_in_context.xdc] for cell 'Linux_Test_i/proc_sys_reset_0'
 Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/ip/Linux_Test_proc_sys_reset_0_0/Linux_Test_proc_sys_reset_0_0/Linux_Test_proc_sys_reset_0_0_in_context.xdc] for cell 'Linux_Test_i/proc_sys_reset_0'
+Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/ip/Linux_Test_blk_mem_gen_0_0/Linux_Test_blk_mem_gen_0_0/Linux_Test_blk_mem_gen_0_0_in_context.xdc] for cell 'Linux_Test_i/blk_mem_gen_0'
+Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/ip/Linux_Test_blk_mem_gen_0_0/Linux_Test_blk_mem_gen_0_0/Linux_Test_blk_mem_gen_0_0_in_context.xdc] for cell 'Linux_Test_i/blk_mem_gen_0'
+Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/ip/Linux_Test_axi_bram_ctrl_0_0/Linux_Test_axi_bram_ctrl_0_0/Linux_Test_axi_bram_ctrl_0_0_in_context.xdc] for cell 'Linux_Test_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/ip/Linux_Test_axi_bram_ctrl_0_0/Linux_Test_axi_bram_ctrl_0_0/Linux_Test_axi_bram_ctrl_0_0_in_context.xdc] for cell 'Linux_Test_i/axi_bram_ctrl_0'
+Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/ip/Linux_Test_axi_smc_0/Linux_Test_axi_smc_0/Linux_Test_axi_smc_0_in_context.xdc] for cell 'Linux_Test_i/axi_smc'
+Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.srcs/sources_1/bd/Linux_Test/ip/Linux_Test_axi_smc_0/Linux_Test_axi_smc_0/Linux_Test_axi_smc_0_in_context.xdc] for cell 'Linux_Test_i/axi_smc'
 Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1751.082 ; gain = 0.000 ; free physical = 1311 ; free virtual = 6067
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1770.840 ; gain = 0.000 ; free physical = 2023 ; free virtual = 6701
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1751.082 ; gain = 0.000 ; free physical = 1311 ; free virtual = 6066
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1751.082 ; gain = 0.000 ; free physical = 1311 ; free virtual = 6066
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1770.840 ; gain = 0.000 ; free physical = 2023 ; free virtual = 6701
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1770.840 ; gain = 0.000 ; free physical = 2023 ; free virtual = 6701
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Linux_Test_i/blk_mem_gen_0' at clock pin 'clkb' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1751.082 ; gain = 367.266 ; free physical = 1388 ; free virtual = 6144
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1770.840 ; gain = 386.250 ; free physical = 2195 ; free virtual = 6880
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1751.082 ; gain = 367.266 ; free physical = 1388 ; free virtual = 6144
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1770.840 ; gain = 386.250 ; free physical = 2195 ; free virtual = 6880
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -347,11 +357,14 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint
 Applied set_property DONT_TOUCH = true for Linux_Test_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Linux_Test_i/processing_system7_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Linux_Test_i/proc_sys_reset_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Linux_Test_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Linux_Test_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Linux_Test_i/axi_smc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1751.082 ; gain = 367.266 ; free physical = 1390 ; free virtual = 6145
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1770.840 ; gain = 386.250 ; free physical = 2197 ; free virtual = 6882
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1751.082 ; gain = 367.266 ; free physical = 1389 ; free virtual = 6145
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1770.840 ; gain = 386.250 ; free physical = 2197 ; free virtual = 6883
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -387,7 +400,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1751.082 ; gain = 367.266 ; free physical = 1377 ; free virtual = 6134
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1770.840 ; gain = 386.250 ; free physical = 2195 ; free virtual = 6882
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -399,15 +412,16 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5578] Moved timing constraint from pin 'Linux_Test_i/processing_system7_0/FCLK_CLK0' to pin 'Linux_Test_i/processing_system7_0/bbstub_FCLK_CLK0/O'
-INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Linux_Test_i/axi_bram_ctrl_0/bram_clk_a' to pin 'Linux_Test_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1796.082 ; gain = 412.266 ; free physical = 1249 ; free virtual = 6006
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1793.840 ; gain = 409.250 ; free physical = 2063 ; free virtual = 6750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1796.082 ; gain = 412.266 ; free physical = 1249 ; free virtual = 6006
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1793.840 ; gain = 409.250 ; free physical = 2063 ; free virtual = 6750
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -419,7 +433,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1806.098 ; gain = 422.281 ; free physical = 1247 ; free virtual = 6005
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1803.855 ; gain = 419.266 ; free physical = 2061 ; free virtual = 6748
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -443,7 +457,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1806.098 ; gain = 422.281 ; free physical = 1247 ; free virtual = 6005
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1803.855 ; gain = 419.266 ; free physical = 2061 ; free virtual = 6748
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -456,7 +470,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1806.098 ; gain = 422.281 ; free physical = 1247 ; free virtual = 6005
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1803.855 ; gain = 419.266 ; free physical = 2061 ; free virtual = 6748
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -468,25 +482,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1806.098 ; gain = 422.281 ; free physical = 1247 ; free virtual = 6005
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1803.855 ; gain = 419.266 ; free physical = 2061 ; free virtual = 6748
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1806.098 ; gain = 422.281 ; free physical = 1247 ; free virtual = 6005
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1803.855 ; gain = 419.266 ; free physical = 2061 ; free virtual = 6748
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1806.098 ; gain = 422.281 ; free physical = 1247 ; free virtual = 6005
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1803.855 ; gain = 419.266 ; free physical = 2061 ; free virtual = 6748
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1806.098 ; gain = 422.281 ; free physical = 1247 ; free virtual = 6005
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1803.855 ; gain = 419.266 ; free physical = 2061 ; free virtual = 6748
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -496,45 +510,51 @@ Report BlackBoxes:
 +------+----------------------------------+----------+
 |      |BlackBox name                     |Instances |
 +------+----------------------------------+----------+
-|1     |Linux_Test_proc_sys_reset_0_0     |         1|
-|2     |Linux_Test_processing_system7_0_0 |         1|
+|1     |Linux_Test_axi_bram_ctrl_0_0      |         1|
+|2     |Linux_Test_axi_smc_0              |         1|
+|3     |Linux_Test_blk_mem_gen_0_0        |         1|
+|4     |Linux_Test_proc_sys_reset_0_0     |         1|
+|5     |Linux_Test_processing_system7_0_0 |         1|
 +------+----------------------------------+----------+
 
 Report Cell Usage: 
-+------+----------------------------------+------+
-|      |Cell                              |Count |
-+------+----------------------------------+------+
-|1     |Linux_Test_proc_sys_reset_0_0     |     1|
-|2     |Linux_Test_processing_system7_0_0 |     1|
-+------+----------------------------------+------+
++------+-----------------------------------------+------+
+|      |Cell                                     |Count |
++------+-----------------------------------------+------+
+|1     |Linux_Test_axi_bram_ctrl_0_0_bbox_0      |     1|
+|2     |Linux_Test_axi_smc_0_bbox_1              |     1|
+|3     |Linux_Test_blk_mem_gen_0_0_bbox_2        |     1|
+|4     |Linux_Test_proc_sys_reset_0_0_bbox_3     |     1|
+|5     |Linux_Test_processing_system7_0_0_bbox_4 |     1|
++------+-----------------------------------------+------+
 
 Report Instance Areas: 
 +------+---------------+-----------+------+
 |      |Instance       |Module     |Cells |
 +------+---------------+-----------+------+
-|1     |top            |           |   199|
-|2     |  Linux_Test_i |Linux_Test |   199|
+|1     |top            |           |   543|
+|2     |  Linux_Test_i |Linux_Test |   543|
 +------+---------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1806.098 ; gain = 422.281 ; free physical = 1247 ; free virtual = 6005
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1803.855 ; gain = 419.266 ; free physical = 2061 ; free virtual = 6748
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1806.098 ; gain = 182.680 ; free physical = 1306 ; free virtual = 6064
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1806.105 ; gain = 422.281 ; free physical = 1306 ; free virtual = 6064
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1803.855 ; gain = 170.680 ; free physical = 2119 ; free virtual = 6806
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1803.863 ; gain = 419.266 ; free physical = 2129 ; free virtual = 6815
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1812.098 ; gain = 0.000 ; free physical = 1244 ; free virtual = 6001
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1808.855 ; gain = 0.000 ; free physical = 2058 ; free virtual = 6745
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-22 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1816.098 ; gain = 443.820 ; free physical = 1291 ; free virtual = 6048
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1816.098 ; gain = 0.000 ; free physical = 1291 ; free virtual = 6048
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1812.855 ; gain = 439.805 ; free physical = 2105 ; free virtual = 6792
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1812.855 ; gain = 0.000 ; free physical = 2105 ; free virtual = 6792
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/Linux_Test_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Linux_Test_wrapper_utilization_synth.rpt -pb Linux_Test_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr  6 19:31:41 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 25 09:33:12 2021...

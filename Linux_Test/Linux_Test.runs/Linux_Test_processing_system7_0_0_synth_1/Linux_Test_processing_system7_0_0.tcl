@@ -27,8 +27,9 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.cache/wt [current_project]
 set_property parent.project_path /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language Verilog [current_project]
+set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
 set_property ip_output_repo /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

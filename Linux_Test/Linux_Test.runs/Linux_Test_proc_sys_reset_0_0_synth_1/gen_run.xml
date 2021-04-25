@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="Linux_Test_proc_sys_reset_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1617730223">
+<GenRun Id="Linux_Test_proc_sys_reset_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1619335799">
+  <File Type="VDS-TIMING-PB" Name="Linux_Test_proc_sys_reset_0_0_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Linux_Test_proc_sys_reset_0_0_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="Linux_Test_proc_sys_reset_0_0.dcp"/>
   <File Type="RDS-UTIL-PB" Name="Linux_Test_proc_sys_reset_0_0_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="Linux_Test_proc_sys_reset_0_0_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="Linux_Test_proc_sys_reset_0_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="Linux_Test_proc_sys_reset_0_0.vds"/>
-  <File Type="RDS-DCP" Name="Linux_Test_proc_sys_reset_0_0.dcp"/>
-  <File Type="PA-TCL" Name="Linux_Test_proc_sys_reset_0_0.tcl"/>
   <File Type="REPORTS-TCL" Name="Linux_Test_proc_sys_reset_0_0_reports.tcl"/>
+  <File Type="PA-TCL" Name="Linux_Test_proc_sys_reset_0_0.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Linux_Test_proc_sys_reset_0_0">
     <File Path="$PSRCDIR/sources_1/bd/Linux_Test/ip/Linux_Test_proc_sys_reset_0_0/Linux_Test_proc_sys_reset_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>
@@ -22,9 +27,11 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Linux_Test_proc_sys_reset_0_0">
     <File Path="$PSRCDIR/sources_1/bd/Linux_Test/ip/Linux_Test_proc_sys_reset_0_0/Linux_Test_proc_sys_reset_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>

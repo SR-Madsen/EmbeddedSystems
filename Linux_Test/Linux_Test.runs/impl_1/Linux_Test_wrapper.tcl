@@ -73,6 +73,7 @@ set rc [catch {
   set_property parent.project_path /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.xpr [current_project]
   set_property ip_output_repo /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   add_files -quiet /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.runs/synth_1/Linux_Test_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
@@ -160,7 +161,9 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force Linux_Test_wrapper.mmi }
+  catch { write_bmm -force Linux_Test_wrapper_bd.bmm }
   write_bitstream -force Linux_Test_wrapper.bit 
   catch { write_sysdef -hwdef Linux_Test_wrapper.hwdef -bitfile Linux_Test_wrapper.bit -meminfo Linux_Test_wrapper.mmi -file Linux_Test_wrapper.sysdef }
   catch {write_debug_probes -quiet -force Linux_Test_wrapper}

@@ -1,6 +1,0 @@
-//arch = zynq; split = false; format = BIN
-the_ROM_image:
-{
-	/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/Linux_Test_wrapper.bit
-	/home/sebastian/Desktop/Embedded_Linux/EK-ES/u-boot-xlnx-master/u-boot.elf
-}
