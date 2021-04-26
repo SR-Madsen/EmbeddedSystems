@@ -205,7 +205,7 @@ u8 move_right_bullet(bullet_t *sprite) {
 
 // Removes pixels for sprite.
 void remove_bullet(bullet_t *sprite) {
-	color_t colors = {0, 0, 255};
+	color_t colors = {background_color.red, background_color.green, background_color.blue};
 	sprite->active = 0;
 	setPixel(sprite->core, colors);
 }

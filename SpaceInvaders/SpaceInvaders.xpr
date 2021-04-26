@@ -67,17 +67,20 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_blk_mem_gen_0_1/SpaceInvaders_blk_mem_gen_0_1.xci">
-          <Proxy FileSetName="SpaceInvaders_blk_mem_gen_0_1"/>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_rst_ps7_0_100M_0/SpaceInvaders_rst_ps7_0_100M_0.xci">
+          <Proxy FileSetName="SpaceInvaders_rst_ps7_0_100M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_0_1/SpaceInvaders_axi_bram_ctrl_0_1.xci">
-          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_0_1"/>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_mdm_1_2/SpaceInvaders_mdm_1_2.xci">
+          <Proxy FileSetName="SpaceInvaders_mdm_1_2"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_0_0/SpaceInvaders_axi_bram_ctrl_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_0_0"/>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_microblaze_0_axi_intc_2/SpaceInvaders_microblaze_0_axi_intc_2.xci">
+          <Proxy FileSetName="SpaceInvaders_microblaze_0_axi_intc_2"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_xbar_2/SpaceInvaders_xbar_2.xci">
           <Proxy FileSetName="SpaceInvaders_xbar_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_processing_system7_0_0/SpaceInvaders_processing_system7_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_processing_system7_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_gpio_0_1/SpaceInvaders_axi_gpio_0_1.xci">
           <Proxy FileSetName="SpaceInvaders_axi_gpio_0_1"/>
@@ -85,29 +88,26 @@
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_gpio_0_0/SpaceInvaders_axi_gpio_0_0.xci">
           <Proxy FileSetName="SpaceInvaders_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_processing_system7_0_0/SpaceInvaders_processing_system7_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_processing_system7_0_0"/>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_0_1/SpaceInvaders_axi_bram_ctrl_0_1.xci">
+          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_blk_mem_gen_0_0/SpaceInvaders_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_blk_mem_gen_0_0"/>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_0_0/SpaceInvaders_axi_bram_ctrl_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_blk_mem_gen_0_1/SpaceInvaders_blk_mem_gen_0_1.xci">
+          <Proxy FileSetName="SpaceInvaders_blk_mem_gen_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_smc_1/SpaceInvaders_axi_smc_1.xci">
+          <Proxy FileSetName="SpaceInvaders_axi_smc_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_xadc_wiz_0_0/SpaceInvaders_xadc_wiz_0_0.xci">
           <Proxy FileSetName="SpaceInvaders_xadc_wiz_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_microblaze_0_axi_intc_2/SpaceInvaders_microblaze_0_axi_intc_2.xci">
-          <Proxy FileSetName="SpaceInvaders_microblaze_0_axi_intc_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_mdm_1_2/SpaceInvaders_mdm_1_2.xci">
-          <Proxy FileSetName="SpaceInvaders_mdm_1_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_rst_ps7_0_100M_0/SpaceInvaders_rst_ps7_0_100M_0.xci">
-          <Proxy FileSetName="SpaceInvaders_rst_ps7_0_100M_0"/>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_blk_mem_gen_0_0/SpaceInvaders_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_blk_mem_gen_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_2_1/SpaceInvaders_axi_bram_ctrl_2_1.xci">
           <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_2_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_smc_1/SpaceInvaders_axi_smc_1.xci">
-          <Proxy FileSetName="SpaceInvaders_axi_smc_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_microblaze_0_0/SpaceInvaders_microblaze_0_0.xci">
           <Proxy FileSetName="SpaceInvaders_microblaze_0_0"/>

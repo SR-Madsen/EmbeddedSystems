@@ -143,3 +143,24 @@ con
 11:19:46 INFO  : 
 11:19:47 INFO  : Updating hardware inferred compiler options for SpaceInvaders.
 11:19:47 INFO  : Clearing existing target manager status.
+08:36:12 INFO  : Registering command handlers for SDK TCF services
+08:36:14 INFO  : Launching XSCT server: xsct -n -interactive /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/temp_xsdb_launch_script.tcl
+08:36:21 INFO  : XSCT server has started successfully.
+08:36:41 INFO  : Successfully done setting XSCT server connection channel  
+08:36:41 INFO  : Successfully done setting SDK workspace  
+08:36:41 INFO  : Processing command line option -hwspec /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top.hdf.
+08:36:42 INFO  : Checking for hwspec changes in the project top_hw_platform_0.
+08:36:48 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1619342708000,  Project:1619342228000
+08:36:48 INFO  : The hardware specification for project 'top_hw_platform_0' is different from /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top.hdf.
+08:36:48 INFO  : Copied contents of /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top.hdf into /top_hw_platform_0/system.hdf.
+08:36:51 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+08:36:53 INFO  : 
+08:36:53 INFO  : Updating hardware inferred compiler options for SpaceInvaders.
+08:36:54 INFO  : Clearing existing target manager status.
+08:51:19 INFO  : Registering command handlers for SDK TCF services
+08:51:21 INFO  : Launching XSCT server: xsct -n -interactive /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/temp_xsdb_launch_script.tcl
+08:51:23 INFO  : XSCT server has started successfully.
+08:51:23 INFO  : Successfully done setting XSCT server connection channel  
+08:51:23 INFO  : Successfully done setting SDK workspace  
+08:51:23 INFO  : Processing command line option -hwspec /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top.hdf.
+08:51:23 INFO  : Checking for hwspec changes in the project top_hw_platform_0.

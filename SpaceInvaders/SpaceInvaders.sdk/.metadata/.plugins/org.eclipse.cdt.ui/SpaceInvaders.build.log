@@ -1,56 +1,6 @@
-11:20:45 **** Auto Build of configuration Debug for project SpaceInvaders ****
+08:56:42 **** Incremental Build of configuration Debug for project SpaceInvaders ****
 make all 
-Building file: ../src/gpios.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpios.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpios.d" -MT"src/gpios.o" -o "src/gpios.o" "../src/gpios.c"
-Finished building: ../src/gpios.c
- 
-Building file: ../src/helloworld.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-Finished building: ../src/helloworld.c
- 
-Building file: ../src/led_matrix.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
-Finished building: ../src/led_matrix.c
- 
-Building file: ../src/platform.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-Finished building: ../src/platform.c
- 
-Building file: ../src/sprites.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
-Finished building: ../src/sprites.c
- 
-Building file: ../src/stats.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/stats.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/stats.d" -MT"src/stats.o" -o "src/stats.o" "../src/stats.c"
-Finished building: ../src/stats.c
- 
-Building file: ../src/tasks.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
-Finished building: ../src/tasks.c
- 
-Building file: ../src/xadc.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
-Finished building: ../src/xadc.c
- 
-Building target: SpaceInvaders.elf
-Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SpaceInvaders_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "SpaceInvaders.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: SpaceInvaders.elf
- 
-Invoking: MicroBlaze Print Size
-mb-size SpaceInvaders.elf  |tee "SpaceInvaders.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  46112	   1688	   2864	  50664	   c5e8	SpaceInvaders.elf
-Finished building: SpaceInvaders.elf.size
- 
+make: Nothing to be done for 'all'.
 
-11:20:46 Build Finished (took 1s.468ms)
+08:56:42 Build Finished (took 511ms)
 

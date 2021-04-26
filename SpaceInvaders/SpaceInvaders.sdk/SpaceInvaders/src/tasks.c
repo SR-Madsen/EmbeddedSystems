@@ -241,7 +241,7 @@ void spritesTask() {
 	{
 		case 0:
 		for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
-			if (smalls[i].active && (smalls[i].left.y == 8 || smalls[i].left.y == 7)) {
+			if (smalls[i].active && smalls[i].left.y >= 7) {
 				spawn_possible = 0;
 			}
 		}
@@ -259,12 +259,12 @@ void spritesTask() {
 
 		case 1:
 		for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
-			if (smalls[i].active && (smalls[i].left.y == 8 || smalls[i].left.y == 7)) {
+			if (smalls[i].active && smalls[i].left.y >= 7) {
 				spawn_possible = 0;
 			}
 		}
 		for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
-			if (meds[i].active && meds[i].core.y == 8) {
+			if (meds[i].active && meds[i].core.y >= 8) {
 				spawn_possible = 0;
 			}
 		}
@@ -294,12 +294,12 @@ void spritesTask() {
 
 		case 2:
 			for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
-				if (smalls[i].active && (smalls[i].left.y == 8 || smalls[i].left.y == 7)) {
+				if (smalls[i].active && smalls[i].left.y >= 7) {
 					spawn_possible = 0;
 				}
 			}
 			for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
-				if (meds[i].active && (meds[i].core.y == 8 || meds[i].core.y == 7)) {
+				if (meds[i].active && meds[i].core.y >= 7) {
 					spawn_possible = 0;
 				}
 			}
@@ -329,12 +329,12 @@ void spritesTask() {
 
 		case 3:
 		for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
-			if (smalls[i].active && (smalls[i].left.y == 8 || smalls[i].left.y == 7)) {
+			if (smalls[i].active && smalls[i].left.y >= 7) {
 				spawn_possible = 0;
 			}
 		}
 		for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
-			if (meds[i].active && (meds[i].core.y == 8 || meds[i].core.y == 7)) {
+			if (meds[i].active && meds[i].core.y >= 7) {
 				spawn_possible = 0;
 			}
 		}
@@ -365,17 +365,17 @@ void spritesTask() {
 
 		case 4:
 		for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
-			if (smalls[i].active && (smalls[i].left.y == 8 || smalls[i].left.y == 7)) {
+			if (smalls[i].active && smalls[i].left.y >= 7) {
 				spawn_possible = 0;
 			}
 		}
 		for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
-			if (meds[i].active && (meds[i].core.y == 8 || meds[i].core.y == 7)) {
+			if (meds[i].active && meds[i].core.y >= 7) {
 				spawn_possible = 0;
 			}
 		}
 		for (int i = 0; i < sizeof(bigs)/sizeof(bigs[0]); i++) {
-			if (bigs[i].active && (bigs[i].core_up.y == 8 || bigs[i].core_up.y == 7)) {
+			if (bigs[i].active && bigs[i].core_up.y >= 7) {
 				spawn_possible = 0;
 			}
 		}
@@ -416,17 +416,17 @@ void spritesTask() {
 
 		case 5:
 		for (int i = 0; i < sizeof(smalls)/sizeof(smalls[0]); i++) {
-			if (smalls[i].active && (smalls[i].left.y == 8 || smalls[i].left.y == 7)) {
+			if (smalls[i].active && smalls[i].left.y >= 7) {
 				spawn_possible = 0;
 			}
 		}
 		for (int i = 0; i < sizeof(meds)/sizeof(meds[0]); i++) {
-			if (meds[i].active && (meds[i].core.y == 8 || meds[i].core.y == 7)) {
+			if (meds[i].active && meds[i].core.y >= 7) {
 				spawn_possible = 0;
 			}
 		}
 		for (int i = 0; i < sizeof(bigs)/sizeof(bigs[0]); i++) {
-			if (bigs[i].active && (bigs[i].core_up.y == 8 || bigs[i].core_up.y == 7)) {
+			if (bigs[i].active && bigs[i].core_up.y >= 7) {
 				spawn_possible = 0;
 			}
 		}
@@ -479,10 +479,10 @@ void matrixTask() {
 // Handles updating the level and player HP, as well as writing statistics.
 void levelTask(int LED_GPIO_ID) {
 
-	if (level < 5 && (small_kills+medium_kills+big_kills) > level*10+10) {
+	if (level < 5 && (small_kills+medium_kills+big_kills) > level*20+10) {
 		level++;
 	}
-	if (small_kills+medium_kills+big_kills > 60) {
+	if (small_kills+medium_kills+big_kills > 110) {
 		victorious = 1;
 	}
 
