@@ -62,3 +62,17 @@
 09:48:20 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -arch zynq -o /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/fsbl/bootimage/BOOT.bin
 09:48:20 INFO  : Creating new bif file /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/fsbl/bootimage/fsbl.bif
 09:48:22 INFO  : Bootgen command execution is done.
+09:34:19 INFO  : Launching XSCT server: xsct -n -interactive /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/temp_xsdb_launch_script.tcl
+09:37:06 ERROR : (XSDB Server)Terminated
+
+09:37:19 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+09:37:50 INFO  : Launching XSCT server: xsct -n -interactive /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/temp_xsdb_launch_script.tcl
+09:37:52 INFO  : XSCT server has started successfully.
+09:37:52 INFO  : Successfully done setting XSCT server connection channel  
+09:37:52 INFO  : Restoring local repository preferences: 
+		 /home/sebastian/Desktop/Embedded_Linux/EK-ES/device-tree-xlnx-master
+09:37:53 INFO  : Successfully done setting SDK workspace  
+09:37:57 INFO  : Registering command handlers for SDK TCF services
+09:37:57 INFO  : Processing command line option -hwspec /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper.hdf.
+09:37:59 INFO  : Checking for hwspec changes in the project Linux_Test_wrapper_hw_platform_0.
+09:38:02 INFO  : BSP Project P/device_tree_bsp_0 has been successfully migrated.

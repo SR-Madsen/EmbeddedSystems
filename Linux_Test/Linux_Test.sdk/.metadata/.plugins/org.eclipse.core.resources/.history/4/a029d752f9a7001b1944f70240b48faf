@@ -1,0 +1,13 @@
+/*
+ * blockram.c
+ *
+ *  Created on: Apr 28, 2021
+ *      Author: sebastian
+ */
+
+#include "blockram.h"
+
+// Functions
+void open_bram(int fd) {
+	bram_vptr = (u32*) mmap(NULL, BRAM_LENGTH, PROT_READ | PROT_WRITE, MAP_SHARED, fd, BRAM_PHYSICAL_BASEADDR);
+}

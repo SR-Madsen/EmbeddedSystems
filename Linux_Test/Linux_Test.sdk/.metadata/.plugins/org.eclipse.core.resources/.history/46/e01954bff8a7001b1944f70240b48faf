@@ -1,0 +1,33 @@
+/*
+ * blockram.h
+ *
+ *  Created on: Apr 28, 2021
+ *      Author: sebastian
+ */
+
+#ifndef SRC_BLOCKRAM_H_
+#define SRC_BLOCKRAM_H_
+
+// Defines
+#define BRAM_PHYSICAL_BASEADDR 	0x40000000
+#define BRAM_LENGTH				0x00002000
+#define LEVEL_OFFSET			0
+#define SMALL_KILLS_OFFSET		1
+#define MEDIUM_KILLS_OFFSET		2
+#define BIG_KILLS_OFFSET		3
+#define HEALTH_OFFSET			4
+#define POWER_UP_OFFSET			5
+
+
+// Type Definitions
+typedef long int u32;
+
+
+// Variables
+u32 *bram_vptr;
+
+
+// Functions
+
+
+#endif /* SRC_BLOCKRAM_H_ */

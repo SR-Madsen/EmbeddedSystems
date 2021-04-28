@@ -1,864 +1,857 @@
-19:34:39 **** Build of project fsbl_bsp ****
-make -k all 
-Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src
-make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
-make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src
-make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src
-make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src
-make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_0/src
-make -C ps7_cortexa9_0/libsrc/xilffs_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
-make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
-make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling ddrps
-arm-none-eabi-ar: creating ../../../lib/libxil.a
-Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src
-make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling sdps
-Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
-make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling standalone
-In file included from sleep.c:53:0:
-xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-In file included from xtime_l.c:49:0:
-xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-In file included from xil_sleeptimer.c:51:0:
-xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-In file included from usleep.c:56:0:
-xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling dmaps
-Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling cpu_cortexa9
-Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src
-make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling emacps
-Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling ttcps
-Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src
-make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling qspips
-Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src
-make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_0/src
-make -C ps7_cortexa9_0/libsrc/xilffs_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling XilFFs Library
-Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
-make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling scugic
-Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling xadcps
-Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling devcfg
-Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling scuwdt
-Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
-make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling uartps
-Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling usbps
-Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling coresightps_dcc
-Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling scutimer
-Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling gpiops
-Finished building libraries
-19:34:54 **** Build of configuration Debug for project fsbl ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/fsbl_handoff.S
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_handoff.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.o" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
-Finished building: ../src/fsbl_handoff.S
- 
-Building file: ../src/fsbl_hooks.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
-Finished building: ../src/fsbl_hooks.c
- 
-Building file: ../src/image_mover.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
-Finished building: ../src/image_mover.c
- 
-Building file: ../src/main.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:137:0:
-../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Finished building: ../src/main.c
- 
-Building file: ../src/md5.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.o" -o "src/md5.o" "../src/md5.c"
-Finished building: ../src/md5.c
- 
-Building file: ../src/nand.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
-Finished building: ../src/nand.c
- 
-Building file: ../src/nor.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
-Finished building: ../src/nor.c
- 
-Building file: ../src/pcap.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
-In file included from ../src/pcap.c:100:0:
-../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Finished building: ../src/pcap.c
- 
-Building file: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c"
-Finished building: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c
- 
-Building file: ../src/qspi.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
-Finished building: ../src/qspi.c
- 
-Building file: ../src/rsa.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.o" -o "src/rsa.o" "../src/rsa.c"
-Finished building: ../src/rsa.c
- 
-Building file: ../src/sd.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
-Finished building: ../src/sd.c
- 
-Building target: fsbl.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fsbl_bsp/ps7_cortexa9_0/lib -o "fsbl.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
-Finished building target: fsbl.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size fsbl.elf  |tee "fsbl.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81496	  11592	  74712	 167800	  28f78	fsbl.elf
-Finished building: fsbl.elf.size
- 
-19:34:56 **** Auto Build of configuration Debug for project fsbl ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-19:36:29 **** Auto Build of configuration Debug for project fsbl ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-19:37:46 **** Clean-only build of project fsbl_bsp ****
-make -k clean 
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
-make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s clean 
-make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s clean 
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s clean 
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s clean 
-make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s clean 
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s clean 
-make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s clean 
-make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s clean 
-make -C ps7_cortexa9_0/libsrc/xilffs_v4_0/src -s clean 
-make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s clean 
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
-make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s clean 
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s clean 
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s clean 
-rm -f ps7_cortexa9_0/lib/libxil.a
-19:37:47 **** Build of project fsbl_bsp ****
-make -k all 
-Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src
-make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
-make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src
-make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src
-make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src
-make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_0/src
-make -C ps7_cortexa9_0/libsrc/xilffs_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
-make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
-make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling ddrps
-arm-none-eabi-ar: creating ../../../lib/libxil.a
-Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src
-make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling sdps
-Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
-make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling standalone
-In file included from sleep.c:53:0:
-xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-In file included from xtime_l.c:49:0:
-xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-In file included from xil_sleeptimer.c:51:0:
-xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-In file included from usleep.c:56:0:
-xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling dmaps
-Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling cpu_cortexa9
-Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src
-make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling emacps
-Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling ttcps
-Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src
-make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling qspips
-Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src
-make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_0/src
-make -C ps7_cortexa9_0/libsrc/xilffs_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling XilFFs Library
-Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
-make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling scugic
-Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling xadcps
-Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling devcfg
-Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling scuwdt
-Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
-make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling uartps
-Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling usbps
-Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling coresightps_dcc
-Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling scutimer
-Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling gpiops
-Finished building libraries
-19:37:59 **** Auto Build of configuration Debug for project fsbl ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/fsbl_hooks.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
-Finished building: ../src/fsbl_hooks.c
- 
-Building file: ../src/image_mover.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
-Finished building: ../src/image_mover.c
- 
-Building file: ../src/main.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:137:0:
-../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Finished building: ../src/main.c
- 
-Building file: ../src/md5.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.o" -o "src/md5.o" "../src/md5.c"
-Finished building: ../src/md5.c
- 
-Building file: ../src/nand.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
-Finished building: ../src/nand.c
- 
-Building file: ../src/nor.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
-Finished building: ../src/nor.c
- 
-Building file: ../src/pcap.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
-In file included from ../src/pcap.c:100:0:
-../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Finished building: ../src/pcap.c
- 
-Building file: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c"
-Finished building: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c
- 
-Building file: ../src/qspi.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
-Finished building: ../src/qspi.c
- 
-Building file: ../src/sd.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
-Finished building: ../src/sd.c
- 
-Building target: fsbl.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fsbl_bsp/ps7_cortexa9_0/lib -o "fsbl.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
-Finished building target: fsbl.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size fsbl.elf  |tee "fsbl.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81496	  11592	  74712	 167800	  28f78	fsbl.elf
-Finished building: fsbl.elf.size
- 
-19:38:30 **** Build of project device_tree_bsp_0 ****
-make -k all 
+09:42:10 **** Incremental Build of configuration Debug for project blockram ****
+make all 
 make: Nothing to be done for 'all'.
-19:39:08 **** Auto Build of project device_tree_bsp_0 ****
-make -k all 
-make: Nothing to be done for 'all'.
-10:07:52 **** Auto Build of project device_tree_bsp_0 ****
-make -k all 
-make: Nothing to be done for 'all'.
-10:07:56 **** Auto Build of project device_tree_bsp_0 ****
-make -k all 
-make: Nothing to be done for 'all'.
-10:10:37 **** Clean-only build of configuration Debug for project fsbl ****
-make clean 
-rm -rf  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/fsbl_handoff.d  ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  fsbl.elf.size  fsbl.elf
- 
-10:10:38 **** Auto Build of configuration Debug for project fsbl ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/fsbl_handoff.S
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_handoff.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.o" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
-Finished building: ../src/fsbl_handoff.S
- 
-Building file: ../src/fsbl_hooks.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
-Finished building: ../src/fsbl_hooks.c
- 
-Building file: ../src/image_mover.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
-Finished building: ../src/image_mover.c
- 
-Building file: ../src/main.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:137:0:
-../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Finished building: ../src/main.c
- 
-Building file: ../src/md5.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.o" -o "src/md5.o" "../src/md5.c"
-Finished building: ../src/md5.c
- 
-Building file: ../src/nand.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
-Finished building: ../src/nand.c
- 
-Building file: ../src/nor.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
-Finished building: ../src/nor.c
- 
-Building file: ../src/pcap.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
-In file included from ../src/pcap.c:100:0:
-../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Finished building: ../src/pcap.c
- 
-Building file: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c"
-Finished building: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c
- 
-Building file: ../src/qspi.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
-Finished building: ../src/qspi.c
- 
-Building file: ../src/rsa.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.o" -o "src/rsa.o" "../src/rsa.c"
-Finished building: ../src/rsa.c
- 
-Building file: ../src/sd.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
-Finished building: ../src/sd.c
- 
-Building target: fsbl.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fsbl_bsp/ps7_cortexa9_0/lib -o "fsbl.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
-Finished building target: fsbl.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size fsbl.elf  |tee "fsbl.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81496	  11592	  74712	 167800	  28f78	fsbl.elf
-Finished building: fsbl.elf.size
- 
-10:11:42 **** Auto Build of configuration Debug for project fsbl ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-08:47:32 **** Auto Build of project device_tree_bsp_0 ****
-make -k all 
-make: Nothing to be done for 'all'.
-08:47:38 **** Auto Build of project device_tree_bsp_0 ****
-make -k all 
-make: Nothing to be done for 'all'.
-08:50:18 **** Build of configuration Debug for project webpage ****
+09:42:36 **** Auto Build of configuration Debug for project blockram ****
 make all 
 Building file: ../src/helloworld.c
 Invoking: ARM v7 Linux gcc compiler
 arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 Finished building: ../src/helloworld.c
  
-Building target: webpage.elf
+Building target: blockram.elf
 Invoking: ARM v7 Linux gcc linker
-arm-linux-gnueabihf-gcc  -o "webpage.elf"  ./src/helloworld.o   
-Finished building target: webpage.elf
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/helloworld.o   
+Finished building target: blockram.elf
  
 Invoking: ARM v7 Linux Print Size
-arm-linux-gnueabihf-size webpage.elf  |tee "webpage.elf.size"
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
    text	   data	    bss	    dec	    hex	filename
-    852	    280	      4	   1136	    470	webpage.elf
-Finished building: webpage.elf.size
+    852	    280	      4	   1136	    470	blockram.elf
+Finished building: blockram.elf.size
  
-08:50:20 **** Auto Build of configuration Debug for project webpage ****
+09:45:15 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/helloworld.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+    852	    280	      4	   1136	    470	blockram.elf
+Finished building: blockram.elf.size
+ 
+09:45:21 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/helloworld.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+    852	    280	      4	   1136	    470	blockram.elf
+Finished building: blockram.elf.size
+ 
+09:46:01 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/helloworld.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+    981	    284	      8	   1273	    4f9	blockram.elf
+Finished building: blockram.elf.size
+ 
+09:46:08 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:30:8: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘long’
+ typdef long int u32;
+        ^~~~
+make: *** [src/helloworld.o] Error 1
+src/subdir.mk:18: recipe for target 'src/helloworld.o' failed
+09:46:11 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/helloworld.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+    981	    284	      8	   1273	    4f9	blockram.elf
+Finished building: blockram.elf.size
+ 
+09:46:55 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:36:5: error: unknown type name ‘u64’
+     u64 x;
+     ^~~
+../src/helloworld.c:36:9: warning: unused variable ‘x’ [-Wunused-variable]
+src/subdir.mk:18: recipe for target 'src/helloworld.o' failed
+     u64 x;
+         ^
+../src/helloworld.c:35:11: warning: unused variable ‘bram_pbbase’ [-Wunused-variable]
+     off_t bram_pbbase = 0x40000000;
+           ^~~~~~~~~~~
+../src/helloworld.c:34:18: warning: unused variable ‘bram_size’ [-Wunused-variable]
+     unsigned int bram_size = 0x2000;
+                  ^~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+09:47:06 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:37:9: warning: unused variable ‘fd’ [-Wunused-variable]
+     int fd;
+         ^~
+../src/helloworld.c:36:10: warning: unused variable ‘bram32_vptr’ [-Wunused-variable]
+     u32 *bram32_vptr;
+          ^~~~~~~~~~~
+../src/helloworld.c:35:11: warning: unused variable ‘bram_pbbase’ [-Wunused-variable]
+     off_t bram_pbbase = 0x40000000;
+           ^~~~~~~~~~~
+../src/helloworld.c:34:18: warning: unused variable ‘bram_size’ [-Wunused-variable]
+     unsigned int bram_size = 0x2000;
+                  ^~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/helloworld.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+    805	    276	      4	   1085	    43d	blockram.elf
+Finished building: blockram.elf.size
+ 
+09:47:55 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:36:10: warning: unused variable ‘bram32_vptr’ [-Wunused-variable]
+     u32 *bram32_vptr;
+          ^~~~~~~~~~~
+../src/helloworld.c:35:11: warning: unused variable ‘bram_pbbase’ [-Wunused-variable]
+     off_t bram_pbbase = 0x40000000;
+           ^~~~~~~~~~~
+../src/helloworld.c:34:18: warning: unused variable ‘bram_size’ [-Wunused-variable]
+     unsigned int bram_size = 0x2000;
+                  ^~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/helloworld.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+    885	    280	      4	   1169	    491	blockram.elf
+Finished building: blockram.elf.size
+ 
+09:49:24 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:41:91: error: ‘bram_pbase’ undeclared (first use in this function); did you mean ‘bram_pbbase’?
+      bram32_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+                                                                                           ^~~~~~~~~~
+                                                                                           bram_pbbase
+../src/helloworld.c:41:91: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:36:10: warning: variable ‘bram32_vptr’ set but not used [-Wunused-but-set-variable]
+     u32 *bram32_vptr;
+          ^~~~~~~~~~~
+../src/helloworld.c:35:11: warning: unused variable ‘bram_pbbase’ [-Wunused-variable]
+     off_t bram_pbbase = 0x40000000;
+           ^~~~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+09:49:32 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:36:10: warning: variable ‘bram32_vptr’ set but not used [-Wunused-but-set-variable]
+     u32 *bram32_vptr;
+          ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/helloworld.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1217	    292	      8	   1517	    5ed	blockram.elf
+Finished building: blockram.elf.size
+ 
+09:50:06 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/helloworld.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1253	    292	      8	   1553	    611	blockram.elf
+Finished building: blockram.elf.size
+ 
+09:50:17 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/helloworld.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1309	    296	      8	   1613	    64d	blockram.elf
+Finished building: blockram.elf.size
+ 
+09:51:03 **** Incremental Build of configuration Debug for project blockram ****
 make all 
 make: Nothing to be done for 'all'.
-09:35:25 **** Auto Build of project device_tree_bsp_0 ****
-make -k all 
-make: Nothing to be done for 'all'.
-09:35:44 **** Auto Build of configuration Debug for project fsbl ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/fsbl_hooks.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
-Finished building: ../src/fsbl_hooks.c
- 
-Building file: ../src/image_mover.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
-Finished building: ../src/image_mover.c
- 
-Building file: ../src/main.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:137:0:
-../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Finished building: ../src/main.c
- 
-Building file: ../src/nand.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
-Finished building: ../src/nand.c
- 
-Building file: ../src/nor.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
-Finished building: ../src/nor.c
- 
-Building file: ../src/pcap.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
-In file included from ../src/pcap.c:100:0:
-../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Finished building: ../src/pcap.c
- 
-Building file: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c"
-Finished building: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c
- 
-Building file: ../src/qspi.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
-Finished building: ../src/qspi.c
- 
-Building file: ../src/sd.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
-Finished building: ../src/sd.c
- 
-Building target: fsbl.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fsbl_bsp/ps7_cortexa9_0/lib -o "fsbl.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
-Finished building target: fsbl.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size fsbl.elf  |tee "fsbl.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81496	  11592	  74712	 167800	  28f78	fsbl.elf
-Finished building: fsbl.elf.size
- 
-09:39:43 **** Auto Build of configuration Debug for project fsbl ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/fsbl_hooks.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
-In file included from ../src/fsbl_hooks.c:50:0:
-../src/fsbl.h:320:10: fatal error: xil_io.h: No such file or directory
-src/subdir.mk:65: recipe for target 'src/fsbl_hooks.o' failed
- #include "xil_io.h"
-          ^~~~~~~~~~
-compilation terminated.
-make: *** [src/fsbl_hooks.o] Error 1
-09:43:54 **** Incremental Build of configuration Debug for project fsbl ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/fsbl_hooks.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
-src/subdir.mk:65: recipe for target 'src/fsbl_hooks.o' failed
-In file included from ../src/fsbl_hooks.c:50:0:
-../src/fsbl.h:320:10: fatal error: xil_io.h: No such file or directory
- #include "xil_io.h"
-          ^~~~~~~~~~
-compilation terminated.
-make: *** [src/fsbl_hooks.o] Error 1
-09:47:15 **** Build of project fsbl_bsp ****
-make -k all 
-Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src
-make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
-make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src
-make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src
-make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src
-make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_0/src
-make -C ps7_cortexa9_0/libsrc/xilffs_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
-make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/bram_v4_2/src
-make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
-make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling ddrps
-arm-none-eabi-ar: creating ../../../lib/libxil.a
-Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src
-make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling sdps
-Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
-make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling standalone
-In file included from sleep.c:53:0:
-xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-In file included from xtime_l.c:49:0:
-xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-In file included from xil_sleeptimer.c:51:0:
-xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-In file included from usleep.c:56:0:
-xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling dmaps
-Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling cpu_cortexa9
-Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src
-make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling emacps
-Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling ttcps
-Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src
-make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling qspips
-Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src
-make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_0/src
-make -C ps7_cortexa9_0/libsrc/xilffs_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling XilFFs Library
-Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
-make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling scugic
-Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling xadcps
-Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_2/src
-make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling bram
-Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling devcfg
-Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling scuwdt
-Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
-make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling uartps
-Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling usbps
-Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling coresightps_dcc
-Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling scutimer
-Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
-Compiling gpiops
-Finished building libraries
-09:47:30 **** Build of configuration Debug for project fsbl ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/fsbl_handoff.S
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_handoff.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.o" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
-Finished building: ../src/fsbl_handoff.S
- 
-Building file: ../src/fsbl_hooks.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
-Finished building: ../src/fsbl_hooks.c
- 
-Building file: ../src/image_mover.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
-Finished building: ../src/image_mover.c
- 
-Building file: ../src/main.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:137:0:
-../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Finished building: ../src/main.c
- 
-Building file: ../src/md5.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.o" -o "src/md5.o" "../src/md5.c"
-Finished building: ../src/md5.c
- 
-Building file: ../src/nand.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
-Finished building: ../src/nand.c
- 
-Building file: ../src/nor.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
-Finished building: ../src/nor.c
- 
-Building file: ../src/pcap.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
-In file included from ../src/pcap.c:100:0:
-../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-Finished building: ../src/pcap.c
- 
-Building file: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c"
-Finished building: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/ps7_init.c
- 
-Building file: ../src/qspi.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
-Finished building: ../src/qspi.c
- 
-Building file: ../src/rsa.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.o" -o "src/rsa.o" "../src/rsa.c"
-Finished building: ../src/rsa.c
- 
-Building file: ../src/sd.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
-Finished building: ../src/sd.c
- 
-Building target: fsbl.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fsbl_bsp/ps7_cortexa9_0/lib -o "fsbl.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
-Finished building target: fsbl.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size fsbl.elf  |tee "fsbl.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  81496	  11592	  74712	 167800	  28f78	fsbl.elf
-Finished building: fsbl.elf.size
- 
-09:47:33 **** Auto Build of configuration Debug for project fsbl ****
+09:51:04 **** Incremental Build of configuration Debug for project fsbl ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-09:48:22 **** Auto Build of configuration Debug for project fsbl ****
+09:51:36 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1309	    296	      8	   1613	    64d	blockram.elf
+Finished building: blockram.elf.size
+ 
+09:55:14 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1309	    296	      8	   1613	    64d	blockram.elf
+Finished building: blockram.elf.size
+ 
+09:55:20 **** Auto Build of configuration Debug for project blockram ****
+make all 
+make: Nothing to be done for 'all'.
+10:00:27 **** Auto Build of configuration Debug for project blockram ****
+make all 
+make: Nothing to be done for 'all'.
+10:03:10 **** Auto Build of configuration Debug for project blockram ****
+make all 
+make: Nothing to be done for 'all'.
+10:03:27 **** Auto Build of configuration Debug for project blockram ****
+make all 
+make: Nothing to be done for 'all'.
+10:07:16 **** Auto Build of configuration Debug for project blockram ****
+make all 
+make: Nothing to be done for 'all'.
+10:07:28 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1341	    296	     12	   1649	    671	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:07:48 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+../src/blockram.c: In function ‘open_bram’:
+../src/blockram.c:12:21: warning: implicit declaration of function ‘mmap’ [-Wimplicit-function-declaration]
+  bram_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+                     ^~~~
+../src/blockram.c:12:26: error: ‘NULL’ undeclared (first use in this function)
+  bram_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+                          ^~~~
+../src/blockram.c:12:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/blockram.c:12:32: error: ‘bram_size’ undeclared (first use in this function); did you mean ‘bram_vptr’?
+  bram_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+                                ^~~~~~~~~
+                                bram_vptr
+../src/blockram.c:12:43: error: ‘PROT_READ’ undeclared (first use in this function)
+  bram_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+                                           ^~~~~~~~~
+../src/blockram.c:12:55: error: ‘PROT_WRITE’ undeclared (first use in this function); did you mean ‘PROT_READ’?
+  bram_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+                                                       ^~~~~~~~~~
+                                                       PROT_READ
+../src/blockram.c:12:67: error: ‘MAP_SHARED’ undeclared (first use in this function)
+  bram_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+src/subdir.mk:21: recipe for target 'src/blockram.o' failed
+                                                                   ^~~~~~~~~~
+../src/blockram.c:12:79: error: ‘file’ undeclared (first use in this function)
+  bram_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+                                                                               ^~~~
+../src/blockram.c:12:85: error: ‘bram_pbase’ undeclared (first use in this function); did you mean ‘bram_size’?
+  bram_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+                                                                                     ^~~~~~~~~~
+                                                                                     bram_size
+make: *** [src/blockram.o] Error 1
+10:08:09 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+../src/blockram.c: In function ‘open_bram’:
+../src/blockram.c:12:21: warning: implicit declaration of function ‘mmap’ [-Wimplicit-function-declaration]
+  bram_vptr = (u32*) mmap(NULL, BRAM_LENGTH, PROT_READ | PROT_WRITE, MAP_SHARED, fd, BRAM_PHYSICAL_BASEADDR);
+                     ^~~~
+../src/blockram.c:12:26: error: ‘NULL’ undeclared (first use in this function)
+  bram_vptr = (u32*) mmap(NULL, BRAM_LENGTH, PROT_READ | PROT_WRITE, MAP_SHARED, fd, BRAM_PHYSICAL_BASEADDR);
+                          ^~~~
+../src/blockram.c:12:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/blockram.c:12:45: error: ‘PROT_READ’ undeclared (first use in this function)
+  bram_vptr = (u32*) mmap(NULL, BRAM_LENGTH, PROT_READ | PROT_WRITE, MAP_SHARED, fd, BRAM_PHYSICAL_BASEADDR);
+                                             ^~~~~~~~~
+../src/blockram.c:12:57: error: ‘PROT_WRITE’ undeclared (first use in this function); did you mean ‘PROT_READ’?
+  bram_vptr = (u32*) mmap(NULL, BRAM_LENGTH, PROT_READ | PROT_WRITE, MAP_SHARED, fd, BRAM_PHYSICAL_BASEADDR);
+                                                         ^~~~~~~~~~
+                                                         PROT_READ
+../src/blockram.c:12:69: error: ‘MAP_SHARED’ undeclared (first use in this function)
+  bram_vptr = (u32*) mmap(NULL, BRAM_LENGTH, PROT_READ | PROT_WRITE, MAP_SHARED, fd, BRAM_PHYSICAL_BASEADDR);
+                                                                     ^~~~~~~~~~
+make: *** [src/blockram.o] Error 1
+src/subdir.mk:21: recipe for target 'src/blockram.o' failed
+10:08:25 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+../src/blockram.c: In function ‘open_bram’:
+../src/blockram.c:12:26: error: ‘NULL’ undeclared (first use in this function)
+  bram_vptr = (u32*) mmap(NULL, BRAM_LENGTH, PROT_READ | PROT_WRITE, MAP_SHARED, fd, BRAM_PHYSICAL_BASEADDR);
+                          ^~~~
+../src/blockram.c:12:26: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:21: recipe for target 'src/blockram.o' failed
+make: *** [src/blockram.o] Error 1
+10:08:53 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1389	    296	     12	   1697	    6a1	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:10:23 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1389	    296	     12	   1697	    6a1	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:11:24 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1629	    296	     12	   1937	    791	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:11:58 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1725	    296	     12	   2033	    7f1	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:12:38 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1725	    304	     12	   2041	    7f9	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:12:48 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1725	    304	     12	   2041	    7f9	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:13:11 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1741	    304	     12	   2057	    809	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:13:28 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:39:6: error: ‘bram32_vptr’ undeclared (first use in this function); did you mean ‘bram_vptr’?
+      bram32_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+      ^~~~~~~~~~~
+      bram_vptr
+../src/main.c:39:6: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:14:56 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:39:6: error: ‘bram32_vptr’ undeclared (first use in this function); did you mean ‘bram_vptr’?
+      bram32_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+      ^~~~~~~~~~~
+      bram_vptr
+../src/main.c:39:6: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:15:14 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:39:6: error: ‘bram32_vptr’ undeclared (first use in this function); did you mean ‘bram_vptr’?
+      bram32_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+      ^~~~~~~~~~~
+      bram_vptr
+../src/main.c:39:6: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:15:34 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:39:6: error: ‘bram32_vptr’ undeclared (first use in this function); did you mean ‘bram_vptr’?
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+      bram32_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+      ^~~~~~~~~~~
+      bram_vptr
+../src/main.c:39:6: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+10:15:36 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:39:6: error: ‘bram32_vptr’ undeclared (first use in this function); did you mean ‘bram_vptr’?
+      bram32_vptr = (u32*) mmap(NULL, bram_size, PROT_READ | PROT_WRITE, MAP_SHARED, file, bram_pbase);
+      ^~~~~~~~~~~
+      bram_vptr
+../src/main.c:39:6: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:15:59 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:42:17: error: ‘SMALL_OFFSET’ undeclared (first use in this function); did you mean ‘LEVEL_OFFSET’?
+      write_bram(SMALL_OFFSET, 0xFACEB00C);
+                 ^~~~~~~~~~~~
+                 LEVEL_OFFSET
+../src/main.c:42:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+10:16:04 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+./src/main.o:/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/blockram/Debug/../src/blockram.h:32: multiple definition of `bram_size'
+makefile:36: recipe for target 'blockram.elf' failed
+./src/blockram.o:/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/blockram/Debug/../src/blockram.h:32: first defined here
+./src/main.o:/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/blockram/Debug/../src/blockram.h:33: multiple definition of `bram_pbase'
+./src/blockram.o:/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/blockram/Debug/../src/blockram.h:33: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [blockram.elf] Error 1
+10:16:18 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+./src/main.o:/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/blockram/Debug/../src/blockram.h:32: multiple definition of `bram_size'
+makefile:36: recipe for target 'blockram.elf' failed
+./src/blockram.o:/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/blockram/Debug/../src/blockram.h:32: first defined here
+./src/main.o:/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/blockram/Debug/../src/blockram.h:33: multiple definition of `bram_pbase'
+./src/blockram.o:/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/blockram/Debug/../src/blockram.h:33: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [blockram.elf] Error 1
+10:16:36 **** Incremental Build of configuration Debug for project blockram ****
+make all 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+./src/main.o:/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/blockram/Debug/../src/blockram.h:32: multiple definition of `bram_size'
+./src/blockram.o:/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/blockram/Debug/../src/blockram.h:32: first defined here
+./src/main.o:/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/blockram/Debug/../src/blockram.h:33: multiple definition of `bram_pbase'
+makefile:36: recipe for target 'blockram.elf' failed
+./src/blockram.o:/home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/blockram/Debug/../src/blockram.h:33: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [blockram.elf] Error 1
+10:16:37 **** Incremental Build of configuration Debug for project fsbl ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-09:49:18 **** Build of project device_tree_bsp_0 ****
-make -k all 
+10:17:57 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1837	    296	     20	   2153	    869	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:18:02 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/blockram.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1869	    296	     20	   2185	    889	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:18:08 **** Incremental Build of configuration Debug for project blockram ****
+make all 
 make: Nothing to be done for 'all'.
-09:50:15 **** Auto Build of project device_tree_bsp_0 ****
-make -k all 
+10:18:09 **** Incremental Build of configuration Debug for project fsbl ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:22:21 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1869	    296	     20	   2185	    889	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:24:26 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1933	    296	     20	   2249	    8c9	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:25:06 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:49:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long int}’ [-Wformat=]
+      printf("Level read: %d", data[0]);
+             ^                 ~~~~~~~
+../src/main.c:27:18: note: in definition of macro ‘printf’
+  fprintf(stdout, __VA_ARGS__); \
+                  ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2051	    300	     20	   2371	    943	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:28:34 **** Auto Build of configuration Debug for project blockram ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:49:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long int}’ [-Wformat=]
+      printf("Level read: %d\r\n", data[0]);
+             ^                     ~~~~~~~
+../src/main.c:27:18: note: in definition of macro ‘printf’
+  fprintf(stdout, __VA_ARGS__); \
+                  ^~~~~~~~~~~
+../src/main.c:50:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long int}’ [-Wformat=]
+      printf("Small read: %d\r\n", data[1]);
+             ^                     ~~~~~~~
+../src/main.c:27:18: note: in definition of macro ‘printf’
+  fprintf(stdout, __VA_ARGS__); \
+                  ^~~~~~~~~~~
+../src/main.c:51:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long int}’ [-Wformat=]
+      printf("Medium read: %d\r\n", data[2]);
+             ^                      ~~~~~~~
+../src/main.c:27:18: note: in definition of macro ‘printf’
+  fprintf(stdout, __VA_ARGS__); \
+                  ^~~~~~~~~~~
+../src/main.c:52:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long int}’ [-Wformat=]
+      printf("Big read: %d\r\n", data[3]);
+             ^                   ~~~~~~~
+../src/main.c:27:18: note: in definition of macro ‘printf’
+  fprintf(stdout, __VA_ARGS__); \
+                  ^~~~~~~~~~~
+../src/main.c:53:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long int}’ [-Wformat=]
+      printf("Health read: %d\r\n", data[4]);
+             ^                      ~~~~~~~
+../src/main.c:27:18: note: in definition of macro ‘printf’
+  fprintf(stdout, __VA_ARGS__); \
+                  ^~~~~~~~~~~
+../src/main.c:54:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘u32 {aka long int}’ [-Wformat=]
+      printf("Power-up read: %d\r\n", data[5]);
+             ^                        ~~~~~~~
+../src/main.c:27:18: note: in definition of macro ‘printf’
+  fprintf(stdout, __VA_ARGS__); \
+                  ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "blockram.elf"  ./src/blockram.o ./src/main.o   
+Finished building target: blockram.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size blockram.elf  |tee "blockram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2411	    300	     20	   2731	    aab	blockram.elf
+Finished building: blockram.elf.size
+ 
+10:28:38 **** Incremental Build of configuration Debug for project blockram ****
+make all 
 make: Nothing to be done for 'all'.
+10:28:39 **** Incremental Build of configuration Debug for project fsbl ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
