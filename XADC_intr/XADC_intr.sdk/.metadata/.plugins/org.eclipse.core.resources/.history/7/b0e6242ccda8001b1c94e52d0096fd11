@@ -1,0 +1,131 @@
+/*
+ * xadc.c
+ *
+ *  Created on: Apr 29, 2021
+ *      Author: sebastian
+ */
+
+#include "xadc.h"
+
+/*
+ * 	Examples of use
+ */
+
+/*
+
+
+*/
+
+
+/*
+ * 	Functions
+ */
+// See header file for documentation
+
+u8 initXAdc() {
+	u8 status;
+
+	XAdcConfigPtr = XAdcPs_LookupConfig(XADC_DEVICE_ID);
+	if (XAdcConfigPtr == (XAdcPs_Config *) NULL) {
+		xil_printf("XADC Config lookup failed");
+		return XST_FAILURE;
+	}
+
+	// Initialize XADC from configuration
+	status = XAdcPs_CfgInitialize(&XAdc, XAdcConfigPtr, XAdcConfigPtr->BaseAddress);
+	if (status != XST_SUCCESS) {
+		xil_printf("XADC Initialization failed");
+		return XST_FAILURE;
+	}
+
+	// Do selftest of BRAM module to check that it's functional
+	status = XAdcPs_SelfTest(&XAdc);
+	if (status != XST_SUCCESS) {
+		xil_printf("XADC Selftest failed");
+		return XST_FAILURE;
+	}
+
+	return XST_SUCCESS;
+}
+
+u8 initGic(Xil_InterruptHandler handler) {
+	u8 status = XST_SUCCESS;
+
+	// Initialize the interrupt controller driver with configuration so that it is ready to use.
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	if (NULL == IntcConfig) {
+		return XST_FAILURE;
+	}
+
+	status = XScuGic_CfgInitialize(&InterruptController, IntcConfig,
+					IntcConfig->CpuBaseAddress);
+	if (status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+    xil_printf("Initialization exception table.\r\n");
+	/*
+	 * Initialize the exception table.
+	 */
+	Xil_ExceptionInit();
+
+
+	xil_printf("Register handler with exception table.\r\n");
+	/*
+	 * Register the interrupt controller handler with the exception table.
+	 */
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+				(Xil_ExceptionHandler) XScuGic_InterruptHandler,
+				&InterruptController);
+
+
+	xil_printf("Connecting interrupt handler to GIC.\r\n");
+	/*
+	 * Connect the device driver handler that will be called when an
+	 * interrupt for the device occurs, the handler defined above performs
+	 * the specific interrupt processing for the device.
+	 */
+	Status = XScuGic_Connect(&InterruptController, XADC_EOS,
+				(Xil_ExceptionHandler)XAdcInterruptHandler,
+				&XAdc);
+	if (Status != XST_SUCCESS) {
+		return Status;
+	}
+
+
+	xil_printf("Enabling interrupt.\r\n");
+	/*
+	 * Enable the interrupt for the XADC_EOS signal.
+	 */
+	XScuGic_Enable(&InterruptController, XADC_EOS);
+
+
+	xil_printf("Configuring interrupt.\r\n");
+	XScuGic_SetPriorityTriggerType(&InterruptController, XADC_EOS, HIGH_PRIORITY, RISING_EDGE);
+
+
+	xil_printf("Enable exceptions.\r\n");
+	/*
+	 * Enable exceptions.
+	 */
+	Xil_ExceptionEnable();
+
+	return status;
+
+}
+
+void getBatteryRaw(u16 *raw) {
+	*raw = (XAdcPs_GetAdcData(&XAdc, XADCPS_CH_AUX_MIN + 14) >> 4);
+}
+
+void getTorqueRaw(u16 *raw) {
+	*raw = (XAdcPs_GetAdcData(&XAdc, XADCPS_CH_AUX_MIN + 6) >> 4);
+}
+
+void getPhaseARaw(u16 *raw) {
+	*raw = (XAdcPs_GetAdcData(&XAdc, XADCPS_CH_AUX_MIN + 7) >> 4);
+}
+
+void getPhaseBRaw(u16 *raw) {
+	*raw = (XAdcPs_GetAdcData(&XAdc, XADCPS_CH_AUX_MIN + 15) >> 4);
+}

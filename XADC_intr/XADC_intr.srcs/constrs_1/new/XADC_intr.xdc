@@ -1,0 +1,7 @@
+set_property IOSTANDARD LVCMOS33 [get_ports Vaux7_0_v_n]
+set_property IOSTANDARD LVCMOS33 [get_ports Vaux7_0_v_p]
+set_property IOSTANDARD LVCMOS33 [get_ports Vaux14_0_v_n]
+set_property IOSTANDARD LVCMOS33 [get_ports Vaux14_0_v_p]
+set_property IOSTANDARD LVCMOS33 [get_ports Vaux15_0_v_n]
+set_property IOSTANDARD LVCMOS33 [get_ports Vaux15_0_v_p]
+set_property PACKAGE_PIN L15 [get_ports Vaux7_0_v_n]

@@ -1,0 +1,129 @@
+/************ ELECTRIC GO-KART MAIN ************/
+#include <stdio.h>
+#include "platform.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xscugic.h"
+#include "xil_exception.h"
+
+// User includes
+#include "xadc.h"
+
+// User defines
+#define INTC_DEVICE_ID XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define IRQ_F2P XIL_EXCEPTION_ID_INT
+#define XADC_EOS 61
+#define HIGH_PRIORITY 0
+#define RISING_EDGE 0b11
+
+static void XAdcInterruptHandler(XAdcPs *XAdc);
+
+// User structs
+
+
+// User variables
+XScuGic InterruptController;
+XScuGic_Config *IntcConfig;
+
+XAdcPs XAdc;
+XAdcPs_Config *XAdcConfigPtr;
+
+u8 Status;
+u32 IntrStatus;
+
+u32 downscaler = 0;
+
+int main()
+{
+    init_platform();
+
+	/*
+	 * Initialize the interrupt controller driver so that it is ready to
+	 * use.
+	 */
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	if (NULL == IntcConfig) {
+		xil_printf("Failed at finding GIC config.");
+		while(1);
+	}
+
+	Status = XScuGic_CfgInitialize(&InterruptController, IntcConfig,
+					IntcConfig->CpuBaseAddress);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Failed at initializing GIC.");
+		while(1);
+	}
+
+    initXAdc();
+
+    xil_printf("Initialization exception table.\r\n");
+	/*
+	 * Initialize the exception table.
+	 */
+	Xil_ExceptionInit();
+
+
+	xil_printf("Register handler with exception table.\r\n");
+	/*
+	 * Register the interrupt controller handler with the exception table.
+	 */
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+				(Xil_ExceptionHandler) XScuGic_InterruptHandler,
+				&InterruptController);
+
+
+	xil_printf("Connecting interrupt handler to GIC.\r\n");
+	/*
+	 * Connect the device driver handler that will be called when an
+	 * interrupt for the device occurs, the handler defined above performs
+	 * the specific interrupt processing for the device.
+	 */
+	Status = XScuGic_Connect(&InterruptController, XADC_EOS,
+				(Xil_ExceptionHandler)XAdcInterruptHandler,
+				&XAdc);
+	if (Status != XST_SUCCESS) {
+		return Status;
+	}
+
+
+	xil_printf("Enabling interrupt.\r\n");
+	/*
+	 * Enable the interrupt for the XADC_EOS signal.
+	 */
+	XScuGic_Enable(&InterruptController, XADC_EOS);
+
+
+	xil_printf("Configuring interrupt.\r\n");
+	XScuGic_SetPriorityTriggerType(&InterruptController, XADC_EOS, HIGH_PRIORITY, RISING_EDGE);
+
+
+	xil_printf("Enable exceptions.\r\n");
+	/*
+	 * Enable exceptions.
+	 */
+	Xil_ExceptionEnable();
+
+	xil_printf("Now going into loop.");
+	while(1);
+
+    /************************
+     * INSERT CODE HERE
+     */
+
+    cleanup_platform();
+    return 0;
+}
+
+static void XAdcInterruptHandler(XAdcPs *XAdc) {
+	if (downscaler++ >= 250000) {
+		u16 temp_data = 0;
+		getBatteryRaw(&temp_data);
+		xil_printf("Battery reading is: %d\r\n", temp_data);
+		getPhaseARaw(&temp_data);
+		xil_printf("Phase A reading is: %d\r\n", temp_data);
+		getPhaseBRaw(&temp_data);
+		xil_printf("Phase B reading is: %d\r\n", temp_data);
+		downscaler = 0;
+		xil_printf("\r\n\r\n");
+	}
+}
