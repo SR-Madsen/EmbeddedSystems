@@ -32,7 +32,7 @@ signal index : integer := DATA_LENGTH;
 signal position : unsigned(DATA_LENGTH-1 downto 0) := (others => '0');
 
 signal S_AXI_ARESETN : std_logic := '1';
-
+signal enable: std_logic := '1';
 
 begin
 
@@ -41,7 +41,7 @@ begin
     process(S_AXI_ACLK, S_AXI_ARESETN)
     begin
         if rising_edge(S_AXI_ACLK) then
-            if S_AXI_ARESETN = '1' then
+            if S_AXI_ARESETN = '1' and enable = '1' then
                 if (clk_div >= CLOCK_SCALER) then
                     clk_div <= 0;
                     temp_clock <= not temp_clock;
@@ -57,22 +57,25 @@ begin
     end process;
     
     clk_scaled <= temp_clock;
+    SERIAL_CLOCK <= '1' when index = -1 else 
+                    '1' when not (S_AXI_ARESETN = '1' and enable = '1') else
+                    temp_clock;
     
     -- State Machine for both getting absolute position at startup and tracking position
     process(clk_scaled)
     variable inc_AB : std_logic_vector(1 downto 0);
     
     begin
-        if S_AXI_ARESETN = '1' and index > -1 then
-            SERIAL_CLOCK <= clk_scaled;
-        end if;
+        --if S_AXI_ARESETN = '1' and index > -1 then
+        --    SERIAL_CLOCK <= clk_scaled;
+        --end if;
     
         if clk_scaled'event and clk_scaled = '0' then
-            if S_AXI_ARESETN = '1' then
+            if S_AXI_ARESETN = '1' and enable = '1' then
                 case state is
                     when GET_ABS =>
                         if (index = -1) then
-                            SERIAL_CLOCK <= '1';
+                            --SERIAL_CLOCK <= '1';
                             position <= data_temp(DATA_LENGTH-1 downto 0);
                             
                             inc_AB := INC_A & INC_B;
@@ -133,7 +136,7 @@ begin
                 state <= GET_ABS;
                 position <= (others => '0');
                 index <= DATA_LENGTH;
-                SERIAL_CLOCK <= '1';
+                --SERIAL_CLOCK <= '1';
             end if;
         end if;
     end process;

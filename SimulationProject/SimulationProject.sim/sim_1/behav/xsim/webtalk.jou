@@ -2,8 +2,8 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Mar 29 09:41:03 2021
-# Process ID: 17455
+# Start of session at: Thu May 13 09:16:38 2021
+# Process ID: 21167
 # Current directory: /home/sebastian/Desktop/Git/EmbeddedSystems/SimulationProject/SimulationProject.sim/sim_1/behav/xsim
 # Command line: wbtcv -mode batch -source /home/sebastian/Desktop/Git/EmbeddedSystems/SimulationProject/SimulationProject.sim/sim_1/behav/xsim/xsim.dir/encoder_driver_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/sebastian/Desktop/Git/EmbeddedSystems/SimulationProject/SimulationProject.sim/sim_1/behav/xsim/webtalk.log

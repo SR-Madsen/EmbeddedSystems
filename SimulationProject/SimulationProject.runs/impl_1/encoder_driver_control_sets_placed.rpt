@@ -1,0 +1,80 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu May 13 09:30:43 2021
+| Host         : sebastian-ZBook running 64-bit Linux Mint 20
+| Command      : report_control_sets -verbose -file encoder_driver_control_sets_placed.rpt
+| Design       : encoder_driver
+| Device       : xc7z010
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    68 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            9 |
+|      3 |            1 |
+|      8 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |            8 |
+| Yes          | No                    | No                     |              40 |           16 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               8 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+----------------------+------------------+------------------+----------------+
+|      Clock Signal     |     Enable Signal    | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------------+----------------------+------------------+------------------+----------------+
+|  S_AXI_ACLK_IBUF_BUFG |                      |                  |                1 |              1 |
+| ~temp_clock_BUFG      | data_temp[0]_i_1_n_0 |                  |                1 |              1 |
+| ~temp_clock_BUFG      | data_temp[1]_i_1_n_0 |                  |                1 |              1 |
+| ~temp_clock_BUFG      | data_temp[2]_i_1_n_0 |                  |                1 |              1 |
+| ~temp_clock_BUFG      | data_temp[3]_i_1_n_0 |                  |                1 |              1 |
+| ~temp_clock_BUFG      | data_temp[4]_i_1_n_0 |                  |                1 |              1 |
+| ~temp_clock_BUFG      | data_temp[5]_i_1_n_0 |                  |                1 |              1 |
+| ~temp_clock_BUFG      | data_temp[6]_i_1_n_0 |                  |                1 |              1 |
+| ~temp_clock_BUFG      | data_temp[7]_i_1_n_0 |                  |                1 |              1 |
+| ~temp_clock_BUFG      |                      |                  |                1 |              3 |
+| ~temp_clock_BUFG      | position[7]_i_1_n_0  | INC_Z_IBUF       |                4 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG |                      | clear            |                8 |             32 |
+| ~temp_clock_BUFG      | index                |                  |                8 |             32 |
++-----------------------+----------------------+------------------+------------------+----------------+
+
+

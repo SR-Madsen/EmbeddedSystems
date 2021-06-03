@@ -1,0 +1,338 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 13 09:30:00 2021
+# Process ID: 32847
+# Current directory: /home/sebastian/Desktop/Git/EmbeddedSystems/SimulationProject/SimulationProject.runs/synth_1
+# Command line: vivado -log encoder_driver.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source encoder_driver.tcl
+# Log file: /home/sebastian/Desktop/Git/EmbeddedSystems/SimulationProject/SimulationProject.runs/synth_1/encoder_driver.vds
+# Journal file: /home/sebastian/Desktop/Git/EmbeddedSystems/SimulationProject/SimulationProject.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source encoder_driver.tcl -notrace
+Command: synth_design -top encoder_driver -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 32883 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1395.273 ; gain = 42.895 ; free physical = 7805 ; free virtual = 12647
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'encoder_driver' [/home/sebastian/Desktop/Git/EmbeddedSystems/SimulationProject/SimulationProject.srcs/sources_1/new/encoder_driver.vhd:20]
+	Parameter DATA_LENGTH bound to: 8 - type: integer 
+	Parameter CLOCK_SCALER bound to: 112 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sebastian/Desktop/Git/EmbeddedSystems/SimulationProject/SimulationProject.srcs/sources_1/new/encoder_driver.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element inc_AB_reg was removed.  [/home/sebastian/Desktop/Git/EmbeddedSystems/SimulationProject/SimulationProject.srcs/sources_1/new/encoder_driver.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'encoder_driver' (1#1) [/home/sebastian/Desktop/Git/EmbeddedSystems/SimulationProject/SimulationProject.srcs/sources_1/new/encoder_driver.vhd:20]
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[31] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[30] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[29] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[28] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[27] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[26] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[25] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[24] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[23] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[22] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[21] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[20] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[19] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[18] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[17] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[16] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[15] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[14] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[13] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[12] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[11] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[10] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[9] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[8] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1441.023 ; gain = 88.645 ; free physical = 7816 ; free virtual = 12658
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1441.023 ; gain = 88.645 ; free physical = 7816 ; free virtual = 12659
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1449.027 ; gain = 96.648 ; free physical = 7816 ; free virtual = 12659
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'encoder_driver'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-5545] ROM "SERIAL_CLOCK" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "position" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_temp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "index" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 get_abs |                              000 |                              000
+                   three |                              001 |                              100
+                     two |                              010 |                              011
+                    zero |                              011 |                              001
+                     one |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'encoder_driver'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1465.043 ; gain = 112.664 ; free physical = 7790 ; free virtual = 12633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   5 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module encoder_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   5 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "position" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_temp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "index" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SERIAL_CLOCK" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[31] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[30] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[29] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[28] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[27] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[26] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[25] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[24] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[23] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[22] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[21] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[20] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[19] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[18] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[17] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[16] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[15] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[14] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[13] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[12] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[11] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[10] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[9] driven by constant 0
+WARNING: [Synth 8-3917] design encoder_driver has port slv_reg0[8] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1573.410 ; gain = 221.031 ; free physical = 7652 ; free virtual = 12496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1573.410 ; gain = 221.031 ; free physical = 7652 ; free virtual = 12496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1573.410 ; gain = 221.031 ; free physical = 7651 ; free virtual = 12495
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1573.410 ; gain = 221.031 ; free physical = 7651 ; free virtual = 12495
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1573.410 ; gain = 221.031 ; free physical = 7651 ; free virtual = 12495
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1573.410 ; gain = 221.031 ; free physical = 7651 ; free virtual = 12495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1573.410 ; gain = 221.031 ; free physical = 7651 ; free virtual = 12495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1573.410 ; gain = 221.031 ; free physical = 7651 ; free virtual = 12495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1573.410 ; gain = 221.031 ; free physical = 7651 ; free virtual = 12495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    20|
+|3     |LUT1   |    33|
+|4     |LUT2   |    36|
+|5     |LUT3   |     2|
+|6     |LUT4   |    15|
+|7     |LUT5   |    18|
+|8     |LUT6   |    26|
+|9     |FDRE   |    84|
+|10    |IBUF   |     5|
+|11    |OBUF   |    33|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   274|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1573.410 ; gain = 221.031 ; free physical = 7651 ; free virtual = 12495
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1573.410 ; gain = 221.031 ; free physical = 7652 ; free virtual = 12496
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1573.418 ; gain = 221.031 ; free physical = 7652 ; free virtual = 12496
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1710.438 ; gain = 0.000 ; free physical = 7565 ; free virtual = 12409
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1710.438 ; gain = 358.164 ; free physical = 7620 ; free virtual = 12464
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1710.438 ; gain = 0.000 ; free physical = 7620 ; free virtual = 12464
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/sebastian/Desktop/Git/EmbeddedSystems/SimulationProject/SimulationProject.runs/synth_1/encoder_driver.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file encoder_driver_utilization_synth.rpt -pb encoder_driver_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 13 09:30:16 2021...
