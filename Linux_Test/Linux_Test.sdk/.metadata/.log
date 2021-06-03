@@ -12953,3 +12953,102 @@ java.io.FileNotFoundException: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux
 	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2283)
 	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$4.run(IDEWorkbenchAdvisor.java:456)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SESSION 2021-06-03 11:46:53.205 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk
+
+!ENTRY org.eclipse.ui 2 0 2021-06-03 11:46:58.216
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-06-03 11:46:58.216
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2021-06-03 11:47:01.000
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-06-03 11:47:01.000
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:19.425
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:19.425
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:19.431
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:19.432
+!MESSAGE XSCT Command: [setws /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:36.718
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:36.718
+!MESSAGE XSCT command with result: [setws /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:36.791
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:40.931
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:40.979
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/system.hdf /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/device_tree_bsp_0/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:41.042
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/system.hdf /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/device_tree_bsp_0/system.mss ], Result: [{Format=ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+, Time=1622713661042, Code=1}, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:41.043
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/system.hdf /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/device_tree_bsp_0/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:41.046
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/system.hdf /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/device_tree_bsp_0/system.mss], Result: [{Format=ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+, Time=1622713661046, Code=1}, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:41.047
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/system.hdf /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/device_tree_bsp_0/system.mss /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/device_tree_bsp_0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-03 11:47:41.049
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper_hw_platform_0/system.hdf /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/device_tree_bsp_0/system.mss /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/device_tree_bsp_0], Result: [{Format=ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+, Time=1622713661049, Code=1}, ]. Thread: ModalContext
+
+!ENTRY org.eclipse.core.resources 4 568 2021-06-03 11:52:22.720
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap (No such file or directory)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1852)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1224)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui.ide 4 4 2021-06-03 12:27:08.331
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2021-06-03 12:27:08.331
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2021-06-03 12:27:08.331
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers (No such file or directory)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:51)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1657)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1739)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1199)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2283)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$4.run(IDEWorkbenchAdvisor.java:456)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
