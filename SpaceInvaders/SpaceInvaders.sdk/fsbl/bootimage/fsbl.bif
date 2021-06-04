@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/fsbl/Debug/fsbl.elf
+	/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0/top.bit
+	/home/sebastian/Desktop/Embedded_Linux/EK-ES/u-boot-xlnx-master/u-boot.elf
+}

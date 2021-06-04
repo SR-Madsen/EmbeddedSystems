@@ -72,10 +72,4 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_i
 # IP: bd/SpaceInvaders/ip/SpaceInvaders_lmb_bram_0/SpaceInvaders_lmb_bram_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_lmb_bram_0 || ORIG_REF_NAME==SpaceInvaders_lmb_bram_0} -quiet] -quiet
 
-# IP: bd/SpaceInvaders/ip/SpaceInvaders_auto_pc_0/SpaceInvaders_auto_pc_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_auto_pc_0 || ORIG_REF_NAME==SpaceInvaders_auto_pc_0} -quiet] -quiet
-
-# IP: bd/SpaceInvaders/ip/SpaceInvaders_auto_pc_1/SpaceInvaders_auto_pc_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==SpaceInvaders_auto_pc_1 || ORIG_REF_NAME==SpaceInvaders_auto_pc_1} -quiet] -quiet
-
 # XDC: bd/SpaceInvaders/SpaceInvaders_ooc.xdc

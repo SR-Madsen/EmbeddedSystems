@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="SpaceInvaders_microblaze_0_axi_intc_2_synth_1" LaunchDir="/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.runs/SpaceInvaders_microblaze_0_axi_intc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_1" LaunchDir="/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream">
+		<Parent Id="SpaceInvaders_microblaze_0_axi_intc_2_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

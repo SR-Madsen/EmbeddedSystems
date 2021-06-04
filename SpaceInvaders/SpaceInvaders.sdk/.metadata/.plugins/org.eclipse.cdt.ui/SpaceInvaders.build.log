@@ -1,6 +1,6 @@
-08:56:42 **** Incremental Build of configuration Debug for project SpaceInvaders ****
+17:36:03 **** Incremental Build of configuration Debug for project SpaceInvaders ****
 make all 
 make: Nothing to be done for 'all'.
 
-08:56:42 Build Finished (took 511ms)
+17:36:03 Build Finished (took 470ms)
 

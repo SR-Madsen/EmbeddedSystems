@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Apr 26 08:57:52 2021
-# Process ID: 17094
+# Start of session at: Fri Jun  4 22:45:13 2021
+# Process ID: 6548
 # Current directory: /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.runs/impl_1
 # Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.runs/impl_1/top.vdi
