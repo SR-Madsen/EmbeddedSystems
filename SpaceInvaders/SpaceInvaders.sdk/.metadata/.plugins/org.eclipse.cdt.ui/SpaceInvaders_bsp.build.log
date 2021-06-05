@@ -1,4 +1,4 @@
-12:50:50 **** Build of project SpaceInvaders_bsp ****
+08:44:36 **** Build of project SpaceInvaders_bsp ****
 make -k all 
 Running Make include in microblaze_0/libsrc/standalone_v6_8/src
 make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -15,10 +15,6 @@ make -C microblaze_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILE
 Running Make libs in microblaze_0/libsrc/standalone_v6_8/src
 make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling standalone
-outbyte.c: In function 'outbyte':
-outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
- void outbyte(char c) {
-                   ^
 inbyte.c: In function 'inbyte':
 inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
@@ -26,6 +22,10 @@ inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
 microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
  #pragma message ("For the sleep routines, assembly instructions are used")
          ^~~~~~~
+outbyte.c: In function 'outbyte':
+outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
+ void outbyte(char c) {
+                   ^
 mb-ar: creating ../../../lib/libxil.a
 Running Make libs in microblaze_0/libsrc/bram_v4_2/src
 make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -44,5 +44,5 @@ make -C microblaze_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=m
 Compiling sysmon
 Finished building libraries
 
-12:50:53 Build Finished (took 2s.896ms)
+08:44:38 Build Finished (took 2s.65ms)
 

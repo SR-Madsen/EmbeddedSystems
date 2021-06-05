@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
---Date        : Sat Apr 24 19:15:35 2021
+--Date        : Fri Jun  4 22:53:33 2021
 --Host        : sebastian-ZBook running 64-bit Linux Mint 20
 --Command     : generate_target SpaceInvaders.bd
 --Design      : SpaceInvaders

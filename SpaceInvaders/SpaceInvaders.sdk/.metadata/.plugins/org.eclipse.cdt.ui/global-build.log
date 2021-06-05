@@ -1,14 +1,118 @@
-13:53:45 **** Incremental Build of configuration Debug for project fsbl ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+08:42:25 **** Clean-only build of configuration Debug for project SpaceInvaders ****
+make clean 
+rm -rf  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o  ./src/gpios.d ./src/helloworld.d ./src/led_matrix.d ./src/platform.d ./src/sprites.d ./src/stats.d ./src/tasks.d ./src/xadc.d  SpaceInvaders.elf.size  SpaceInvaders.elf
  
-make: Nothing to be done for 'main-build'.
-13:54:22 **** Auto Build of configuration Debug for project fsbl ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+08:42:25 **** Clean-only build of project SpaceInvaders_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
+make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_8/src -s clean 
+make -C microblaze_0/libsrc/gpio_v4_3/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_8/src -s clean 
+make -C microblaze_0/libsrc/sysmon_v7_5/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+08:42:26 **** Build of project SpaceInvaders_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/standalone_v6_8/src
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_8/src
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/gpio_v4_3/src
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/intc_v3_8/src
+make -C microblaze_0/libsrc/intc_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/sysmon_v7_5/src
+make -C microblaze_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/standalone_v6_8/src
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+inbyte.c: In function 'inbyte':
+inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+outbyte.c: In function 'outbyte':
+outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
+ void outbyte(char c) {
+                   ^
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+Running Make libs in microblaze_0/libsrc/cpu_v2_8/src
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/gpio_v4_3/src
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpio
+Running Make libs in microblaze_0/libsrc/intc_v3_8/src
+make -C microblaze_0/libsrc/intc_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/sysmon_v7_5/src
+make -C microblaze_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sysmon
+Finished building libraries
+08:42:29 **** Build of configuration Debug for project SpaceInvaders ****
+make all 
+Building file: ../src/gpios.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpios.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpios.d" -MT"src/gpios.o" -o "src/gpios.o" "../src/gpios.c"
+Finished building: ../src/gpios.c
  
-make: Nothing to be done for 'main-build'.
-14:10:32 **** Auto Build of configuration Debug for project fsbl ****
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/led_matrix.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/sprites.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building file: ../src/stats.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/stats.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/stats.d" -MT"src/stats.o" -o "src/stats.o" "../src/stats.c"
+Finished building: ../src/stats.c
+ 
+Building file: ../src/tasks.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building file: ../src/xadc.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: SpaceInvaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SpaceInvaders_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "SpaceInvaders.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SpaceInvaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SpaceInvaders.elf  |tee "SpaceInvaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45848	   1688	   2864	  50400	   c4e0	SpaceInvaders.elf
+Finished building: SpaceInvaders.elf.size
+ 
+08:42:41 **** Incremental Build of configuration Debug for project SpaceInvaders ****
+make all 
+make: Nothing to be done for 'all'.
+08:44:22 **** Auto Build of configuration Debug for project fsbl ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -73,27 +177,574 @@ Finished building target: fsbl.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size fsbl.elf  |tee "fsbl.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  56364	  11176	  71816	 139356	  2205c	fsbl.elf
+  56364	  11176	  44112	 111652	  1b424	fsbl.elf
 Finished building: fsbl.elf.size
  
-14:19:22 **** Incremental Build of configuration Debug for project SpaceInvaders ****
+08:44:32 **** Clean-only build of project SpaceInvaders_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
+make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_8/src -s clean 
+make -C microblaze_0/libsrc/gpio_v4_3/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_8/src -s clean 
+make -C microblaze_0/libsrc/sysmon_v7_5/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+08:44:33 **** Clean-only build of project blockram_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/intc_v3_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+08:44:33 **** Clean-only build of project device_tree_bsp_0 ****
+make -k clean 
+make: *** No rule to make target 'clean'.
+08:44:34 **** Clean-only build of project fsbl_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/intc_v3_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+08:44:35 **** Clean-only build of configuration Debug for project SpaceInvaders ****
+make clean 
+rm -rf  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o  ./src/gpios.d ./src/helloworld.d ./src/led_matrix.d ./src/platform.d ./src/sprites.d ./src/stats.d ./src/tasks.d ./src/xadc.d  SpaceInvaders.elf.size  SpaceInvaders.elf
+ 
+08:44:35 **** Clean-only build of configuration Debug for project blockram ****
+make clean 
+rm -rf  ./src/blockram.o ./src/helloworld.o ./src/platform.o  ./src/blockram.d ./src/helloworld.d ./src/platform.d  blockram.elf.size  blockram.elf
+ 
+08:44:36 **** Clean-only build of configuration Debug for project fsbl ****
+make clean 
+rm -rf  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/fsbl_handoff.d  ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  fsbl.elf.size  fsbl.elf
+ 
+08:44:36 **** Build of project SpaceInvaders_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/standalone_v6_8/src
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_8/src
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/gpio_v4_3/src
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/intc_v3_8/src
+make -C microblaze_0/libsrc/intc_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/sysmon_v7_5/src
+make -C microblaze_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/standalone_v6_8/src
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+inbyte.c: In function 'inbyte':
+inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+outbyte.c: In function 'outbyte':
+outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
+ void outbyte(char c) {
+                   ^
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+Running Make libs in microblaze_0/libsrc/cpu_v2_8/src
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/gpio_v4_3/src
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpio
+Running Make libs in microblaze_0/libsrc/intc_v3_8/src
+make -C microblaze_0/libsrc/intc_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/sysmon_v7_5/src
+make -C microblaze_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sysmon
+Finished building libraries
+08:44:38 **** Build of configuration Debug for project SpaceInvaders ****
 make all 
+Building file: ../src/gpios.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpios.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpios.d" -MT"src/gpios.o" -o "src/gpios.o" "../src/gpios.c"
+Finished building: ../src/gpios.c
+ 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/led_matrix.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/sprites.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+Finished building: ../src/sprites.c
+ 
+Building file: ../src/stats.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/stats.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/stats.d" -MT"src/stats.o" -o "src/stats.o" "../src/stats.c"
+Finished building: ../src/stats.c
+ 
+Building file: ../src/tasks.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building file: ../src/xadc.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+Finished building: ../src/xadc.c
+ 
+Building target: SpaceInvaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SpaceInvaders_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "SpaceInvaders.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SpaceInvaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SpaceInvaders.elf  |tee "SpaceInvaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45848	   1688	   2864	  50400	   c4e0	SpaceInvaders.elf
+Finished building: SpaceInvaders.elf.size
+ 
+08:44:39 **** Build of project blockram_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/intc_v3_8/src
+make -C ps7_cortexa9_0/libsrc/intc_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling bram
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/intc_v3_8/src
+make -C ps7_cortexa9_0/libsrc/intc_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling intc
+Running Make libs in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sysmon
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+08:44:49 **** Build of configuration Debug for project blockram ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/blockram.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/blockram.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../blockram_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/blockram.d" -MT"src/blockram.o" -o "src/blockram.o" "../src/blockram.c"
+Finished building: ../src/blockram.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../blockram_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:79:48: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long int}' [-Wformat=]
+     fprintf(html_file, "<tr><td>Level</td><td>%d</td></tr>\n", data[0]);
+                                               ~^               ~~~~~~~
+                                               %ld
+../src/helloworld.c:80:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long int}' [-Wformat=]
+     fprintf(html_file, "<tr><td>Scout kills</td><td>%d</td></tr>\n", data[1]);
+                                                     ~^               ~~~~~~~
+                                                     %ld
+../src/helloworld.c:81:56: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long int}' [-Wformat=]
+     fprintf(html_file, "<tr><td>Fighter kills</td><td>%d</td></tr>\n", data[2]);
+                                                       ~^               ~~~~~~~
+                                                       %ld
+../src/helloworld.c:82:59: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long int}' [-Wformat=]
+     fprintf(html_file, "<tr><td>Mothership kills</td><td>%d</td></tr>\n", data[3]);
+                                                          ~^               ~~~~~~~
+                                                          %ld
+../src/helloworld.c:83:59: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long int}' [-Wformat=]
+     fprintf(html_file, "<tr><td>Remaining health</td><td>%d</td></tr>\n", data[4]);
+                                                          ~^               ~~~~~~~
+                                                          %ld
+../src/helloworld.c:84:58: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long int}' [-Wformat=]
+     fprintf(html_file, "<tr><td>Active Power-Up</td><td>%d</td></tr>\n", data[5]);
+                                                         ~^               ~~~~~~~
+                                                         %ld
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../blockram_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../blockram_bsp/ps7_cortexa9_0/lib -o "blockram.elf"  ./src/blockram.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/blockram.o: In function `open_bram':
+/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/blockram/Debug/../src/blockram.c:14: undefined reference to `mmap'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:41: blockram.elf] Error 1
+08:44:50 **** Build of project device_tree_bsp_0 ****
+make -k all 
 make: Nothing to be done for 'all'.
-14:22:17 **** Incremental Build of configuration Debug for project SpaceInvaders ****
-make all 
-make: Nothing to be done for 'all'.
-14:22:50 **** Incremental Build of configuration Debug for project SpaceInvaders ****
-make all 
-make: Nothing to be done for 'all'.
-14:23:54 **** Incremental Build of configuration Debug for project SpaceInvaders ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:32 **** Incremental Build of configuration Debug for project SpaceInvaders ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:13 **** Incremental Build of configuration Debug for project SpaceInvaders ****
-make all 
-make: Nothing to be done for 'all'.
-17:36:03 **** Incremental Build of configuration Debug for project SpaceInvaders ****
-make all 
-make: Nothing to be done for 'all'.
+08:44:50 **** Build of project fsbl_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_0/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/intc_v3_8/src
+make -C ps7_cortexa9_0/libsrc/intc_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_0/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling XilFFs Library
+diskio.c: In function 'disk_read':
+diskio.c:358:9: warning: unused parameter 'buff' [-Wunused-parameter]
+   BYTE *buff, /* Pointer to the data buffer to store read data */
+         ^~~~
+diskio.c:359:9: warning: unused parameter 'sector' [-Wunused-parameter]
+   DWORD sector, /* Start sector number (LBA) */
+         ^~~~~~
+diskio.c: In function 'disk_ioctl':
+diskio.c:402:7: warning: unused parameter 'pdrv' [-Wunused-parameter]
+  BYTE pdrv,    /* Physical drive number (0) */
+       ^~~~
+diskio.c:403:7: warning: unused parameter 'cmd' [-Wunused-parameter]
+  BYTE cmd,    /* Control code */
+       ^~~
+diskio.c:404:8: warning: unused parameter 'buff' [-Wunused-parameter]
+  void *buff    /* Buffer to send/receive control data */
+        ^~~~
+diskio.c: In function 'disk_write':
+diskio.c:501:14: warning: unused parameter 'buff' [-Wunused-parameter]
+  const BYTE *buff, /* Data to be written */
+              ^~~~
+diskio.c:502:8: warning: unused parameter 'sector' [-Wunused-parameter]
+  DWORD sector,  /* Sector address (LBA) */
+        ^~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling bram
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/intc_v3_8/src
+make -C ps7_cortexa9_0/libsrc/intc_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling intc
+Running Make libs in ps7_cortexa9_0/libsrc/sysmon_v7_5/src
+make -C ps7_cortexa9_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sysmon
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+08:45:00 **** Build of configuration Debug for project fsbl ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_handoff.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.o" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:137:0:
+../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.o" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
+In file included from ../src/pcap.c:100:0:
+../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/pcap.c
+ 
+Building file: /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0/ps7_init.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.o" -o "src/ps7_init.o" "/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0/ps7_init.c"
+Finished building: /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.o" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: fsbl.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fsbl_bsp/ps7_cortexa9_0/lib -o "fsbl.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: fsbl.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size fsbl.elf  |tee "fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56364	  11176	  44112	 111652	  1b424	fsbl.elf
+Finished building: fsbl.elf.size
+ 

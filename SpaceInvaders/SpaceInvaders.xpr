@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2018.3 (64-bit)              -->
+<!-- Product Version: Vivado v2018.3_AR71948 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
@@ -40,13 +40,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
-    <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="1"/>
+    <Option Name="WTModelSimExportSim" Val="1"/>
+    <Option Name="WTQuestaExportSim" Val="1"/>
+    <Option Name="WTIesExportSim" Val="1"/>
+    <Option Name="WTVcsExportSim" Val="1"/>
+    <Option Name="WTRivieraExportSim" Val="1"/>
+    <Option Name="WTActivehdlExportSim" Val="1"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -67,53 +67,50 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_blk_mem_gen_0_1/SpaceInvaders_blk_mem_gen_0_1.xci">
-          <Proxy FileSetName="SpaceInvaders_blk_mem_gen_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_blk_mem_gen_0_0/SpaceInvaders_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_blk_mem_gen_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_0_0/SpaceInvaders_axi_bram_ctrl_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_0_1/SpaceInvaders_axi_bram_ctrl_0_1.xci">
-          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_gpio_0_0/SpaceInvaders_axi_gpio_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_lmb_bram_0/SpaceInvaders_lmb_bram_0.xci">
-          <Proxy FileSetName="SpaceInvaders_lmb_bram_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_microblaze_0_0/SpaceInvaders_microblaze_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_microblaze_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_processing_system7_0_0/SpaceInvaders_processing_system7_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_gpio_0_1/SpaceInvaders_axi_gpio_0_1.xci">
-          <Proxy FileSetName="SpaceInvaders_axi_gpio_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_microblaze_0_axi_intc_2/SpaceInvaders_microblaze_0_axi_intc_2.xci">
-          <Proxy FileSetName="SpaceInvaders_microblaze_0_axi_intc_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_xbar_2/SpaceInvaders_xbar_2.xci">
-          <Proxy FileSetName="SpaceInvaders_xbar_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_xadc_wiz_0_0/SpaceInvaders_xadc_wiz_0_0.xci">
-          <Proxy FileSetName="SpaceInvaders_xadc_wiz_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_2_1/SpaceInvaders_axi_bram_ctrl_2_1.xci">
           <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_2_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_mdm_1_2/SpaceInvaders_mdm_1_2.xci">
-          <Proxy FileSetName="SpaceInvaders_mdm_1_2"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_rst_ps7_0_100M_0/SpaceInvaders_rst_ps7_0_100M_0.xci">
           <Proxy FileSetName="SpaceInvaders_rst_ps7_0_100M_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_mdm_1_2/SpaceInvaders_mdm_1_2.xci">
+          <Proxy FileSetName="SpaceInvaders_mdm_1_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_xbar_2/SpaceInvaders_xbar_2.xci">
+          <Proxy FileSetName="SpaceInvaders_xbar_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_processing_system7_0_0/SpaceInvaders_processing_system7_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_gpio_0_0/SpaceInvaders_axi_gpio_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_smc_1/SpaceInvaders_axi_smc_1.xci">
           <Proxy FileSetName="SpaceInvaders_axi_smc_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_gpio_0_1/SpaceInvaders_axi_gpio_0_1.xci">
+          <Proxy FileSetName="SpaceInvaders_axi_gpio_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_xadc_wiz_0_0/SpaceInvaders_xadc_wiz_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_xadc_wiz_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_microblaze_0_0/SpaceInvaders_microblaze_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_microblaze_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_lmb_bram_0/SpaceInvaders_lmb_bram_0.xci">
+          <Proxy FileSetName="SpaceInvaders_lmb_bram_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_0_1/SpaceInvaders_axi_bram_ctrl_0_1.xci">
+          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_blk_mem_gen_0_1/SpaceInvaders_blk_mem_gen_0_1.xci">
+          <Proxy FileSetName="SpaceInvaders_blk_mem_gen_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_axi_bram_ctrl_0_0/SpaceInvaders_axi_bram_ctrl_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_axi_bram_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="SpaceInvaders.bd" FileRelPathName="ip/SpaceInvaders_blk_mem_gen_0_0/SpaceInvaders_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="SpaceInvaders_blk_mem_gen_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/SpaceInvaders/hdl/SpaceInvaders_wrapper.vhd">
@@ -192,6 +189,14 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSDKDIR/SpaceInvaders/Debug/SpaceInvaders.elf">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="ScopedToRef" Val="SpaceInvaders"/>
+          <Attr Name="ScopedToCell" Val="microblaze_0"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="top"/>
@@ -259,12 +264,6 @@
     <FileSet Name="SpaceInvaders_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/SpaceInvaders_processing_system7_0_0">
       <Config>
         <Option Name="TopModule" Val="SpaceInvaders_processing_system7_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="SpaceInvaders_microblaze_0_axi_intc_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/SpaceInvaders_microblaze_0_axi_intc_2">
-      <Config>
-        <Option Name="TopModule" Val="SpaceInvaders_microblaze_0_axi_intc_2"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -412,15 +411,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="SpaceInvaders_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_processing_system7_0_0" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_processing_system7_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_processing_system7_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="SpaceInvaders_microblaze_0_axi_intc_2_synth_1" Type="Ft3:Synth" SrcSet="SpaceInvaders_microblaze_0_axi_intc_2" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_microblaze_0_axi_intc_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/SpaceInvaders_microblaze_0_axi_intc_2_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
@@ -629,22 +619,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="SpaceInvaders_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="SpaceInvaders_microblaze_0_axi_intc_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="SpaceInvaders_microblaze_0_axi_intc_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="SpaceInvaders_microblaze_0_axi_intc_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>

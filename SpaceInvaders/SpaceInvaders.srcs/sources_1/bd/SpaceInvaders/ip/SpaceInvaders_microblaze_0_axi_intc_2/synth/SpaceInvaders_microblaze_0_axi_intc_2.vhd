@@ -160,7 +160,7 @@ ARCHITECTURE SpaceInvaders_microblaze_0_axi_intc_2_arch OF SpaceInvaders_microbl
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF interrupt_address: SIGNAL IS "xilinx.com:interface:mbinterrupt:1.0 interrupt ADDRESS";
   ATTRIBUTE X_INTERFACE_INFO OF processor_ack: SIGNAL IS "xilinx.com:interface:mbinterrupt:1.0 interrupt ACK";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF irq: SIGNAL IS "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, LOW_LATENCY 1";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF irq: SIGNAL IS "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, LOW_LATENCY 1, IRQ.PortWidth 1";
   ATTRIBUTE X_INTERFACE_INFO OF irq: SIGNAL IS "xilinx.com:interface:mbinterrupt:1.0 interrupt INTERRUPT";
   ATTRIBUTE X_INTERFACE_PARAMETER OF processor_rst: SIGNAL IS "XIL_INTERFACENAME proc_reset, POLARITY ACTIVE_HIGH, TYPE PROCESSOR, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF processor_rst: SIGNAL IS "xilinx.com:signal:reset:1.0 proc_reset RST";

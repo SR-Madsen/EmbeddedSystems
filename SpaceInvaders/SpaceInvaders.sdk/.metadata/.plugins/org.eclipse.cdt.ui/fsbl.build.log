@@ -1,6 +1,11 @@
-14:10:32 **** Auto Build of configuration Debug for project fsbl ****
+08:45:00 **** Build of configuration Debug for project fsbl ****
 make pre-build main-build 
 a9-linaro-pre-build-step
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_handoff.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.o" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
  
 Building file: ../src/fsbl_hooks.c
 Invoking: ARM v7 gcc compiler
@@ -20,6 +25,11 @@ In file included from ../src/main.c:137:0:
  #pragma message ("For the sleep routines, Global timer is being used")
          ^~~~~~~
 Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.o" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
  
 Building file: ../src/nand.c
 Invoking: ARM v7 gcc compiler
@@ -50,6 +60,11 @@ Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.o" -o "src/qspi.o" "../src/qspi.c"
 Finished building: ../src/qspi.c
  
+Building file: ../src/rsa.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.o" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
 Building file: ../src/sd.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -I"/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/top_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.o" -o "src/sd.o" "../src/sd.c"
@@ -63,9 +78,9 @@ Finished building target: fsbl.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size fsbl.elf  |tee "fsbl.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  56364	  11176	  71816	 139356	  2205c	fsbl.elf
+  56364	  11176	  44112	 111652	  1b424	fsbl.elf
 Finished building: fsbl.elf.size
  
 
-14:10:34 Build Finished (took 1s.447ms)
+08:45:01 Build Finished (took 1s.264ms)
 

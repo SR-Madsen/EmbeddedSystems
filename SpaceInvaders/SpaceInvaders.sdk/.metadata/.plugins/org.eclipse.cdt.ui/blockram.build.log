@@ -1,4 +1,4 @@
-13:17:33 **** Auto Build of configuration Debug for project blockram ****
+08:44:49 **** Build of configuration Debug for project blockram ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -48,8 +48,7 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 ./src/blockram.o: In function `open_bram':
 /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/blockram/Debug/../src/blockram.c:14: undefined reference to `mmap'
 collect2: error: ld returned 1 exit status
-make: *** [blockram.elf] Error 1
-makefile:39: recipe for target 'blockram.elf' failed
+make: *** [makefile:41: blockram.elf] Error 1
 
-13:17:34 Build Finished (took 672ms)
+08:44:50 Build Finished (took 816ms)
 

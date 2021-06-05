@@ -25,7 +25,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.cache/wt [current_project]
 set_property parent.project_path /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
@@ -67,6 +67,15 @@ set_property used_in_implementation false [get_files -all /home/sebastian/Deskto
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_rst_ps7_0_100M_0/SpaceInvaders_rst_ps7_0_100M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_axi_bram_ctrl_2_1/SpaceInvaders_axi_bram_ctrl_2_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_axi_smc_1/ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_axi_smc_1/bd_0/ip/ip_1/bd_2130_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_axi_smc_1/bd_0/ip/ip_1/bd_2130_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_axi_smc_1/bd_0/ip/ip_5/bd_2130_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_axi_smc_1/bd_0/ip/ip_6/bd_2130_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_axi_smc_1/bd_0/ip/ip_7/bd_2130_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_axi_smc_1/bd_0/ip/ip_8/bd_2130_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_axi_smc_1/bd_0/ip/ip_9/bd_2130_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_axi_smc_1/bd_0/ip/ip_10/bd_2130_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_axi_smc_1/bd_0/ip/ip_11/bd_2130_m00s2a_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_microblaze_0_0/SpaceInvaders_microblaze_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_microblaze_0_0/SpaceInvaders_microblaze_0_0_ooc_debug.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_microblaze_0_0/SpaceInvaders_microblaze_0_0_ooc.xdc]
@@ -77,6 +86,8 @@ set_property used_in_implementation false [get_files -all /home/sebastian/Deskto
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_dlmb_bram_if_cntlr_0/SpaceInvaders_dlmb_bram_if_cntlr_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_ilmb_bram_if_cntlr_0/SpaceInvaders_ilmb_bram_if_cntlr_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_lmb_bram_0/SpaceInvaders_lmb_bram_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_auto_pc_0/SpaceInvaders_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/ip/SpaceInvaders_auto_pc_1/SpaceInvaders_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.srcs/sources_1/bd/SpaceInvaders/SpaceInvaders_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
