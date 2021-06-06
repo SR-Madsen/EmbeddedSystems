@@ -633,8 +633,8 @@ void collisionCheckStraight() {
 							power_up_timer = 30;
 						} else if (rng == 4) {
 							power_up = FREEZE;
-							power_up_timer = 30;
 							color_cannon_freeze(&cannon);
+							power_up_timer = 30;
 						} else if (rng == 6) {
 							if (player_health < 4) {
 								player_health++;

@@ -15,10 +15,10 @@ signal counter : UNSIGNED(12 downto 0) := (others => '0');
 begin
     -- Clock in = 125 MHz (8 ns)
     -- Timer frequency must be 7.5 kHz and counter 8 bit.
+    -- count output frequency = 125 MHz / (2^6 * 2^8) = 7.659 kHz
     
     count <= STD_LOGIC_VECTOR(counter(12 downto 5));
     
-    -- Take 125 MHz and slow it down
     process(clk)
     begin
         if rising_edge(clk) then

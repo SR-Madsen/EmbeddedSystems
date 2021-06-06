@@ -47,17 +47,7 @@ int main()
     	read_health(&data[4]);
     	read_pup(&data[5]);
 
-    	//printf("Level read: %d\r\n", data[0]);
-    	//printf("Small read: %d\r\n", data[1]);
-    	//printf("Medium read: %d\r\n", data[2]);
-    	//printf("Big read: %d\r\n", data[3]);
-    	//printf("Health read: %d\r\n", data[4]);
-    	//printf("Power-up read: %d\r\n", data[5]);
-
-    	//printf("Finished reads from memory.\r\n");
     	close(mem_file);
-    } else {
-    	//printf("Failed at getting virtual address.");
     }
 
     // Write values to BusyBox HTML file

@@ -370,7 +370,9 @@ void writePixelValueToDevice(u8 x, u8 y) {
 // Write a pixel's value out to the LED Matrix using struct
 void writePixelToDevice(position_t pos) {
 	if (pos.y >= 0 && pos.y < 9) {
-		u32 data = (pixels[pos.x-1][pos.y-1][RED]<<RED_SHIFT) | (pixels[pos.x-1][pos.y-1][GREEN]<<GREEN_SHIFT) | (pixels[pos.x-1][pos.y-1][BLUE]);
+		u32 data = (pixels[pos.x-1][pos.y-1][RED]<<RED_SHIFT)
+				 | (pixels[pos.x-1][pos.y-1][GREEN]<<GREEN_SHIFT)
+				 | (pixels[pos.x-1][pos.y-1][BLUE]);
 		ledMatrixOut32(data, BYTES_PER_WORD*((pos.x-1)+((pos.y-1)*NUMBER_OF_COLS)));
 	}
 }

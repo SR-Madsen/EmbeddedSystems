@@ -748,3 +748,89 @@ arm-none-eabi-size fsbl.elf  |tee "fsbl.elf.size"
   56364	  11176	  44112	 111652	  1b424	fsbl.elf
 Finished building: fsbl.elf.size
  
+09:16:47 **** Incremental Build of configuration Debug for project SpaceInvaders ****
+make all 
+make: Nothing to be done for 'all'.
+11:29:31 **** Incremental Build of configuration Debug for project SpaceInvaders ****
+make all 
+make: Nothing to be done for 'all'.
+11:53:00 **** Incremental Build of configuration Debug for project SpaceInvaders ****
+make all 
+make: Nothing to be done for 'all'.
+13:43:50 **** Auto Build of configuration Debug for project SpaceInvaders ****
+make all 
+Building file: ../src/led_matrix.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_matrix.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/led_matrix.d" -MT"src/led_matrix.o" -o "src/led_matrix.o" "../src/led_matrix.c"
+Finished building: ../src/led_matrix.c
+ 
+Building target: SpaceInvaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SpaceInvaders_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "SpaceInvaders.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SpaceInvaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SpaceInvaders.elf  |tee "SpaceInvaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45848	   1688	   2864	  50400	   c4e0	SpaceInvaders.elf
+Finished building: SpaceInvaders.elf.size
+ 
+13:53:54 **** Auto Build of configuration Debug for project SpaceInvaders ****
+make all 
+Building file: ../src/tasks.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tasks.o" -I../../SpaceInvaders_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/tasks.d" -MT"src/tasks.o" -o "src/tasks.o" "../src/tasks.c"
+Finished building: ../src/tasks.c
+ 
+Building target: SpaceInvaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SpaceInvaders_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "SpaceInvaders.elf"  ./src/gpios.o ./src/helloworld.o ./src/led_matrix.o ./src/platform.o ./src/sprites.o ./src/stats.o ./src/tasks.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SpaceInvaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SpaceInvaders.elf  |tee "SpaceInvaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45848	   1688	   2864	  50400	   c4e0	SpaceInvaders.elf
+Finished building: SpaceInvaders.elf.size
+ 
+13:55:42 **** Auto Build of configuration Debug for project blockram ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../blockram_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:48: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long int}' [-Wformat=]
+     fprintf(html_file, "<tr><td>Level</td><td>%d</td></tr>\n", data[0]);
+                                               ~^               ~~~~~~~
+                                               %ld
+../src/helloworld.c:70:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long int}' [-Wformat=]
+     fprintf(html_file, "<tr><td>Scout kills</td><td>%d</td></tr>\n", data[1]);
+                                                     ~^               ~~~~~~~
+                                                     %ld
+../src/helloworld.c:71:56: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long int}' [-Wformat=]
+     fprintf(html_file, "<tr><td>Fighter kills</td><td>%d</td></tr>\n", data[2]);
+                                                       ~^               ~~~~~~~
+                                                       %ld
+../src/helloworld.c:72:59: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long int}' [-Wformat=]
+     fprintf(html_file, "<tr><td>Mothership kills</td><td>%d</td></tr>\n", data[3]);
+                                                          ~^               ~~~~~~~
+                                                          %ld
+../src/helloworld.c:73:59: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long int}' [-Wformat=]
+     fprintf(html_file, "<tr><td>Remaining health</td><td>%d</td></tr>\n", data[4]);
+                                                          ~^               ~~~~~~~
+                                                          %ld
+../src/helloworld.c:74:58: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long int}' [-Wformat=]
+     fprintf(html_file, "<tr><td>Active Power-Up</td><td>%d</td></tr>\n", data[5]);
+                                                         ~^               ~~~~~~~
+                                                         %ld
+Finished building: ../src/helloworld.c
+ 
+Building target: blockram.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../blockram_bsp/ps7_cortexa9_0/lib -o "blockram.elf"  ./src/blockram.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/blockram.o: In function `open_bram':
+/home/sebastian/Desktop/Git/EmbeddedSystems/SpaceInvaders/SpaceInvaders.sdk/blockram/Debug/../src/blockram.c:14: undefined reference to `mmap'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:41: blockram.elf] Error 1
