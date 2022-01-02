@@ -301,3 +301,31 @@ ERROR: [Hsi 55-1452] Error: running open_sw_design.
 
 11:47:41 ERROR : Failed in generating sources
 11:47:41 INFO  : BSP Project P/device_tree_bsp_0 has been successfully migrated.
+12:57:02 INFO  : Registering command handlers for SDK TCF services
+12:57:03 INFO  : Launching XSCT server: xsct -n -interactive /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/temp_xsdb_launch_script.tcl
+12:57:06 INFO  : XSCT server has started successfully.
+12:57:06 INFO  : Successfully done setting XSCT server connection channel  
+12:57:06 INFO  : Successfully done setting SDK workspace  
+12:57:06 INFO  : Restoring local repository preferences: 
+		 /home/sebastian/Desktop/Embedded_Linux/EK-ES/device-tree-xlnx-master
+12:57:06 INFO  : Processing command line option -hwspec /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper.hdf.
+12:57:07 INFO  : Checking for hwspec changes in the project Linux_Test_wrapper_hw_platform_0.
+12:57:10 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1619336086000,  Project:1619339621000
+12:57:10 INFO  : The hardware specification for project 'Linux_Test_wrapper_hw_platform_0' is different from /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper.hdf.
+12:57:10 INFO  : Copied contents of /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper.hdf into /Linux_Test_wrapper_hw_platform_0/system.hdf.
+12:57:15 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:57:29 INFO  : BSP Project P/device_tree_bsp_0 has been successfully migrated.
+12:57:32 INFO  : 
+12:57:33 INFO  : 
+12:57:34 INFO  : Updating hardware inferred compiler options for fsbl.
+12:57:34 INFO  : Clearing existing target manager status.
+09:13:44 INFO  : Registering command handlers for SDK TCF services
+09:13:46 INFO  : Launching XSCT server: xsct -n -interactive /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/temp_xsdb_launch_script.tcl
+09:13:49 INFO  : XSCT server has started successfully.
+09:13:49 INFO  : Successfully done setting XSCT server connection channel  
+09:13:49 INFO  : Successfully done setting SDK workspace  
+09:13:49 INFO  : Restoring local repository preferences: 
+		 /home/sebastian/Desktop/Embedded_Linux/EK-ES/device-tree-xlnx-master
+09:13:49 INFO  : Processing command line option -hwspec /home/sebastian/Desktop/Git/EmbeddedSystems/Linux_Test/Linux_Test.sdk/Linux_Test_wrapper.hdf.
+09:13:49 INFO  : Checking for hwspec changes in the project Linux_Test_wrapper_hw_platform_0.
+09:13:55 INFO  : BSP Project P/device_tree_bsp_0 has been successfully migrated.

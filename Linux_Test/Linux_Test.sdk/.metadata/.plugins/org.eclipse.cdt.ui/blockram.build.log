@@ -1,6 +1,6 @@
-12:25:34 **** Incremental Build of configuration Debug for project blockram ****
+09:14:23 **** Incremental Build of configuration Debug for project blockram ****
 make all 
 make: Nothing to be done for 'all'.
 
-12:25:34 Build Finished (took 514ms)
+09:14:24 Build Finished (took 513ms)
 
